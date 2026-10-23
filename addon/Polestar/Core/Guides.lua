@@ -9,6 +9,7 @@ local type, pairs, ipairs, tostring, tonumber = type, pairs, ipairs, tostring, t
 
 local Guides = {}
 ns.Guides = Guides
+local Own = {} -- file-private functions and state
 
 local guides = {} -- id -> guide
 local order = {} -- ids in first-registration order
@@ -149,6 +150,7 @@ local REQUIRED = {
 	use = { item = isNum, itemName = isStr },
 	sethome = {}, -- `location`, or `candidates` for `sethome nearest`
 	hearth = { location = isStr },
+	die = { location = isStr, map = isNum, x = isNum, y = isNum },
 	getfp = { location = isStr },
 	fly = { location = isStr },
 	enter = { location = isStr },
@@ -369,7 +371,12 @@ local function validate(def)
 	if type(def) ~= "table" then return "guide is not a table" end
 	if not isStr(def.id) then return "missing id" end
 	if not isStr(def.title) then return "missing title" end
-	if type(def.steps) ~= "table" or #def.steps == 0 then return "no steps" end
+	-- Deferred steps (a race part's guide): the steps as Lua source, checked
+	-- when they are first read (Guides.Steps); their count is given.
+	local deferred = rawget(def, "steps") == nil and isStr(def.stepsSrc)
+	if deferred then
+		if not (isNum(def.stepCount) and def.stepCount > 0) then return "no steps" end
+	elseif type(def.steps) ~= "table" or #def.steps == 0 then return "no steps" end
 	if def.minLevel ~= nil and not isNum(def.minLevel) then return "bad minLevel" end
 	if def.maxLevel ~= nil and not isNum(def.maxLevel) then return "bad maxLevel" end
 	if def.next ~= nil and not isStr(def.next) then return "bad next" end
@@ -427,10 +434,16 @@ local function validate(def)
 			end
 		end
 	end
+	if deferred then return nil end
+	return Own.validateSteps(def.steps)
+end
+
+-- A guide's steps checked (validate, or a deferred guide's on first read).
+function Own.validateSteps(steps)
 	-- A step's `label` (format 4) names it, once per guide; `along` is true or
 	-- the label of a later step (docs/PACK_FORMAT.md, "Format 4").
 	local labelAt = {}
-	for s, step in ipairs(def.steps) do
+	for s, step in ipairs(steps) do
 		if type(step) ~= "table" then return ("step %d is not a table"):format(s) end
 		if type(step.goals) ~= "table" or #step.goals == 0 then return ("step %d has no goals"):format(s) end
 		if not checkOnly(step.only) then return ("step %d: bad only"):format(s) end
@@ -446,7 +459,7 @@ local function validate(def)
 			if err then return ("step %d goal %d: %s"):format(s, g, err) end
 		end
 	end
-	for s, step in ipairs(def.steps) do
+	for s, step in ipairs(steps) do
 		local along = step.along
 		if along ~= nil and along ~= true and not (isStr(along) and (labelAt[along] or 0) > s) then
 			return ("step %d: bad along"):format(s)
@@ -481,7 +494,7 @@ Guides.Validate = validate
 ---------------------------------------------------------------------------
 
 -- Every format Polestar has shipped (docs/PACK_FORMAT.md, "Versioning").
-Guides.FORMATS = { [1] = true, [2] = true, [3] = true, [4] = true, [5] = true }
+Guides.FORMATS = { [1] = true, [2] = true, [3] = true, [4] = true, [5] = true, [6] = true }
 Guides.RESERVED = { guides = true, forever = true, lookup = true, draft = true, polestar = true, imported = true }
 local OFFICIAL_ADDON = "Polestar_Guides"
 local REQUIRED_META = { "addon", "title", "author", "version", "license" }
@@ -535,6 +548,8 @@ end
 -- Author text prints literally: every `|` doubled, once, at registration.
 local escape = ns.EscapeText
 local ID_KEYS = { id = true, pack = true, next = true, nextChoices = true }
+-- At registration a deferred guide's source string stays as written.
+local DEFERRED_SKIP = { id = true, pack = true, next = true, nextChoices = true, stepsSrc = true }
 local function escapeTree(t, seen, skip)
 	seen[t] = true
 	for k, v in pairs(t) do
@@ -675,6 +690,91 @@ end
 -- def: a compiled guide (ARCHITECTURE, "Guide data"); def.pack names its
 -- registered pack, which must own def.id. A pack registering one of its own
 -- ids again replaces that guide in its first slot. -> ok, err
+-- A step's picture is a file in the pack's addon folder: its texture path
+-- from the addon that registered the pack. A pack without an addon folder
+-- (imported guides, Lookup's) has no files, so shows none.
+function Own.stepImages(steps, r)
+	for _, step in ipairs(steps) do
+		local image = step.image
+		if image then
+			image.texture = r and r.addon and ("Interface\\AddOns\\" .. r.addon .. "\\" .. (image.file:gsub("/", "\\"))) or nil
+		end
+	end
+end
+
+---------------------------------------------------------------------------
+-- Deferred steps. A race part's guide (docs/PACK_FORMAT.md, "Race parts")
+-- carries its steps as one Lua source string, `stepsSrc` (`return { ... }`),
+-- with `stepCount`: a guide nobody opens costs its string, not its tables.
+-- The first read of `def.steps` runs it (Guides.Steps): the steps are
+-- checked, their pictures placed, their texts put in the client's language
+-- and escaped, as at registration. Guides.Release drops them again (the
+-- Engine, for a guide no tab shows); the next read brings them back.
+---------------------------------------------------------------------------
+
+Own.live = {} -- guide id -> true while its deferred steps are in
+
+function Guides.Steps(def)
+	local steps = rawget(def, "steps")
+	if steps or type(rawget(def, "stepsSrc")) ~= "string" then return steps end
+	local fn = loadstring(def.stepsSrc, "=" .. tostring(def.id))
+	local ok, list = false, nil
+	if fn then ok, list = pcall(fn) end
+	local err = not (ok and type(list) == "table") and "bad steps" or Own.validateSteps(list)
+	if err then
+		local r = packs[def.pack]
+		if r then problem(r, "guide-refused", (L["Guide %s was refused: %s."]):format(escape(def.id), escape(err)), def.id) end
+		list = { { title = def.title, goals = { { t = "note", text = L["This guide could not be read."] } } } }
+	end
+	Own.stepImages(list, packs[def.pack])
+	rawset(def, "steps", list)
+	ns.GuideTexts.PrepareSteps(def)
+	escapeTree(list, {}, ID_KEYS)
+	Own.live[def.id] = true
+	return list
+end
+
+Own.DEFERRED = { __index = function(def, k) if k == "steps" then return Guides.Steps(def) end end }
+
+-- Drop a deferred guide's steps (they come back on the next read). True if dropped.
+function Guides.Release(id)
+	local def = guides[id]
+	if not (def and Own.live[id] and type(rawget(def, "stepsSrc")) == "string") then return false end
+	ns.GuideTexts.DropSteps(def)
+	rawset(def, "steps", nil)
+	Own.live[id] = nil
+	return true
+end
+
+-- Drop the deferred steps of every guide but those in `keep` (id -> true).
+function Guides.ReleaseExcept(keep)
+	for id in pairs(Own.live) do
+		if not keep[id] then Guides.Release(id) end
+	end
+end
+
+-- A guide no tab shows any more gives its deferred steps back.
+function Own.sweep()
+	local E = ns.Engine
+	if E and E.TabIds then Guides.ReleaseExcept(E.TabIds()) end
+end
+ns.On("TABS_CHANGED", Own.sweep)
+ns.On("GUIDE_CHANGED", Own.sweep)
+
+-- Whether the player's class is among `classes` (a race part's guide of one
+-- class route registers only for that class: its other classes' routes are
+-- never read in).
+function ns.PartWants(classes)
+	if type(classes) ~= "table" or #classes == 0 then return true end
+	if not UnitClass then return true end
+	local _, cls = UnitClass("player")
+	if not cls then return true end
+	for i = 1, #classes do
+		if classes[i] == cls then return true end
+	end
+	return false
+end
+
 function ns.RegisterGuide(def)
 	if type(def) ~= "table" or not isStr(def.id) then
 		local err = type(def) ~= "table" and "guide is not a table" or "missing id"
@@ -720,20 +820,15 @@ function ns.RegisterGuide(def)
 		problem(r, "guide-refused", (L["Guide %s was refused: %s."]):format(escape(id), escape(err)), id)
 		return false, err
 	end
-	-- A step's picture is a file in the pack's addon folder: its texture path
-	-- from the addon that registered the pack. A pack without an addon
-	-- folder (imported guides, Lookup's) has no files, so shows none.
-	for _, step in ipairs(def.steps) do
-		local image = step.image
-		if image then
-			image.texture = r.addon and ("Interface\\AddOns\\" .. r.addon .. "\\" .. (image.file:gsub("/", "\\"))) or nil
-		end
-	end
+	local deferred = rawget(def, "steps") == nil
+	if not deferred then Own.stepImages(def.steps, r) end
 	-- The texts in the client's language (GuideTexts), then escaped like the
 	-- rest. While the pack's files load its names stay English: the pack's
 	-- ADDON_LOADED brings its texts addon and the names in.
 	ns.GuideTexts.Prepare(def, not (r.addon and not loaded[r.addon]))
-	escapeTree(def, {}, ID_KEYS)
+	escapeTree(def, {}, DEFERRED_SKIP)
+	-- Deferred steps come in on first read (Own.DEFERRED, Guides.Steps).
+	if deferred then setmetatable(def, Own.DEFERRED) end
 	if not guides[id] then
 		order[#order + 1] = id
 		r.guides[#r.guides + 1] = id
@@ -742,9 +837,9 @@ function ns.RegisterGuide(def)
 	guides[id] = def
 	local h = {}
 	for k, v in pairs(def) do
-		if k ~= "steps" then h[k] = v end
+		if k ~= "steps" and k ~= "stepsSrc" then h[k] = v end
 	end
-	h.stepCount = #def.steps
+	h.stepCount = deferred and def.stepCount or #def.steps
 	headers[id] = h
 	return true
 end
@@ -1007,10 +1102,25 @@ local function relocalise(packId)
 	if changed and loggedIn then ns.Fire("GUIDES_REGISTERED") end
 end
 
+-- A pack's leveling guides for one race ship in an addon of their own,
+-- <pack addon>_<race file> (load on demand, tools/lib/dsl/project.js
+-- buildPackFiles): loaded once the pack's own files are done, for the
+-- player's race only. Its guides register into the pack.
+local function loadRacePart(name)
+	if not UnitRace then return end
+	local _, race = UnitRace("player")
+	race = ns.Compat.Readable(race)
+	if type(race) ~= "string" or race == "" then return end
+	ns.Data.Pack(name .. "_" .. race)
+end
+
 ns.RegisterEvent("ADDON_LOADED", function(_, name)
 	loadingRefused = nil
 	if type(name) ~= "string" then return end
 	loaded[name] = true
+	for _, r in ipairs(records) do
+		if r.addon == name and accepted(r) then loadRacePart(name) end
+	end
 	if not ns.Names.Localised() then return end
 	for _, r in ipairs(records) do
 		if r.addon == name and accepted(r) then
@@ -1214,6 +1324,32 @@ function Guides.DropImported(id)
 	end
 	r.guideCount = #r.guides
 	return true
+end
+
+-- Guide ids a cutover retired (Polestar.RetireGuides(packId, ids), from a
+-- pack's retired.json): a saved tab of one opens its successor, that pack's
+-- leveling guide for the player now (Guides.Successor), so a character keeps
+-- a guide across the cutover; its progress is read again from the quest log.
+local retired = {} -- id -> pack id
+
+function ns.RetireGuides(packId, list)
+	if type(packId) ~= "string" or type(list) ~= "table" then return end
+	for _, id in ipairs(list) do
+		if type(id) == "string" then retired[id] = packId end
+	end
+end
+
+function Guides.IsRetired(id)
+	return retired[id] ~= nil
+end
+
+-- The successor of a retired guide id: its pack's best leveling guide for
+-- the player at their level (as Suggestions ranks a pack's). nil for an id that is
+-- not retired, or a guide still registered under it.
+function Guides.Successor(id)
+	if not retired[id] or guides[id] then return nil end
+	local fitting, best = rank(retired[id], ns.Compat.GetPlayerInfo(), ns.PlayerPoint(), ns.Compat.GetZoneText())
+	return fitting[1] or best
 end
 
 -- The leveling guide a new character of the player's race and class starts

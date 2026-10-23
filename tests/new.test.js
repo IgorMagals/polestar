@@ -139,7 +139,7 @@ test('with an origin URL the workflow and dev container install Polestar from it
 	assert.match(dc.image, /node:24/);
 	assert.ok(dc.postCreateCommand.includes(REPO) && /lua5\.1/.test(dc.postCreateCommand) && /npm link/.test(dc.postCreateCommand));
 	// Never fetch from community web sites (quest XP) or read a web quest list cache from a runner or Codespace.
-	for (const text of [wf, dc.postCreateCommand]) assert.deepEqual(text.match(/polestar data build[^\n"&]*/g).map((s) => s.trim()), ['polestar data build --no-web-xp --no-wowhead']);
+	for (const text of [wf, dc.postCreateCommand]) assert.deepEqual(text.match(/forge data build[^\n"&]*/g).map((s) => s.trim()), ['forge data build --no-web-xp --no-web-zones']);
 	assert.doesNotMatch(a.stdout, /skipped/);
 
 	const without = path.join(tmp(), 'p');
@@ -152,10 +152,10 @@ test('with an origin URL the workflow and dev container install Polestar from it
 
 const skip = needs('quests.json') || (!hasLua() && 'no Lua 5.1');
 
-test('end to end: the new pack lints clean, playtests and packs from its own folder', { skip }, () => {
+test('end to end: the new pack lints clean, playtests and packs from its own folder', { skip: skip || (!cli.forgeBin() && 'no forge build (lint is forge guide lint)') }, () => {
 	const dir = path.join(tmp(), 'ann');
 	assert.equal(polestar(['new', dir, ...ARGS, '--license', 'CC-BY-4.0'], { origin: '' }).status, 0);
-	const lint = polestar(['lint', '--format', 'json'], { cwd: dir });
+	const lint = cli.forge(['guide', 'lint', '--format', 'json'], { cwd: dir });
 	assert.equal(lint.status, 0, lint.stdout + lint.stderr);
 	const doc = JSON.parse(lint.stdout);
 	const diags = Array.isArray(doc) ? doc : doc.diagnostics;
@@ -163,7 +163,7 @@ test('end to end: the new pack lints clean, playtests and packs from its own fol
 	const play = polestar(['playtest'], { cwd: dir });
 	assert.equal(play.status, 0, play.stdout + play.stderr);
 	assert.match(play.stdout, /ok {2}ann-routes\/example/);
-	const pack = polestar(['pack'], { cwd: dir });
+	const pack = cli.forge(['release', 'pack'], { cwd: dir });
 	assert.equal(pack.status, 0, pack.stdout + pack.stderr);
 	assert.ok(fs.existsSync(path.join(dir, 'dist', 'PolestarPack_AnnsRoutes-0.1.0.zip')));
 });

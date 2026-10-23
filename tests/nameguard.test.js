@@ -18,8 +18,8 @@ test('nameguard: the names are built from parts and this repository names them o
 	assert.equal(guard.names().length, 3);
 	const allow = guard.loadAllow();
 	const { unexpected, stale } = guard.checkMentions(guard.mentions(ROOT), allow);
-	assert.deepEqual(unexpected, [], 'files naming a retired source: reword them with "Forever\'s quest data", "the game\'s data" or "players\' reports"; additions to tools/lib/nameguard-allow.json are decided by the maintainers in review');
-	assert.deepEqual(stale, [], 'allowlisted files that no longer name one: drop them from tools/lib/nameguard-allow.json');
+	assert.deepEqual(unexpected, [], 'files naming a retired source: reword them with "Forever\'s quest data", "the game\'s data" or "players\' reports"; additions to data/nameguard-allow.json are decided by the maintainers in review');
+	assert.deepEqual(stale, [], 'allowlisted files that no longer name one: drop them from data/nameguard-allow.json');
 });
 
 test('nameguard: a new mention fails, a cleaned allowlisted file fails until it leaves the list', () => {
@@ -30,7 +30,7 @@ test('nameguard: a new mention fails, a cleaned allowlisted file fails until it 
 	fs.writeFileSync(path.join(dir, 'kept.js'), `// legacy tag: ${site}\n`);
 	fs.writeFileSync(path.join(dir, 'clean.md'), 'Checked against Forever\'s quest data.\n');
 	git('add', '.');
-	const allow = { 'kept.js': 'phase2' };
+	const allow = { 'kept.js': 'excluded' };
 	assert.deepEqual(guard.checkMentions(guard.mentions(dir), allow), { unexpected: [], stale: [] });
 	// Before: a doc cites the site again -> the guard names the file.
 	fs.writeFileSync(path.join(dir, 'clean.md'), `Checked on ${site[0].toUpperCase()}${site.slice(1)} Forever.\n`);
@@ -47,14 +47,14 @@ test('nameguard: a new mention fails, a cleaned allowlisted file fails until it 
 test('nameguard: the allowlist gives every file one of the known kinds', () => {
 	const allow = guard.loadAllow();
 	assert.ok(Object.keys(allow).length > 0);
-	assert.ok(Object.values(allow).every((r) => ['excluded', 'phase2', 'guard'].includes(r)));
+	assert.ok(Object.values(allow).every((r) => r === 'excluded'));
 	const bad = path.join(os.tmpdir(), `nameguard-allow-${process.pid}.json`);
 	fs.writeFileSync(bad, JSON.stringify({ files: { 'a.js': 'later' } }));
 	assert.throws(() => guard.loadAllow(bad), /kind "later"/);
 	fs.rmSync(bad);
 });
 
-test('nameguard: the allowlist only shrinks: no new phase2 entries; a new entry is excluded with a reason', () => {
+test('nameguard: the allowlist only shrinks: a new entry is excluded with a reason', () => {
 	const shipped = JSON.parse(fs.readFileSync(guard.ALLOW, 'utf8')).files;
 	const tmp = path.join(os.tmpdir(), `nameguard-shrink-${process.pid}.json`);
 	const load = (files) => {
@@ -66,12 +66,10 @@ test('nameguard: the allowlist only shrinks: no new phase2 entries; a new entry 
 	assert.doesNotThrow(load(shipped));
 	assert.doesNotThrow(load(Object.fromEntries(rest.map((f) => [f, shipped[f]]))));
 	assert.ok(first);
-	// A new file listed as phase2 (or as a bare "excluded") is refused.
-	assert.throws(load({ ...shipped, 'tools/lib/new-code.js': 'phase2' }), /only shrinks/);
+	// A new file listed as a bare kind is refused, and so are the retired kinds.
 	assert.throws(load({ ...shipped, 'docs/NEW.md': 'excluded' }), /only shrinks/);
-	// An original phase2 entry cannot move to another path, nor become something new.
-	const p2 = Object.keys(shipped).find((f) => shipped[f] === 'phase2');
-	assert.throws(load({ ...shipped, [p2]: { kind: 'phase2', reason: 'x' } }), /must be \{ "kind": "excluded"/);
+	assert.throws(load({ ...shipped, 'tools/lib/new-code.js': 'phase2' }), /kind "phase2"/);
+	assert.throws(load({ ...shipped, 'tools/lib/new-code.js': { kind: 'phase2', reason: 'x' } }), /must be \{ "kind": "excluded"/);
 	// A new entry agreed in review: excluded, with its reason.
 	assert.throws(load({ ...shipped, 'docs/NEW.md': { kind: 'excluded' } }), /reason/);
 	assert.deepEqual(load({ ...shipped, 'docs/NEW.md': { kind: 'excluded', reason: 'a licence notice quoting the source name' } })()['docs/NEW.md'], 'excluded');

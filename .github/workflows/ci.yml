@@ -19,7 +19,7 @@ jobs:
   test:
     name: Tests
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 35
     steps:
       - uses: actions/checkout@v5
 
@@ -30,8 +30,8 @@ jobs:
       - name: Install Lua 5.1
         run: sudo apt-get update -q && sudo apt-get install -y -q lua5.1
 
-      # No npm dependencies. A fresh clone has no built data (it needs the game
-      # client and local sources), so the tests that read it skip with a reason.
+      # A fresh clone has no built data (it needs the game client and local
+      # sources), so the tests that read it skip with a reason.
       - name: Test
         run: npm test
 
@@ -42,9 +42,17 @@ jobs:
         run: npm run i18n:check
 
       # Every changelog fragment in changes/ has a section and an entry, and
-      # CHANGELOG.md has no "Unreleased" section of its own.
+      # CHANGELOG.md has no "Unreleased" section of its own (forge changelog
+      # check; a debug build of forge, cached between runs).
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: rust
+
       - name: Changelog fragments
-        run: node tools/polestar.js changelog check
+        working-directory: rust
+        run: cargo run --locked -q -p forge -- changelog check --root ..
 
       # The textures are generated from code alone, so CI rebuilds them to
       # verify the generators work. Committed copies are kept fresh by the

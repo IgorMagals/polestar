@@ -137,8 +137,8 @@ adding, changing or removing texts, run `node tools/polestar.js i18n sync`
 and commit the locale files with the change: a stale key fails `npm test`. A
 text looked up through a variable (`L[category]`) must be listed in
 `DATA_KEYS` in `tools/lib/i18n/keys.js` (the Dungeons attunement notes are
-read from `tools/lib/codex/attunements.json` there); a generator writes its
-prose as literal keys (`talents build`: the plan notes in `Talents/Builds.lua`).
+read from `data/codex/attunements.json` there); a generator writes its
+prose as literal keys (`forge data talents build`: the plan notes in `Talents/Builds.lua`).
 Data that names a game thing carries its id, never its English name alone, so
 the display can ask `Polestar.Names` for it. A game term the client names
 (`ITEM_QUALITY3_DESC`, `FACTION_HORDE`…) is read from the client, not put in
@@ -219,7 +219,7 @@ the Codex and quest database are built), and plants English to show the
 check finds it: an interface string "translated" as its English, English the
 code writes out, dropped guide texts (a paladin's among them) and prose after
 a slash command. Every scene needs the Codex and the quest database built
-(`codex build`, `questdb build`): without them the addon is an incomplete
+(`forge data codex`, `questdb build`): without them the addon is an incomplete
 install with its own warnings, so the scenes skip, as on CI; run
 `i18n leaks` before a pull request that changes what the addon shows. A text that is right
 to show in Latin letters goes on the allow list with the reason in its group,
@@ -242,18 +242,18 @@ has the details.
 - `node tools/polestar.js i18n names [<locale>...]` rebuilds the addons. Per
   id the first source with a name wins: the client's own tables in that
   language (wago.tools), Forever's quest data in that language (what
-  is cached under `data/sources/wowhead/names`), DingDB (cloned into
+  is cached under `data/sources/web/names`), DingDB (cloned into
   `data/sources/ding` at the commit pinned in `tools/lib/i18n/names.js`,
   every file checked against its sha256) and pfQuest's `db/<locale>` (the
-  clone `data build` uses). It keeps only the ids the compiled guides, the
+  clone `forge data build` uses). It keeps only the ids the compiled guides, the
   quest database (`questdb build`, or `--questdb <dir>`), the Codex's data
-  (`codex build`, or `--codex <dir>`) and the travel data name. A name equal
+  (`forge data codex`, or `--codex <dir>`) and the travel data name. A name equal
   to the English one is not stored (a later source's translation wins), nor
   is one marking unused content (`[PH]`, `(DNT)`...). The client tables
   come from the newest build that has them all in English and every
   language; without one the build stops (`--no-tables` leaves them out on
   purpose). The web names are read from the cache in
-  `data/sources/wowhead/names/`, and without it that source is empty.
+  `data/sources/web/names/`, and without it that source is empty.
   `--offline` reads only the caches, `--no-questie` leaves DingDB out. It
   prints, per language, how many ids of each kind have no name. Commit the
   folders it writes.
@@ -264,7 +264,7 @@ has the details.
   commit, version and sha256s of `DING` in `tools/lib/i18n/names.js`; a file
   that differs from its pin stops the build.
 - A new language needs its web path (`LOCALE_PATHS` in
-  `tools/lib/codex/wowhead.js`, for the cache and the packs' credit), a
+  `tools/lib/codex/web.js`, for the cache and the packs' credit), a
   DingDB file and `DING` pin if Ding
   has it, its AddOns-list text (`tools/lib/i18n/toc.js`) and the folder's
   entry in the release list (`tools/lib/dsl/project.js` takes every locale of

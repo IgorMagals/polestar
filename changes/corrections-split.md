@@ -1,7 +1,7 @@
 ---
 section: contributors
 ---
-- tools/lib/data/corrections.json keeps the fixes an independent source backs,
+- data/corrections.json keeps the fixes an independent source backs,
   each naming it in `source` (an in-game check or issue, a recording, the
   client, EG Link, CMaNGOS, the Forever TrinityCore DB, QuestieDB, pfQuest or
   Factoruide); the others move to a private overlay,

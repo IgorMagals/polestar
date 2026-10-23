@@ -221,10 +221,10 @@ test('travel import keeps the open borders of the file it replaces, and says whe
 	assert.deepEqual([fresh.source, fresh.open], ['test', undefined]);
 });
 
-// The shipped crossings (tools/lib/travel/crossings.json, in TravelData.lua),
+// The shipped crossings (data/crossings.json, in TravelData.lua),
 // on the real maps when this checkout has them built.
 const SHIPPED = require('../tools/lib/travel/build').SHIPPED_CROSSINGS;
-const realData = fs.existsSync(path.join(DATA, 'map-frames.json')) || 'data/forever not built (node tools/polestar.js data build)';
+const realData = fs.existsSync(path.join(DATA, 'map-frames.json')) || 'data/forever not built (forge data build)';
 
 // Fitz, 2026-10-16: from the Barrens (61.66,35.46) to his map marker by
 // Astranaar (Ashenvale 41.21,47.97), a Horde character who knows Ratchet,

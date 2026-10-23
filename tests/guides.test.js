@@ -6,7 +6,7 @@
 // it never names. A step that cannot be completed, an accept/turn-in without a
 // location, or a candidate pick the character may not use fails the guide.
 //
-// Needs data/forever (node tools/polestar.js data build); skips without it.
+// Needs data/forever (forge data build); skips without it.
 // POLESTAR_GUIDES=<substring> limits the run to matching guide files or ids.
 
 const { test } = require('node:test');
@@ -21,9 +21,9 @@ const { format } = require('../tools/lib/dsl/diag');
 
 const skip = needs('quests.json') || (findGuideFiles(OFFICIAL_DIR).length === 0 && 'no guides under guides/');
 
-test('every authored guide can be played to the end by every class it branches on', { skip }, () => {
+test('every authored guide can be played to the end by every class it branches on', { skip }, async () => {
 	const { manifest } = readManifest(OFFICIAL_DIR, { official: true });
-	const { results, diag, played } = playtest({ dir: OFFICIAL_DIR, manifest, official: true, filter: process.env.POLESTAR_GUIDES || null });
+	const { results, diag, played } = await playtest({ dir: OFFICIAL_DIR, manifest, official: true, filter: process.env.POLESTAR_GUIDES || null });
 	assert.deepEqual(diag.errors.map(format), [], 'guides must compile without errors');
 	assert.ok(played > 0, `no guide matches POLESTAR_GUIDES=${process.env.POLESTAR_GUIDES}`);
 	const failures = results.filter((r) => !r.ok).flatMap(resultLines);

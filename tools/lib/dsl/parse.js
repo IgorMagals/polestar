@@ -64,6 +64,8 @@ const MODS = {
 	use: [...COMMON, ...COORDS, 'quest'],
 	sethome: [...COMMON, ...COORDS, 'npc'],
 	hearth: [...COMMON],
+	// `die "<Graveyard>" @x,y`: die and take the Spirit Healer's resurrection there (a deathskip).
+	die: [...COMMON, ...COORDS],
 	getfp: [...COMMON, ...COORDS, 'npc'],
 	fly: [...COMMON],
 	// `enter "<Place>"`: be in that zone or area (the zone or subzone text); coordinates only point the arrow.
@@ -690,6 +692,7 @@ function parsePositional(verb, goal, toks, line, lex, ln, err, spans) {
 		}
 		case 'sethome':
 		case 'hearth':
+		case 'die':
 		case 'getfp':
 		case 'fly':
 		case 'enter': {

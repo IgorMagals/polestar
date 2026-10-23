@@ -20,7 +20,7 @@
 
 - [ ] I ran the tests for what I changed (`node --test tests/<area>.test.js`; guide changes: also `lint` and `playtest --filter <guide>`)
 - [ ] Not run, and why:
-- [ ] A changelog fragment in `changes/` (`node tools/polestar.js changelog add`), crediting the reporter
+- [ ] A changelog fragment in `changes/` (`forge changelog add`), crediting the reporter
 - [ ] An AI agent wrote or helped with this — **Model and tool:** ____
 
 ## Maintainer review

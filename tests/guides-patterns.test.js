@@ -8,7 +8,7 @@
 // and back (#310). tests/guides-reported.test.js pins each report itself.
 // Every test names all its offenders as guide:line.
 //
-// Needs data/forever (node tools/polestar.js data build); skips without it.
+// Needs data/forever (forge data build); skips without it.
 
 const { test } = require('node:test');
 const assert = require('node:assert/strict');

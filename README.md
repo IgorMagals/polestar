@@ -550,42 +550,45 @@ few more listed by `/psrec`.
 
 ```mermaid
 flowchart LR
-  data["Reference<br/>data"] --> world["World model<br/>solo quests"]
-  world --> search["Search<br/>3.5-30M routes<br/>per start"]
-  search --> consensus["Consensus<br/>one route<br/>from level 12"]
-  search --> robust["Robustness<br/>2000 draws"]
-  consensus --> guides["Guides<br/>written from<br/>the export"]
-  guides --> compile["Lint, compile,<br/>play to the end"]
-  compile --> addon["Polestar_Guides"]
-  guides -. scored .-> search
+  game["The game's data<br/>+ the guides"] --> data["Reference<br/>data"]
+  data --> world["World model<br/>solo quests"]
+  world --> walks["Walks<br/>priced on the maps"]
+  walks --> routes["Routes<br/>v1 improved"]
+  routes --> guides["Guides<br/>route written in"]
+  guides --> judge["Judge<br/>report"]
+  judge --> addon["Polestar_Guides"]
 ```
 
-1. **World model.** Every quest the faction can do, with its level,
-   prerequisites, givers and enders, and the work its objectives take: kills
-   at the mob's spawn clusters, item drops at their recorded rates, objects,
-   escorts. Dungeon, raid, PvP and elite quests are filtered out, so a route
-   is something one player can do alone.
-2. **Search.** For each start (Orc, Tauren, Undead and Skyborne for the
-   Horde; Human, Dwarf, Night Elf and Skyborne for the Alliance), randomised
-   greedy construction, local search and simulated annealing evaluate
-   millions of complete 1-60 routes, restarting until the best route stops
-   improving or a cap on evaluated routes is reached.
-3. **Route rules.** When routes are compared, grinding counts 2.5 times and
-   every move into another zone counts 7.5 minutes, so a route takes a hub's
-   quests, does them in one loop and moves on rather than chasing a few
-   experience points across the map. Reported hours stay real.
-4. **Consensus.** Each start keeps its own route to level 12 (the starting
-   zone guides); from there one shared route per faction is searched, so the
-   guides join into one chain.
-5. **Guides.** The consensus route is exported as skeleton guides, one per
-   zone visit, and the guides are written from them by hand. They drop side
-   trips for one or two small quests behind a flight, boat, hearth or long
-   ride; where that leaves the level short, a step names a camp to grind at
-   (with an optional dungeon for the long ones). The finished guides are
-   scored under the same model, next to the best route found.
+The routes are made by **Polestar Forge**, one program (`forge build`) that runs every step from
+the installed game to judged guides ([docs/FORGE.md](docs/FORGE.md)):
 
-### The numbers
+1. **Reference data.** Forge reads the game's own tables from the installed client, Forever's quest
+   data and our corrections into the facts every tool uses: quests, givers and enders, objectives,
+   spawns, items, travel ([data](docs/forge/data.md)).
+2. **World model.** Every quest the faction can do alone, with its level, prerequisites and the
+   work its objectives take: kills at the mob's camps, item drops at their rates, objects, escorts.
+   Dungeon, raid, PvP and elite quests are left out, so a route is something one player can do.
+3. **Walks.** Every walk a route may take is priced on the terrain, with Leffe's navigation maps
+   where they cover it and Polestar's own walking grid elsewhere ([nav](docs/forge/nav.md)).
+4. **Routes, v1 improved.** Each start begins from the order of the shipped guides, which players
+   know and like, and changes only by local edits that reach 60 faster in the model: a quest
+   picked up where you pass it, work folded into an earlier visit instead of a trip back, a stop
+   moved within its zone. An edit is kept only when the guides' deliberate orders (the fixes from
+   player reports) still hold and it does not add returns or passed-by quests
+   ([routes](docs/forge/routes.md), [model](docs/forge/model.md)).
+5. **Guides.** The improved route is written into the guides themselves, keeping their text
+   ([writer](docs/forge/writer.md)).
+6. **Judge.** The written guides are played the way a player follows them and compared with v1:
+   hours, quests passed by, returns, the player-report checks; a change that loses to v1 is not
+   shipped ([judge](docs/forge/judge.md)).
 
+Every quest a route leaves out is listed with the reason (`forge sim skips`), so a missing quest is
+a question with an answer.
+
+### The numbers (guides up to 0.2.4)
+
+The guides shipped so far were written from the earlier JavaScript simulator's searches
+([docs/legacy/SIMULATION-js.md](docs/legacy/SIMULATION-js.md)); these are its numbers.
 Hours to 60, solo, under the model. The routes were searched four times,
 independently: the first search is the one the guides were written from;
 each later one used another random seed, more routes and newer data. Each
@@ -663,10 +666,11 @@ possible, so the claim is narrower and checked:
 > detours keep their priors, and Forever's 30-60 content is not in the data.
 > Comparisons between routes are what the numbers support; absolute hours
 > are not. Recordings from the Recorder are what will calibrate kill time
-> (`sim calibrate`); travel detours keep their priors even then.
+> (`forge sim calibrate`); travel detours keep their priors even then.
 
-The whole method, every parameter and its known limitations are in
-[docs/SIMULATION.md](docs/SIMULATION.md).
+That simulator's method and parameters are in
+[docs/legacy/SIMULATION-js.md](docs/legacy/SIMULATION-js.md); Forge's model is in
+[docs/forge/model.md](docs/forge/model.md).
 
 ## A guide, from source to game
 
@@ -769,8 +773,9 @@ can cover one zone or the whole climb, under a licence of your choice
 ```sh
 git clone https://github.com/fitzforge/polestar.git
 cd polestar
-npm link               # puts `polestar` on your PATH; no npm dependencies
-polestar data build    # the reference data every guide command reads
+npm link               # puts `polestar` on your PATH
+cd rust && cargo build --release -p forge && cd ..   # or a prebuilt forge from the Releases page
+rust/target/release/forge data build    # the reference data every guide command reads
 polestar doctor        # checks the setup and prints the fix for anything missing
 cd ..                  # your pack goes beside the clone, not inside it
 polestar new my-pack   # asks for the id, title, author and licence
@@ -794,15 +799,15 @@ the tests. Building the data needs a local Forever client: it reads the
 client's tables and installed addons.
 
 ```sh
-node tools/polestar.js data build         # reference data into data/forever/ (local)
+forge data build --kb                     # reference data into data/forever/ (local)
 node tools/polestar.js questdb build      # the Polestar_QuestDB pack
-node tools/polestar.js lint               # check every guide
-node tools/polestar.js compile            # build addon/Polestar_Guides
+forge guide lint               # check every guide
+forge guide compile                       # build addon/Polestar_Guides
 node --test "tests/**/*.test.js"          # the test suite
 node tools/polestar.js preview            # render the UI to docs/preview/*.svg
 node tools/polestar.js install --recorder # into a detected Forever or beta client
-node tools/polestar.js version            # the release version in package.json, guides/pack.json and every addon TOC
-node tools/polestar.js pack               # release zips and SHA256SUMS into dist/
+forge release version                    # the release version in package.json, guides/pack.json and every addon TOC
+forge release pack                       # release zips and SHA256SUMS into dist/
 ```
 
 `npm test` runs the suite. [CI](.github/workflows/ci.yml) runs it on every
@@ -821,6 +826,22 @@ the steps and what each zip carries.
 `node tools/polestar.js help` lists every command and `help <command>` its
 options; [tools/README.md](tools/README.md) groups them, lists the generated
 files and gives the rebuild order after a data change.
+
+<details>
+<summary><b>Polestar Forge: making the routes</b></summary>
+
+```sh
+cd rust && cargo build --release -p forge && cd ..   # or a prebuilt forge from the Releases page
+rust/target/release/forge doctor                     # what it finds: the game, the data, the maps
+rust/target/release/forge build --guides guides --out forge-out
+```
+
+Forge reads the installed game, builds the data and the walks, improves every start's route from
+the shipped guides, writes it into the guides and judges them: `forge-out/report.md` compares each
+start with v1. Without a maintainer's `data/sources`, `forge data fetch` downloads the public data
+pack first. [docs/FORGE.md](docs/FORGE.md) is the guide.
+
+</details>
 
 <details>
 <summary><b>The playground: the real addon in a browser</b></summary>
@@ -858,7 +879,7 @@ Pick a guide and a character and the route plays on the game's own minimap
 terrain, zone by zone or as the whole 1-60 route across the continents: each
 step's start time and duration split into travel, combat, talking and
 waiting, the level and XP, the quest log and items, the spawn areas and the
-path. The clock is the simulator's model ([docs/SIMULATION.md](docs/SIMULATION.md)),
+path. The clock is the simulator's model ([docs/legacy/SIMULATION-js.md](docs/legacy/SIMULATION-js.md)),
 so treat absolute hours as estimates and compare steps against each other.
 With the navigation grid built (`node tools/polestar.js nav build`, local
 only) every walk follows the terrain, the walks between mobs in a kill area
@@ -891,7 +912,7 @@ committed or shipped.
 ```sh
 node tools/polestar.js record watch     # import sessions as the game saves them
 node tools/polestar.js record import    # or import once
-node tools/polestar.js data build       # fold recordings into the reference data
+forge data build --kb                   # fold recordings into the reference data
 node tools/polestar.js record report    # how long each guide step really took
 ```
 
@@ -902,7 +923,7 @@ AFK breaks (idle time counts at most 5 minutes), going back a step and other
 tabs are accounted for.
 
 At Forever's launch, the data is rebuilt and the simulator rerun to take in
-the new zones ([docs/SIMULATION.md](docs/SIMULATION.md), "Refresh").
+the new zones ([docs/FORGE.md](docs/FORGE.md)).
 
 </details>
 
@@ -912,13 +933,14 @@ the new zones ([docs/SIMULATION.md](docs/SIMULATION.md), "Refresh").
 |---|---|
 | [`addon/Polestar`](addon/Polestar) | The addon: engine, navigation, UI, modules, textures drawn in code ([addon/README.md](addon/README.md); every addon: [docs/ARCHITECTURE.md, "Overview"](docs/ARCHITECTURE.md#overview)) |
 | [`addon/Polestar_Guides`](addon/Polestar_Guides) | The compiled guides (generated by `compile`) |
-| [`addon/Polestar_ItemDB`](addon/Polestar_ItemDB) | Item stats for gear advice: `Items.lua` from `itemdb build`, `Forever.lua` from `gear build` |
+| [`addon/Polestar_ItemDB`](addon/Polestar_ItemDB) | Item stats for gear advice: `Items.lua` from `forge data itemdb`, `Forever.lua` from `forge data gear` |
 | [`addon/Polestar_Nav`](addon/Polestar_Nav) | The arrow's walking routes: Polestar's walking router, started from Shortest Path Forever's by Cillian Berragan (GPL-3.0-or-later), on Polestar's walking maps of Eastern Kingdoms, Kalimdor and Zephras Isle, grown from his format (`nav pack`; [CREDITS.md](addon/Polestar_Nav/CREDITS.md)) |
 | [`addon/Polestar_Recorder`](addon/Polestar_Recorder) | The optional session recorder |
 | [`guides/forever`](guides/forever) | The guide sources: leveling, professions, reputation, exploration, Legacy, collectibles |
 | [`tools`](tools) | The command line (`polestar.js`), the guide compiler, the simulator, data importers, texture and preview renderers, the playground ([tools/README.md](tools/README.md)) |
+| [`rust`](rust) | Polestar Forge, the Rust pipeline that makes the routes and writes them into the guides: one `forge` program ([docs/FORGE.md](docs/FORGE.md)) |
 | [`tests`](tests) | `node --test` suites; `tests/lua` is the simulated game client they run the addon in ([tests/README.md](tests/README.md)) |
-| [`docs`](docs) | Architecture, guide format, simulation, the suite's scope, UI renders ([docs/README.md](docs/README.md)) |
+| [`docs`](docs) | Architecture, guide format, Forge, the suite's scope, UI renders ([docs/README.md](docs/README.md)) |
 | `data/` | Local build products and recordings, gitignored |
 
 [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) describes the modules and their
@@ -934,7 +956,7 @@ saved you a minute. Questions and ideas are welcome on the
 [Polestar Discord](https://discord.gg/vMbee6F2e9).
 
 - **Found a wrong step?** A guide's title names its file under
-  `guides/forever/`; fix the step, run `node tools/polestar.js lint` and
+  `guides/forever/`; fix the step, run `forge guide lint` and
   `playtest --filter <name>`, and open a pull request. Without the reference
   data (built from a local client today), send the fix or an issue anyway:
   [CONTRIBUTING.md](CONTRIBUTING.md) has the full walkthrough.

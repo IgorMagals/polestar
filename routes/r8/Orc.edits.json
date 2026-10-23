@@ -1,0 +1,1775 @@
+[
+  {
+    "n": 1,
+    "kind": "insert",
+    "steps": [
+      {
+        "t": "accept",
+        "q": 79976,
+        "task": null
+      },
+      {
+        "t": "turnin",
+        "q": 79976,
+        "task": null
+      }
+    ],
+    "from": null,
+    "to": 915,
+    "q": 79976,
+    "text": "Arathi Highlands, L38.0: add This Must Be The Place (level 32, giver passed by): take it right after 'do Foul Magics (objective)', hand it in right after 'take This Must Be The Place'",
+    "reason": "a passed-by quest worth its detour",
+    "savedMin": 2.58,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "q": 79976,
+      "edit": "insert",
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 2,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 893,
+        "task": 0
+      }
+    ],
+    "from": 406,
+    "to": 407,
+    "q": 893,
+    "text": "The Barrens, L22.0: do Weapons of Choice (objective) right after 'do Weapons of Choice (objective)' (within the zone stay; 1 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 1.01,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        893,
+        0
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 3,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 1058,
+        "task": 3
+      }
+    ],
+    "from": 469,
+    "to": 471,
+    "q": 1058,
+    "text": "Stonetalon Mountains, L24.1: do Jin'Zil's Forest Magic (objective) right after 'do Cenarius' Legacy (objective)' (within the zone stay; 2 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 0.77,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        1058,
+        3
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 4,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 8366,
+        "task": 1
+      }
+    ],
+    "from": 1138,
+    "to": 1141,
+    "q": 8366,
+    "text": "Tanaris, L42.8: do Southsea Shakedown (objective) right after 'do Pirate Hats Ahoy! (objective)' (within the zone stay; 3 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 0.49,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        8366,
+        1
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 5,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 1058,
+        "task": 3
+      }
+    ],
+    "from": 471,
+    "to": 467,
+    "q": 1058,
+    "text": "Stonetalon Mountains, L24.1: do Jin'Zil's Forest Magic (objective) right after 'do Jin'Zil's Forest Magic (objective)' (within the zone stay; 4 steps earlier)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 0.3,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        1058,
+        3
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 6,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "turnin",
+        "q": 6641,
+        "task": null
+      }
+    ],
+    "from": 571,
+    "to": 614,
+    "q": 6641,
+    "text": "Ashenvale, L27.0: hand in Vorsha the Lasher right after 'hand in The Hunt Completed' (within the zone stay; 43 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 0.26,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "turnin",
+        6641,
+        null
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 7,
+    "kind": "fold later",
+    "steps": [
+      {
+        "t": "turnin",
+        "q": 1420,
+        "task": null
+      }
+    ],
+    "from": 1103,
+    "to": 1198,
+    "q": 1420,
+    "text": "Swamp of Sorrows, L42.3: hand in Report to Helgrum right after 'take Ripple Recovery' (on the later visit, folding a return; 95 steps later)",
+    "reason": "folds a return into the other visit to the same place",
+    "savedMin": 0.2,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "turnin",
+        1420,
+        null
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 8,
+    "kind": "fold later",
+    "steps": [
+      {
+        "t": "turnin",
+        "q": 819,
+        "task": null
+      }
+    ],
+    "from": 233,
+    "to": 306,
+    "q": 819,
+    "text": "The Barrens, L16.1: hand in Chen's Empty Keg right after 'hand in Favorite Food' (on the later visit, folding a return; 73 steps later)",
+    "reason": "folds a return into the other visit to the same place",
+    "savedMin": 9.07,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "turnin",
+        819,
+        null
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 9,
+    "kind": "fold later",
+    "steps": [
+      {
+        "t": "turnin",
+        "q": 875,
+        "task": null
+      }
+    ],
+    "from": 231,
+    "to": 324,
+    "q": 875,
+    "text": "The Barrens, L16.0: hand in Harpy Lieutenants right after 'do Raptor Horns (objective)' (on the later visit, folding a return; 93 steps later)",
+    "reason": "folds a return into the other visit to the same place",
+    "savedMin": 7.22,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "turnin",
+        875,
+        null
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 10,
+    "kind": "insert",
+    "steps": [
+      {
+        "t": "accept",
+        "q": 96261,
+        "task": null
+      },
+      {
+        "t": "task",
+        "q": 96261,
+        "task": 0
+      },
+      {
+        "t": "turnin",
+        "q": 96261,
+        "task": null
+      }
+    ],
+    "from": null,
+    "to": 619,
+    "q": 96261,
+    "text": "Mulgore, L28.4: add The Broodmother (level 31, giver passed by): take it right after 'take Stronger than Steel', hand it in right after 'hand in Stronger than Steel'",
+    "reason": "a passed-by quest worth its detour",
+    "savedMin": 6.57,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "q": 96261,
+      "edit": "insert",
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 11,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 865,
+        "task": 0
+      }
+    ],
+    "from": 323,
+    "to": 376,
+    "q": 865,
+    "text": "The Barrens, L19.7: do Raptor Horns (objective) right after 'do Stolen Silver (objective)' (within the zone stay; 53 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 3.3,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        865,
+        0
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 12,
+    "kind": "fold later",
+    "steps": [
+      {
+        "t": "turnin",
+        "q": 893,
+        "task": null
+      }
+    ],
+    "from": 422,
+    "to": 552,
+    "q": 893,
+    "text": "The Barrens, L22.8: hand in Weapons of Choice right after 'train' (on the later visit, folding a return; 130 steps later)",
+    "reason": "folds a return into the other visit to the same place",
+    "savedMin": 0.21,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "turnin",
+        893,
+        null
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 13,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "turnin",
+        "q": 6462,
+        "task": null
+      }
+    ],
+    "from": 578,
+    "to": 616,
+    "q": 6462,
+    "text": "Ashenvale, L27.2: hand in Troll Charm right after 'hand in Je'neu of the Earthen Ring' (within the zone stay; 38 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 0.18,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "turnin",
+        6462,
+        null
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 14,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "accept",
+        "q": 485,
+        "task": null
+      }
+    ],
+    "from": 1413,
+    "to": 1405,
+    "q": 485,
+    "text": "The Hinterlands, L48.5: take Find OOX-09/HL! right after 'take Rin'ji's Secret' (within the zone stay; 8 steps earlier)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 5.01,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "accept",
+        485,
+        null
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 15,
+    "kind": "fold later",
+    "steps": [
+      {
+        "t": "turnin",
+        "q": 1691,
+        "task": null
+      }
+    ],
+    "from": 1151,
+    "to": 1280,
+    "q": 1691,
+    "text": "Tanaris, L43.6: hand in More Wastewander Justice right after 'hand in Perfect Yeti Hide' (on the later visit, folding a return; 129 steps later)",
+    "reason": "folds a return into the other visit to the same place",
+    "savedMin": 4.44,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "turnin",
+        1691,
+        null
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 16,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 570,
+        "task": 0
+      }
+    ],
+    "from": 835,
+    "to": 836,
+    "q": 570,
+    "text": "Stranglethorn Vale, L35.9: do Mok'thardin's Enchantment (objective) right after 'do Some Assembly Required (objective)' (within the zone stay; 1 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 0.28,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        570,
+        0
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 17,
+    "kind": "fold later",
+    "steps": [
+      {
+        "t": "turnin",
+        "q": 6142,
+        "task": null
+      }
+    ],
+    "from": 738,
+    "to": 998,
+    "q": 6142,
+    "text": "Desolace, L32.0: hand in Clam Bait right after 'hand in Stinky's Escape' (on the later visit, folding a return; 260 steps later)",
+    "reason": "folds a return into the other visit to the same place",
+    "savedMin": 4.21,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "turnin",
+        6142,
+        null
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 18,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "train"
+      }
+    ],
+    "from": 693,
+    "to": 694,
+    "q": null,
+    "text": "Orgrimmar, L30.5: train right after 'take Alliance Relations' (within the zone stay; 1 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 4.21,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": null
+  },
+  {
+    "n": 19,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 4402,
+        "task": 0
+      }
+    ],
+    "from": 15,
+    "to": 12,
+    "q": 4402,
+    "text": "Durotar, L3.3: do Galgar's Cactus Apple Surprise (objective) right after 'train' (within the zone stay; 3 steps earlier)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 0.3,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        4402,
+        0
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 20,
+    "kind": "fold",
+    "steps": [
+      {
+        "t": "accept",
+        "q": 5961,
+        "task": null
+      }
+    ],
+    "from": 2017,
+    "to": 1904,
+    "q": 5961,
+    "text": "Undercity, L57.4: take The Champion of the Banshee Queen right after 'hand in Prompt Potion Runner' (on the earlier visit, folding a return; 113 steps earlier)",
+    "reason": "folds a return into the other visit to the same place",
+    "savedMin": 3.53,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "accept",
+        5961,
+        null
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 21,
+    "kind": "fold later",
+    "steps": [
+      {
+        "t": "turnin",
+        "q": 192,
+        "task": null
+      },
+      {
+        "t": "turnin",
+        "q": 339,
+        "task": null
+      },
+      {
+        "t": "turnin",
+        "q": 340,
+        "task": null
+      },
+      {
+        "t": "turnin",
+        "q": 341,
+        "task": null
+      },
+      {
+        "t": "turnin",
+        "q": 342,
+        "task": null
+      },
+      {
+        "t": "task",
+        "q": 338,
+        "task": 0
+      },
+      {
+        "t": "turnin",
+        "q": 338,
+        "task": null
+      }
+    ],
+    "from": 852,
+    "to": 1064,
+    "q": 192,
+    "text": "Stranglethorn Vale, L36.6: the 7 steps at this place (hand in Panther Mastery; hand in Chapter I; hand in Chapter II; hand in Chapter III; hand in Chapter IV; do The Green Hills of Stranglethorn (objective); hand in The Green Hills of Stranglethorn) right after 'hand in The Troll Witchdoctor' (on the later visit, folding a return; 212 steps later)",
+    "reason": "folds a return into the other visit to the same place",
+    "savedMin": 3.49,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "turnin",
+        192,
+        null
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 22,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "accept",
+        "q": 2875,
+        "task": null
+      }
+    ],
+    "from": 1121,
+    "to": 1134,
+    "q": 2875,
+    "text": "Tanaris, L42.6: take WANTED: Andre Firebeard right after 'take Pirate Hats Ahoy!' (within the zone stay; 13 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 3.22,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "accept",
+        2875,
+        null
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 23,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 3161,
+        "task": 0
+      }
+    ],
+    "from": 1294,
+    "to": 1291,
+    "q": 3161,
+    "text": "Tanaris, L46.4: do Gahz'ridian (objective) right after 'take Gahz'ridian' (within the zone stay; 3 steps earlier)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 2.94,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        3161,
+        0
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 24,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "accept",
+        "q": 4984,
+        "task": null
+      }
+    ],
+    "from": 1675,
+    "to": 1663,
+    "q": 4984,
+    "text": "Western Plaguelands, L52.5: take The Wildlife Suffers Too right after 'hand in Minion's Scourgestones' (within the zone stay; 12 steps earlier)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 2.77,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "accept",
+        4984,
+        null
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 25,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 3123,
+        "task": 0
+      }
+    ],
+    "from": 1412,
+    "to": 1389,
+    "q": 3123,
+    "text": "The Hinterlands, L48.7: do Testing the Vessel (objective) right after 'do Grim Message (objective)' (within the zone stay; 23 steps earlier)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 2.66,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        3123,
+        0
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 26,
+    "kind": "fold later",
+    "steps": [
+      {
+        "t": "turnin",
+        "q": 5881,
+        "task": null
+      }
+    ],
+    "from": 557,
+    "to": 632,
+    "q": 5881,
+    "text": "The Barrens, L26.9: hand in Calling in the Reserves right after 'train' (on the later visit, folding a return; 75 steps later)",
+    "reason": "folds a return into the other visit to the same place",
+    "savedMin": 2.54,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "turnin",
+        5881,
+        null
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 27,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 192,
+        "task": 0
+      }
+    ],
+    "from": 851,
+    "to": 860,
+    "q": 192,
+    "text": "Stranglethorn Vale, L36.6: do Panther Mastery (objective) right after 'do Hostile Takeover (objective)' (within the zone stay; 9 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 2.43,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        192,
+        0
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 28,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 1104,
+        "task": 0
+      }
+    ],
+    "from": 682,
+    "to": 684,
+    "q": 1104,
+    "text": "Thousand Needles, L29.8: do Salt Flat Venom (objective) right after 'do Load Lightening (objective)' (within the zone stay; 2 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 2.41,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        1104,
+        0
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 29,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 216,
+        "task": 1
+      }
+    ],
+    "from": 571,
+    "to": 574,
+    "q": 216,
+    "text": "Ashenvale, L27.1: do Between a Rock and a Thistlefur (objective) right after 'do Freedom to Ruul (objective)' (within the zone stay; 3 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 2.38,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        216,
+        1
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 30,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "turnin",
+        "q": 6563,
+        "task": null
+      }
+    ],
+    "from": 569,
+    "to": 613,
+    "q": 6563,
+    "text": "Ashenvale, L27.0: hand in The Essence of Aku'Mai right after 'hand in King of the Foulweald' (within the zone stay; 44 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 1.7,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "turnin",
+        6563,
+        null
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 31,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "turnin",
+        "q": 4809,
+        "task": null
+      }
+    ],
+    "from": 1798,
+    "to": 1828,
+    "q": 4809,
+    "text": "Winterspring, L54.3: hand in Chillwind Horns right after 'hand in A Little Luck' (within the zone stay; 30 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 0.72,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "turnin",
+        4809,
+        null
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 32,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 6042,
+        "task": 0
+      }
+    ],
+    "from": 1922,
+    "to": 1925,
+    "q": 6042,
+    "text": "Eastern Plaguelands, L55.8: do Un-Life's Little Annoyances (objective) right after 'do Un-Life's Little Annoyances (objective)' (within the zone stay; 3 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 2.19,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        6042,
+        0
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 33,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "turnin",
+        "q": 4451,
+        "task": null
+      }
+    ],
+    "from": 1351,
+    "to": 1357,
+    "q": 4451,
+    "text": "Searing Gorge, L47.6: hand in The Key to Freedom right after 'hand in What the Flux?' (within the zone stay; 6 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 2.14,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "turnin",
+        4451,
+        null
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 34,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 876,
+        "task": 0
+      }
+    ],
+    "from": 340,
+    "to": 345,
+    "q": 876,
+    "text": "The Barrens, L20.1: do Serena Bloodfeather (objective) right after 'take Trouble in the Valley' (within the zone stay; 5 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 2.1,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        876,
+        0
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 35,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 815,
+        "task": 0
+      }
+    ],
+    "from": 85,
+    "to": 79,
+    "q": 815,
+    "text": "Durotar, L8.6: do Break a Few Eggs (objective) right after 'do A Solvent Spirit (objective)' (within the zone stay; 6 steps earlier)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 2.09,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        815,
+        0
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 36,
+    "kind": "fold later",
+    "steps": [
+      {
+        "t": "accept",
+        "q": 6606,
+        "task": null
+      },
+      {
+        "t": "turnin",
+        "q": 6606,
+        "task": null
+      },
+      {
+        "t": "turnin",
+        "q": 4809,
+        "task": null
+      }
+    ],
+    "from": 1826,
+    "to": 2088,
+    "q": 6606,
+    "text": "Winterspring, L55.0: the 3 steps at this place (take A Little Luck; hand in A Little Luck; hand in Chillwind Horns) right after 'hand in Winterfall Runners' (on the later visit, folding a return; 262 steps later)",
+    "reason": "folds a return into the other visit to the same place",
+    "savedMin": 1.8,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "accept",
+        6606,
+        null
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 37,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 8282,
+        "task": 0
+      }
+    ],
+    "from": 1999,
+    "to": 2004,
+    "q": 8282,
+    "text": "Silithus, L57.2: do Noggle's Lost Satchel (objective) right after 'hand in True Believers' (within the zone stay; 5 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 1.73,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        8282,
+        0
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 38,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "turnin",
+        "q": 571,
+        "task": null
+      }
+    ],
+    "from": 858,
+    "to": 861,
+    "q": 571,
+    "text": "Stranglethorn Vale, L36.9: hand in Mok'thardin's Enchantment right after 'hand in Hostile Takeover' (within the zone stay; 3 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 1.63,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "turnin",
+        571,
+        null
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 39,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "accept",
+        "q": 2781,
+        "task": null
+      }
+    ],
+    "from": 1282,
+    "to": 1288,
+    "q": 2781,
+    "text": "Tanaris, L46.3: take WANTED: Caliph Scorpidsting right after 'take Noxious Lair Investigation' (within the zone stay; 6 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 1.62,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "accept",
+        2781,
+        null
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 40,
+    "kind": "fold later",
+    "steps": [
+      {
+        "t": "turnin",
+        "q": 609,
+        "task": null
+      },
+      {
+        "t": "turnin",
+        "q": 209,
+        "task": null
+      }
+    ],
+    "from": 1102,
+    "to": 1479,
+    "q": 609,
+    "text": "Stranglethorn Vale, L42.2: the 2 steps at this place (hand in Voodoo Dues; hand in Skullsplitter Tusks) right after 'do The Singing Crystals (objective)' (on the later visit, folding a return; 377 steps later)",
+    "reason": "folds a return into the other visit to the same place",
+    "savedMin": 0.34,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "turnin",
+        609,
+        null
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 41,
+    "kind": "fold later",
+    "steps": [
+      {
+        "t": "turnin",
+        "q": 7734,
+        "task": null
+      },
+      {
+        "t": "turnin",
+        "q": 7738,
+        "task": null
+      }
+    ],
+    "from": 1276,
+    "to": 1500,
+    "q": 7734,
+    "text": "Feralas, L46.1: the 2 steps at this place (hand in Improved Quality; hand in Perfect Yeti Hide) right after 'take Magatha's Payment to Jediga' (on the later visit, folding a return; 224 steps later)",
+    "reason": "folds a return into the other visit to the same place",
+    "savedMin": 1.65,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "turnin",
+        7734,
+        null
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 42,
+    "kind": "insert",
+    "steps": [
+      {
+        "t": "accept",
+        "q": 594,
+        "task": null
+      },
+      {
+        "t": "turnin",
+        "q": 594,
+        "task": null
+      }
+    ],
+    "from": null,
+    "to": 1477,
+    "q": 594,
+    "text": "Stranglethorn Vale, L49.8: add Message in a Bottle (level 45, giver passed by): take it right after 'do The Singing Crystals (objective)', hand it in right after 'take Message in a Bottle'",
+    "reason": "a passed-by quest worth its detour",
+    "savedMin": 3.87,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "q": 594,
+      "edit": "insert",
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 43,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 4145,
+        "task": 2
+      }
+    ],
+    "from": 1575,
+    "to": 1579,
+    "q": 4145,
+    "text": "Un'Goro Crater, L51.3: do Larion and Muigin (objective) right after 'do Lost! (objective)' (within the zone stay; 4 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 1.62,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        4145,
+        2
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 44,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 4300,
+        "task": 0
+      }
+    ],
+    "from": 1551,
+    "to": 1600,
+    "q": 4300,
+    "text": "Un'Goro Crater, L50.8: do Bone-Bladed Weapons (objective) right after 'do The Bait for Lar'korwi (objective)' (within the zone stay; 49 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 3.56,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        4300,
+        0
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 45,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "accept",
+        "q": 3884,
+        "task": null
+      }
+    ],
+    "from": 1551,
+    "to": 1554,
+    "q": 3884,
+    "text": "Un'Goro Crater, L50.8: take Williden's Journal right after 'do Alien Ecology (objective)' (within the zone stay; 3 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 2.03,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "accept",
+        3884,
+        null
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 46,
+    "kind": "fold",
+    "steps": [
+      {
+        "t": "accept",
+        "q": 2781,
+        "task": null
+      }
+    ],
+    "from": 1284,
+    "to": 1149,
+    "q": 2781,
+    "text": "Tanaris, L46.2: take WANTED: Caliph Scorpidsting right after 'hand in Pirate Hats Ahoy!' (on the earlier visit, folding a return; 135 steps earlier)",
+    "reason": "folds a return into the other visit to the same place",
+    "savedMin": 1.53,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "accept",
+        2781,
+        null
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 47,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "accept",
+        "q": 885,
+        "task": null
+      }
+    ],
+    "from": 410,
+    "to": 407,
+    "q": 885,
+    "text": "The Barrens, L22.2: take Washte Pawne right after 'do Weapons of Choice (objective)' (within the zone stay; 3 steps earlier)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 1.37,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "accept",
+        885,
+        null
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 48,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 4501,
+        "task": 1
+      }
+    ],
+    "from": 1547,
+    "to": 1550,
+    "q": 4501,
+    "text": "Un'Goro Crater, L50.7: do Beware of Pterrordax (objective) right after 'do Shizzle's Flyer (objective)' (within the zone stay; 3 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 1.33,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        4501,
+        1
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 49,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 201,
+        "task": 0
+      }
+    ],
+    "from": 816,
+    "to": 817,
+    "q": 201,
+    "text": "Stranglethorn Vale, L35.4: do Investigate the Camp (objective) right after 'do Supply and Demand (objective)' (within the zone stay; 1 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 1.27,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        201,
+        0
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 50,
+    "kind": "drop",
+    "steps": [
+      {
+        "t": "accept",
+        "q": 709,
+        "task": null
+      },
+      {
+        "t": "task",
+        "q": 709,
+        "task": 0
+      },
+      {
+        "t": "turnin",
+        "q": 709,
+        "task": null
+      }
+    ],
+    "from": null,
+    "to": null,
+    "q": 709,
+    "text": "Badlands, L38.8: drop Solution to Doom (level 40): its trip costs more than its XP",
+    "reason": "its trip costs more than its XP",
+    "savedMin": 1.26,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "q": 709,
+      "edit": "drop",
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 51,
+    "kind": "fold later",
+    "steps": [
+      {
+        "t": "turnin",
+        "q": 1878,
+        "task": null
+      }
+    ],
+    "from": 1125,
+    "to": 1273,
+    "q": 1878,
+    "text": "Tanaris, L42.6: hand in Water Pouch Bounty right after 'take Perfect Yeti Hide' (on the later visit, folding a return; 148 steps later)",
+    "reason": "folds a return into the other visit to the same place",
+    "savedMin": 1.1,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "turnin",
+        1878,
+        null
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 52,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 6381,
+        "task": 0
+      }
+    ],
+    "from": 474,
+    "to": 475,
+    "q": 6381,
+    "text": "Stonetalon Mountains, L24.2: do New Life (objective) right after 'do Elemental War (objective)' (within the zone stay; 1 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 0.49,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        6381,
+        0
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 53,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 1108,
+        "task": 0
+      }
+    ],
+    "from": 947,
+    "to": 941,
+    "q": 1108,
+    "text": "Badlands, L38.8: do Indurium (objective) right after 'do Barbecued Buzzard Wings (objective)' (within the zone stay; 6 steps earlier)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 2.13,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        1108,
+        0
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 54,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 3128,
+        "task": 1
+      }
+    ],
+    "from": 1253,
+    "to": 1254,
+    "q": 3128,
+    "text": "Feralas, L45.5: do Natural Materials (objective) right after 'do Natural Materials (objective)' (within the zone stay; 1 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 1.22,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        3128,
+        1
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 55,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 784,
+        "task": 1
+      }
+    ],
+    "from": 59,
+    "to": 61,
+    "q": 784,
+    "text": "Durotar, L6.8: do Vanquish the Betrayers (objective) right after 'take The Admiral's Orders' (within the zone stay; 2 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 1.2,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        784,
+        1
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 56,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 7850,
+        "task": 0
+      }
+    ],
+    "from": 1419,
+    "to": 1420,
+    "q": 7850,
+    "text": "The Hinterlands, L48.8: do Dark Vessels (objective) right after 'hand in Kidnapped Elder Torntusk!' (within the zone stay; 1 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 1.19,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        7850,
+        0
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 57,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 4921,
+        "task": 0
+      }
+    ],
+    "from": 364,
+    "to": 359,
+    "q": 4921,
+    "text": "The Barrens, L20.9: do Lost in Battle (objective) right after 'do Verog the Dervish (objective)' (within the zone stay; 5 steps earlier)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 1.17,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        4921,
+        0
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 58,
+    "kind": "fold",
+    "steps": [
+      {
+        "t": "turnin",
+        "q": 1150,
+        "task": null
+      },
+      {
+        "t": "accept",
+        "q": 1151,
+        "task": null
+      },
+      {
+        "t": "turnin",
+        "q": 1151,
+        "task": null
+      }
+    ],
+    "from": 672,
+    "to": 650,
+    "q": 1150,
+    "text": "Thousand Needles, L29.7: the 3 steps at this place (hand in Test of Endurance; take Test of Strength; hand in Test of Strength) right after 'take Test of Endurance' (on the earlier visit, folding a return; 22 steps earlier)",
+    "reason": "folds a return into the other visit to the same place",
+    "savedMin": 1.16,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "turnin",
+        1150,
+        null
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 59,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 4841,
+        "task": 0
+      }
+    ],
+    "from": 643,
+    "to": 646,
+    "q": 4841,
+    "text": "Thousand Needles, L29.0: do Pacify the Centaur (objective) right after 'take Assassination Plot' (within the zone stay; 3 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 1.14,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        4841,
+        0
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 60,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 98093,
+        "task": 1
+      }
+    ],
+    "from": 409,
+    "to": 413,
+    "q": 98093,
+    "text": "The Barrens, L22.1: do Field to Clear (objective) right after 'take Revenge of Gann' (within the zone stay; 4 steps later)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 1.12,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        98093,
+        1
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 61,
+    "kind": "move",
+    "steps": [
+      {
+        "t": "task",
+        "q": 5181,
+        "task": 0
+      }
+    ],
+    "from": 1908,
+    "to": 1905,
+    "q": 5181,
+    "text": "Eastern Plaguelands, L55.6: do Villains of Darrowshire (objective) right after 'take Villains of Darrowshire' (within the zone stay; 3 steps earlier)",
+    "reason": "a cheaper place within the zone stay",
+    "savedMin": 1.08,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "s": [
+        "task",
+        5181,
+        0
+      ],
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 62,
+    "kind": "pickup",
+    "steps": [
+      {
+        "t": "accept",
+        "q": 98095,
+        "task": null
+      },
+      {
+        "t": "turnin",
+        "q": 98095,
+        "task": null
+      }
+    ],
+    "from": null,
+    "to": 531,
+    "q": 98095,
+    "text": "Hillsbrad Foothills, L25.1: add Valuable Vantages (level 25; its giver is passed here): 1714 XP for -0.1 min of detour and work (99999 XP/min against the route's 441 at this level, detour 0 s); take it right after 'do The Rescue (objective)', hand it in right after 'take Valuable Vantages'",
+    "reason": "a worthwhile passed-by quest picked up where it is passed (<= 2 min)",
+    "savedMin": 4.79,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "q": 98095,
+      "edit": "insert",
+      "reason": "",
+      "issue": ""
+    }
+  },
+  {
+    "n": 63,
+    "kind": "pickup",
+    "steps": [
+      {
+        "t": "accept",
+        "q": 1372,
+        "task": null
+      },
+      {
+        "t": "turnin",
+        "q": 1372,
+        "task": null
+      }
+    ],
+    "from": null,
+    "to": 1102,
+    "q": 1372,
+    "text": "Duskwood, L42.2: add Nothing But The Truth (level 42; its giver is passed here): 329 XP for 0.7 min of detour and work (504 XP/min against the route's 506 at this level, detour 27 s); take it right after 'hand in Raptor Mastery', hand it in right after 'take Nothing But The Truth'",
+    "reason": "a worthwhile passed-by quest picked up where it is passed (<= 2 min)",
+    "savedMin": 0.08,
+    "guards": "quest order and deliberate orders (player reports), feasibility (items, escorts, timers), judge returns and passed-by, split work, area visits, training gaps and shifts, feedback guards (grind after hand-ins, hearth cooldown, training on the way, no elite/rare camps), log <= 38, no added late turn-in",
+    "revert": {
+      "q": 1372,
+      "edit": "insert",
+      "reason": "",
+      "issue": ""
+    }
+  }
+]

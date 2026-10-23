@@ -15,6 +15,22 @@ picks one) for every addon test; `luac5.1` for `syntax.test.js`; `python3`
 for the zip checks in `pack.test.js`. `node tools/polestar.js doctor` checks
 Node and Lua.
 
+While working, `npm run test:changed` runs only the test files your change
+can reach: `tools/testsel.js` takes the files `git diff HEAD` and untracked
+files name (`--base main` adds what is committed since main; paths given on
+the command line replace them), maps each to the tests that require it, load
+it into the addon or read its path (the rules are the table at the top of the
+script), prints `N of M test files` with a reason for each, and runs them:
+each file in a `node --test` process of its own, several at once (`--jobs N`,
+default half the cores) but another only while the machine has more than
+`--reserve GB` available (default 6; a large sim test holds 2-3 GB), printing
+the output of the files that fail.
+`node tools/testsel.js` alone only prints the selection; `--json` prints the
+mapping. A changed file no rule maps to a test is listed as unmapped
+(`--all-unmapped` runs the whole suite for it). The selection is a shortcut,
+not the gate: `npm test` (every file) is what CI runs, so run it before you
+push.
+
 CI (`.github/workflows/ci.yml`, on pushes to main and on pull requests)
 installs Lua 5.1 and runs `npm test`, then rebuilds the textures with
 `node tools/polestar.js media` and the UI renders with
@@ -106,7 +122,7 @@ CI, they skip; everything else runs.
 | `addon/Polestar_Codex` | `codex build` | `lookup-codex.test.js` (release-safe, and Lookup, Dungeons and Rares read it in game) |
 | `data/forever/codex/*.json` | `codex build` | `dungeons-attune.test.js` (the real attunement chains) |
 | `addon/Polestar_ItemDB/Items.lua` | `itemdb build` (committed, so present on a clone) | `itemdb.test.js` |
-| `addon/Polestar_Nav` (Polestar's walking router, started from Shortest Path Forever's; Polestar's maps of maps 0, 1 and 2991 and `Chokepoints.lua`) | the router hand-written, `nav pack` (`PACK.json`); committed, so present on a clone | `nav-maps.test.js` (matches `PACK.json`; the router's headers keep his copyright; walks Goldshire to the Fargodeep Mine mouth on the real maps; Idle trims the graph to its resting ceiling), `nav-router.test.js` (ground classes and faction profiles on synthetic maps; format 1 routes as the router before classes, from git history), `nav-load.test.js` (a missing part file or no decoder drops the map, no Lua error), `nav-e2e.test.js` (the arrow end to end on the real engine: Polestar's world frame against the engine's, the path through Walk, Travel and Nav.Sample; needs `data/forever/map-frames.json` and `addon/Polestar_Guides/MapFrames.lua` too) |
+| `addon/Polestar_Nav` (Polestar's walking router, started from Shortest Path Forever's; Polestar's maps of maps 0, 1 and 2991 and `Chokepoints.lua`) | the router hand-written, `forge nav pack` (`PACK.json`); committed, so present on a clone | `nav-maps.test.js` (matches `PACK.json`; the router's headers keep his copyright; walks Goldshire to the Fargodeep Mine mouth on the real maps; Idle trims the graph to its resting ceiling), `nav-router.test.js` (ground classes and faction profiles on synthetic maps; format 1 routes as the router before classes, from git history), `nav-load.test.js` (a missing part file or no decoder drops the map, no Lua error), `nav-e2e.test.js` (the arrow end to end on the real engine: Polestar's world frame against the engine's, the path through Walk, Travel and Nav.Sample; needs `data/forever/map-frames.json` and `addon/Polestar_Guides/MapFrames.lua` too) |
 | `data/local/crossings.json`, `addon/Polestar_Travel` | the local crossings file, `travel build` | `travel-crossings.test.js`, `nav-crossings.test.js` |
 | `data/local/nav/` (the navigation grid) | `nav build` | `navmesh-path.test.js` (real routes: the Frostmane Hold cave mouth, the Mesa Elevator, the South Gate tunnel) |
 | The Forever client's map tiles and WMO roots cached in `data/sources/casc` | `nav build` | `navmesh-geom.test.js` (WMO bounding boxes on their placements, real tiles) |

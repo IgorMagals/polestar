@@ -1,0 +1,24 @@
+[package]
+name = "forge-devtools"
+description = "Developer tools for Forge's maintainers; not part of the forge binary"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+homepage.workspace = true
+publish = false
+
+[dependencies]
+serde_json.workspace = true
+rustc-hash.workspace = true
+forge-core = { path = "../forge-core" }
+forge-data = { path = "../forge-data" }
+forge-guide = { path = "../forge-guide" }
+forge-nav = { path = "../forge-nav" }
+forge-navbuild = { path = "../forge-navbuild" }
+forge-sim = { path = "../forge-sim" }
+forge-world = { path = "../forge-world" }
+
+[lints]
+workspace = true

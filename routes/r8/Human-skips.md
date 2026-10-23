@@ -1,0 +1,2328 @@
+# Human: quests the route does not take
+
+Recomputed every cut from the data and route-overrides.json. Reasons: chain-not-open 108, dropped 1, elite/group 524, judge-refused 2, level 401, low-value 77, missing-info 638, pvp/event/profession/rep 411, rare-drop 10, zone-left 123.
+
+## chain-not-open (108)
+
+- 49 Sweet Amber (L44, forever/alliance/02-westfall): a quest before it is not in the route
+- 69 The Legend of Stalvan (L28, forever/alliance/05-duskwood): a quest before it is not in the route
+- 70 The Legend of Stalvan (L28, forever/alliance/human/01-elwynn-forest): a quest before it is not in the route
+- 72 The Legend of Stalvan (L28, forever/alliance/50-60/05-silithus): a quest before it is not in the route
+- 75 The Legend of Stalvan (L28, forever/alliance/human/01-elwynn-forest): a quest before it is not in the route
+- 93 Dusky Crab Cakes (L20, forever/alliance/05-duskwood): a quest before it is not in the route
+- 97 The Legend of Stalvan (L28, forever/alliance/05-duskwood): a quest before it is not in the route
+- 98 The Legend of Stalvan (L35, forever/alliance/05-duskwood): a quest before it is not in the route
+- 122 Underbelly Scales (L18, forever/alliance/04-redridge-mountains): a quest before it is not in the route
+- 124 A Baying of Gnolls (L20, forever/alliance/04-redridge-mountains): a quest before it is not in the route
+- 126 Howling in the Hills (L25, forever/alliance/04-redridge-mountains): a quest before it is not in the route
+- 130 Visit the Herbalist (L15, forever/alliance/04-redridge-mountains): a quest before it is not in the route
+- 142 The Defias Brotherhood (L18, forever/alliance/02-westfall): a quest before it is not in the route
+- 170 A New Threat (L2, forever/alliance/40-50/06-searing-gorge): a quest before it is not in the route
+- 181 Look to the Stars (L30, forever/alliance/05-duskwood): chain not open there (prerequisite)
+- 196 Raptor Mastery (L41, forever/alliance/30-40/04-stranglethorn-vale): chain not open there (prerequisite)
+- 218 The Stolen Journal (L5, forever/alliance/40-50/06-searing-gorge): a quest before it is not in the route
+- 227 Morgan Ladimore (L35, forever/alliance/05-duskwood): a quest before it is not in the route
+- 237 In Defense of the King's Lands (L15, forever/alliance/40-50/05-the-hinterlands): a quest before it is not in the route
+- 258 A Hunter's Challenge (L17, forever/alliance/30-40/05-arathi-highlands): a quest before it is not in the route
+- 263 In Defense of the King's Lands (L15, forever/alliance/40-50/05-the-hinterlands): a quest before it is not in the route
+- 302 Powder to Ironband (L15, forever/alliance/30-40/01-hillsbrad-foothills): a quest before it is not in the route
+- 318 Evershine (L7, forever/alliance/50-60/05-silithus): a quest before it is not in the route
+- 319 A Favor for Evershine (L8, forever/alliance/50-60/05-silithus): a quest before it is not in the route
+- 345 Ink Supplies (L24, forever/alliance/human/01-elwynn-forest): a quest before it is not in the route
+- 347 Rethban Ore (L24, forever/alliance/04-redridge-mountains): a quest before it is not in the route
+- 415 Rejold's New Brew (L10, forever/alliance/50-60/05-silithus): a quest before it is not in the route
+- 417 A Pilot's Revenge (L11, forever/alliance/50-60/06-silithus): a quest before it is not in the route
+- 454 After the Ambush (L15, forever/alliance/30-40/06-badlands): a quest before it is not in the route
+- 457 The Balance of Nature (L3, forever/alliance/40-50/05-the-hinterlands): a quest before it is not in the route
+- 459 The Woodland Protector (L3, forever/alliance/40-50/05-the-hinterlands): a quest before it is not in the route
+- 473 Report to Captain Stoutfist (L28, forever/alliance/06-ashenvale): a quest before it is not in the route
+- 476 Gnarlpine Corruption (L6, forever/alliance/40-50/05-the-hinterlands): a quest before it is not in the route
+- 483 The Relics of Wakening (L9, forever/alliance/40-50/05-the-hinterlands): a quest before it is not in the route
+- 486 Ursal the Mauler (L12, forever/alliance/40-50/05-the-hinterlands): a quest before it is not in the route
+- 489 Seek Redemption! (L7, forever/alliance/40-50/05-the-hinterlands): a quest before it is not in the route
+- 625 Cortello's Riddle (L43, forever/alliance/40-50/01-stranglethorn-vale): chain not open there (prerequisite)
+- 626 Cortello's Riddle (L51, forever/alliance/40-50/01-stranglethorn-vale): a quest before it is not in the route
+- 633 The Thandol Span (L31, forever/alliance/30-40/05-arathi-highlands): a quest before it is not in the route
+- 634 Plea to the Alliance (L31, forever/alliance/30-40/05-arathi-highlands): a quest before it is not in the route
+- 686 A King's Tribute (L30, forever/alliance/30-40/01-hillsbrad-foothills): a quest before it is not in the route
+- 689 A King's Tribute (L31, forever/alliance/50-60/05-silithus): a quest before it is not in the route
+- 700 A King's Tribute (L31, forever/alliance/50-60/05-silithus): a quest before it is not in the route
+- 835 Securing the Lines (L11, forever/alliance/50-60/01-burning-steppes): a quest before it is not in the route
+- 888 Stolen Booty (L16, forever/alliance/50-60/05-silithus): a quest before it is not in the route
+- 900 Samophlange (L14, forever/alliance/30-40/03-ashenvale): a quest before it is not in the route
+- 901 Samophlange (L14, forever/alliance/30-40/03-ashenvale): a quest before it is not in the route
+- 917 Webwood Egg (L5, forever/alliance/40-50/05-the-hinterlands): a quest before it is not in the route
+- 920 Tenaron's Summons (L5, forever/alliance/40-50/05-the-hinterlands): a quest before it is not in the route
+- 921 Crown of the Earth (L5, forever/alliance/40-50/05-the-hinterlands): a quest before it is not in the route
+- 923 Tumors (L9, forever/alliance/50-60/04-western-plaguelands): a quest before it is not in the route
+- 929 Crown of the Earth (L5, forever/alliance/40-50/05-the-hinterlands): a quest before it is not in the route
+- 933 Crown of the Earth (L9, forever/alliance/40-50/05-the-hinterlands): a quest before it is not in the route
+- 943 The Absent Minded Prospector (L24, forever/alliance/30-40/03-ashenvale): a quest before it is not in the route
+- 981 The Tower of Althalaxx (L31, forever/alliance/03-darkshore): a quest before it is not in the route
+- 1038 Velinde's Effects (L30, forever/alliance/40-50/05-the-hinterlands): a quest before it is not in the route
+- 1039 The Barrens Port (L30, forever/alliance/40-50/05-the-hinterlands): a quest before it is not in the route
+- 1040 Passage to Booty Bay (L30, forever/alliance/50-60/05-silithus): a quest before it is not in the route
+- 1041 The Caravan Road (L30, forever/alliance/40-50/01-stranglethorn-vale): a quest before it is not in the route
+- 1042 The Carevin Family (L30, forever/alliance/05-duskwood): a quest before it is not in the route
+- 1043 The Scythe of Elune (L30, forever/alliance/07-thousand-needles): a quest before it is not in the route
+- 1044 Answered Questions (L30, forever/alliance/07-thousand-needles): a quest before it is not in the route
+- 1059 Reclaiming the Charred Vale (L27, forever/alliance/06-ashenvale): a quest before it is not in the route
+- 1081 Reception from Tyrande (L28, forever/alliance/06-ashenvale): a quest before it is not in the route
+- 1083 Enraged Spirits (L26, forever/alliance/06-ashenvale): a quest before it is not in the route
+- 1084 Wounded Ancients (L28, forever/alliance/06-ashenvale): a quest before it is not in the route
+- 1095 Further Instructions (L27, forever/alliance/50-60/05-silithus): a quest before it is not in the route
+- 1096 Gerenzo Wrenchwhistle (L27, forever/alliance/06-ashenvale): a quest before it is not in the route
+- 1115 The Rumormonger (L36, forever/alliance/07-thousand-needles): a quest before it is not in the route
+- 1116 Dream Dust in the Swamp (L36, forever/alliance/30-40/04-stranglethorn-vale): a quest before it is not in the route
+- 1134 Pridewings of Stonetalon (L21, forever/alliance/30-40/03-ashenvale): a quest before it is not in the route
+- 1143 The Tower of Althalaxx (L31, forever/alliance/03-darkshore): a quest before it is not in the route
+- 1167 The Tower of Althalaxx (L28, forever/alliance/06-ashenvale): chain not open there (prerequisite)
+- 1180 Goblin Sponsorship (L37, forever/alliance/50-60/05-silithus): a quest before it is not in the route
+- 1181 Goblin Sponsorship (L37, forever/alliance/40-50/01-stranglethorn-vale): a quest before it is not in the route
+- 1182 Goblin Sponsorship (L37, forever/alliance/30-40/04-stranglethorn-vale): a quest before it is not in the route
+- 1186 The Eighteenth Pilot (L37, forever/alliance/07-thousand-needles): a quest before it is not in the route
+- 1187 Razzeric's Tweaking (L41, forever/alliance/07-thousand-needles): a quest before it is not in the route
+- 1258 ... and Bugs (L40, forever/alliance/40-50/01-stranglethorn-vale): chain not open there (prerequisite)
+- 1320 The Black Shield (L35, forever/alliance/40-50/01-stranglethorn-vale): a quest before it is not in the route
+- 1452 Rhapsody's Kalimdor Kocktail (L43, forever/alliance/40-50/02-badlands): chain not open there (prerequisite)
+- 1456 The Karnitol Shipwreck (L39, forever/alliance/30-40/02-desolace): chain not open there (prerequisite)
+- 2399 The Sprouted Fronds (L10, forever/alliance/40-50/05-the-hinterlands): a quest before it is not in the route
+- 2498 Return to Denalan (L9, forever/alliance/50-60/04-western-plaguelands): a quest before it is not in the route
+- 2681 The Stones That Bind Us (L57, forever/alliance/30-40/05-arathi-highlands): a quest before it is not in the route
+- 2701 Heroes of Old (L57, forever/alliance/30-40/05-arathi-highlands): a quest before it is not in the route
+- 2702 Heroes of Old (L57, forever/alliance/30-40/05-arathi-highlands): a quest before it is not in the route
+- 2721 Kirith (L58, forever/alliance/30-40/05-arathi-highlands): a quest before it is not in the route
+- 2743 The Cover of Darkness (L60, forever/alliance/50-60/01-burning-steppes): a quest before it is not in the route
+- 3372 Release Them (L52, forever/alliance/40-50/06-searing-gorge): a quest before it is not in the route
+- 3508 Breaking the Ward (L58, forever/alliance/50-60/01-burning-steppes): a quest before it is not in the route
+- 3509 The Name of the Beast (L58, forever/alliance/50-60/01-burning-steppes): a quest before it is not in the route
+- 3519 A Friend in Need (L4, forever/alliance/40-50/05-the-hinterlands): a quest before it is not in the route
+- 3521 Iverron's Antidote (L4, forever/alliance/40-50/05-the-hinterlands): a quest before it is not in the route
+- 4297 Food for Baby (L47, forever/alliance/40-50/02-badlands): a quest before it is not in the route
+- 4298 Becoming a Parent (L48, forever/alliance/40-50/02-badlands): a quest before it is not in the route
+- 5086 Toxic Horrors (L56, forever/alliance/50-60/03-winterspring): chain not open there (prerequisite)
+- 5087 Winterfall Runners (L57, forever/alliance/50-60/03-winterspring): a quest before it is not in the route
+- 5721 The Battle of Darrowshire (L60, forever/alliance/50-60/04-western-plaguelands): chain not open there (prerequisite)
+- 5846 Of Love and Family (L58, forever/alliance/50-60/04-western-plaguelands): a quest before it is not in the route
+- 7383 Crown of the Earth (L11, forever/alliance/40-50/05-the-hinterlands): a quest before it is not in the route
+- 92911 Harvesting the Harvesters (L15, forever/alliance/02-westfall): a quest before it is not in the route
+- 98392 Darkness in the Glade (L12, forever/alliance/40-50/05-the-hinterlands): a quest before it is not in the route
+- 98398 The Oracle Tree (L12, forever/alliance/40-50/05-the-hinterlands): a quest before it is not in the route
+- 99050 The Great Tree Provides (L10, forever/alliance/40-50/05-the-hinterlands): a quest before it is not in the route
+- 99160 Rime's Wrath (L8, forever/alliance/40-50/07-un-goro-crater): a quest before it is not in the route
+- 99161 Rime's Wrath (L8, forever/alliance/40-50/07-un-goro-crater): a quest before it is not in the route
+- 99162 Treacherous Cold (L8, forever/alliance/40-50/07-un-goro-crater): a quest before it is not in the route
+
+## dropped (1)
+
+- 147 Manhunt (L10, forever/alliance/human/01-elwynn-forest): in v1's order, does nothing in the cut's replay (its chain or level is not open where v1 has it)
+
+## elite/group (524)
+
+- 19 Tharil'zun (L25, forever/alliance/04-redridge-mountains): group work (elite, or needs an elite quest)
+- 55 Morbent Fel (L32, forever/alliance/05-duskwood): group work (elite, or needs an elite quest)
+- 115 Shadow Magic (L23, forever/alliance/04-redridge-mountains): group work (elite, or needs an elite quest)
+- 167 Oh Brother... (L20, forever/alliance/40-50/01-stranglethorn-vale): group work (elite, or needs an elite quest)
+- 168 Collecting Memories (L18, forever/alliance/40-50/01-stranglethorn-vale): group work (elite, or needs an elite quest)
+- 169 WANTED: Gath'Ilzogg (L26, forever/alliance/04-redridge-mountains): group work (elite, or needs an elite quest)
+- 176 Wanted:  "Hogger" (L11, forever/alliance/human/01-elwynn-forest): group work (elite, or needs an elite quest)
+- 193 Panther Mastery (L40, forever/alliance/30-40/04-stranglethorn-vale): group work (elite, or needs an elite quest)
+- 197 Raptor Mastery (L43, forever/alliance/30-40/04-stranglethorn-vale): group work (elite, or needs an elite quest)
+- 202 Colonel Kurzen (L40, forever/alliance/30-40/04-stranglethorn-vale): group work (elite, or needs an elite quest)
+- 206 Mai'Zoth (L46, forever/alliance/30-40/04-stranglethorn-vale): group work (elite, or needs an elite quest)
+- 208 Big Game Hunter (L43, forever/alliance/30-40/04-stranglethorn-vale): group work (elite, or needs an elite quest)
+- 214 Red Silk Bandanas (L17, forever/alliance/02-westfall): dungeon quest
+- 228 Mor'Ladim (L35, forever/alliance/05-duskwood): group work (elite, or needs an elite quest)
+- 229 The Daughter Who Lived (L35, forever/alliance/05-duskwood): group work (elite, or needs an elite quest)
+- 249 Morganth (L27, forever/alliance/human/01-elwynn-forest): group work (elite, or needs an elite quest)
+- 253 Bride of the Embalmer (L30, forever/alliance/07-thousand-needles): group work (elite, or needs an elite quest)
+- 255 Mercenaries (L19, forever/alliance/30-40/05-arathi-highlands): group work (elite, or needs an elite quest)
+- 256 WANTED: Chok'sul (L22, forever/alliance/30-40/05-arathi-highlands): group work (elite, or needs an elite quest)
+- 271 Vyrin's Revenge (L20, forever/alliance/30-40/05-arathi-highlands): group work (elite, or needs an elite quest)
+- 278 A Dark Threat Looms (L18, forever/alliance/50-60/06-silithus): group work (elite, or needs an elite quest)
+- 283 A Dark Threat Looms (L20, forever/alliance/30-40/01-hillsbrad-foothills): group work (elite, or needs an elite quest)
+- 303 The Dark Iron War (L30, forever/alliance/06-ashenvale): group work (elite, or needs an elite quest)
+- 304 A Grim Task (L34, forever/alliance/06-ashenvale): group work (elite, or needs an elite quest)
+- 314 Protecting the Herd (L12, forever/alliance/40-50/07-un-goro-crater): group work (elite, or needs an elite quest)
+- 474 Defeat Nek'rosh (L32, forever/alliance/30-40/01-hillsbrad-foothills): group work (elite, or needs an elite quest)
+- 504 Crushridge Warmongers (L40, forever/alliance/30-40/01-hillsbrad-foothills): group work (elite, or needs an elite quest)
+- 543 The Perenolde Tiara (L40, forever/alliance/06-ashenvale): group work (elite, or needs an elite quest)
+- 613 Cracking Maury's Foot (L44, forever/alliance/40-50/01-stranglethorn-vale): group work (elite, or needs an elite quest)
+- 628 Excelsior (L38, forever/alliance/30-40/04-stranglethorn-vale): group work (elite, or needs an elite quest)
+- 630 Message in a Bottle (L51, forever/alliance/40-50/01-stranglethorn-vale): group work (elite, or needs an elite quest)
+- 652 Breaking the Keystone (L42, forever/alliance/30-40/05-arathi-highlands): group work (elite, or needs an elite quest)
+- 653 Myzrael's Allies (L40, forever/alliance/30-40/05-arathi-highlands): group work (elite, or needs an elite quest)
+- 656 Summoning the Princess (L50, forever/alliance/30-40/06-badlands): group work (elite, or needs an elite quest)
+- 682 Stromgarde Badges (L37, forever/alliance/30-40/05-arathi-highlands): group work (elite, or needs an elite quest)
+- 684 Wanted!  Marez Cowl (L39, forever/alliance/30-40/05-arathi-highlands): group work (elite, or needs an elite quest)
+- 685 Wanted!  Otto and Falconcrest (L40, forever/alliance/30-40/05-arathi-highlands): group work (elite, or needs an elite quest)
+- 687 Theldurin the Lost (L40, forever/alliance/06-ashenvale): group work (elite, or needs an elite quest)
+- 692 The Lost Fragments (L41, forever/alliance/30-40/06-badlands): group work (elite, or needs an elite quest)
+- 694 Trelane's Defenses (L39, forever/alliance/30-40/05-arathi-highlands): group work (elite, or needs an elite quest)
+- 696 Attack on the Tower (L39, forever/alliance/30-40/05-arathi-highlands): group work (elite, or needs an elite quest)
+- 721 A Sign of Hope (L35, forever/alliance/30-40/06-badlands): dungeon quest
+- 722 Amulet of Secrets (L40, forever/alliance/40-50/05-the-hinterlands): group work (elite, or needs an elite quest)
+- 726 Passing Word of a Threat (L40, forever/alliance/30-40/01-hillsbrad-foothills): group work (elite, or needs an elite quest)
+- 735 The Star, the Hand and the Heart (L44, forever/alliance/06-ashenvale): group work (elite, or needs an elite quest)
+- 762 An Ambassador of Evil (L44, forever/alliance/30-40/01-hillsbrad-foothills): group work (elite, or needs an elite quest)
+- 959 Trouble at the Docks (L18, forever/alliance/50-60/05-silithus): group work (elite, or needs an elite quest)
+- 1107 Encrusted Tail Fins (L35, forever/alliance/07-thousand-needles): group work (elite, or needs an elite quest)
+- 1275 Researching the Corruption (L24, forever/alliance/03-darkshore): group work (elite, or needs an elite quest)
+- 1360 Reclaimed Treasures (L43, forever/alliance/30-40/01-hillsbrad-foothills): dungeon quest
+- 1475 Into The Temple of Atal'Hakkar (L50, forever/alliance/40-50/01-stranglethorn-vale): dungeon quest
+- 1486 Deviate Hides (L17, forever/alliance/50-60/04-western-plaguelands): group work (elite, or needs an elite quest)
+- 1491 Smart Drinks (L18, forever/alliance/50-60/05-silithus): group work (elite, or needs an elite quest)
+- 2078 Gyromast's Revenge (L20, forever/alliance/03-darkshore): group work (elite, or needs an elite quest)
+- 2199 Lore for a Price (L41, forever/alliance/06-ashenvale): group work (elite, or needs an elite quest)
+- 2418 Power Stones (L36, forever/alliance/30-40/06-badlands): group work (elite, or needs an elite quest)
+- 2499 Oakenscowl (L9, forever/alliance/40-50/05-the-hinterlands): group work (elite, or needs an elite quest)
+- 2521 To Serve Kum'isha (L55, forever/alliance/50-60/01-burning-steppes): group work (elite, or needs an elite quest)
+- 2522 Kum'isha's Endeavors (L55, forever/alliance/50-60/01-burning-steppes): group work (elite, or needs an elite quest)
+- 2861 Tabetha's Task (L46, forever/alliance/40-50/07-un-goro-crater): dungeon quest
+- 2879 The Stave of Equinex (L50, forever/alliance/40-50/03-feralas): group work (elite, or needs an elite quest)
+- 2922 Save Techbot's Brain! (L26, forever/alliance/06-ashenvale): group work (elite, or needs an elite quest)
+- 2923 Tinkmaster Overspark (L26, forever/alliance/03-darkshore): dungeon quest
+- 2925 Klockmort's Essentials (L30, forever/alliance/50-60/06-silithus): dungeon quest
+- 2926 Gnogaine (L27, forever/alliance/50-60/05-silithus): group work (elite, or needs an elite quest)
+- 2927 The Day After (L27, forever/alliance/06-ashenvale): dungeon quest
+- 2928 Gyrodrillmatic Excavationators (L30, forever/alliance/40-50/01-stranglethorn-vale): group work (elite, or needs an elite quest)
+- 2931 Castpipe's Task (L28, forever/alliance/06-ashenvale): dungeon quest
+- 3378 Prayer to Elune (L50, forever/alliance/40-50/06-searing-gorge): group work (elite, or needs an elite quest)
+- 3452 The Flame's Casing (L50, forever/alliance/40-50/06-searing-gorge): group work (elite, or needs an elite quest)
+- 3454 The Torch of Retribution (L50, forever/alliance/40-50/06-searing-gorge): group work (elite, or needs an elite quest)
+- 3462 Squire Maltrake (L50, forever/alliance/40-50/06-searing-gorge): group work (elite, or needs an elite quest)
+- 3463 Set Them Ablaze! (L52, forever/alliance/40-50/06-searing-gorge): group work (elite, or needs an elite quest)
+- 3481 Trinkets... (L50, forever/alliance/40-50/06-searing-gorge): group work (elite, or needs an elite quest)
+- 3510 The Name of the Beast (L58, forever/alliance/50-60/01-burning-steppes): group work (elite, or needs an elite quest)
+- 3566 Rise, Obsidion! (L52, forever/alliance/40-50/06-searing-gorge): group work (elite, or needs an elite quest)
+- 3626 Return to the Blasted Lands (L58, forever/alliance/30-40/04-stranglethorn-vale): group work (elite, or needs an elite quest)
+- 3627 Uniting the Shattered Amulet (L60, forever/alliance/30-40/05-arathi-highlands): group work (elite, or needs an elite quest)
+- 4023 A Taste of Flame (L54, forever/alliance/30-40/06-badlands): group work (elite, or needs an elite quest)
+- 4128 Ragnar Thunderbrew (L55, forever/alliance/40-50/05-the-hinterlands): dungeon quest
+- 4182 Dragonkin Menace (L54, forever/alliance/50-60/01-burning-steppes): group work (elite, or needs an elite quest)
+- 4223 The True Masters (L54, forever/alliance/04-redridge-mountains): group work (elite, or needs an elite quest)
+- 4244 Chasing A-Me 01 (L53, forever/alliance/40-50/07-un-goro-crater): group work (elite, or needs an elite quest)
+- 4286 The Good Stuff (L56, forever/alliance/50-60/01-burning-steppes): group work (elite, or needs an elite quest)
+- 4324 Yuka Screwspigot (L53, forever/alliance/40-50/04-tanaris): dungeon quest
+- 4766 Mayara Brightwing (L60, forever/alliance/06-ashenvale): dungeon quest
+- 4907 Tinkee Steamboil (L60, forever/alliance/50-60/03-winterspring): dungeon quest
+- 5121 High Chief Winterfall (L59, forever/alliance/50-60/03-winterspring): group work (elite, or needs an elite quest)
+- 6186 The Blightcaller Cometh (L60, forever/alliance/50-60/06-silithus): group work (elite, or needs an elite quest)
+- 6187 Order Must Be Restored (L60, forever/alliance/06-ashenvale): group work (elite, or needs an elite quest)
+- 6626 A Host of Evil (L35, forever/alliance/40-50/01-stranglethorn-vale): group work (elite, or needs an elite quest)
+- 7028 Twisted Evils (L47, forever/alliance/30-40/02-desolace): group work (elite, or needs an elite quest)
+- 7070 Shadowshard Fragments (L42, forever/alliance/40-50/01-stranglethorn-vale): group work (elite, or needs an elite quest)
+- 7494 Feathermoon Stronghold (L57, forever/alliance/02-westfall): dungeon quest
+- 7701 WANTED: Overseer Maltorius (L50, forever/alliance/40-50/06-searing-gorge): group work (elite, or needs an elite quest)
+- 8240 A Bijou for Zanza (L60, forever/alliance/30-40/04-stranglethorn-vale): raid quest
+- 8283 Wanted - Deathclasp, Terror of the Sands (L59, forever/alliance/50-60/05-silithus): group work (elite, or needs an elite quest)
+- 8310 Breaking the Code (L60, forever/alliance/50-60/06-silithus): group work (elite, or needs an elite quest)
+- 8551 The Captain's Chest (L47, forever/alliance/40-50/01-stranglethorn-vale): group work (elite, or needs an elite quest)
+- 8553 The Captain's Cutlass (L50, forever/alliance/40-50/01-stranglethorn-vale): group work (elite, or needs an elite quest)
+- 8554 Facing Negolash (L50, forever/alliance/40-50/01-stranglethorn-vale): group work (elite, or needs an elite quest)
+- 95646 Horrors in the Highland (L31, forever/alliance/06-ashenvale): dungeon quest
+- 95999 WANTED: Incinerator Gar'im (L25, forever/alliance/04-redridge-mountains): group work (elite, or needs an elite quest)
+- 97005 Chol'aruk the Ravener (L21, forever/alliance/50-60/04-western-plaguelands): group work (elite, or needs an elite quest)
+- 98291 Death to the Dragonmaw (L30, forever/alliance/30-40/01-hillsbrad-foothills): group work (elite, or needs an elite quest)
+- 98297 Stopping the Cycle (L34, forever/alliance/30-40/01-hillsbrad-foothills): group work (elite, or needs an elite quest)
+- 50 Sweet Amber (L44.0, Westfall): left out of the world: item objective 6037 drops only outside the open world
+- 166 The Defias Brotherhood (L22.0, Westfall): left out of the world: dungeon quest (instance area or dungeons.json)
+- 373 The Unsent Letter (L22.0, Stormwind City): left out of the world: dungeon quest (instance area or dungeons.json)
+- 377 Crime and Punishment (L26.0, Duskwood): left out of the world: dungeon quest (instance area or dungeons.json)
+- 378 The Fury Runs Deep (L27.0, Wetlands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 386 What Comes Around... (L25.0, Redridge Mountains): left out of the world: dungeon quest (instance area or dungeons.json)
+- 387 Quell the Uprising (L26.0, Stormwind City): left out of the world: dungeon quest (instance area or dungeons.json)
+- 388 The Color of Blood (L26.0, Stormwind City): left out of the world: dungeon quest (instance area or dungeons.json)
+- 391 The Stockade Riots (L29.0, Stormwind City): left out of the world: dungeon quest (instance area or dungeons.json)
+- 969 Luck Be With You (L60.0, Durotar): left out of the world: listed: Frostmaul Shards lie in the Frostmaul giants' cave (elite 59-60); opens the Mau'ari E'ko chain
+- 971 Knowledge in the Deeps (L23.0, Ironforge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 996 Corrupted Windblossom (L55.0, Felwood): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 998 Corrupted Windblossom (L55.0, Felwood): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 1050 Mythology of the Titans (L38.0, Ironforge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 1053 In the Name of the Light (L40.0, Hillsbrad Foothills): left out of the world: dungeon quest (instance area or dungeons.json)
+- 1101 The Crone of the Kraul (L34.0, Thousand Needles): left out of the world: dungeon quest (instance area or dungeons.json)
+- 1139 The Lost Tablets of Will (L45.0, Ironforge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 1142 Mortality Wanes (L30.0, Teldrassil): left out of the world: dungeon quest (instance area or dungeons.json)
+- 1144 Willix the Importer (L30.0, The Barrens): left out of the world: dungeon quest (instance area or dungeons.json)
+- 1192 Indurium Ore (L42.0, Thousand Needles): left out of the world: item objective 5833 drops only outside the open world
+- 1193 A Broken Trap (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 1198 In Search of Thaelrid (L24.0, Teldrassil): left out of the world: dungeon quest (instance area or dungeons.json)
+- 1199 Twilight Falls (L25.0, Teldrassil): left out of the world: dungeon quest (instance area or dungeons.json)
+- 1200 Blackfathom Villainy (L27.0, Teldrassil): left out of the world: dungeon quest (instance area or dungeons.json)
+- 1221 Blueleaf Tubers (L26.0, The Barrens): left out of the world: dungeon quest (instance area or dungeons.json)
+- 1318 Unfinished Gordok Business (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 1446 Jammal'an the Prophet (L53.0, The Hinterlands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 1487 Deviate Eradication (L21.0, The Barrens): left out of the world: dungeon quest (instance area or dungeons.json)
+- 1514 Corrupted Windblossom (L55.0, Felwood): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 1701 Fire Hardened Mail (L28.0, Stormwind City): left out of the world: item objective 6841 drops only outside the open world
+- 1740 The Orb of Soran'ruk (L25.0, The Barrens): left out of the world: dungeon quest (instance area or dungeons.json)
+- 1920 Investigate the Blue Recluse (L16.0, Stormwind City): left out of the world: item objective 7292 drops only outside the open world
+- 1951 Rituals of Power (L40.0, Thousand Needles): left out of the world: item objective 7274 drops only outside the open world
+- 1956 Power in Uldaman (L40.0, Dustwallow Marsh): left out of the world: item objective 8053 drops only outside the open world
+- 2040 Underground Assault (L20.0, Stormwind City): left out of the world: dungeon quest (instance area or dungeons.json)
+- 2200 Back to Uldaman (L42.0, Ironforge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 2201 Find the Gems (L43.0, Ironforge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 2204 Restoring the Necklace (L44.0, Ironforge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 2240 The Hidden Chamber (L40.0, Ironforge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 2278 The Platinum Discs (L47.0, Badlands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 2279 The Platinum Discs (L47.0, Ironforge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 2398 The Lost Dwarves (L40.0, Ironforge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 2523 Corrupted Songflower (L55.0, Felwood): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 2768 Divino-matic Rod (L47.0, Tanaris): left out of the world: dungeon quest (instance area or dungeons.json)
+- 2770 Gahz'rilla (L50.0, Thousand Needles): left out of the world: dungeon quest (instance area or dungeons.json)
+- 2846 Tiara of the Deep (L46.0, Dustwallow Marsh): left out of the world: dungeon quest (instance area or dungeons.json)
+- 2865 Scarab Shells (L45.0, Tanaris): left out of the world: dungeon quest (instance area or dungeons.json)
+- 2878 Corrupted Songflower (L55.0, Felwood): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 2904 A Fine Mess (L30.0, Stranglethorn Vale): left out of the world: dungeon quest (instance area or dungeons.json)
+- 2924 Essential Artificials (L30.0, Ironforge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 2929 The Grand Betrayal (L35.0, Ironforge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 2930 Data Rescue (L30.0, Ironforge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 2945 Grime-Encrusted Ring (L34.0, Dun Morogh): left out of the world: dungeon quest (instance area or dungeons.json)
+- 2947 Return of the Ring (L34.0, Ironforge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 2951 The Sparklematic 5200! (L30.0, Dun Morogh): left out of the world: dungeon quest (instance area or dungeons.json)
+- 2952 The Sparklematic 5200! (L30.0, Dun Morogh): left out of the world: dungeon quest (instance area or dungeons.json)
+- 2953 More Sparklematic Action (L30.0, Dun Morogh): left out of the world: dungeon quest (instance area or dungeons.json)
+- 2962 The Only Cure is More Green Glow (L30.0, Dun Morogh): left out of the world: dungeon quest (instance area or dungeons.json)
+- 2991 Nekrum's Medallion (L47.0, Blasted Lands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 3042 Troll Temper (L45.0, Tanaris): left out of the world: dungeon quest (instance area or dungeons.json)
+- 3363 Corrupted Songflower (L55.0, Felwood): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 3373 The Essence of Eranikus (L55.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 3446 Into the Depths (L51.0, Tanaris): left out of the world: dungeon quest (instance area or dungeons.json)
+- 3447 Secret of the Circle (L51.0, Tanaris): left out of the world: dungeon quest (instance area or dungeons.json)
+- 3523 Scourge of the Downs (L37.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 3525 Extinguishing the Idol (L37.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 3527 The Prophecy of Mosh'aru (L47.0, Tanaris): left out of the world: dungeon quest (instance area or dungeons.json)
+- 3528 The God Hakkar (L53.0, Tanaris): left out of the world: dungeon quest (instance area or dungeons.json)
+- 3636 Bring the Light (L42.0, Stormwind City): left out of the world: dungeon quest (instance area or dungeons.json)
+- 3802 Dark Iron Legacy (L52.0, Burning Steppes): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4024 A Taste of Flame (L58.0, Burning Steppes): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4103 Salve via Hunting (L55.0, Felwood): left out of the world: listed: Salve via ...: salve turn-ins (gathering or profession items), only for the corrupted plants
+- 4113 Corrupted Songflower (L55.0, Felwood): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 4114 Corrupted Songflower (L55.0, Felwood): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 4115 Corrupted Windblossom (L55.0, Felwood): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 4116 Corrupted Songflower (L55.0, Felwood): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 4117 Corrupted Whipper Root (L55.0, Felwood): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 4118 Corrupted Songflower (L55.0, Darkshore): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 4119 Corrupted Night Dragon (L55.0, Felwood): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 4123 The Heart of the Mountain (L55.0, Burning Steppes): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4126 Hurley Blackbreath (L55.0, Dun Morogh): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4136 Ribbly Screwspigot (L53.0, Badlands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4143 Haze of Evil (L52.0, Feralas): left out of the world: item objective 11318 drops only outside the open world
+- 4201 The Love Potion (L54.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4221 Corrupted Windblossom (L55.0, Felwood): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 4222 Corrupted Windblossom (L55.0, Darkshore): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 4241 Marshal Windsor (L54.0, Burning Steppes): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4242 Abandoned Hope (L54.0, Burning Steppes): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4263 Incendius! (L56.0, Burning Steppes): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4264 A Crumpled Up Note (L58.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4282 A Shred of Hope (L58.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4295 Rocknot's Ale (L1.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4322 Jail Break! (L58.0, Burning Steppes): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4341 Kharan Mighthammer (L59.0, Ironforge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4342 Kharan's Tale (L59.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4343 Corrupted Windblossom (L55.0, Darkshore): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 4361 The Bearer of Bad News (L59.0, Ironforge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4362 The Fate of the Kingdom (L59.0, Ironforge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4363 The Princess's Surprise (L59.0, Ironforge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4401 Corrupted Songflower (L55.0, Felwood): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 4403 Corrupted Windblossom (L55.0, Felwood): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 4443 Corrupted Whipper Root (L55.0, Felwood): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 4444 Corrupted Whipper Root (L55.0, Felwood): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 4445 Corrupted Whipper Root (L55.0, Darkshore): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 4446 Corrupted Whipper Root (L55.0, Felwood): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 4447 Corrupted Night Dragon (L55.0, Felwood): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 4448 Corrupted Night Dragon (L55.0, Darkshore): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 4461 Corrupted Whipper Root (L55.0, Darkshore): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 4462 Corrupted Night Dragon (L55.0, Darkshore): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 4463 Libram of Rumination (L55.0, Burning Steppes): left out of the world: item objective 11752 drops only outside the open world
+- 4464 Corrupted Songflower (L55.0, Felwood): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 4465 Corrupted Songflower (L55.0, Felwood): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 4466 Corrupted Windblossom (L55.0, Felwood): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 4467 Corrupted Windblossom (L55.0, Felwood): left out of the world: listed: corrupted plants: each needs a Cenarion Plant Salve (a Salve via ... turn-in item, not modelled)
+- 4482 Libram of Tenacity (L55.0, Burning Steppes): left out of the world: item objective 11753 drops only outside the open world
+- 4483 Libram of Resilience (L55.0, Burning Steppes): left out of the world: item objective 11751 drops only outside the open world
+- 4601 The Sparklematic 5200! (L30.0, Dun Morogh): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4602 The Sparklematic 5200! (L30.0, Dun Morogh): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4603 More Sparklematic Action (L30.0, Dun Morogh): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4604 More Sparklematic Action (L30.0, Dun Morogh): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4605 The Sparklematic 5200! (L30.0, Dun Morogh): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4606 The Sparklematic 5200! (L30.0, Dun Morogh): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4701 Put Her Down (L59.0, Burning Steppes): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4729 Kibler's Exotic Pets (L59.0, Badlands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4734 Egg Freezing (L60.0, Burning Steppes): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4735 Egg Collection (L60.0, Burning Steppes): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4742 Seal of Ascension (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4743 Seal of Ascension (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4764 Doomrigger's Clasp (L60.0, Burning Steppes): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4771 Dawn's Gambit (L60.0, Eastern Plaguelands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4788 The Final Tablets (L58.0, Tanaris): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4862 En-Ay-Es-Tee-Why (L59.0, Badlands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 4867 Urok Doomhowl (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5001 Bijou's Belongings (L59.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5002 Message to Maxwell (L59.0, Burning Steppes): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5047 Finkle Einhorn, At Your Service! (L60.0, Winterspring): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5081 Maxwell's Mission (L60.0, Burning Steppes): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5089 General Drakkisath's Command (L60.0, Burning Steppes): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5102 General Drakkisath's Demise (L60.0, Burning Steppes): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5122 The Medallion of Faith (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5125 Aurius' Reckoning (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5160 The Matron Protectorate (L60.0, Winterspring): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5166 Breastplate of the Chromatic Flight (L60.0, Western Plaguelands): left out of the world: item objective 12871 drops only outside the open world
+- 5167 Legplates of the Chromatic Defier (L60.0, Western Plaguelands): left out of the world: item objective 12871 drops only outside the open world
+- 5212 The Flesh Does Not Lie (L60.0, Eastern Plaguelands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5213 The Active Agent (L60.0, Eastern Plaguelands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5214 The Great Fras Siabi (L60.0, Eastern Plaguelands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5243 Houses of the Holy (L60.0, Eastern Plaguelands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5251 The Archivist (L60.0, Eastern Plaguelands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5262 The Truth Comes Crashing Down (L60.0, Eastern Plaguelands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5263 Above and Beyond (L60.0, Eastern Plaguelands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5282 The Restless Souls (L60.0, Eastern Plaguelands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5343 Barov Family Fortune (L60.0, Western Plaguelands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5382 Doctor Theolen Krastinov, the Butcher (L60.0, Western Plaguelands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5384 Kirtonos the Herald (L60.0, Western Plaguelands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5463 Menethil's Gift (L60.0, Eastern Plaguelands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5466 The Lich, Ras Frostwhisper (L60.0, Western Plaguelands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5515 Krastinov's Bag of Horrors (L60.0, Western Plaguelands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5518 The Gordok Ogre Suit (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5519 The Gordok Ogre Suit (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5525 Free Knot! (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5529 Plagued Hatchlings (L58.0, Eastern Plaguelands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5582 Healthy Dragon Scale (L58.0, Eastern Plaguelands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5848 Of Love and Family (L60.0, Western Plaguelands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 5882 Salve via Hunting (L55.0, Felwood): left out of the world: listed: Salve via ...: salve turn-ins (gathering or profession items), only for the corrupted plants
+- 5892 Irondeep Supplies (L55.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 6026 That's Asking A Lot (L58.0, Eastern Plaguelands): left out of the world: listed: Smokey LaRue: crafted Thorium bars and bombs (profession items)
+- 6041 When Smokey Sings, I Get Violent (L58.0, Eastern Plaguelands): left out of the world: listed: Smokey LaRue: crafted Thorium bars and bombs (profession items)
+- 6502 Drakefire Amulet (L60.0, Winterspring): left out of the world: dungeon quest (instance area or dungeons.json)
+- 6781 More Armor Scraps (L60.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 6821 Eye of the Emberseer (L60.0, Azshara): left out of the world: item objective 17322 drops only outside the open world
+- 6846 Begin the Attack! (L60.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 6848 Master Ryson's All Seeing Eye (L60.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 6862 Zinfizzlex's Portable Shredder Unit (L60.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 6881 Ivus the Forest Lord (L60.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 6941 Call of Air - Vipore's Fleet (L60.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 6942 Call of Air - Slidore's Fleet (L60.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 6943 Call of Air - Ichman's Fleet (L60.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 6981 The Glowing Shard (L26.0, The Barrens): left out of the world: dungeon quest (instance area or dungeons.json)
+- 6982 Coldtooth Supplies (L55.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 7026 Ram Riding Harnesses (L60.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 7027 Empty Stables (L60.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 7041 Vyletongue Corruption (L47.0, Stonetalon Mountains): left out of the world: dungeon quest (instance area or dungeons.json)
+- 7044 Legends of Maraudon (L49.0, Desolace): left out of the world: dungeon quest (instance area or dungeons.json)
+- 7046 The Scepter of Celebras (L49.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 7065 Corruption of Earth and Seed (L51.0, Stonetalon Mountains): left out of the world: dungeon quest (instance area or dungeons.json)
+- 7066 Seed of Life (L51.0, Moonglade): left out of the world: dungeon quest (instance area or dungeons.json)
+- 7067 The Pariah's Instructions (L48.0, Desolace): left out of the world: dungeon quest (instance area or dungeons.json)
+- 7081 Alterac Valley Graveyards (L60.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 7102 Towers and Bunkers (L60.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 7121 The Quartermaster (L60.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 7122 Capture a Mine (L60.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 7141 The Battle of Alterac (L60.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 7162 Proving Grounds (L60.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 7168 Rise and Be Recognized (L60.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 7169 Honored Amongst the Guard (L60.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 7170 Earned Reverence (L60.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 7171 Legendary Heroes (L60.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 7172 The Eye of Command (L60.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 7202 Korrak the Bloodrager (L60.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 7221 Speak with Prospector Stonehewer (L60.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 7223 Armor Scraps (L60.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 7282 Brotherly Love (L60.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 7301 Fallen Sky Lords (L60.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 7364 Gnomeregan Bounty (L60.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 7365 Staghelm's Requiem (L60.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 7366 The Archbishop's Mercy (L60.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 7367 Defusing the Threat (L60.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 7382 Korrak the Everliving (L60.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 7386 Crystal Cluster (L60.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 7402 Wanted: ORCS! (L60.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 7424 What the Hoof? (L60.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 7425 Staghelm's Mojo Jamboree (L60.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 7426 One Man's Love (L60.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 7428 Wanted: MORE ORCS! (L60.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 7429 Free Knot! (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 7441 Pusillin and the Elder Azj'Tordin (L58.0, Feralas): left out of the world: dungeon quest (instance area or dungeons.json)
+- 7461 The Madness Within (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 7462 The Treasure of the Shen'dralar (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 7482 Elven Legends (L60.0, Feralas): left out of the world: dungeon quest (instance area or dungeons.json)
+- 7483 Libram of Rapidity (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 7484 Libram of Focus (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 7485 Libram of Protection (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 7487 Attunement to the Core (L60.0, Searing Gorge): left out of the world: item objective 18412 drops only outside the open world
+- 7488 Lethtendris's Web (L57.0, Feralas): left out of the world: dungeon quest (instance area or dungeons.json)
+- 7498 Garona: A Study on Stealth and Treachery (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 7499 Codex of Defense (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 7500 The Arcanist's Cookbook (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 7501 The Light and How To Swing It (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 7502 Harnessing Shadows (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 7503 The Greatest Race of Hunters (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 7504 Holy Bologna: What the Light Won't Tell You (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 7505 Frost Shock and You (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 7506 The Emerald Dream... (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 7703 Unfinished Gordok Business (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 7761 Blackhand's Command (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 7788 Vanquish the Invaders! (L25.0, Ashenvale): left out of the world: pvp quest (instance area or dungeons.json)
+- 7848 Attunement to the Core (L60.0, Searing Gorge): left out of the world: raid quest (instance area or dungeons.json)
+- 7871 Vanquish the Invaders! (L35.0, Ashenvale): left out of the world: pvp quest (instance area or dungeons.json)
+- 7872 Vanquish the Invaders! (L45.0, Ashenvale): left out of the world: pvp quest (instance area or dungeons.json)
+- 7873 Vanquish the Invaders! (L55.0, Ashenvale): left out of the world: pvp quest (instance area or dungeons.json)
+- 7877 The Treasure of the Shen'dralar (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 7886 Talismans of Merit (L55.0, Ashenvale): left out of the world: pvp quest (instance area or dungeons.json)
+- 7887 Talismans of Merit (L35.0, Ashenvale): left out of the world: pvp quest (instance area or dungeons.json)
+- 7888 Talismans of Merit (L45.0, Ashenvale): left out of the world: pvp quest (instance area or dungeons.json)
+- 7921 Talismans of Merit (L25.0, Ashenvale): left out of the world: pvp quest (instance area or dungeons.json)
+- 8080 Arathi Basin Resources! (L55.0, Arathi Highlands): left out of the world: pvp quest (instance area or dungeons.json)
+- 8081 More Resource Crates (L55.0, Arathi Highlands): left out of the world: pvp quest (instance area or dungeons.json)
+- 8105 The Battle for Arathi Basin! (L55.0, Arathi Highlands): left out of the world: pvp quest (instance area or dungeons.json)
+- 8154 Arathi Basin Resources! (L45.0, Arathi Highlands): left out of the world: pvp quest (instance area or dungeons.json)
+- 8155 Arathi Basin Resources! (L25.0, Arathi Highlands): left out of the world: pvp quest (instance area or dungeons.json)
+- 8156 Arathi Basin Resources! (L35.0, Arathi Highlands): left out of the world: pvp quest (instance area or dungeons.json)
+- 8157 More Resource Crates (L45.0, Arathi Highlands): left out of the world: pvp quest (instance area or dungeons.json)
+- 8158 More Resource Crates (L25.0, Arathi Highlands): left out of the world: pvp quest (instance area or dungeons.json)
+- 8159 More Resource Crates (L35.0, Arathi Highlands): left out of the world: pvp quest (instance area or dungeons.json)
+- 8166 The Battle for Arathi Basin! (L45.0, Arathi Highlands): left out of the world: pvp quest (instance area or dungeons.json)
+- 8167 The Battle for Arathi Basin! (L35.0, Arathi Highlands): left out of the world: pvp quest (instance area or dungeons.json)
+- 8168 The Battle for Arathi Basin! (L25.0, Arathi Highlands): left out of the world: pvp quest (instance area or dungeons.json)
+- 8183 The Heart of Hakkar (L60.0, Stranglethorn Vale): left out of the world: raid quest (instance area or dungeons.json)
+- 8184 Presence of Might (L60.0, ): left out of the world: raid quest (instance area or dungeons.json)
+- 8185 Syncretist's Sigil (L60.0, ): left out of the world: raid quest (instance area or dungeons.json)
+- 8186 Death's Embrace (L60.0, ): left out of the world: raid quest (instance area or dungeons.json)
+- 8187 Falcon's Call (L60.0, ): left out of the world: raid quest (instance area or dungeons.json)
+- 8189 Presence of Sight (L60.0, ): left out of the world: raid quest (instance area or dungeons.json)
+- 8190 Hoodoo Hex (L60.0, ): left out of the world: raid quest (instance area or dungeons.json)
+- 8191 Prophetic Aura (L60.0, ): left out of the world: raid quest (instance area or dungeons.json)
+- 8192 Animist's Caress (L60.0, ): left out of the world: raid quest (instance area or dungeons.json)
+- 8201 A Collection of Heads (L60.0, Stranglethorn Vale): left out of the world: raid quest (instance area or dungeons.json)
+- 8227 Nat's Measuring Tape (L60.0, Dustwallow Marsh): left out of the world: raid quest (instance area or dungeons.json)
+- 8232 The Green Drake (L52.0, Azshara): left out of the world: item objective 20019 drops only outside the open world
+- 8236 The Azure Key (L52.0, Azshara): left out of the world: item objective 20022 drops only outside the open world
+- 8249 Junkboxes Needed (L60.0, Alterac Mountains): left out of the world: item objective 16885 drops only outside the open world
+- 8253 Destroy Morphaz (L52.0, Azshara): left out of the world: item objective 20085 drops only outside the open world
+- 8257 Blood of Morphaz (L52.0, Azshara): left out of the world: item objective 20025 drops only outside the open world
+- 8268 Ribbons of Sacrifice (L39.0, The Barrens): left out of the world: pvp quest (instance area or dungeons.json)
+- 8269 Ribbons of Sacrifice (L60.0, Ashenvale): left out of the world: pvp quest (instance area or dungeons.json)
+- 8289 Talismans of Merit (L15.0, Ashenvale): left out of the world: pvp quest (instance area or dungeons.json)
+- 8290 Vanquish the Invaders (L15.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 8308 Brann Bronzebeard's Lost Letter (L60.0, Silithus): left out of the world: listed: the letter drops from Hive'Ashi elites; its non-elite droppers are hive-event spawns (3 recorded)
+- 8309 Glyph Chasing (L60.0, Silithus): left out of the world: item objective 20456 drops only outside the open world
+- 8371 Concerted Efforts (L60.0, Alterac Mountains): left out of the world: listed: Concerted Efforts: one mark from each battleground
+- 8372 Fight for Warsong Gulch (L19.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 8374 Claiming Arathi Basin (L29.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 8375 Remember Alterac Valley! (L60.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 8383 Remember Alterac Valley! (L60.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 8384 Claiming Arathi Basin (L29.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 8385 Concerted Efforts (L60.0, Alterac Mountains): left out of the world: listed: Concerted Efforts: one mark from each battleground
+- 8386 Fight for Warsong Gulch (L19.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 8391 Claiming Arathi Basin (L39.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 8392 Claiming Arathi Basin (L49.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 8393 Claiming Arathi Basin (L39.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 8394 Claiming Arathi Basin (L49.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 8395 Claiming Arathi Basin (L59.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 8397 Claiming Arathi Basin (L59.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 8399 Fight for Warsong Gulch (L29.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 8400 Fight for Warsong Gulch (L39.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 8401 Fight for Warsong Gulch (L49.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 8402 Fight for Warsong Gulch (L59.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 8404 Fight for Warsong Gulch (L29.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 8405 Fight for Warsong Gulch (L39.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 8406 Fight for Warsong Gulch (L49.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 8407 Fight for Warsong Gulch (L59.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 8418 Forging the Mightstone (L52.0, Western Plaguelands): left out of the world: item objective 20606 drops only outside the open world
+- 8422 Trolls of a Feather (L52.0, Felwood): left out of the world: item objective 20606 drops only outside the open world
+- 8425 Voodoo Feathers (L52.0, Swamp of Sorrows): left out of the world: item objective 20606 drops only outside the open world
+- 8565 Past Victories in Arathi (L1.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 8567 Past Victories in Warsong Gulch (L1.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 8569 Past Efforts in Warsong Gulch (L1.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 8905 An Earnest Proposition (L60.0, Ironforge): left out of the world: item objective 16714 drops only outside the open world
+- 8906 An Earnest Proposition (L60.0, Ironforge): left out of the world: item objective 16681 drops only outside the open world
+- 8907 An Earnest Proposition (L60.0, Ironforge): left out of the world: item objective 16683 drops only outside the open world
+- 8908 An Earnest Proposition (L60.0, Ironforge): left out of the world: item objective 16722 drops only outside the open world
+- 8909 An Earnest Proposition (L60.0, Ironforge): left out of the world: item objective 16697 drops only outside the open world
+- 8912 An Earnest Proposition (L60.0, Ironforge): left out of the world: item objective 16735 drops only outside the open world
+- 8926 Just Compensation (L60.0, Ironforge): left out of the world: item objective 16716 drops only outside the open world
+- 8931 Just Compensation (L60.0, Ironforge): left out of the world: item objective 16680 drops only outside the open world
+- 8932 Just Compensation (L60.0, Ironforge): left out of the world: item objective 16685 drops only outside the open world
+- 8934 Just Compensation (L60.0, Ironforge): left out of the world: item objective 16696 drops only outside the open world
+- 8936 Just Compensation (L60.0, Ironforge): left out of the world: item objective 16702 drops only outside the open world
+- 8937 Just Compensation (L60.0, Ironforge): left out of the world: item objective 16736 drops only outside the open world
+- 8945 Dead Man's Plea (L60.0, Eastern Plaguelands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 8948 Anthion's Old Friend (L60.0, Eastern Plaguelands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 8949 Falrin's Vendetta (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 8950 The Instigator's Enchantment (L60.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 8951 Anthion's Parting Words (L60.0, Eastern Plaguelands): left out of the world: item objective 16715 drops only outside the open world
+- 8952 Anthion's Parting Words (L60.0, Eastern Plaguelands): left out of the world: item objective 16675 drops only outside the open world
+- 8953 Anthion's Parting Words (L60.0, Eastern Plaguelands): left out of the world: item objective 16682 drops only outside the open world
+- 8954 Anthion's Parting Words (L60.0, Eastern Plaguelands): left out of the world: item objective 16725 drops only outside the open world
+- 8955 Anthion's Parting Words (L60.0, Eastern Plaguelands): left out of the world: item objective 16691 drops only outside the open world
+- 8956 Anthion's Parting Words (L60.0, Eastern Plaguelands): left out of the world: item objective 16711 drops only outside the open world
+- 8958 Anthion's Parting Words (L60.0, Eastern Plaguelands): left out of the world: item objective 16704 drops only outside the open world
+- 8959 Anthion's Parting Words (L60.0, Eastern Plaguelands): left out of the world: item objective 16734 drops only outside the open world
+- 8961 Three Kings of Flame (L60.0, Searing Gorge): left out of the world: item objective 21987 drops only outside the open world
+- 8966 The Left Piece of Lord Valthalak's Amulet (L60.0, Searing Gorge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 8967 The Left Piece of Lord Valthalak's Amulet (L60.0, Searing Gorge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 8968 The Left Piece of Lord Valthalak's Amulet (L60.0, Searing Gorge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 8969 The Left Piece of Lord Valthalak's Amulet (L60.0, Searing Gorge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 8989 The Right Piece of Lord Valthalak's Amulet (L60.0, Searing Gorge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 8990 The Right Piece of Lord Valthalak's Amulet (L60.0, Searing Gorge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 8991 The Right Piece of Lord Valthalak's Amulet (L60.0, Searing Gorge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 8992 The Right Piece of Lord Valthalak's Amulet (L60.0, Searing Gorge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 8995 Mea Culpa, Lord Valthalak (L60.0, Searing Gorge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 8999 Saving the Best for Last (L60.0, Ironforge): left out of the world: item objective 16720 drops only outside the open world
+- 9000 Saving the Best for Last (L60.0, Ironforge): left out of the world: item objective 16677 drops only outside the open world
+- 9001 Saving the Best for Last (L60.0, Ironforge): left out of the world: item objective 16686 drops only outside the open world
+- 9002 Saving the Best for Last (L60.0, Ironforge): left out of the world: item objective 16727 drops only outside the open world
+- 9003 Saving the Best for Last (L60.0, Ironforge): left out of the world: item objective 16693 drops only outside the open world
+- 9004 Saving the Best for Last (L60.0, Ironforge): left out of the world: item objective 16707 drops only outside the open world
+- 9005 Saving the Best for Last (L60.0, Ironforge): left out of the world: item objective 16698 drops only outside the open world
+- 9006 Saving the Best for Last (L60.0, Ironforge): left out of the world: item objective 16731 drops only outside the open world
+- 9015 The Challenge (L60.0, Eastern Plaguelands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 9053 A Better Ingredient (L52.0, Tanaris): left out of the world: item objective 22444 drops only outside the open world
+- 9124 Cryptstalker Armor Doesn't Make Itself... (L60.0, Eastern Plaguelands): left out of the world: listed: Naxxramas-era Argent Dawn turn-ins at Light's Hope (patch 1.11 endgame materials)
+- 9125 Crypt Fiend Parts (L60.0, Eastern Plaguelands): left out of the world: listed: Naxxramas-era Argent Dawn turn-ins at Light's Hope (patch 1.11 endgame materials)
+- 9126 Bonescythe Digs (L60.0, Eastern Plaguelands): left out of the world: listed: Naxxramas-era Argent Dawn turn-ins at Light's Hope (patch 1.11 endgame materials)
+- 9127 Bone Fragments (L60.0, Eastern Plaguelands): left out of the world: listed: Naxxramas-era Argent Dawn turn-ins at Light's Hope (patch 1.11 endgame materials)
+- 9128 The Elemental Equation (L60.0, Eastern Plaguelands): left out of the world: listed: Naxxramas-era Argent Dawn turn-ins at Light's Hope (patch 1.11 endgame materials)
+- 9129 Core of Elements (L60.0, Eastern Plaguelands): left out of the world: listed: Naxxramas-era Argent Dawn turn-ins at Light's Hope (patch 1.11 endgame materials)
+- 9131 Binding the Dreadnaught (L60.0, Eastern Plaguelands): left out of the world: listed: Naxxramas-era Argent Dawn turn-ins at Light's Hope (patch 1.11 endgame materials)
+- 9132 Dark Iron Scraps (L60.0, Eastern Plaguelands): left out of the world: listed: Naxxramas-era Argent Dawn turn-ins at Light's Hope (patch 1.11 endgame materials)
+- 9136 Savage Flora (L60.0, Eastern Plaguelands): left out of the world: listed: Naxxramas-era Argent Dawn turn-ins at Light's Hope (patch 1.11 endgame materials)
+- 9137 Savage Fronds (L60.0, Eastern Plaguelands): left out of the world: listed: Naxxramas-era Argent Dawn turn-ins at Light's Hope (patch 1.11 endgame materials)
+- 9141 They Call Me "The Rooster" (L60.0, Eastern Plaguelands): left out of the world: listed: Naxxramas-era Argent Dawn turn-ins at Light's Hope (patch 1.11 endgame materials)
+- 9142 Craftsman's Writ (L60.0, Eastern Plaguelands): left out of the world: listed: Naxxramas-era Argent Dawn turn-ins at Light's Hope (patch 1.11 endgame materials)
+- 9221 Superior Armaments of Battle - Friend of the Dawn (L60.0, Eastern Plaguelands): left out of the world: listed: Argent Dawn armaments: Scourge Invasion insignia and Friendly-Exalted ranks
+- 9222 Epic Armaments of Battle - Friend of the Dawn (L60.0, Eastern Plaguelands): left out of the world: listed: Argent Dawn armaments: Scourge Invasion insignia and Friendly-Exalted ranks
+- 9223 Superior Armaments of Battle - Honored Amongst the Dawn (L60.0, Eastern Plaguelands): left out of the world: listed: Argent Dawn armaments: Scourge Invasion insignia and Friendly-Exalted ranks
+- 9224 Epic Armaments of Battle - Honored Amongst the Dawn (L60.0, Eastern Plaguelands): left out of the world: listed: Argent Dawn armaments: Scourge Invasion insignia and Friendly-Exalted ranks
+- 9225 Epic Armaments of Battle - Revered Amongst the Dawn (L60.0, Eastern Plaguelands): left out of the world: listed: Argent Dawn armaments: Scourge Invasion insignia and Friendly-Exalted ranks
+- 9226 Superior Armaments of Battle - Revered Amongst the Dawn (L60.0, Eastern Plaguelands): left out of the world: listed: Argent Dawn armaments: Scourge Invasion insignia and Friendly-Exalted ranks
+- 9227 Superior Armaments of Battle - Exalted Amongst the Dawn (L60.0, Eastern Plaguelands): left out of the world: listed: Argent Dawn armaments: Scourge Invasion insignia and Friendly-Exalted ranks
+- 9228 Epic Armaments of Battle - Exalted Amongst the Dawn (L60.0, Eastern Plaguelands): left out of the world: listed: Argent Dawn armaments: Scourge Invasion insignia and Friendly-Exalted ranks
+- 9324 Stealing Orgrimmar's Flame (L60.0, Teldrassil): left out of the world: listed: Midsummer Fire Festival: stealing the other faction's capital flames (seasonal; no event flag in the data)
+- 9325 Stealing Thunder Bluff's Flame (L60.0, Teldrassil): left out of the world: listed: Midsummer Fire Festival: stealing the other faction's capital flames (seasonal; no event flag in the data)
+- 9326 Stealing the Undercity's Flame (L60.0, Teldrassil): left out of the world: listed: Midsummer Fire Festival: stealing the other faction's capital flames (seasonal; no event flag in the data)
+- 9664 Establishing New Outposts (L60.0, Eastern Plaguelands): left out of the world: listed: Eastern Plaguelands tower captures (world PvP objective)
+- 79092 Archmage Theocritus' Research Journal (L20.0, Stormwind City): left out of the world: item objective 203755 drops only outside the open world
+- 86776 Ingredients for the Forge (L30.0, Loch Modan): left out of the world: item objective 2841 drops only outside the open world
+- 88756 Bring Back a Bang (L32.0, Wetlands): left out of the world: item objective 280806 drops only outside the open world
+- 88757 Accessories of the Lost (L33.0, Wetlands): left out of the world: item objective 284705 drops only outside the open world
+- 92415 Remember That I Love You (L22.0, Stormwind City): left out of the world: dungeon quest (instance area or dungeons.json)
+- 92456 A Green Sample (L33.0, Stormwind City): left out of the world: dungeon quest (instance area or dungeons.json)
+- 92457 Starving Arcane (L33.0, Silverpine Forest): left out of the world: dungeon quest (instance area or dungeons.json)
+- 92458 Heart of Disruption (L33.0, Silverpine Forest): left out of the world: dungeon quest (instance area or dungeons.json)
+- 92489 Power Overwhelming (L33.0, Stormwind City): left out of the world: dungeon quest (instance area or dungeons.json)
+- 95189 Crest of Lordaeron (L22.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 95195 Bloodied Insignia (L22.0, Stormwind City): left out of the world: dungeon quest (instance area or dungeons.json)
+- 95250 Abominable Creatures (L21.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 95647 Lost in the Thicket Things (L31.0, Wetlands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 95772 Songblade Search (L31.0, Redridge Mountains): left out of the world: dungeon quest (instance area or dungeons.json)
+- 95795 Fallen in the Fen (L31.0, Redridge Mountains): left out of the world: dungeon quest (instance area or dungeons.json)
+- 95809 Heartwoven (L31.0, Wetlands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 95810 Lost Relic Carry (L31.0, Wetlands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 96264 Elemental Aid (L33.0, Arathi Highlands): left out of the world: item objective 274463 drops only outside the open world
+- 96393 Old Ironforge Incursion (L16.0, Dun Morogh): left out of the world: dungeon quest (instance area or dungeons.json)
+- 96394 The Restless Dead (L15.0, Ironforge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 96395 An Ancient Grudge (L15.0, ): left out of the world: dungeon quest (instance area or dungeons.json)
+- 96403 Important Heirlooms (L15.0, Ironforge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 96800 Past Due (L38.0, Alterac Mountains): left out of the world: dungeon quest (instance area or dungeons.json)
+- 97237 Shelf Picked (L18.0, Stormwind City): left out of the world: item objective 277196 drops only outside the open world
+- 98071 Brewer's Trade (L27.0, Hillsbrad Foothills): left out of the world: item objective 279389 drops only outside the open world
+- 98208 Bloom of the Heavens (L29.0, Wetlands): left out of the world: item objective 279915 drops only outside the open world
+- 98246 Trying Times (L29.0, Wetlands): left out of the world: item objective 280132 drops only outside the open world
+- 98293 Forced Disarmament (L30.0, Wetlands): left out of the world: item objective 280369 drops only outside the open world
+- 98387 Blackrock Blockade (L21.0, Redridge Mountains): left out of the world: item objective 280841 drops only outside the open world
+- 98417 Vengeful Trail (L30.0, Ashenvale): left out of the world: item objective 281014 drops only outside the open world
+- 98423 The Treaty of Understanding (L16.0, Ironforge): left out of the world: dungeon quest (instance area or dungeons.json)
+- 98815 Highland Hides (L28.0, Wetlands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 98824 Prehistoric Prism (L31.0, Wetlands): left out of the world: dungeon quest (instance area or dungeons.json)
+- 98895 Darkspear Islands Clash (L39.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 98896 Darkspear Islands Clash (L39.0, Alterac Mountains): left out of the world: pvp quest (instance area or dungeons.json)
+- 98897 Darkspear Islands Clash (L49.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 98899 Darkspear Islands Clash (L59.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 98903 The Battle for Darkspear Islands! (L39.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 98904 The Battle for Darkspear Islands! (L49.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 98905 The Battle for Darkspear Islands! (L60.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 98910 Darkspear's Basic Care Package (L39.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+- 98913 Theramore Basic Care Package (L39.0, ): left out of the world: pvp quest (instance area or dungeons.json)
+
+## judge-refused (2)
+
+- 103 Keeper of the Flame (L16, forever/alliance/02-westfall): worthwhile (279 XP/min against the route's 206) but the pickup was refused: +1.3 min (another check)
+- 163 Raven Hill (L20, forever/alliance/05-duskwood): worthwhile (945 XP/min against the route's 381) but the pickup was refused: avoidable returns 90->91
+
+## level (401)
+
+- 467 Stonegear's Search (L23, forever/alliance/30-40/05-arathi-highlands): passed only where the level window is closed
+- 1390 Oops, We Killed Them Again. (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 6642 Favor Amongst the Brotherhood, Dark Iron Ore (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 6643 Favor Amongst the Brotherhood, Fiery Core (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 6644 Favor Amongst the Brotherhood, Lava Core (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 6645 Favor Amongst the Brotherhood, Core Leather (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 6646 Favor Amongst the Brotherhood, Blood of the Mountain (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 6823 Agent of Hydraxis (L60.0, Azshara): left out of the world: needs level 60 (mount swaps, endgame)
+- 6824 Hands of the Enemy (L60.0, Azshara): left out of the world: needs level 60 (mount swaps, endgame)
+- 7463 Arcane Refreshment (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 7486 A Hero's Reward (L60.0, Azshara): left out of the world: needs level 60 (mount swaps, endgame)
+- 7495 Victory for the Alliance (L60.0, Stormwind City): left out of the world: needs level 60 (mount swaps, endgame)
+- 7496 Celebrating Good Times (L60.0, Stormwind City): left out of the world: needs level 60 (mount swaps, endgame)
+- 7507 Foror's Compendium (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 7508 The Forging of Quel'Serrar (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 7509 The Forging of Quel'Serrar (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 7521 Thunderaan the Windseeker (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 7562 Mor'zul Bloodbringer (L58.0, Stormwind City): left out of the world: needs level 60 (mount swaps, endgame)
+- 7563 Rage of Blood (L58.0, Burning Steppes): left out of the world: needs level 60 (mount swaps, endgame)
+- 7564 Wildeyes (L58.0, Burning Steppes): left out of the world: needs level 60 (mount swaps, endgame)
+- 7581 The Prison's Bindings (L60.0, Blasted Lands): left out of the world: needs level 60 (mount swaps, endgame)
+- 7582 The Prison's Casing (L60.0, Blasted Lands): left out of the world: needs level 60 (mount swaps, endgame)
+- 7583 Suppression (L60.0, Blasted Lands): left out of the world: needs level 60 (mount swaps, endgame)
+- 7604 A Binding Contract (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 7621 A Warning (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 7622 The Balance of Light and Shadow (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 7623 Lord Banehollow (L58.0, Burning Steppes): left out of the world: needs level 60 (mount swaps, endgame)
+- 7624 Ulathek the Traitor (L58.0, Darkshore): left out of the world: needs level 60 (mount swaps, endgame)
+- 7625 Xorothian Stardust (L60.0, Darkshore): left out of the world: needs level 60 (mount swaps, endgame)
+- 7626 Bell of Dethmoora (L60.0, Burning Steppes): left out of the world: needs level 60 (mount swaps, endgame)
+- 7627 Wheel of the Black March (L60.0, Burning Steppes): left out of the world: needs level 60 (mount swaps, endgame)
+- 7628 Doomsday Candle (L60.0, Burning Steppes): left out of the world: needs level 60 (mount swaps, endgame)
+- 7629 Imp Delivery (L60.0, Burning Steppes): left out of the world: needs level 60 (mount swaps, endgame)
+- 7630 Arcanite (L60.0, Burning Steppes): left out of the world: needs level 60 (mount swaps, endgame)
+- 7631 Dreadsteed of Xoroth (L60.0, Burning Steppes): left out of the world: needs level 60 (mount swaps, endgame)
+- 7632 The Ancient Leaf (L60.0, Felwood): left out of the world: needs level 60 (mount swaps, endgame)
+- 7633 An Introduction (L60.0, Felwood): left out of the world: needs level 60 (mount swaps, endgame)
+- 7634 Ancient Sinew Wrapped Lamina (L60.0, Felwood): left out of the world: needs level 60 (mount swaps, endgame)
+- 7635 A Proper String (L60.0, Felwood): left out of the world: needs level 60 (mount swaps, endgame)
+- 7636 Stave of the Ancients (L60.0, Felwood): left out of the world: needs level 60 (mount swaps, endgame)
+- 7637 Emphasis on Sacrifice (L60.0, Stormwind City): left out of the world: needs level 60 (mount swaps, endgame)
+- 7638 Lord Grayson Shadowbreaker (L60.0, Stormwind City): left out of the world: needs level 60 (mount swaps, endgame)
+- 7639 To Show Due Judgment (L60.0, Ironforge): left out of the world: needs level 60 (mount swaps, endgame)
+- 7640 Exorcising Terrordale (L60.0, Stormwind City): left out of the world: needs level 60 (mount swaps, endgame)
+- 7641 The Work of Grimand Elmore (L60.0, Stormwind City): left out of the world: needs level 60 (mount swaps, endgame)
+- 7642 Collection of Goods (L60.0, Stormwind City): left out of the world: needs level 60 (mount swaps, endgame)
+- 7643 Ancient Equine Spirit (L60.0, Stormwind City): left out of the world: needs level 60 (mount swaps, endgame)
+- 7644 Blessed Arcanite Barding (L60.0, Stormwind City): left out of the world: needs level 60 (mount swaps, endgame)
+- 7645 Manna-Enriched Horse Feed (L60.0, Hillsbrad Foothills): left out of the world: needs level 60 (mount swaps, endgame)
+- 7646 The Divination Scryer (L60.0, Stormwind City): left out of the world: needs level 60 (mount swaps, endgame)
+- 7647 Judgment and Redemption (L60.0, Stormwind City): left out of the world: needs level 60 (mount swaps, endgame)
+- 7648 Grimand's Finest Work (L60.0, Stormwind City): left out of the world: needs level 60 (mount swaps, endgame)
+- 7666 Again Into the Great Ossuary (L60.0, Stormwind City): left out of the world: needs level 60 (mount swaps, endgame)
+- 7670 Lord Grayson Shadowbreaker (L60.0, Ironforge): left out of the world: needs level 60 (mount swaps, endgame)
+- 7671 Frostsaber Replacement (L1.0, Teldrassil): left out of the world: needs level 60 (mount swaps, endgame)
+- 7672 Nightsaber Replacement (L1.0, Teldrassil): left out of the world: needs level 60 (mount swaps, endgame)
+- 7673 Frost Ram Exchange (L1.0, Dun Morogh): left out of the world: needs level 60 (mount swaps, endgame)
+- 7674 Black Ram Exchange (L1.0, Dun Morogh): left out of the world: needs level 60 (mount swaps, endgame)
+- 7675 Icy Blue Mechanostrider Replacement (L1.0, Dun Morogh): left out of the world: needs level 60 (mount swaps, endgame)
+- 7676 White Mechanostrider Replacement (L1.0, Dun Morogh): left out of the world: needs level 60 (mount swaps, endgame)
+- 7677 White Stallion Exchange (L1.0, Elwynn Forest): left out of the world: needs level 60 (mount swaps, endgame)
+- 7678 Palomino Exchange (L1.0, Elwynn Forest): left out of the world: needs level 60 (mount swaps, endgame)
+- 7781 The Lord of Blackrock (L60.0, Stormwind City): left out of the world: needs level 60 (mount swaps, endgame)
+- 7782 The Lord of Blackrock (L60.0, Stormwind City): left out of the world: needs level 60 (mount swaps, endgame)
+- 7785 Examine the Vessel (L60.0, Feralas): left out of the world: needs level 60 (mount swaps, endgame)
+- 7786 Thunderaan the Windseeker (L60.0, Feralas): left out of the world: needs level 60 (mount swaps, endgame)
+- 7787 Rise, Thunderfury! (L60.0, Feralas): left out of the world: needs level 60 (mount swaps, endgame)
+- 7797 Dimensional Ripper - Everlook (L1.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8041 Strength of Mount Mugamba (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8042 Strength of Mount Mugamba (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8043 Strength of Mount Mugamba (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8044 The Rage of Mugamba (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8045 The Heathen's Brand (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8046 The Heathen's Brand (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8047 The Heathen's Brand (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8048 The Hero's Brand (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8049 The Eye of Zuldazar (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8050 The Eye of Zuldazar (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8051 The Eye of Zuldazar (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8052 The All-Seeing Eye of Zuldazar (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8053 Paragons of Power: The Freethinker's Armguards (L61.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8054 Paragons of Power: The Freethinker's Belt (L61.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8055 Paragons of Power: The Freethinker's Breastplate (L61.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8056 Paragons of Power: The Augur's Bracers (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8057 Paragons of Power: The Haruspex's Bracers (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8058 Paragons of Power: The Vindicator's Armguards (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8059 Paragons of Power: The Demoniac's Wraps (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8060 Paragons of Power: The Illusionist's Wraps (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8061 Paragons of Power: The Confessor's Wraps (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8062 Paragons of Power: The Predator's Bracers (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8063 Paragons of Power: The Madcap's Bracers (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8064 Paragons of Power: The Haruspex's Belt (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8065 Paragons of Power: The Haruspex's Tunic (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8066 Paragons of Power: The Predator's Belt (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8067 Paragons of Power: The Predator's Mantle (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8068 Paragons of Power: The Illusionist's Mantle (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8069 Paragons of Power: The Illusionist's Robes (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8070 Paragons of Power: The Confessor's Bindings (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8071 Paragons of Power: The Confessor's Mantle (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8072 Paragons of Power: The Madcap's Mantle (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8073 Paragons of Power: The Madcap's Tunic (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8074 Paragons of Power: The Augur's Belt (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8075 Paragons of Power: The Augur's Hauberk (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8076 Paragons of Power: The Demoniac's Mantle (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8077 Paragons of Power: The Demoniac's Robes (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8078 Paragons of Power: The Vindicator's Belt (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8079 Paragons of Power: The Vindicator's Breastplate (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8101 The Pebble of Kajaro (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8102 The Pebble of Kajaro (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8103 The Pebble of Kajaro (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8104 The Jewel of Kajaro (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8106 Kezan's Taint (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8107 Kezan's Taint (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8108 Kezan's Taint (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8109 Kezan's Unstoppable Taint (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8110 Enchanted South Seas Kelp (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8111 Enchanted South Seas Kelp (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8112 Enchanted South Seas Kelp (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8113 Pristine Enchanted South Seas Kelp (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8114 Control Four Bases (L60.0, Arathi Highlands): left out of the world: needs level 60 (mount swaps, endgame)
+- 8115 Control Five Bases (L60.0, Arathi Highlands): left out of the world: needs level 60 (mount swaps, endgame)
+- 8141 Zandalarian Shadow Talisman (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8142 Zandalarian Shadow Talisman (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8143 Zandalarian Shadow Talisman (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8144 Zandalarian Shadow Mastery Talisman (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8145 The Maelstrom's Tendril (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8146 The Maelstrom's Tendril (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8147 The Maelstrom's Tendril (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8148 Maelstrom's Wrath (L60.0, Stranglethorn Vale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8286 What Tomorrow Brings (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8288 Only One May Rise (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8291 Vanquish the Invaders! (L60.0, Ashenvale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8292 Talismans of Merit (L60.0, Ashenvale): left out of the world: needs level 60 (mount swaps, endgame)
+- 8297 Arathi Basin Resources! (L60.0, Arathi Highlands): left out of the world: needs level 60 (mount swaps, endgame)
+- 8298 More Resource Crates (L60.0, Arathi Highlands): left out of the world: needs level 60 (mount swaps, endgame)
+- 8301 The Path of the Righteous (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8302 The Hand of the Righteous (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8303 Anachronos (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8305 Long Forgotten Memories (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8320 Twilight Geolords (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8321 Vyral the Vile (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8331 Aurel Goldleaf (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8332 Dukes of the Council (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8333 Medallion of Station (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8341 Lords of the Council (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8342 Twilight Ring of Lordship (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8343 Goldleaf's Discovery (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8348 Signet of the Dukes (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8349 Bor Wildmane (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8351 Bor Wishes to Speak (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8352 Scepter of the Council (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8361 Abyssal Contacts (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8362 Abyssal Crests (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8363 Abyssal Signets (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8364 Abyssal Scepters (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8396 Claiming Arathi Basin (L60.0, Alterac Mountains): left out of the world: needs level 60 (mount swaps, endgame)
+- 8398 Claiming Arathi Basin (L60.0, Alterac Mountains): left out of the world: needs level 60 (mount swaps, endgame)
+- 8403 Fight for Warsong Gulch (L60.0, Alterac Mountains): left out of the world: needs level 60 (mount swaps, endgame)
+- 8408 Fight for Warsong Gulch (L60.0, Alterac Mountains): left out of the world: needs level 60 (mount swaps, endgame)
+- 8446 Shrouded in Nightmare (L60.0, Moonglade): left out of the world: needs level 60 (mount swaps, endgame)
+- 8447 Waking Legends (L60.0, Moonglade): left out of the world: needs level 60 (mount swaps, endgame)
+- 8496 Bandages for the Field (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8497 Desert Survival Kits (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8498 Twilight Battle Orders (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8501 Target: Hive'Ashi Stingers (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8502 Target: Hive'Ashi Workers (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8508 Field Duty Papers (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8519 A Pawn on the Eternal Board (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8534 Hive'Zora Scout Report (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8535 Hoary Templar (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8536 Earthen Templar (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8537 Crimson Templar (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8538 The Four Dukes (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8539 Target: Hive'Zora Hive Sisters (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8540 Boots for the Guard (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8541 Grinding Stones for the Guard (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8544 Conqueror's Spaulders (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8548 Volunteer's Battlegear (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8555 The Charge of the Dragonflights (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8559 Conqueror's Greaves (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8560 Conqueror's Legguards (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8561 Conqueror's Crown (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8562 Conqueror's Breastplate (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8572 Veteran's Battlegear (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8573 Champion's Battlegear (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8574 Stalwart's Battlegear (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8575 Azuregos's Magical Ledger (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8576 Translating the Ledger (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8577 Stewvul, Ex-B.F.F. (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8578 Scrying Goggles? No Problem! (L60.0, Silverpine Forest): left out of the world: needs level 60 (mount swaps, endgame)
+- 8579 Mortal Champions (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8584 Never Ask Me About My Business (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8585 The Isle of Dread! (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8586 Dirge's Kickin' Chimaerok Chops (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8587 Return to Narain (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8592 Tiara of the Oracle (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8593 Trousers of the Oracle (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8594 Mantle of the Oracle (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8595 Mortal Champions (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8596 Footwraps of the Oracle (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8597 Draconic for Dummies (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8598 rAnS0m (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8599 Love Song for Narain (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8603 Vestments of the Oracle (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8606 Decoy! (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8620 The Only Prescription (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8625 Enigma Shoulderpads (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8626 Striker's Footguards (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8627 Avenger's Breastplate (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8628 Avenger's Crown (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8629 Avenger's Legguards (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8630 Avenger's Pauldrons (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8631 Enigma Leggings (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8632 Enigma Circlet (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8633 Enigma Robes (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8634 Enigma Boots (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8637 Deathdealer's Boots (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8638 Deathdealer's Vest (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8639 Deathdealer's Helm (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8640 Deathdealer's Leggings (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8641 Deathdealer's Spaulders (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8655 Avenger's Greaves (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8656 Striker's Hauberk (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8657 Striker's Diadem (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8658 Striker's Leggings (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8659 Striker's Pauldrons (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8660 Doomcaller's Footwraps (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8661 Doomcaller's Robes (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8662 Doomcaller's Circlet (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8663 Doomcaller's Trousers (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8664 Doomcaller's Mantle (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8665 Genesis Boots (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8666 Genesis Vest (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8667 Genesis Helm (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8668 Genesis Trousers (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8669 Genesis Shoulderpads (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8687 Target: Hive'Zora Tunnelers (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8728 The Good News and The Bad News (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8729 The Wrath of Neptulon (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8730 Nefarius's Corruption (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8733 Eranikus, Tyrant of the Dream (L60.0, Teldrassil): left out of the world: needs level 60 (mount swaps, endgame)
+- 8734 Tyrande and Remulos (L60.0, Teldrassil): left out of the world: needs level 60 (mount swaps, endgame)
+- 8735 The Nightmare's Corruption (L60.0, Moonglade): left out of the world: needs level 60 (mount swaps, endgame)
+- 8736 The Nightmare Manifests (L60.0, Moonglade): left out of the world: needs level 60 (mount swaps, endgame)
+- 8737 Azure Templar (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8738 Hive'Regal Scout Report (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8739 Hive'Ashi Scout Report (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8740 Twilight Marauders (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8741 The Champion Returns (L60.0, Moonglade): left out of the world: needs level 60 (mount swaps, endgame)
+- 8742 The Might of Kalimdor (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8747 The Path of the Protector (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8748 The Path of the Protector (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8749 The Path of the Protector (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8750 The Path of the Protector (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8751 The Protector of Kalimdor (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8752 The Path of the Conqueror (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8753 The Path of the Conqueror (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8754 The Path of the Conqueror (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8755 The Path of the Conqueror (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8756 The Qiraji Conqueror (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8757 The Path of the Invoker (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8758 The Path of the Invoker (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8759 The Path of the Invoker (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8760 The Path of the Invoker (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8761 The Grand Invoker (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8764 The Changing of Paths - Protector No More (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8765 The Changing of Paths - Invoker No More (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8766 The Changing of Paths - Conqueror No More (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8770 Target: Hive'Ashi Defenders (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8771 Target: Hive'Ashi Sandstalkers (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8772 Target: Hive'Zora Waywatchers (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8773 Target: Hive'Zora Reavers (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8774 Target: Hive'Regal Ambushers (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8775 Target: Hive'Regal Spitfires (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8776 Target: Hive'Regal Slavemakers (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8777 Target: Hive'Regal Burrowers (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8778 The Ironforge Brigade Needs Explosives! (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8779 Scrying Materials (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8780 Armor Kits for the Field (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8781 Arms for the Field (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8782 Uniform Supplies (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8783 Extraordinary Materials (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8784 Secrets of the Qiraji (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8789 Imperial Qiraji Armaments (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8790 Imperial Qiraji Regalia (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8791 The Fall of Ossirian (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8801 C'Thun's Legacy (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 8802 The Savior of Kalimdor (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 8829 The Ultimate Deception (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 8856 Desert Survival Kits (L0.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 9023 The Perfect Poison (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 9033 Echoes of War (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9034 Dreadnaught Breastplate (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9036 Dreadnaught Legplates (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9037 Dreadnaught Helmet (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9038 Dreadnaught Pauldrons (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9039 Dreadnaught Sabatons (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9040 Dreadnaught Gauntlets (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9041 Dreadnaught Waistguard (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9042 Dreadnaught Bracers (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9043 Redemption Tunic (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9044 Redemption Legguards (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9045 Redemption Headpiece (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9046 Redemption Spaulders (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9047 Redemption Boots (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9048 Redemption Handguards (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9049 Redemption Girdle (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9050 Redemption Wristguards (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9054 Cryptstalker Tunic (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9055 Cryptstalker Legguards (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9056 Cryptstalker Headpiece (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9057 Cryptstalker Spaulders (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9058 Cryptstalker Boots (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9059 Cryptstalker Handguards (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9060 Cryptstalker Girdle (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9061 Cryptstalker Wristguards (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9068 Earthshatter Tunic (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9069 Earthshatter Legguards (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9070 Earthshatter Headpiece (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9071 Earthshatter Spaulders (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9072 Earthshatter Boots (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9073 Earthshatter Handguards (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9074 Earthshatter Girdle (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9075 Earthshatter Wristguards (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9077 Bonescythe Breastplate (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9078 Bonescythe Legplates (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9079 Bonescythe Helmet (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9080 Bonescythe Pauldrons (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9081 Bonescythe Sabatons (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9082 Bonescythe Gauntlets (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9083 Bonescythe Waistguard (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9084 Bonescythe Bracers (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9086 Dreamwalker Tunic (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9087 Dreamwalker Legguards (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9088 Dreamwalker Headpiece (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9089 Dreamwalker Spaulders (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9090 Dreamwalker Boots (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9091 Dreamwalker Handguards (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9092 Dreamwalker Girdle (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9093 Dreamwalker Wristguards (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9095 Frostfire Robe (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9096 Frostfire Leggings (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9097 Frostfire Circlet (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9098 Frostfire Shoulderpads (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9099 Frostfire Sandals (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9100 Frostfire Gloves (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9101 Frostfire Belt (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9102 Frostfire Bindings (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9103 Plagueheart Robe (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9104 Plagueheart Leggings (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9105 Plagueheart Circlet (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9106 Plagueheart Shoulderpads (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9107 Plagueheart Sandals (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9108 Plagueheart Gloves (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9109 Plagueheart Belt (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9110 Plagueheart Bindings (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9111 Robe of Faith (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9112 Leggings of Faith (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9113 Circlet of Faith (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9114 Shoulderpads of Faith (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9115 Sandals of Faith (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9116 Gloves of Faith (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9117 Belt of Faith (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9118 Bindings of Faith (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9120 The Fall of Kel'Thuzad (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9121 The Dread Citadel - Naxxramas (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9122 The Dread Citadel - Naxxramas (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9123 The Dread Citadel - Naxxramas (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9208 The Savage Guard - Arcanum of Protection (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 9209 The Savage Guard - Arcanum of Rapidity (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 9210 The Savage Guard - Arcanum of Focus (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+- 9211 The Ice Guard (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9213 The Shadow Guard (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9229 The Fate of Ramaladni (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9230 Ramaladni's Icy Grasp (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9232 The Only Song I Know... (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9233 Omarion's Handbook (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9234 Icebane Gauntlets (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9235 Icebane Bracers (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9236 Icebane Breastplate (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9237 Glacial Cloak (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9238 Glacial Wrists (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9239 Glacial Gloves (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9240 Glacial Vest (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9241 Polar Bracers (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9242 Polar Gloves (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9243 Polar Tunic (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9244 Icy Scale Bracers (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9245 Icy Scale Gauntlets (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9246 Icy Scale Breastplate (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 9250 Frame of Atiesh (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 9251 Atiesh, the Befouled Greatstaff (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 9257 Atiesh, Greatstaff of the Guardian (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 9269 Atiesh, Greatstaff of the Guardian (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 9270 Atiesh, Greatstaff of the Guardian (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 9271 Atiesh, Greatstaff of the Guardian (L60.0, Tanaris): left out of the world: needs level 60 (mount swaps, endgame)
+- 9338 Allegiance to Cenarion Circle (L60.0, Silithus): left out of the world: needs level 60 (mount swaps, endgame)
+- 9362 Warlord Krellian (L60.0, Azshara): left out of the world: needs level 60 (mount swaps, endgame)
+- 9364 Fragmented Magic (L60.0, Azshara): left out of the world: needs level 60 (mount swaps, endgame)
+- 9378 DND FLAG The Dread Citadel - Naxxramas (L60.0, Eastern Plaguelands): left out of the world: needs level 60 (mount swaps, endgame)
+- 98901 Darkspear Islands Clash (L60.0, ): left out of the world: needs level 60 (mount swaps, endgame)
+
+## low-value (77)
+
+- 5 Jitters' Growling Gut (L20, forever/alliance/05-duskwood): low XP for its detour
+- 403 Guarded Thunderbrew Barrel (L1, forever/alliance/50-60/05-silithus): repeatable
+- 1100 Lonebrow's Journal (L34, forever/alliance/40-50/03-feralas): dropped from v1: Thousand Needles, L29.8: drop Lonebrow's Journal (level 34): its trip costs more than its XP
+- 1127 Fool's Stout (L44, forever/alliance/30-40/04-stranglethorn-vale): repeatable
+- 2662 Noggenfogger Elixir (L49, forever/alliance/40-50/04-tanaris): no recorded XP
+- 3801 Dark Iron Legacy (L52, forever/alliance/50-60/01-burning-steppes): dropped from v1: Burning Steppes, L51.9: drop Dark Iron Legacy (level 52): its trip costs more than its XP
+- 5501 Bone Collector (L39, forever/alliance/30-40/02-desolace): dropped from v1: Desolace, L38.7: drop Bone Collector (level 39): its trip costs more than its XP
+- 7792 A Donation of Wool (L60, forever/alliance/40-50/05-the-hinterlands): a trade-goods turn-in (60 of item 2592)
+- 7798 A Donation of Silk (L60, forever/alliance/40-50/05-the-hinterlands): a trade-goods turn-in (60 of item 4306)
+- 9272 Dressing the Part (L55, forever/alliance/40-50/01-stranglethorn-vale): no recorded XP
+- 86757 Slowing the Orc Advance (L32, forever/alliance/06-ashenvale): low XP for its detour
+- 96339 Legacy Reward: Replica Ironforge Air Rifle (L60, forever/alliance/50-60/04-western-plaguelands): no recorded XP
+- 96383 Legacy Reward: Spectral Bear Cub (L60, forever/alliance/50-60/04-western-plaguelands): no recorded XP
+- 96608 The Great Outdoors (L6, forever/alliance/50-60/05-silithus): no recorded XP
+- 96628 The Adventurer (L6, forever/alliance/40-50/06-searing-gorge): no recorded XP
+- 99053 Escaping Ban'ethil (L9, forever/alliance/40-50/05-the-hinterlands): no recorded XP
+- 99267 An Unfortunate End (L60, forever/alliance/05-duskwood): no recorded XP
+- 94473 Fire Sapta (L13.0, Loch Modan): left out of the world: repeatable without a recorded reward (no XP)
+- 94472 Earth Sapta (L4.0, Dun Morogh): left out of the world: repeatable without a recorded reward (no XP)
+- 93459 More Al'Aketh Ears (L13.0, Zephras Isle): left out of the world: repeatable without a recorded reward (no XP)
+- 91736 Applejack Still (L1.0, Elwynn Forest): left out of the world: repeatable without a recorded reward (no XP)
+- 9268 War at Sea (L60.0, Tanaris): left out of the world: repeatable without a recorded reward (no XP)
+- 9267 Mending Old Wounds (L60.0, The Barrens): left out of the world: repeatable without a recorded reward (no XP)
+- 9266 Making Amends (L60.0, Winterspring): left out of the world: repeatable without a recorded reward (no XP)
+- 9259 Traitor to the Bloodsail (L60.0, Stranglethorn Vale): left out of the world: repeatable without a recorded reward (no XP)
+- 9165 Writ of Safe Passage (L60.0, Eastern Plaguelands): left out of the world: repeatable without a recorded reward (no XP)
+- 8893 The Super Egg-O-Matic (L47.0, Tanaris): left out of the world: repeatable without a recorded reward (no XP)
+- 8324 Still Believing (L59.0, Un'Goro Crater): left out of the world: repeatable without a recorded reward (no XP)
+- 8319 Encrypted Twilight Texts (L60.0, Silithus): left out of the world: repeatable without a recorded reward (no XP)
+- 8242 Restoring Fiery Flux Supplies via Heavy Leather (L60.0, Searing Gorge): left out of the world: repeatable without a recorded reward (no XP)
+- 7838 Arena Grandmaster (L55.0, Stranglethorn Vale): left out of the world: repeatable without a recorded reward (no XP)
+- 7812 Additional Runecloth (L60.0, Ironforge): left out of the world: repeatable without a recorded reward (no XP)
+- 7806 Additional Runecloth (L60.0, Ironforge): left out of the world: repeatable without a recorded reward (no XP)
+- 7801 Additional Runecloth (L60.0, Teldrassil): left out of the world: repeatable without a recorded reward (no XP)
+- 7796 Additional Runecloth (L60.0, Stormwind City): left out of the world: repeatable without a recorded reward (no XP)
+- 7737 Gaining Acceptance (L60.0, Searing Gorge): left out of the world: repeatable without a recorded reward (no XP)
+- 7736 Restoring Fiery Flux Supplies via Kingsblood (L60.0, Searing Gorge): left out of the world: repeatable without a recorded reward (no XP)
+- 5981 Rampaging Giants (L60.0, Winterspring): left out of the world: repeatable without a recorded reward (no XP)
+- 5201 Winterfall Intrusion (L60.0, Winterspring): left out of the world: repeatable without a recorded reward (no XP)
+- 5150 Dadanga is Hungry! (L55.0, Un'Goro Crater): left out of the world: repeatable without a recorded reward (no XP)
+- 4970 Frostsaber Provisions (L60.0, Winterspring): left out of the world: repeatable without a recorded reward (no XP)
+- 4785 Fine Gold Thread (L37.0, Stranglethorn Vale): left out of the world: repeatable without a recorded reward (no XP)
+- 4386 Crystal Spire (L53.0, Un'Goro Crater): left out of the world: repeatable without a recorded reward (no XP)
+- 4385 Crystal Charge (L53.0, Un'Goro Crater): left out of the world: repeatable without a recorded reward (no XP)
+- 4384 Crystal Yield (L53.0, Un'Goro Crater): left out of the world: repeatable without a recorded reward (no XP)
+- 4383 Crystal Ward (L53.0, Un'Goro Crater): left out of the world: repeatable without a recorded reward (no XP)
+- 4382 Crystal Force (L53.0, Un'Goro Crater): left out of the world: repeatable without a recorded reward (no XP)
+- 4381 Crystal Restore (L53.0, Un'Goro Crater): left out of the world: repeatable without a recorded reward (no XP)
+- 4041 The Videre Elixir (L52.0, Feralas): left out of the world: repeatable without a recorded reward (no XP)
+- 3861 CLUCK! (L1.0, Westfall): left out of the world: repeatable without a recorded reward (no XP)
+- 3567 To the Top (L25.0, Feralas): left out of the world: repeatable without a recorded reward (no XP)
+- 3503 Meeting with the Master (L55.0, Azshara): left out of the world: repeatable without a recorded reward (no XP)
+- 3502 One Draenei's Junk... (L55.0, Blasted Lands): left out of the world: repeatable without a recorded reward (no XP)
+- 3483 Signal for Pickup (L52.0, Ironforge): left out of the world: repeatable without a recorded reward (no XP)
+- 3421 Return Trip (L55.0, Azshara): left out of the world: repeatable without a recorded reward (no XP)
+- 3375 Replacement Phial (L42.0, Ironforge): left out of the world: repeatable without a recorded reward (no XP)
+- 2750 A Bad Egg (L47.0, Tanaris): left out of the world: repeatable without a recorded reward (no XP)
+- 2749 An Ordinary Egg (L60.0, Tanaris): left out of the world: repeatable without a recorded reward (no XP)
+- 2748 A Fine Egg (L60.0, Tanaris): left out of the world: repeatable without a recorded reward (no XP)
+- 2747 An Extraordinary Egg (L60.0, Tanaris): left out of the world: repeatable without a recorded reward (no XP)
+- 2604 Spiritual Domination (L50.0, Blasted Lands): left out of the world: repeatable without a recorded reward (no XP)
+- 2602 Infallible Mind (L50.0, Blasted Lands): left out of the world: repeatable without a recorded reward (no XP)
+- 2586 Salt of the Scorpok (L50.0, Blasted Lands): left out of the world: repeatable without a recorded reward (no XP)
+- 2584 Spirit of the Boar (L50.0, Blasted Lands): left out of the world: repeatable without a recorded reward (no XP)
+- 2582 Rage of Ages (L50.0, Blasted Lands): left out of the world: repeatable without a recorded reward (no XP)
+- 1794 The Tome of Valor (L20.0, Ironforge): left out of the world: repeatable without a recorded reward (no XP)
+- 1793 The Tome of Valor (L20.0, Stormwind City): left out of the world: repeatable without a recorded reward (no XP)
+- 1790 The Symbol of Life (L12.0, Stormwind City): left out of the world: repeatable without a recorded reward (no XP)
+- 1714 Essence of the Exile (L37.0, Alterac Mountains): left out of the world: repeatable without a recorded reward (no XP)
+- 961 Onu is Meditating (L1.0, Darkshore): left out of the world: repeatable without a recorded reward (no XP)
+- 960 Onu is Meditating (L1.0, Darkshore): left out of the world: repeatable without a recorded reward (no XP)
+- 779 Seal of the Earth (L50.0, Badlands): left out of the world: repeatable without a recorded reward (no XP)
+- 619 Enticing Negolash (L52.0, Stranglethorn Vale): left out of the world: repeatable without a recorded reward (no XP)
+- 308 Distracting Jarven (L7.0, Dun Morogh): left out of the world: repeatable without a recorded reward (no XP)
+- 254 Digging Through the Dirt (L35.0, Duskwood): left out of the world: repeatable without a recorded reward (no XP)
+- 117 Thunderbrew (L15.0, Westfall): left out of the world: repeatable without a recorded reward (no XP)
+- 16 Give Gerard a Drink (L1.0, Elwynn Forest): left out of the world: repeatable without a recorded reward (no XP)
+
+## missing-info (638)
+
+- 68 The Legend of Stalvan (L28, forever/alliance/02-westfall): uncertain in the KB: objectives i:889:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.68.set.objectives))
+- 74 The Legend of Stalvan (L28, forever/alliance/50-60/05-silithus): uncertain in the KB: objectives i:916:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.74.set.objectives))
+- 78 The Legend of Stalvan (L28, forever/alliance/human/01-elwynn-forest): uncertain in the KB: objectives i:921:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.78.set.objectives))
+- 79 The Legend of Stalvan (L28, forever/alliance/05-duskwood): uncertain in the KB: objectives i:938:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.79.set.objectives))
+- 80 The Legend of Stalvan (L28, forever/alliance/05-duskwood): uncertain in the KB: objectives i:939:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.80.set.objectives))
+- 94 A Watchful Eye (L21, forever/alliance/human/01-elwynn-forest): uncertain in the KB: objectives i:1083:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.94.set.objectives))
+- 118 The Price of Shoes (L18, forever/alliance/04-redridge-mountains): uncertain in the KB: objectives i:1283:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.118.set.objectives))
+- 119 Return to Verner (L18, forever/alliance/human/01-elwynn-forest): uncertain in the KB: objectives i:1284:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.119.set.objectives))
+- 120 Messenger to Stormwind (L14, forever/alliance/04-redridge-mountains): uncertain in the KB: objectives i:1293:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.120.set.objectives))
+- 121 Messenger to Stormwind (L14, forever/alliance/50-60/06-silithus): uncertain in the KB: objectives i:1294:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.121.set.objectives))
+- 129 A Free Lunch (L15, forever/alliance/04-redridge-mountains): uncertain in the KB: objectives i:5534:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.129.set.objectives))
+- 131 Delivering Daffodils (L15, forever/alliance/04-redridge-mountains): uncertain in the KB: objectives i:1325:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.131.set.objectives))
+- 132 The Defias Brotherhood (L18, forever/alliance/04-redridge-mountains): uncertain in the KB: objectives i:1327:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.132.set.objectives))
+- 135 The Defias Brotherhood (L18, forever/alliance/02-westfall): uncertain in the KB: objectives i:1327:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.135.set.objectives))
+- 141 The Defias Brotherhood (L18, forever/alliance/50-60/05-silithus): uncertain in the KB: objectives i:1353:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.141.set.objectives))
+- 143 Messenger to Westfall (L14, forever/alliance/04-redridge-mountains): uncertain in the KB: objectives i:1407:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.143.set.objectives))
+- 144 Messenger to Westfall (L14, forever/alliance/02-westfall): uncertain in the KB: objectives i:1408:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.144.set.objectives))
+- 145 Messenger to Darkshire (L18, forever/alliance/04-redridge-mountains): uncertain in the KB: objectives i:1409:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.145.set.objectives))
+- 146 Messenger to Darkshire (L18, forever/alliance/07-thousand-needles): uncertain in the KB: objectives i:1410:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.146.set.objectives))
+- 155 The Defias Brotherhood (L18, forever/alliance/02-westfall): uncertain in the KB: objectives x:?:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.155.set.objectives))
+- 161 A Dark Threat Looms (L18, forever/alliance/50-60/06-silithus): uncertain in the KB: objectives i:2563:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.161.set.objectives))
+- 178 Theocritus' Retrieval (L23, forever/alliance/04-redridge-mountains): uncertain in the KB: objectives i:1956:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.178.set.objectives))
+- 199 A Dark Threat Looms (L18, forever/alliance/30-40/01-hillsbrad-foothills): uncertain in the KB: objectives i:2563:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.199.set.objectives))
+- 231 A Daughter's Love (L35, forever/alliance/05-duskwood): uncertain in the KB: objectives i:2162:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.231.set.objectives))
+- 233 Coldridge Valley Mail Delivery (L3, forever/alliance/40-50/06-searing-gorge): uncertain in the KB: objectives i:2187:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.233.set.objectives))
+- 234 Coldridge Valley Mail Delivery (L4, forever/alliance/40-50/06-searing-gorge): uncertain in the KB: objectives i:2188:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.234.set.objectives))
+- 236 Awaiting Word (L21, forever/alliance/05-duskwood): uncertain in the KB: flagged verify in game ([{"field":"visibility","ours":"in the data","others":[{"source":"factoruide","value":"removed"}]}]); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.236.set.visibility))
+- 240 Return to Jitters (L20, forever/alliance/05-duskwood): uncertain in the KB: objectives i:2250:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.240.set.objectives)); missing: xp uncertain: 1 of 5 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.240.set.xp))
+- 248 Looking Further (L22, forever/alliance/04-redridge-mountains): uncertain in the KB: objectives i:1083:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.248.set.objectives))
+- 273 Resupplying the Excavation (L15, forever/alliance/30-40/05-arathi-highlands): uncertain in the KB: objectives x:45628:? (medium confidence, 1 of 5 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 5 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.273.set.objectives))
+- 274 A Dark Threat Looms (L18, forever/alliance/30-40/05-arathi-highlands): uncertain in the KB: objectives i:2609:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.274.set.objectives))
+- 280 A Dark Threat Looms (L18, forever/alliance/50-60/06-silithus): uncertain in the KB: objectives i:2610:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.280.set.objectives))
+- 282 Senir's Observations (L5, forever/alliance/40-50/06-searing-gorge): uncertain in the KB: objectives i:2619:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.282.set.objectives))
+- 287 Frostmane Hold (L9, forever/alliance/50-60/05-silithus): uncertain in the KB: objectives c:1123:5;x:97:1 (medium confidence, 1 of 4 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.287.set.objectives))
+- 291 The Reports (L10, forever/alliance/50-60/05-silithus): uncertain in the KB: objectives i:2628:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.291.set.objectives))
+- 298 Excavation Progress Report (L15, forever/alliance/30-40/05-arathi-highlands): uncertain in the KB: objectives i:2637:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.298.set.objectives))
+- 301 Report to Ironforge (L15, forever/alliance/30-40/05-arathi-highlands): uncertain in the KB: objectives i:2637:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.301.set.objectives))
+- 309 Protecting the Shipment (L15, forever/alliance/30-40/06-badlands): uncertain in the KB: objectives x:?:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.309.set.objectives))
+- 310 Bitter Rivals (L6, forever/alliance/50-60/05-silithus): uncertain in the KB: objectives i:2548:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.310.set.objectives))
+- 311 Return to Marleth (L7, forever/alliance/50-60/05-silithus): uncertain in the KB: objectives i:2666:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.311.set.objectives))
+- 320 Return to Bellowfiz (L8, forever/alliance/50-60/05-silithus): uncertain in the KB: objectives i:2696:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.320.set.objectives))
+- 322 Blessed Arm (L29, forever/alliance/07-thousand-needles): uncertain in the KB: objectives i:2712:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.322.set.objectives))
+- 325 Armed and Ready (L29, forever/alliance/30-40/05-arathi-highlands): uncertain in the KB: objectives i:7297:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.325.set.objectives))
+- 332 Wine Shop Advert (L2, forever/alliance/02-westfall): uncertain in the KB: objectives i:2722:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.332.set.objectives))
+- 333 Harlan Needs a Resupply (L2, forever/alliance/02-westfall): uncertain in the KB: objectives i:2724:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.333.set.objectives))
+- 334 Package for Thurman (L2, forever/alliance/02-westfall): uncertain in the KB: objectives i:2760:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.334.set.objectives))
+- 336 A Noble Brew (L30, forever/alliance/40-50/01-stranglethorn-vale): uncertain in the KB: objectives i:2788:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.336.set.objectives))
+- 346 Return to Kristoff (L24, forever/alliance/human/01-elwynn-forest): uncertain in the KB: objectives i:2795:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.346.set.objectives))
+- 351 Find OOX-17/TN! (L48, forever/alliance/40-50/04-tanaris): uncertain in the KB: objectives i:8623:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.351.set.objectives))
+- 353 Stormpike's Delivery (L15, forever/alliance/30-40/05-arathi-highlands): uncertain in the KB: objectives i:2806:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.353.set.objectives))
+- 400 Tools for Steelgrill (L5, forever/alliance/50-60/05-silithus): uncertain in the KB: objectives i:2999:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.400.set.objectives))
+- 413 Shimmer Stout (L10, forever/alliance/50-60/05-silithus): uncertain in the KB: objectives i:3085:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.413.set.objectives))
+- 414 Stout to Kadrell (L10, forever/alliance/30-40/05-arathi-highlands): uncertain in the KB: objectives i:3086:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.414.set.objectives))
+- 420 Senir's Observations (L5, forever/alliance/40-50/06-searing-gorge): uncertain in the KB: objectives i:2619:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.420.set.objectives))
+- 455 The Algaz Gauntlet (L21, forever/alliance/50-60/06-silithus): uncertain in the KB: objectives c:2103:8;c:2102:6;x:175:1 (medium confidence, 1 of 4 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.455.set.objectives))
+- 485 Find OOX-09/HL! (L48, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives i:8704:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.485.set.objectives))
+- 531 Vyrin's Revenge (L20, forever/alliance/30-40/05-arathi-highlands): uncertain in the KB: objectives i:2713:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.531.set.objectives))
+- 614 The Captain's Chest (L51, forever/alliance/40-50/01-stranglethorn-vale): uncertain in the KB: flagged verify in game ([{"field":"races","ours":"alliance","others":[{"source":"page","value":"any"}]},{"field":"side","ours":"A","others":[{"s); missing: xp uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.614.set.xp)); missing: sources disagree on races, side, visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.614.set.races))
+- 615 The Captain's Cutlass (L51, forever/alliance/40-50/01-stranglethorn-vale): uncertain in the KB: flagged verify in game ([{"field":"visibility","ours":"in the data","others":[{"source":"factoruide","value":"removed"}]}]); missing: xp uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.615.set.xp)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.615.set.visibility))
+- 618 Facing Negolash (L50, forever/alliance/40-50/01-stranglethorn-vale): uncertain in the KB: flagged verify in game ([{"field":"visibility","ours":"in the data","others":[{"source":"factoruide","value":"removed"}]}]); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.618.set.visibility))
+- 620 The Monogrammed Sash (L45, forever/alliance/40-50/01-stranglethorn-vale): uncertain in the KB: objectives i:3985:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.620.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.620.set.visibility))
+- 632 The Thandol Span (L31, forever/alliance/30-40/05-arathi-highlands): uncertain in the KB: objectives i:4429:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.632.set.objectives))
+- 637 Sully Balloo's Letter (L30, forever/alliance/30-40/05-arathi-highlands): uncertain in the KB: objectives i:4432:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.637.set.objectives))
+- 647 MacKreel's Moonshine (L30, forever/alliance/30-40/05-arathi-highlands): uncertain in the KB: objectives i:4441:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.647.set.objectives))
+- 648 Rescue OOX-17/TN! (L48, forever/alliance/40-50/04-tanaris): uncertain in the KB: objectives x:?:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.648.set.objectives))
+- 667 Death From Below (L44, forever/alliance/30-40/05-arathi-highlands): uncertain in the KB: objectives x:?:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.667.set.objectives))
+- 670 Sunken Treasure (L40, forever/alliance/40-50/01-stranglethorn-vale): uncertain in the KB: objectives i:4494:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.670.set.objectives))
+- 683 Sara Balloo's Plea (L30, forever/alliance/50-60/06-silithus): uncertain in the KB: objectives i:4514:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.683.set.objectives))
+- 695 An Apprentice's Enchantment (L39, forever/alliance/30-40/05-arathi-highlands): uncertain in the KB: objectives i:4529:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.695.set.objectives))
+- 697 Malin's Request (L39, forever/alliance/30-40/05-arathi-highlands): uncertain in the KB: objectives i:4533:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.697.set.objectives))
+- 708 The Black Box (L40, forever/alliance/30-40/06-badlands): uncertain in the KB: objectives i:4613:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.708.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.708.set.visibility))
+- 717 Tremors of the Earth (L50, forever/alliance/40-50/02-badlands): uncertain in the KB: objectives i:4615:1;i:4645:1;i:4640:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.717.set.objectives))
+- 723 Prospect of Faith (L40, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives i:4635:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.723.set.objectives))
+- 724 Prospect of Faith (L40, forever/alliance/30-40/06-badlands): uncertain in the KB: objectives i:4635:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.724.set.objectives))
+- 725 Passing Word of a Threat (L40, forever/alliance/30-40/01-hillsbrad-foothills): uncertain in the KB: objectives i:4622:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.725.set.objectives))
+- 737 Forbidden Knowledge (L40, forever/alliance/06-ashenvale): uncertain in the KB: objectives i:4647:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.737.set.objectives))
+- 741 The Absent Minded Prospector (L20, forever/alliance/03-darkshore): uncertain in the KB: objectives i:4654:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.741.set.objectives))
+- 836 Rescue OOX-09/HL! (L48, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives x:?:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.836.set.objectives))
+- 863 The Escape (L18, forever/alliance/30-40/03-ashenvale): uncertain in the KB: objectives x:?:1 (medium confidence, 1 of 4 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.863.set.objectives))
+- 890 The Missing Shipment (L14, forever/alliance/50-60/05-silithus): uncertain in the KB: objectives i:5080:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.890.set.objectives))
+- 892 The Missing Shipment (L14, forever/alliance/50-60/05-silithus): uncertain in the KB: objectives i:5080:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.892.set.objectives))
+- 894 Samophlange (L14, forever/alliance/50-60/05-silithus): uncertain in the KB: objectives i:5088:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.894.set.objectives))
+- 902 Samophlange (L16, forever/alliance/30-40/03-ashenvale): uncertain in the KB: objectives i:5054:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.902.set.objectives))
+- 922 Rellian Greenspyre (L7, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives i:5168:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.922.set.objectives))
+- 927 The Moss-twined Heart (L12, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives i:5179:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.927.set.objectives))
+- 928 Crown of the Earth (L5, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives i:5186:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.928.set.objectives))
+- 930 The Glowing Fruit (L10, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives i:5189:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.930.set.objectives))
+- 931 The Shimmering Frond (L10, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives i:5190:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.931.set.objectives))
+- 934 Crown of the Earth (L11, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: flagged verify in game ([{"field":"races","ours":"alliance","others":[{"source":"page","value":"any"}]},{"field":"visibility","ours":"in the dat); missing: sources disagree on races, visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.934.set.races))
+- 935 Crown of the Earth (L11, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives i:5188:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.935.set.objectives))
+- 938 Mist (L12, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives x:?:1 (medium confidence, 1 of 4 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.938.set.objectives))
+- 940 Teldrassil (L11, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives i:5219:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.940.set.objectives))
+- 941 Planting the Heart (L12, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives i:5217:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.941.set.objectives))
+- 942 The Absent Minded Prospector (L20, forever/alliance/50-60/04-western-plaguelands): uncertain in the KB: objectives i:4654:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.942.set.objectives))
+- 952 Grove of the Ancients (L17, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives i:5390:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.952.set.objectives))
+- 976 Supplies to Auberdine (L24, forever/alliance/06-ashenvale): uncertain in the KB: objectives x:?:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.976.set.objectives))
+- 995 Escape Through Stealth (L20, forever/alliance/03-darkshore): uncertain in the KB: objectives x:?:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.995.set.objectives))
+- 997 Denalan's Earth (L5, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives i:5391:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.997.set.objectives))
+- 1073 Ineptitude + Chemicals = Fun (L21, forever/alliance/06-ashenvale): objective item 2458 has no known source; missing: objective item 2458 has no known source (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors))
+- 1074 Ineptitude + Chemicals = Fun (L21, forever/alliance/06-ashenvale): uncertain in the KB: objectives i:5732:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.1074.set.objectives))
+- 1077 Special Delivery for Gaxim (L21, forever/alliance/06-ashenvale): uncertain in the KB: objectives i:5731:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.1077.set.objectives))
+- 1091 Kaela's Update (L22, forever/alliance/06-ashenvale): uncertain in the KB: objectives i:5717:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.1091.set.objectives))
+- 1094 Further Instructions (L21, forever/alliance/06-ashenvale): uncertain in the KB: objectives i:5735:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.1094.set.objectives))
+- 1111 Wharfmaster Dizzywig (L36, forever/alliance/07-thousand-needles): uncertain in the KB: objectives i:5799:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.1111.set.objectives))
+- 1112 Parts for Kravel (L36, forever/alliance/50-60/05-silithus): uncertain in the KB: objectives i:5800:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.1112.set.objectives))
+- 1114 Delivery to the Gnomes (L36, forever/alliance/07-thousand-needles): uncertain in the KB: objectives i:5802:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.1114.set.objectives))
+- 1117 Rumors for Kravel (L36, forever/alliance/30-40/04-stranglethorn-vale): uncertain in the KB: objectives i:5804:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.1117.set.objectives))
+- 1118 Back to Booty Bay (L43, forever/alliance/07-thousand-needles): uncertain in the KB: objectives i:5826:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.1118.set.objectives))
+- 1119 Zanzil's Mixture and a Fool's Stout (L44, forever/alliance/30-40/04-stranglethorn-vale): uncertain in the KB: objectives i:5806:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.1119.set.objectives))
+- 1120 Get the Gnomes Drunk (L44, forever/alliance/07-thousand-needles): uncertain in the KB: objectives i:5806:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.1120.set.objectives))
+- 1121 Get the Goblins Drunk (L44, forever/alliance/07-thousand-needles): uncertain in the KB: objectives i:5806:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.1121.set.objectives))
+- 1122 Report Back to Fizzlebub (L44, forever/alliance/07-thousand-needles): uncertain in the KB: objectives i:5807:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.1122.set.objectives))
+- 1183 Goblin Sponsorship (L37, forever/alliance/30-40/04-stranglethorn-vale): uncertain in the KB: objectives i:5852:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.1183.set.objectives))
+- 1188 Safety First (L41, forever/alliance/07-thousand-needles): uncertain in the KB: objectives i:5862:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.1188.set.objectives))
+- 1189 Safety First (L41, forever/alliance/40-50/04-tanaris): uncertain in the KB: objectives i:5865:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.1189.set.objectives))
+- 1253 The Black Shield (L35, forever/alliance/40-50/01-stranglethorn-vale): uncertain in the KB: objectives i:5919:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.1253.set.objectives))
+- 1319 The Black Shield (L35, forever/alliance/40-50/01-stranglethorn-vale): uncertain in the KB: objectives i:5919:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.1319.set.objectives))
+- 1338 Stormpike's Order (L14, forever/alliance/50-60/06-silithus): uncertain in the KB: objectives i:5998:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.1338.set.objectives))
+- 1380 Khan Hratha (L42, forever/alliance/30-40/06-badlands): uncertain in the KB: objectives i:6077:1;i:6074:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.1380.set.objectives))
+- 1423 The Lost Supplies (L40, forever/alliance/30-40/05-arathi-highlands): uncertain in the KB: objectives i:6172:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.1423.set.objectives)); missing: xp uncertain: 1 of 1 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.1423.set.xp))
+- 1457 The Karnitol Shipwreck (L39, forever/alliance/30-40/02-desolace): uncertain in the KB: objectives i:6245:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.1457.set.objectives))
+- 1469 Rhapsody's Tale (L43, forever/alliance/40-50/02-badlands): uncertain in the KB: objectives i:6287:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.1469.set.objectives))
+- 2159 Dolanaar Delivery (L5, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives i:7627:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.2159.set.objectives))
+- 2160 Supplies to Tannok (L5, forever/alliance/40-50/06-searing-gorge): uncertain in the KB: objectives i:7646:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.2160.set.objectives))
+- 2198 The Shattered Necklace (L41, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives i:7666:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.2198.set.objectives))
+- 2459 Ferocitas the Dream Eater (L8, forever/alliance/40-50/05-the-hinterlands): objective item 8050 has no known source; missing: objective item 8050 has no known source (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors))
+- 2520 Sathrah's Sacrifice (L12, forever/alliance/50-60/04-western-plaguelands): uncertain in the KB: objectives x:?:1 (medium confidence, 1 of 4 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.2520.set.objectives))
+- 2561 Druid of the Claw (L10, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives x:?:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.2561.set.objectives))
+- 2661 Delivery for Marin (L49, forever/alliance/40-50/04-tanaris): uncertain in the KB: objectives i:8528:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.2661.set.objectives))
+- 2741 The Super Egg-O-Matic (L60, forever/alliance/40-50/04-tanaris): uncertain in the KB: objectives none (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.2741.set.objectives)); missing: xp uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.2741.set.xp))
+- 2744 The Demon Hunter (L60, forever/alliance/30-40/05-arathi-highlands): uncertain in the KB: objectives x:?:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.2744.set.objectives))
+- 2766 Find OOX-22/FE! (L45, forever/alliance/40-50/03-feralas): uncertain in the KB: objectives i:8705:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.2766.set.objectives))
+- 2767 Rescue OOX-22/FE! (L45, forever/alliance/40-50/03-feralas): uncertain in the KB: objectives x:?:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.2767.set.objectives))
+- 2801 A Tale of Sorrow (L57, forever/alliance/30-40/05-arathi-highlands): uncertain in the KB: objectives x:?:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.2801.set.objectives))
+- 2874 Deliver to MacKinley (L45, forever/alliance/40-50/04-tanaris): uncertain in the KB: objectives i:9245:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.2874.set.objectives))
+- 2941 The Borrower (L48, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives i:9329:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.2941.set.objectives))
+- 2942 The Morrow Stone (L50, forever/alliance/40-50/03-feralas): uncertain in the KB: objectives i:9307:1;i:9306:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.2942.set.objectives))
+- 2943 Return to Troyas (L48, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives i:9331:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.2943.set.objectives))
+- 2944 The Super Snapper FX (L48, forever/alliance/40-50/04-tanaris): uncertain in the KB: objectives i:9330:1;i:9328:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.2944.set.objectives))
+- 3141 Loramus (L57, forever/alliance/50-60/01-burning-steppes): uncertain in the KB: objectives x:?:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.3141.set.objectives))
+- 3181 The Horn of the Beast (L48, forever/alliance/30-40/06-badlands): uncertain in the KB: objectives i:10005:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.3181.set.objectives))
+- 3182 Proof of Deed (L48, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives i:10005:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.3182.set.objectives))
+- 3201 At Last! (L48, forever/alliance/40-50/07-un-goro-crater): uncertain in the KB: objectives i:10022:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.3201.set.objectives))
+- 3364 Scalding Mornbrew Delivery (L5, forever/alliance/40-50/06-searing-gorge): uncertain in the KB: objectives i:10439:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.3364.set.objectives))
+- 3365 Bring Back the Mug (L5, forever/alliance/40-50/06-searing-gorge): uncertain in the KB: objectives i:10440:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.3365.set.objectives))
+- 3382 A Crew Under Fire (L57, forever/alliance/50-60/01-burning-steppes): uncertain in the KB: objectives x:?:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.3382.set.objectives))
+- 3453 The Torch of Retribution (L50, forever/alliance/40-50/06-searing-gorge): uncertain in the KB: objectives x:?:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.3453.set.objectives))
+- 3511 The Name of the Beast (L58, forever/alliance/50-60/01-burning-steppes): uncertain in the KB: objectives i:10610:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.3511.set.objectives))
+- 3520 Screecher Spirits (L44, forever/alliance/40-50/04-tanaris): uncertain in the KB: objectives c:8612:3;i:10699:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.3520.set.objectives))
+- 3522 Iverron's Antidote (L4, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives i:10642:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.3522.set.objectives))
+- 3602 Azsharite (L58, forever/alliance/50-60/01-burning-steppes): uncertain in the KB: objectives i:10714:20;i:10839:1;i:10840:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.3602.set.objectives))
+- 3621 The Formation of Felbane (L58, forever/alliance/50-60/01-burning-steppes): uncertain in the KB: objectives i:10738:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.3621.set.objectives))
+- 3625 Enchanted Azsharite Fel Weaponry (L58, forever/alliance/30-40/04-stranglethorn-vale): uncertain in the KB: objectives x:?:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.3625.set.objectives))
+- 3628 You Are Rakh'likh, Demon (L60, forever/alliance/30-40/05-arathi-highlands): uncertain in the KB: objectives i:10759:1;i:10757:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.3628.set.objectives))
+- 3741 Hilary's Necklace (L15, forever/alliance/04-redridge-mountains): uncertain in the KB: flagged verify in game ([{"field":"races","ours":"any","others":[{"source":"page","value":"alliance"}]},{"field":"side","ours":"both","others":[); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.3741.set.races))
+- 3791 The Mystery of Morrowgrain (L50, forever/alliance/40-50/03-feralas): objective item 11040 has no known source; missing: objective item 11040 has no known source (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors))
+- 3792 Morrowgrain to Feathermoon Stronghold (L55, forever/alliance/40-50/03-feralas): uncertain in the KB: objectives none (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.3792.set.objectives))
+- 3841 An Orphan Looking For a Home (L47, forever/alliance/40-50/03-feralas): uncertain in the KB: objectives i:11102:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.3841.set.objectives))
+- 3842 A Short Incubation (L47, forever/alliance/07-thousand-needles): objective item 3825 has no known source; missing: objective item 3825 has no known source (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors))
+- 3843 The Newest Member of the Family (L47, forever/alliance/07-thousand-needles): uncertain in the KB: objectives i:11471:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.3843.set.objectives))
+- 3962 It's Dangerous to Go Alone (L56, forever/alliance/40-50/07-un-goro-crater): uncertain in the KB: objectives c:9376:1;i:11179:1;i:11522:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.3962.set.objectives))
+- 4022 A Taste of Flame (L54, forever/alliance/30-40/06-badlands): uncertain in the KB: objectives i:10575:1;x:?:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.4022.set.objectives))
+- 4183 The True Masters (L54, forever/alliance/50-60/01-burning-steppes): uncertain in the KB: objectives i:11366:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.4183.set.objectives))
+- 4184 The True Masters (L54, forever/alliance/04-redridge-mountains): uncertain in the KB: objectives i:11367:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.4184.set.objectives))
+- 4185 The True Masters (L54, forever/alliance/06-ashenvale): uncertain in the KB: objectives x:?:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.4185.set.objectives))
+- 4186 The True Masters (L54, forever/alliance/06-ashenvale): uncertain in the KB: objectives i:11368:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.4186.set.objectives))
+- 4224 The True Masters (L54, forever/alliance/50-60/01-burning-steppes): uncertain in the KB: objectives x:?:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.4224.set.objectives))
+- 4245 Chasing A-Me 01 (L53, forever/alliance/40-50/07-un-goro-crater): uncertain in the KB: objectives x:?:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.4245.set.objectives))
+- 4267 Rise of the Silithid (L46, forever/alliance/40-50/03-feralas): uncertain in the KB: objectives i:11466:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.4267.set.objectives))
+- 4810 Return to Tinkee (L54, forever/alliance/50-60/03-winterspring): uncertain in the KB: objectives i:12445:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.4810.set.objectives))
+- 4866 Mother's Milk (L60, forever/alliance/50-60/01-burning-steppes): uncertain in the KB: objectives x:?:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.4866.set.objectives))
+- 5123 The Final Piece (L59, forever/alliance/50-60/03-winterspring): uncertain in the KB: objectives i:12842:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.5123.set.objectives))
+- 5128 Words of the High Chief (L59, forever/alliance/50-60/03-winterspring): uncertain in the KB: objectives i:12842:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.5128.set.objectives))
+- 5227 Gahrron's Withering Cauldron (L58, forever/alliance/50-60/04-western-plaguelands): uncertain in the KB: objectives none (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.5227.set.objectives))
+- 5247 Fragments of the Past (L57, forever/alliance/50-60/04-western-plaguelands): objective item 12655 has no known source; missing: objective item 12655 has no known source (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors))
+- 5248 Tormented By the Past (L58, forever/alliance/50-60/04-western-plaguelands): uncertain in the KB: objectives i:13347:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.5248.set.objectives))
+- 5252 Remorseful Highborne (L58, forever/alliance/50-60/03-winterspring): uncertain in the KB: objectives i:13347:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.5252.set.objectives))
+- 5253 The Crystal of Zin-Malor (L58, forever/alliance/50-60/03-winterspring): uncertain in the KB: objectives i:13347:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.5253.set.objectives))
+- 5401 Argent Dawn Commission (L55, forever/alliance/50-60/03-winterspring): uncertain in the KB: flagged verify in game ([{"field":"races","ours":"any","others":[{"source":"page","value":"alliance"}]},{"field":"side","ours":"both","others":[); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.5401.set.races))
+- 5404 Corruptor's Scourgestones (L55, forever/alliance/50-60/03-winterspring): uncertain in the KB: objectives none (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.5404.set.objectives)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.5404.set.races))
+- 5405 Argent Dawn Commission (L55, forever/alliance/50-60/04-western-plaguelands): uncertain in the KB: flagged verify in game ([{"field":"races","ours":"any","others":[{"source":"page","value":"horde"}]},{"field":"side","ours":"both","others":[{"s); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.5405.set.races))
+- 5406 Corruptor's Scourgestones (L55, forever/alliance/50-60/04-western-plaguelands): uncertain in the KB: objectives none (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.5406.set.objectives)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.5406.set.races))
+- 5407 Invader's Scourgestones (L55, forever/alliance/50-60/04-western-plaguelands): uncertain in the KB: objectives none (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.5407.set.objectives)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.5407.set.races))
+- 5408 Minion's Scourgestones (L55, forever/alliance/50-60/04-western-plaguelands): uncertain in the KB: objectives none (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.5408.set.objectives)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.5408.set.races))
+- 5508 Corruptor's Scourgestones (L55, forever/alliance/50-60/03-winterspring): uncertain in the KB: objectives none (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.5508.set.objectives))
+- 5526 Shards of the Felvine (L60, forever/alliance/50-60/04-western-plaguelands): uncertain in the KB: objectives i:18540:1;i:18501:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.5526.set.objectives))
+- 5713 One Shot. One Kill. (L15, forever/alliance/50-60/02-felwood): uncertain in the KB: objectives x:?:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.5713.set.objectives))
+- 5942 Hidden Treasures (L60, forever/alliance/50-60/03-winterspring): uncertain in the KB: objectives i:15328:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.5942.set.objectives))
+- 6131 Timbermaw Ally (L48, forever/alliance/50-60/02-felwood): uncertain in the KB: objectives c:7153:5;c:7155:5;c:7154:5 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.6131.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.6131.set.visibility))
+- 6185 The Eastern Plagues (L60, forever/alliance/50-60/06-silithus): uncertain in the KB: objectives i:16003:1;i:16001:1;i:16002:1;x:?:1;x:?:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.6185.set.objectives))
+- 6221 Deadwood of the North (L55, forever/alliance/50-60/02-felwood): uncertain in the KB: flagged verify in game ([{"field":"visibility","ours":"in the data","others":[{"source":"factoruide","value":"removed"}]}]); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.6221.set.visibility))
+- 6241 Winterfall Activity (L56, forever/alliance/50-60/03-winterspring): uncertain in the KB: objectives c:7441:6;c:7440:6;c:7442:6 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.6241.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.6241.set.visibility))
+- 6261 Dungar Longdrink (L10, forever/alliance/30-40/01-hillsbrad-foothills): uncertain in the KB: objectives i:16115:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.6261.set.objectives))
+- 6281 Continue to Stormwind (L10, forever/alliance/02-westfall): uncertain in the KB: objectives i:15998:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.6281.set.objectives))
+- 6285 Return to Lewis (L10, forever/alliance/06-ashenvale): uncertain in the KB: objectives i:16115:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.6285.set.objectives))
+- 6804 Poisoned Water (L56, forever/alliance/50-60/01-burning-steppes): uncertain in the KB: objectives i:17309:12;i:17310:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.6804.set.objectives))
+- 7799 A Donation of Mageweave (L60, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives none (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.7799.set.objectives))
+- 7800 A Donation of Runecloth (L60, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives none (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.7800.set.objectives))
+- 7810 Arena Master (L55, forever/alliance/40-50/01-stranglethorn-vale): uncertain in the KB: objectives i:18706:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.7810.set.objectives))
+- 8195 Zulian, Razzashi, and Hakkari Coins (L60, forever/alliance/30-40/04-stranglethorn-vale): uncertain in the KB: objectives none (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8195.set.objectives)); missing: xp uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8195.set.xp))
+- 8238 Gurubashi, Vilebranch, and Witherbark Coins (L60, forever/alliance/30-40/04-stranglethorn-vale): uncertain in the KB: objectives none (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8238.set.objectives)); missing: xp uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8238.set.xp))
+- 8239 Sandfury, Skullsplitter, and Bloodscalp Coins (L60, forever/alliance/30-40/04-stranglethorn-vale): uncertain in the KB: objectives none (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8239.set.objectives)); missing: xp uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8239.set.xp))
+- 8552 The Monogrammed Sash (L50, forever/alliance/40-50/01-stranglethorn-vale): uncertain in the KB: objectives i:3985:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8552.set.objectives))
+- 78148 Runes of the Sorcerer-Kings (L20, forever/alliance/30-40/01-hillsbrad-foothills): uncertain in the KB: objectives i:209850:1 (medium confidence, 1 of 4 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.78148.set.objectives)); missing: who can take it (races) uncertain: sources disagree (1 of 3 agree) (fix in data corrections (tools/lib/data/corrections.json: quests.78148.set.races)); missing: who can take it (side) uncertain: sources disagree (1 of 3 agree) (fix in data corrections (tools/lib/data/corrections.json: quests.78148.set.side)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.78148.set.races))
+- 78270 Goblin Lockpicks (L1, forever/alliance/06-ashenvale): uncertain in the KB: objectives i:210187:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.78270.set.objectives)); missing: sources disagree on races, classes: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.78270.set.races))
+- 82208 Greater Friend of the Library (L45, forever/alliance/30-40/01-hillsbrad-foothills): uncertain in the KB: flagged verify in game ([{"field":"races","ours":"alliance","others":[{"source":"page","value":"any"},{"source":"factoruide","value":"any"}]},{"); missing: who can take it (races) uncertain: sources disagree (1 of 3 agree) (fix in data corrections (tools/lib/data/corrections.json: quests.82208.set.races)); missing: who can take it (side) uncertain: sources disagree (1 of 3 agree) (fix in data corrections (tools/lib/data/corrections.json: quests.82208.set.side)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.82208.set.races))
+- 84397 Northern Kalimdor - A Comprehensive Guide (L1, forever/alliance/30-40/01-hillsbrad-foothills): uncertain in the KB: objectives i:228134:1 (medium confidence, 1 of 4 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.84397.set.objectives)); missing: who can take it (races) uncertain: sources disagree (1 of 3 agree) (fix in data corrections (tools/lib/data/corrections.json: quests.84397.set.races)); missing: who can take it (side) uncertain: sources disagree (1 of 3 agree) (fix in data corrections (tools/lib/data/corrections.json: quests.84397.set.side)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.84397.set.races))
+- 84398 A Study of the Light (L1, forever/alliance/30-40/01-hillsbrad-foothills): uncertain in the KB: objectives i:228135:1 (medium confidence, 1 of 4 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.84398.set.objectives)); missing: who can take it (races) uncertain: sources disagree (1 of 3 agree) (fix in data corrections (tools/lib/data/corrections.json: quests.84398.set.races)); missing: who can take it (side) uncertain: sources disagree (1 of 3 agree) (fix in data corrections (tools/lib/data/corrections.json: quests.84398.set.side)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.84398.set.races))
+- 84399 Ka-Boom! (L1, forever/alliance/30-40/01-hillsbrad-foothills): uncertain in the KB: objectives i:228136:1 (medium confidence, 1 of 4 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.84399.set.objectives)); missing: who can take it (races) uncertain: sources disagree (1 of 3 agree) (fix in data corrections (tools/lib/data/corrections.json: quests.84399.set.races)); missing: who can take it (side) uncertain: sources disagree (1 of 3 agree) (fix in data corrections (tools/lib/data/corrections.json: quests.84399.set.side)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.84399.set.races))
+- 84402 Necromancy 101 (L1, forever/alliance/30-40/01-hillsbrad-foothills): uncertain in the KB: objectives i:228141:1 (medium confidence, 1 of 4 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.84402.set.objectives)); missing: who can take it (races) uncertain: sources disagree (1 of 3 agree) (fix in data corrections (tools/lib/data/corrections.json: quests.84402.set.races)); missing: who can take it (side) uncertain: sources disagree (1 of 3 agree) (fix in data corrections (tools/lib/data/corrections.json: quests.84402.set.side)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.84402.set.races))
+- 86585 Banner of the Fallen (L17, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives c:269185:1 (medium confidence, 1 of 5 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 5 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.86585.set.objectives))
+- 86613 Excavation Tools (L18, forever/alliance/30-40/05-arathi-highlands): uncertain in the KB: objectives i:278398:6 (medium confidence, 1 of 4 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.86613.set.objectives))
+- 86614 Silver of the Waves (L20, forever/alliance/30-40/05-arathi-highlands): uncertain in the KB: objectives i:278051:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.86614.set.objectives))
+- 86667 Snowbound (L10, forever/alliance/30-40/05-arathi-highlands): objective item 279379 has no known source; missing: objective item 279379 has no known source (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors))
+- 91746 Elmpaw's Head (L10, forever/alliance/human/01-elwynn-forest): uncertain in the KB: objectives i:247862:1 (medium confidence, 1 of 3 sources agree); missing: level uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.91746.set.level)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.91746.set.objectives)); missing: xp uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.91746.set.xp))
+- 91777 Rare Books (L7, forever/alliance/human/01-elwynn-forest): uncertain in the KB: flagged verify in game ([{"field":"races","ours":"alliance","others":[{"source":"page","value":"Dwarf/Gnome"}]}]); missing: sources disagree on races: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.91777.set.races))
+- 92743 A Conqueror's Crown (L40, forever/alliance/30-40/02-desolace): uncertain in the KB: objectives i:254392:1;x:93:3000 (medium confidence, 1 of 4 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.92743.set.objectives))
+- 92841 Valley of Bones (L40, forever/alliance/30-40/02-desolace): uncertain in the KB: objectives x:93:9000 (medium confidence, 1 of 4 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.92841.set.objectives))
+- 92844 Mountain of Bones (L42, forever/alliance/30-40/06-badlands): uncertain in the KB: objectives i:254663:426;x:93:9000 (medium confidence, 1 of 4 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.92844.set.objectives))
+- 93034 Valley of Bones (L38, forever/alliance/30-40/06-badlands): uncertain in the KB: objectives x:92:9000 (medium confidence, 1 of 4 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.93034.set.objectives))
+- 93035 Ravaging Ravagers (L38, forever/alliance/30-40/06-badlands): uncertain in the KB: objectives c:11561:6;x:92:9000 (medium confidence, 1 of 4 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.93035.set.objectives))
+- 93037 Outing Outcasts (L40, forever/alliance/30-40/06-badlands): uncertain in the KB: objectives i:255875:1;x:92:9000 (medium confidence, 1 of 4 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.93037.set.objectives))
+- 93041 Facing the Truth (L38, forever/alliance/30-40/06-badlands): uncertain in the KB: objectives i:255945:1;x:92:9000 (medium confidence, 1 of 4 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.93041.set.objectives))
+- 93128 Khan Jehn (L42, forever/alliance/30-40/06-badlands): uncertain in the KB: objectives c:5601:1;x:92:9000 (medium confidence, 1 of 4 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.93128.set.objectives)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.93128.set.races))
+- 95041 Data Hoarders (L10, forever/alliance/40-50/02-badlands): uncertain in the KB: flagged verify in game ([{"field":"races","ours":"alliance","others":[{"source":"page","value":"Dwarf/NightElf/Gnome/HighOrderSkyborne"}]}]); missing: sources disagree on races: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.95041.set.races))
+- 95161 Remember That I Love You (L22, forever/alliance/06-ashenvale): uncertain in the KB: objectives i:251522:1 (medium confidence, 1 of 4 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.95161.set.objectives)); missing: sources disagree on races: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.95161.set.races))
+- 95212 Never Saddle on Quality (L10, forever/alliance/40-50/07-un-goro-crater): uncertain in the KB: flagged verify in game ([{"field":"races","ours":"alliance","others":[{"source":"page","value":"Dwarf/NightElf/Gnome/HighOrderSkyborne"}]}]); missing: sources disagree on races: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.95212.set.races))
+- 95214 Stolen Blasting Powder (L10, forever/alliance/06-ashenvale): uncertain in the KB: flagged verify in game ([{"field":"races","ours":"alliance","others":[{"source":"page","value":"Dwarf/NightElf/Gnome/HighOrderSkyborne"}]}]); missing: sources disagree on races: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.95214.set.races))
+- 96390 Nip 'Em in the Bud (L13, forever/alliance/40-50/06-searing-gorge): uncertain in the KB: flagged verify in game ([{"field":"races","ours":"alliance","others":[{"source":"page","value":"Dwarf/NightElf/Gnome/HighOrderSkyborne"}]}]); missing: sources disagree on races: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.96390.set.races))
+- 96392 Farsen's Watch (L13, forever/alliance/40-50/06-searing-gorge): uncertain in the KB: flagged verify in game ([{"field":"races","ours":"alliance","others":[{"source":"page","value":"Dwarf/NightElf/Gnome/HighOrderSkyborne"}]}]); missing: sources disagree on races: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.96392.set.races))
+- 96606 The Great Outdoors (L6, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives x:227688:1;x:227691:1 (medium confidence, 1 of 4 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.96606.set.objectives))
+- 96629 Camping 101: Cooking (L6, forever/alliance/50-60/05-silithus): uncertain in the KB: objectives x:227854:1 (medium confidence, 1 of 5 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 5 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.96629.set.objectives))
+- 96630 The Adventurer (L6, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives i:275022:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.96630.set.objectives))
+- 96634 Camping 101: Cooking (L6, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives x:227868:1 (medium confidence, 1 of 4 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.96634.set.objectives))
+- 97220 Philmor's Favor (L15, forever/alliance/02-westfall): uncertain in the KB: objectives i:277119:1 (medium confidence, 1 of 4 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.97220.set.objectives))
+- 97222 Gatehouse Goods (L15, forever/alliance/06-ashenvale): uncertain in the KB: flagged verify in game ([{"field":"races","ours":"alliance","others":[{"source":"page","value":"Dwarf/NightElf/Gnome/HighOrderSkyborne"}]}]); missing: xp uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.97222.set.xp)); missing: sources disagree on races: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.97222.set.races))
+- 97234 Reading Room (L18, forever/alliance/50-60/05-silithus): uncertain in the KB: objectives i:277158:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.97234.set.objectives)); missing: sources disagree on races: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.97234.set.races))
+- 97263 Your Package Has Arrived (L2, forever/alliance/50-60/05-silithus): uncertain in the KB: objectives i:277505:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.97263.set.objectives))
+- 97277 Grund and Gozwin (L6, forever/alliance/40-50/06-searing-gorge): uncertain in the KB: flagged verify in game ([{"field":"races","ours":"alliance","others":[{"source":"page","value":"Dwarf/Gnome/HighOrderSkyborne"}]}]); missing: sources disagree on races: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.97277.set.races))
+- 97894 Business in Auberdine (L17, forever/alliance/30-40/05-arathi-highlands): uncertain in the KB: objectives x:?:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.97894.set.objectives))
+- 97977 Nature's Call (L3, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: flagged verify in game ([{"field":"races","ours":"alliance","others":[{"source":"page","value":"NightElf/HighOrderSkyborne"}]}]); missing: sources disagree on races: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.97977.set.races))
+- 98028 Baron Marinous (L21, forever/alliance/03-darkshore): uncertain in the KB: objectives i:279275:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.98028.set.objectives))
+- 98046 Crown of the Earth (L11, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives i:279291:1 (medium confidence, 1 of 4 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.98046.set.objectives)); missing: sources disagree on races: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.98046.set.races))
+- 98065 Crown of the Earth (L11, forever/alliance/50-60/04-western-plaguelands): uncertain in the KB: objectives i:279331:1 (medium confidence, 1 of 4 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.98065.set.objectives)); missing: sources disagree on races: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.98065.set.races))
+- 98240 Crimson Crate Delivery (L29, forever/alliance/06-ashenvale): uncertain in the KB: objectives i:280099:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.98240.set.objectives))
+- 98319 Secure the Mountain (L8, forever/alliance/40-50/06-searing-gorge): uncertain in the KB: flagged verify in game ([{"field":"races","ours":"alliance","others":[{"source":"page","value":"Dwarf/NightElf/Gnome/HighOrderSkyborne"}]}]); missing: sources disagree on races: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.98319.set.races))
+- 98321 Flintfire's Shipment (L7, forever/alliance/50-60/05-silithus): uncertain in the KB: flagged verify in game ([{"field":"races","ours":"alliance","others":[{"source":"page","value":"Dwarf/NightElf/Gnome/HighOrderSkyborne"}]}]); missing: sources disagree on races: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.98321.set.races))
+- 98322 Secure the Mountain (L8, forever/alliance/50-60/05-silithus): uncertain in the KB: flagged verify in game ([{"field":"races","ours":"alliance","others":[{"source":"page","value":"Dwarf/NightElf/Gnome/HighOrderSkyborne"}]}]); missing: sources disagree on races: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.98322.set.races))
+- 98323 Secure the Mountain (L8, forever/alliance/40-50/06-searing-gorge): uncertain in the KB: flagged verify in game ([{"field":"races","ours":"alliance","others":[{"source":"page","value":"Dwarf/NightElf/Gnome/HighOrderSkyborne"}]}]); missing: sources disagree on races: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.98323.set.races))
+- 98326 Frosthowl (L9, forever/alliance/50-60/05-silithus): uncertain in the KB: flagged verify in game ([{"field":"races","ours":"alliance","others":[{"source":"page","value":"Dwarf/NightElf/Gnome/HighOrderSkyborne"}]}]); missing: sources disagree on races: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.98326.set.races))
+- 98403 Twisted Hatred (L12, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: flagged verify in game ([{"field":"races","ours":"alliance","others":[{"source":"page","value":"NightElf"}]}]); missing: sources disagree on races: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.98403.set.races))
+- 98459 A Lack of Virtue (L21, forever/alliance/30-40/01-hillsbrad-foothills): uncertain in the KB: objectives i:281240:1 (medium confidence, 1 of 3 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.98459.set.objectives))
+- 99073 Easing Suffering (L10, forever/alliance/40-50/05-the-hinterlands): uncertain in the KB: objectives i:286069:1 (medium confidence, 1 of 4 sources agree); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.99073.set.objectives))
+- 136 Captain Sander's Hidden Treasure (L16.0, Westfall): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 171 A Warden of the Alliance (L60.0, Duskwood): left out of the world: item objective 18598 has no source; missing: item source unknown (item objective 18598 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.171.set.visibility))
+- 565 Bartolo's Yeti Fur Cloak (L34.0, Hillsbrad Foothills): left out of the world: item objective 3719 has no source; missing: item source unknown (item objective 3719 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors))
+- 579 Stormwind Library (L1.0, Stormwind City): left out of the world: item objective 3898 has no source; missing: item source unknown (item objective 3898 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors))
+- 636 Legends of the Earth (L35.0, Arathi Highlands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: title uncertain: 1 of 1 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.636.set.title)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.636.set.visibility))
+- 715 Liquid Stone (L37.0, Badlands): left out of the world: item objective 3823 has no source; missing: item source unknown (item objective 3823 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors))
+- 716 Stone Is Better than Cloth (L42.0, Badlands): left out of the world: item objective 2868 has no source; missing: item source unknown (item objective 2868 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors))
+- 785 A Strategic Alliance (L8.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.785.set.visibility))
+- 908 Amongst the Ruins (L27.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.908.set.end)); missing: who can take it (side) uncertain: sources disagree (1 of 2 agree) (fix in data corrections (tools/lib/data/corrections.json: quests.908.set.side)); missing: quest giver uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.908.set.start)); missing: sources disagree on races, side, visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.908.set.races))
+- 912 Stonesplinter Trogg Disguise (L12.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: xp uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.912.set.xp))
+- 975 Cache of Mau'ari (L60.0, Durotar): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 999 When Dreams Turn to Nightmares (L25.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.999.set.visibility))
+- 1005 What Lurks Beyond (L20.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.1005.set.visibility))
+- 1006 What Lies Beyond (L18.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.1006.set.visibility))
+- 1099 Goblins Win! (L1.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.1099.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.1099.set.visibility))
+- 1141 The Family and the Fishing Pole (L14.0, Darkshore): left out of the world: item objective 12238 has no source; missing: item source unknown (item objective 12238 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors))
+- 1174 Gnomes Win! (L1.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.1174.set.objectives))
+- 1203 Jarl Needs a Blade (L35.0, Dustwallow Marsh): left out of the world: item objective 3853 has no source; missing: item source unknown (item objective 3853 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors))
+- 1289 Vimes's Report (L38.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.1289.set.visibility))
+- 1371 Gizmo for Warug (L35.0, Desolace): left out of the world: item objective 4392 has no source; missing: item source unknown (item objective 4392 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors))
+- 1500 Waking Naralex (L25.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.1500.set.visibility))
+- 1649 The Tome of Valor (L20.0, Stormwind City): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 1796 Components for the Enchanted Gold Bloodrobe (L31.0, The Barrens): left out of the world: item objective 5770 has no source; missing: item source unknown (item objective 5770 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors))
+- 2876 Ship Schedules (L45.0, Tanaris): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.2876.set.objectives))
+- 2882 Cuergo's Gold (L45.0, Tanaris): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 3366 The Glowing Shard (L25.0, The Barrens): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.3366.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.3366.set.visibility))
+- 3374 The Essence of Eranikus (L55.0, Swamp of Sorrows): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.3374.set.objectives))
+- 3911 The Last Element (L54.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: sources disagree on races, visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.3911.set.races))
+- 4262 Overmaster Pyron (L52.0, Burning Steppes): left out of the world: kill objective npc 9026 has no open-world spawns; missing: objective place unknown (kill objective npc 9026 has no open-world spawns) (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 4481 Libram of Constitution (L55.0, Burning Steppes): left out of the world: item objective 11952 has no source; missing: item source unknown (item objective 11952 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.4481.set.objectives))
+- 4484 Libram of Voracity (L55.0, Burning Steppes): left out of the world: item objective 11951 has no source; missing: item source unknown (item objective 11951 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.4484.set.objectives))
+- 4784 Components for the Enchanted Gold Bloodrobe (L37.0, The Barrens): left out of the world: item objective 6265 has no source; missing: item source unknown (item objective 6265 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors))
+- 4801 Frostsaber E'ko (L60.0, Durotar): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.4801.set.objectives))
+- 4802 Winterfall E'ko (L60.0, Durotar): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.4802.set.objectives))
+- 4803 Shardtooth E'ko (L60.0, Durotar): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.4803.set.objectives))
+- 4804 Chillwind E'ko (L60.0, Durotar): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.4804.set.objectives))
+- 4805 Ice Thistle E'ko (L60.0, Durotar): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.4805.set.objectives))
+- 4806 Frostmaul E'ko (L60.0, Durotar): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.4806.set.objectives))
+- 4807 Wildkin E'ko (L60.0, Durotar): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.4807.set.objectives))
+- 5063 Cap of the Scarlet Savant (L60.0, Winterspring): left out of the world: item objective 12731 has no source; missing: item source unknown (item objective 12731 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.5063.set.objectives))
+- 5067 Leggings of Arcana (L60.0, Winterspring): left out of the world: item objective 12731 has no source; missing: item source unknown (item objective 12731 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.5067.set.objectives))
+- 5068 Breastplate of Bloodthirst (L60.0, Winterspring): left out of the world: item objective 12731 has no source; missing: item source unknown (item objective 12731 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.5068.set.objectives))
+- 5383 Krastinov's Bag of Horrors (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: who can take it (races) uncertain: sources disagree (1 of 2 agree) (fix in data corrections (tools/lib/data/corrections.json: quests.5383.set.races)); missing: sources disagree on races, visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.5383.set.races))
+- 5464 Menethil's Gift (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.5464.set.objectives))
+- 5805 Welcome! (L1.0, Elwynn Forest): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.5805.set.objectives)); missing: sources disagree on races, visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.5805.set.races))
+- 6000 Swearing to Gakin (L50.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.6000.set.visibility))
+- 6606 A Little Luck (L60.0, Winterspring): left out of the world: no located turn-in; missing: turn-in NPC's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: sources disagree on races, side, visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.6606.set.races))
+- 6661 Deeprun Rat Roundup (L12.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.6661.set.objectives))
+- 6662 Me Brother, Nipsy (L12.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.6662.set.objectives))
+- 6822 The Molten Core (L60.0, Azshara): left out of the world: kill objective npc 11658 has no open-world spawns; missing: objective place unknown (kill objective npc 11658 has no open-world spawns) (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 7342 Arrows Are For Sissies (L60.0, Ironforge): left out of the world: item objective 15997 has no source; missing: item source unknown (item objective 15997 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.7342.set.objectives))
+- 7704 Look at the Size of It! (L50.0, Searing Gorge): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.7704.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.7704.set.visibility))
+- 7790 REUSE (L0.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.7790.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.7790.set.visibility))
+- 7907 Darkmoon Beast Deck (L55.0, Mulgore): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 7908 Arena Master (L55.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.7908.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.7908.set.visibility))
+- 7927 Darkmoon Portals Deck (L55.0, Mulgore): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 7928 Darkmoon Warlords Deck (L55.0, Mulgore): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 7929 Darkmoon Elementals Deck (L55.0, Mulgore): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 7937 Your Fortune Awaits You... (L60.0, Elwynn Forest): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.7937.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.7937.set.visibility))
+- 7938 Your Fortune Awaits You... (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.7938.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.7938.set.visibility))
+- 7944 Your Fortune Awaits You... (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.7944.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.7944.set.visibility))
+- 7945 Your Fortune Awaits You... (L60.0, Mulgore): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.7945.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.7945.set.visibility))
+- 7961 Waskily Wabbits! (L1.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.7961.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.7961.set.visibility))
+- 7962 Wabbit Pelts (L1.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 8001 Zombie Cleansing (L3.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 2 sources agree, low confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8001.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.8001.set.visibility))
+- 8021 Redeem iCoke Prize Voucher (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8021.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.8021.set.visibility))
+- 8022 Redeem iCoke Prize Voucher (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8022.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.8022.set.visibility))
+- 8023 Redeem iCoke Prize Voucher (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8023.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.8023.set.visibility))
+- 8024 Redeem iCoke Prize Voucher (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8024.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.8024.set.visibility))
+- 8025 Redeem iCoke Prize Voucher (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8025.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.8025.set.visibility))
+- 8026 Redeem iCoke Prize Voucher (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8026.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.8026.set.visibility))
+- 8237 REUSE (L50.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.8237.set.visibility))
+- 8241 Restoring Fiery Flux Supplies via Iron (L60.0, Searing Gorge): left out of the world: item objective 3575 has no source; missing: item source unknown (item objective 3575 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8241.set.objectives))
+- 8259 A More Fitting Reward (L60.0, Orgrimmar): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: who can take it (classes) uncertain: sources disagree (1 of 3 agree) (fix in data corrections (tools/lib/data/corrections.json: quests.8259.set.classes)); missing: who can take it (races) uncertain: sources disagree (1 of 3 agree) (fix in data corrections (tools/lib/data/corrections.json: quests.8259.set.races)); missing: who can take it (side) uncertain: sources disagree (1 of 3 agree) (fix in data corrections (tools/lib/data/corrections.json: quests.8259.set.side)); missing: sources disagree on races, side, classes: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.8259.set.races))
+- 8306 Into The Maw of Madness (L60.0, Silithus): left out of the world: kill objective npc 15215 has no open-world spawns; missing: objective place unknown (kill objective npc 15215 has no open-world spawns) (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 8530 The Alliance Needs Singed Corestones! (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.8530.set.visibility))
+- 8617 The Horde Needs Singed Corestones! (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.8617.set.visibility))
+- 8811 One Commendation Signet (L60.0, Teldrassil): left out of the world: item objective 21436 has no source; missing: item source unknown (item objective 21436 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8811.set.objectives))
+- 8812 One Commendation Signet (L60.0, Ironforge): left out of the world: item objective 21436 has no source; missing: item source unknown (item objective 21436 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8812.set.objectives))
+- 8813 One Commendation Signet (L60.0, Ironforge): left out of the world: item objective 21436 has no source; missing: item source unknown (item objective 21436 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8813.set.objectives))
+- 8814 One Commendation Signet (L60.0, Stormwind City): left out of the world: item objective 21436 has no source; missing: item source unknown (item objective 21436 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8814.set.objectives))
+- 8819 Ten Commendation Signets (L60.0, Teldrassil): left out of the world: item objective 21436 has no source; missing: item source unknown (item objective 21436 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8819.set.objectives))
+- 8820 Ten Commendation Signets (L60.0, Ironforge): left out of the world: item objective 21436 has no source; missing: item source unknown (item objective 21436 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8820.set.objectives))
+- 8821 Ten Commendation Signets (L60.0, Ironforge): left out of the world: item objective 21436 has no source; missing: item source unknown (item objective 21436 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8821.set.objectives))
+- 8822 Ten Commendation Signets (L60.0, Stormwind City): left out of the world: item objective 21436 has no source; missing: item source unknown (item objective 21436 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8822.set.objectives))
+- 8921 The Ectoplasmic Distiller (L60.0, Tanaris): left out of the world: item objective 16006 has no source; missing: item source unknown (item objective 16006 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8921.set.objectives))
+- 8946 Proof of Life (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8946.set.objectives))
+- 8947 Anthion's Strange Request (L60.0, Eastern Plaguelands): left out of the world: item objective 11371 has no source; missing: item source unknown (item objective 11371 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors))
+- 8971 REUSE (L10.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8971.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.8971.set.visibility))
+- 8972 REUSE (L10.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8972.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.8972.set.visibility))
+- 8973 REUSE (L10.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: sources disagree on races, visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.8973.set.races))
+- 8974 REUSE (L10.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8974.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.8974.set.visibility))
+- 8975 REUSE (L10.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8975.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.8975.set.visibility))
+- 8976 REUSE (L10.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.8976.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.8976.set.visibility))
+- 8996 Return to Bodley (L60.0, Searing Gorge): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 9030 Anthion's Parting Words (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: who can take it (races) uncertain: sources disagree (1 of 2 agree) (fix in data corrections (tools/lib/data/corrections.json: quests.9030.set.races)); missing: sources disagree on races, visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.9030.set.races))
+- 9178 Craftsman's Writ - Dense Weightstone (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9178.set.objectives))
+- 9179 Craftsman's Writ - Imperial Plate Chest (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9179.set.objectives))
+- 9181 Craftsman's Writ - Volcanic Hammer (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9181.set.objectives))
+- 9182 Craftsman's Writ - Huge Thorium Battleaxe (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9182.set.objectives))
+- 9183 Craftsman's Writ - Radiant Circlet (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9183.set.objectives))
+- 9184 Craftsman's Writ - Wicked Leather Headband (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9184.set.objectives))
+- 9185 Craftsman's Writ - Rugged Armor Kit (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9185.set.objectives))
+- 9186 Craftsman's Writ - Wicked Leather Belt (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9186.set.objectives))
+- 9187 Craftsman's Writ - Runic Leather Pants (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9187.set.objectives))
+- 9188 Craftsman's Writ - Brightcloth Pants (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9188.set.objectives))
+- 9190 Craftsman's Writ - Runecloth Boots (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9190.set.objectives))
+- 9191 Craftsman's Writ - Runecloth Bag (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9191.set.objectives))
+- 9194 Craftsman's Writ - Runecloth Robe (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9194.set.objectives))
+- 9195 Craftsman's Writ - Goblin Sapper Charge (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9195.set.objectives))
+- 9196 Craftsman's Writ - Thorium Grenade (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9196.set.objectives))
+- 9197 Craftsman's Writ - Gnomish Battle Chicken (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9197.set.objectives)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.9197.set.races))
+- 9198 Craftsman's Writ - Thorium Tube (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9198.set.objectives))
+- 9200 Craftsman's Writ - Major Mana Potion (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9200.set.objectives))
+- 9201 Craftsman's Writ - Greater Arcane Protection Potion (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9201.set.objectives))
+- 9202 Craftsman's Writ - Major Healing Potion (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9202.set.objectives))
+- 9203 Craftsman's Writ - Flask of Petrification (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9203.set.objectives))
+- 9204 Craftsman's Writ - Stonescale Eel (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9204.set.objectives))
+- 9205 Craftsman's Writ - Plated Armorfish (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9205.set.objectives))
+- 9206 Craftsman's Writ - Lightning Eel (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9206.set.objectives))
+- 9247 The Keeper's Call (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9247.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.9247.set.visibility))
+- 9249 40 Tickets - Schematic: Steam Tonk Controller (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.9249.set.end)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9249.set.objectives)); missing: quest giver uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.9249.set.start)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.9249.set.visibility))
+- 9273 Redeem iCoke Prize Voucher (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9273.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.9273.set.visibility))
+- 9292 Cracked Necrotic Crystal (L60.0, Stormwind City): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9292.set.objectives))
+- 9295 Letter from the Front (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9295.set.objectives))
+- 9296 reuse (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9296.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.9296.set.visibility))
+- 9297 reuse (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9297.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.9297.set.visibility))
+- 9298 reuse (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9298.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.9298.set.visibility))
+- 9299 Note from the Front (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9299.set.objectives))
+- 9300 Page from the Front (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9300.set.objectives))
+- 9301 Envelope from the Front (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9301.set.objectives))
+- 9302 Missive from the Front (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9302.set.objectives))
+- 9304 Document from the Front (L60.0, Eastern Plaguelands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9304.set.objectives))
+- 9353 Redeem iCoke Gift Box Voucher (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.9353.set.objectives)); missing: sources disagree on visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.9353.set.visibility))
+- 9556 To The Victor... (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: sources disagree on races, visibility: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.9556.set.races))
+- 78088 A Strange Artifact (L30.0, Ashenvale): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.78088.set.objectives)); missing: quest giver uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.78088.set.start)); missing: sources disagree on start (not applied: an NPC or object without spawns): to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.78088.set.start (not applied: an NPC or object without spawns)))
+- 78124 Nar'thalas Almanac (L0.0, Undercity): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.78124.set.objectives)); missing: quest giver uncertain: 1 of 2 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.78124.set.start))
+- 78127 The Dalaran Digest (L0.0, Undercity): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.78127.set.objectives)); missing: quest giver uncertain: 1 of 2 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.78127.set.start))
+- 78142 Bewitchments and Glamours (L0.0, Undercity): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.78142.set.objectives)); missing: quest giver uncertain: 1 of 2 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.78142.set.start))
+- 78143 Secrets of the Dreamers (L0.0, Undercity): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.78143.set.objectives)); missing: quest giver uncertain: 1 of 2 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.78143.set.start))
+- 78145 Arcanic Systems Manual (L0.0, Undercity): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.78145.set.objectives)); missing: quest giver uncertain: 1 of 2 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.78145.set.start))
+- 78146 Goaz Scrolls (L0.0, Undercity): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.78146.set.objectives)); missing: quest giver uncertain: 1 of 2 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.78146.set.start))
+- 78147 Crimes Against Anatomy (L0.0, Undercity): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.78147.set.objectives)); missing: quest giver uncertain: 1 of 2 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.78147.set.start))
+- 78149 Fury of the Land (L0.0, Undercity): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.78149.set.objectives)); missing: quest giver uncertain: 1 of 2 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.78149.set.start))
+- 78150 Friend of the Library (L0.0, Undercity): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: quest giver uncertain: 1 of 2 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.78150.set.start))
+- 78261 The Horn of Xelthos (L23.0, Silverpine Forest): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 5 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.78261.set.objectives)); missing: quest giver uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.78261.set.start)); missing: sources disagree on races, classes: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.78261.set.races))
+- 78307 The Horn of Xelthos (L0.0, Silverpine Forest): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: xp uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.78307.set.xp)); missing: sources disagree on races, classes: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.78307.set.races))
+- 78699 The Eye of Bhossca (L35.0, Silverpine Forest): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: xp uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.78699.set.xp))
+- 78823 Terror of the Desert Skies (L40.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.78823.set.end))
+- 79091 Archmage Antonidas: The Unabridged Autobiography (L0.0, Undercity): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.79091.set.objectives)); missing: quest giver uncertain: 1 of 2 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.79091.set.start)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.79091.set.races))
+- 79093 Rumi of Gnomeregan: The Collected Works (L0.0, Undercity): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.79093.set.objectives)); missing: quest giver uncertain: 1 of 2 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.79093.set.start))
+- 79094 The Lessons of Ta'zo (L0.0, Undercity): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.79094.set.objectives)); missing: quest giver uncertain: 1 of 2 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.79094.set.start)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.79094.set.races))
+- 79097 Baxtan: On Destructive Magics (L0.0, Undercity): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: quest giver uncertain: 1 of 2 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.79097.set.start))
+- 79229 Highway Robbery (L40.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.79229.set.end))
+- 79535 Basilisks: Should Petrification be Feared? (L0.0, Undercity): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.79535.set.objectives)); missing: quest giver uncertain: 1 of 2 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.79535.set.start))
+- 79624 Anyone Can Cook (L40.0, Arathi Highlands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 79947 Geomancy: The Stone-Cold Truth (L0.0, Undercity): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.79947.set.objectives)); missing: quest giver uncertain: 1 of 2 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.79947.set.start))
+- 79948 Defensive Magics 101 (L0.0, Undercity): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: quest giver uncertain: 1 of 2 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.79948.set.start))
+- 79949 A Web of Lies: Debunking Myths and Legends (L0.0, Undercity): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.79949.set.objectives)); missing: quest giver uncertain: 1 of 2 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.79949.set.start))
+- 79950 Demons and You (L0.0, Undercity): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: quest giver uncertain: 1 of 2 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.79950.set.start))
+- 79951 Mummies: A Guide to the Unsavory Undead (L0.0, Undercity): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.79951.set.objectives)); missing: quest giver uncertain: 1 of 2 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.79951.set.start))
+- 79952 RwlRwlRwlRwl! (L0.0, Undercity): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.79952.set.objectives)); missing: quest giver uncertain: 1 of 2 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.79952.set.start))
+- 80001 Rekindle (L0.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: quest giver uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.80001.set.start))
+- 81947 Sanguine Sorcery (L0.0, Undercity): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.81947.set.objectives)); missing: quest giver uncertain: 1 of 2 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.81947.set.start))
+- 81949 Legends of the Tidesages (L0.0, Undercity): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.81949.set.objectives)); missing: quest giver uncertain: 1 of 2 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.81949.set.start))
+- 81952 Everyday Etiquette (L0.0, Undercity): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.81952.set.objectives)); missing: quest giver uncertain: 1 of 2 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.81952.set.start))
+- 81953 Stonewrought Design (L0.0, Undercity): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.81953.set.objectives)); missing: quest giver uncertain: 1 of 2 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.81953.set.start))
+- 81954 Venomous Journeys (L0.0, Stormwind City): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.81954.set.objectives)); missing: quest giver uncertain: 1 of 2 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.81954.set.start))
+- 81955 A Mind of Metal (L0.0, Undercity): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.81955.set.objectives)); missing: quest giver uncertain: 1 of 2 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.81955.set.start))
+- 81956 Conjurer's Codex (L0.0, Undercity): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.81956.set.objectives)); missing: quest giver uncertain: 1 of 2 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.81956.set.start))
+- 91899 A Sealed Crate (L60.0, Redridge Mountains): left out of the world: item objective 248765 has no source; missing: item source unknown (item objective 248765 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors)); missing: turn-in NPC uncertain: 1 of 5 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.91899.set.end)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.91899.set.objectives)); missing: quest giver uncertain: 1 of 4 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.91899.set.start))
+- 91900 A Sealed Crate (L60.0, Redridge Mountains): left out of the world: item objective 248766 has no source; missing: item source unknown (item objective 248766 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.91900.set.objectives)); missing: quest giver uncertain: 1 of 3 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.91900.set.start))
+- 91904 A Sealed Crate (L60.0, Redridge Mountains): left out of the world: item objective 248770 has no source; missing: item source unknown (item objective 248770 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.91904.set.objectives)); missing: quest giver uncertain: 1 of 3 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.91904.set.start))
+- 91905 A Sealed Crate (L60.0, Redridge Mountains): left out of the world: item objective 248771 has no source; missing: item source unknown (item objective 248771 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.91905.set.objectives)); missing: who can take it (races) uncertain: sources disagree (1 of 3 agree) (fix in data corrections (tools/lib/data/corrections.json: quests.91905.set.races)); missing: who can take it (side) uncertain: sources disagree (1 of 3 agree) (fix in data corrections (tools/lib/data/corrections.json: quests.91905.set.side)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.91905.set.races))
+- 92109 My First Alchemy Set (L10.0, Westfall): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 92110 My First Real Potion (L10.0, Westfall): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 92754 A New Need for Shadow Protection (L35.0, Desolace): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.92754.set.objectives)); missing: quest giver uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.92754.set.start)); missing: sources disagree on start (not applied: an NPC or object without spawns): to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.92754.set.start (not applied: an NPC or object without spawns)))
+- 92755 Mysterious Mysticism (L35.0, Desolace): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.92755.set.objectives)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.92755.set.races))
+- 92811 Economic Warfare (L60.0, Desolace): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.92811.set.objectives)); missing: quest giver uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.92811.set.start)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.92811.set.races))
+- 92814 I Need a Tailor (L35.0, Desolace): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.92814.set.objectives))
+- 92817 Leather Technique (L35.0, Desolace): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.92817.set.objectives))
+- 92818 Big, No, MASSIVE Iron Axes (L35.0, Desolace): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.92818.set.end)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.92818.set.objectives)); missing: sources disagree on start (not applied: an NPC or object without spawns), end (not applied: an NPC or object without spawns), races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.92818.set.start (not applied: an NPC or object without spawns)))
+- 92846 Outcast Necromancers (L40.0, Shen'dralas): left out of the world: no located turn-in; missing: turn-in NPC's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.92846.set.objectives))
+- 92847 Corrupting Tears (L42.0, Shen'dralas): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.92847.set.objectives)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.92847.set.races))
+- 92867 Ground to Keep (L39.0, Arathi Highlands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 92872 Dutiful Steps (L38.0, Arathi Highlands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 92873 Proof of Concept (L41.0, Shen'dralas): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.92873.set.objectives)); missing: quest giver uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.92873.set.start)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.92873.set.races))
+- 92893 No Mercy for the Weak (L42.0, Shen'dralas): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.92893.set.objectives)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.92893.set.races))
+- 92894 Bone Raising (L40.0, Shen'dralas): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.92894.set.objectives)); missing: quest giver uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.92894.set.start)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.92894.set.races))
+- 93044 A Cleansing Cry (L38.0, Desolace): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.93044.set.objectives)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.93044.set.races))
+- 93058 Saving Our Own (L42.0, Shen'dralas): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.93058.set.objectives)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.93058.set.races))
+- 93062 Bone Burying (L42.0, Shen'dralas): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.93062.set.objectives)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.93062.set.races))
+- 93066 Bristleback Retreat (L43.0, Shen'dralas): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.93066.set.objectives))
+- 93072 Long-Term Solutions (L43.0, Shen'dralas): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.93072.set.end)); missing: quest giver uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.93072.set.start))
+- 93122 Checking Things Out (L43.0, Shen'dralas): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.93122.set.objectives)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.93122.set.races))
+- 93125 Going Home (L43.0, Shen'dralas): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.93125.set.objectives))
+- 93129 Threat of Starvation (L43.0, Shen'dralas): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.93129.set.end)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.93129.set.objectives)); missing: quest giver uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.93129.set.start))
+- 93188 Return to Orgrul (L43.0, Shen'dralas): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.93188.set.end)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.93188.set.objectives)); missing: quest giver uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.93188.set.start))
+- 93196 Khan Jehn (L42.0, Desolace): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.93196.set.end)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.93196.set.objectives)); missing: quest giver uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.93196.set.start)); missing: sources disagree on end (not applied: an NPC or object without spawns): to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.93196.set.end (not applied: an NPC or object without spawns)))
+- 93226 Buying Friendship: Magram (L45.0, Desolace): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.93226.set.end)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.93226.set.objectives)); missing: quest giver uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.93226.set.start))
+- 93227 Buying Friendship: Gelkis (L45.0, Desolace): left out of the world: no located turn-in; missing: turn-in NPC's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.93227.set.objectives)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.93227.set.races))
+- 93429 Blood of My Blood (L35.0, Swamp of Sorrows): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.93429.set.objectives)); missing: quest giver uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.93429.set.start)); missing: sources disagree on start (not applied: an NPC or object without spawns), races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.93429.set.start (not applied: an NPC or object without spawns)))
+- 93430 Taking the Bait Back (L35.0, Swamp of Sorrows): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: xp uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.93430.set.xp))
+- 93464 The Visiting Mage (L38.0, Swamp of Sorrows): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: xp uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.93464.set.xp))
+- 93465 Notes on Draenethyst (L40.0, Desolace): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 93585 This Light of Mine (L34.0, Swamp of Sorrows): left out of the world: no located turn-in; missing: turn-in NPC's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.93585.set.objectives))
+- 93678 Abridged Notes on Draenethyst (L40.0, Desolace): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.93678.set.objectives))
+- 93862 Crate Return (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.93862.set.objectives))
+- 94004 Craftsman's Writ: Elixir of Ogre's Strength (L60.0, Alterac Mountains): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94214 Craftsman's Writ: Shadow Protection Potion (L60.0, Duskwood): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.94214.set.races))
+- 94215 Craftsman's Writ: Free Action Potion (L60.0, Hillsbrad Foothills): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94217 Craftsman's Writ: Lesser Troll's Blood Elixir (L60.0, Stranglethorn Vale): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94218 Craftsman's Writ: Elixir of Defense (L60.0, Thousand Needles): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.94218.set.races))
+- 94219 Craftsman's Writ: Draught of Water Breathing (L60.0, Wetlands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94220 Craftsman's Writ: Pearl-Handled Dagger (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.94220.set.end)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.94220.set.races))
+- 94221 Craftsman's Writ: Golden Rod (L60.0, Arathi Highlands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94222 Craftsman's Writ: Iridescent Hammer (L60.0, Ashenvale): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.94222.set.races))
+- 94223 Craftsman's Writ: Silver Skeleton Key (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.94223.set.end))
+- 94224 Craftsman's Writ: Heavy Bronze Mace (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94225 Craftsman's Writ: Rough Bronze Leggings (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.94225.set.end))
+- 94226 Craftsman's Writ: Green Iron Gauntlets (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.94226.set.end))
+- 94227 Craftsman's Writ: Big Bronze Knife (L60.0, Thousand Needles): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94228 Craftsman's Writ: Green Iron Boots (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.94228.set.end))
+- 94229 Craftsman's Writ: Ornate Spyglass (L60.0, Alterac Mountains): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94230 Craftsman's Writ: Explosive Sheep (L60.0, Arathi Highlands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94231 Craftsman's Writ: Moonsight Rifle (L60.0, Ashenvale): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94232 Craftsman's Writ: Minor Recombobulator (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.94232.set.end)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.94232.set.races))
+- 94233 Craftsman's Writ: Practice Lock (L60.0, Hillsbrad Foothills): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.94233.set.races))
+- 94234 Craftsman's Writ: Shadow Goggles (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.94234.set.end))
+- 94235 Craftsman's Writ: Gnomish Universal Remote (L60.0, Stranglethorn Vale): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94236 Craftsman's Writ: Big Bronze Bomb (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.94236.set.end))
+- 94237 Craftsman's Writ: Crafted Solid Shot (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94238 Craftsman's Writ: Heavy Leather Ball (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.94238.set.end))
+- 94239 Craftsman's Writ: Fine Leather Pants (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94240 Craftsman's Writ: Herbalist's Gloves (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.94240.set.end))
+- 94242 Craftsman's Writ: Pilferer's Gloves (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.94242.set.end)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.94242.set.races))
+- 94243 Craftsman's Writ: Heavy Quiver (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.94243.set.end))
+- 94244 Craftsman's Writ: Dark Leather Shoulders (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94245 Craftsman's Writ: Barbaric Gloves (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.94245.set.end))
+- 94246 Craftsman's Writ: Red Whelp Gloves (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.94246.set.end)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.94246.set.races))
+- 94247 Craftsman's Writ: Lesser Wizard's Robe (L60.0, Alterac Mountains): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94248 Craftsman's Writ: Blue Overalls (L60.0, Arathi Highlands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.94248.set.races))
+- 94249 Craftsman's Writ: Azure Silk Hood (L60.0, Ashenvale): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94250 Craftsman's Writ: Small Silk Pack (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94251 Craftsman's Writ: Phoenix Pants (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.94251.set.end)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.94251.set.races))
+- 94252 Craftsman's Writ: Red Woolen Boots (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94253 Craftsman's Writ: Colorful Kilt (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.94253.set.end)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.94253.set.races))
+- 94254 Craftsman's Writ: Greater Adept's Robe (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94255 Craftsman's Writ: Spider Silk Slippers (L60.0, Wetlands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.94255.set.races))
+- 94256 Craftsman's Writ: Frost Protection Potion (L60.0, Badlands): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94257 Craftsman's Writ: Lesser Invisibility Potion (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94258 Craftsman's Writ: Lesser Stoneshield Potion (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94259 Craftsman's Writ: Nature Protection Potion (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94260 Craftsman's Writ: Catseye Draught (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94261 Craftsman's Writ: Great Rage Potion (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94262 Craftsman's Writ: Mana Potion (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94263 Craftsman's Writ: Fire Protection Potion (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94264 Craftsman's Writ: Shadow Oil (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94265 Craftsman's Writ: Goblin Rocket Fuel (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94266 Craftsman's Writ: Elixir of Agility (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94267 Craftsman's Writ: Wildvine Potion (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94268 Craftsman's Writ: Steel Plate Helm (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94269 Craftsman's Writ: Inlaid Mithril Cylinder (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94270 Craftsman's Writ: Steel Weapon Chain (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94271 Craftsman's Writ: Ornate Mithril Shoulders (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94272 Craftsman's Writ: Blue Glittering Axe (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94273 Craftsman's Writ: Moonsteel Broadsword (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94274 Craftsman's Writ: Golden Scale Coif (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94275 Craftsman's Writ: Solid Sharpening Stone (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94276 Craftsman's Writ: Wicked Mithril Blade (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94277 Craftsman's Writ: Truesilver Rod (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94278 Craftsman's Writ: Golden Scale Gauntlets (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94279 Craftsman's Writ: Heavy Mithril Axe (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94280 Craftsman's Writ: Mechanical Dragonling (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94281 Craftsman's Writ: Advanced Target Dummy (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94282 Craftsman's Writ: Craftsman's Monocle (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94283 Craftsman's Writ: Goblin Land Mine (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94284 Craftsman's Writ: Catseye Ultra Goggles (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94285 Craftsman's Writ: Unstable Trigger (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94286 Craftsman's Writ: Flash Bomb (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94287 Craftsman's Writ: Fire Goggles (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94288 Craftsman's Writ: Mithril Frag Bomb (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94289 Craftsman's Writ: Gyromatic Micro-Adjuster (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94290 Craftsman's Writ: Mechanical Repair Kit (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94291 Craftsman's Writ: Dark Iron Bomb (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94292 Craftsman's Writ: Comfortable Leather Hat (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94293 Craftsman's Writ: Guardian Cloak (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94294 Craftsman's Writ: Dusky Bracers (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94295 Craftsman's Writ: Wild Leather Helmet (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94296 Craftsman's Writ: Wild Leather Shoulders (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94297 Craftsman's Writ: Quickdraw Quiver (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94298 Craftsman's Writ: Swift Boots (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94299 Craftsman's Writ: Nightscape Shoulders (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94300 Craftsman's Writ: Big Voodoo Mask (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94301 Craftsman's Writ: Big Voodoo Robe (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94302 Craftsman's Writ: Turtle Scale Breastplate (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94303 Craftsman's Writ: Thick Leather Ammo Pouch (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94304 Craftsman's Writ: Mageweave Bag (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94305 Craftsman's Writ: Shadoweave Gloves (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94306 Craftsman's Writ: Crimson Silk Robe (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94307 Craftsman's Writ: Shadoweave Robe (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94308 Craftsman's Writ: Enchanted Mageweave Pouch (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94309 Craftsman's Writ: Star Belt (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94310 Craftsman's Writ: Black Mageweave Vest (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94311 Craftsman's Writ: Red Mageweave Pants (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94312 Craftsman's Writ: Orange Martial Shirt (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94313 Craftsman's Writ: White Bandit Mask (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94314 Craftsman's Writ: Cindercloth Robe (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94315 Craftsman's Writ: Earthen Silk Belt (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94316 Craftsman's Writ: Potion of Demonslaying (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94317 Craftsman's Writ: Dreamless Sleep Potion (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94318 Craftsman's Writ: Greater Fire Protection Potion (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94319 Craftsman's Writ: Draught of Detect Demon (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94320 Craftsman's Writ: Gift of Arthas (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94321 Craftsman's Writ: Flask of Chromatic Resistance (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94322 Craftsman's Writ: Limited Invulnerability Potion (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94323 Craftsman's Writ: Major Rejuvenation Potion (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94324 Craftsman's Writ: Distilled Firewater (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94325 Craftsman's Writ: Radiant Circlet (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94326 Craftsman's Writ: Radiant Belt (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94327 Craftsman's Writ: Orcish War Leggings (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94328 Craftsman's Writ: Mithril Spurs (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94329 Craftsman's Writ: Imperial Plate Chest (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94330 Craftsman's Writ: Darkrune Gauntlets (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94331 Craftsman's Writ: Huge Thorium Battleaxe (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94332 Craftsman's Writ: Arcanite Skeleton Key (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94333 Craftsman's Writ: Ebon Shiv (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94334 Craftsman's Writ: Masterwork Target Dummy (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94335 Craftsman's Writ: Green Lens (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94336 Craftsman's Writ: Lifelike Mechanical Toad (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94337 Craftsman's Writ: Gnomish Alarm-O-Bot (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94338 Craftsman's Writ: Goblin Jumper Cables XL (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94339 Craftsman's Writ: Field Repair Bot 74A (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94340 Craftsman's Writ: Truesilver Transformer (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94341 Craftsman's Writ: Sniper Scope (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94342 Craftsman's Writ: Tranquil Mechanical Yeti (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94343 Craftsman's Writ: Wicked Leather Pants (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94344 Craftsman's Writ: Gordok Ogre Suit (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94345 Craftsman's Writ: Volcanic Breastplate (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94346 Craftsman's Writ: Runic Leather Headband (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94347 Craftsman's Writ: Wicked Leather Bracers (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94348 Craftsman's Writ: Chimeric Vest (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94349 Craftsman's Writ: Heavy Scorpid Helm (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94350 Craftsman's Writ: Runic Leather Bracers (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94351 Craftsman's Writ: Frostsaber Boots (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94352 Craftsman's Writ: Wizardweave Turban (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94353 Craftsman's Writ: Runecloth Bag (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94354 Craftsman's Writ: Runecloth Boots (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94355 Craftsman's Writ: Tuxedo Jacket (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94356 Craftsman's Writ: Felcloth Boots (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94357 Craftsman's Writ: Cenarion Herb Bag (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94358 Craftsman's Writ: Shadoweave Mask (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94359 Craftsman's Writ: Ghostweave Vest (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94360 Craftsman's Writ: Soul Pouch (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94775 Divine Grace (L10.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.94775.set.end)); missing: quest giver uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.94775.set.start))
+- 94776 Divine Grace (L10.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94777 Divine Grace (L10.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94778 Divine Grace (L10.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 94779 Divine Grace (L10.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 95384 Partial Mystical Notes (L40.0, Stranglethorn Vale): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.95384.set.objectives))
+- 95816 Sign Me Up! (L60.0, Redridge Mountains): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: sources disagree on races: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.95816.set.races))
+- 95817 Rotgath Stonebeard (L60.0, Ironforge): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: sources disagree on races: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.95817.set.races))
+- 96243 Call of Earth (L10.0, Ironforge): left out of the world: no located turn-in; missing: turn-in NPC's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 96781 What's the Big Idea? (L36.0, Alterac Mountains): left out of the world: item objective 275482 has no source; missing: item source unknown (item objective 275482 has no source) (fix in data corrections (tools/lib/data/corrections.json: items: drops or vendors))
+- 96782 Covert Extraction (L36.0, Alterac Mountains): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: quest giver uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.96782.set.start)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.96782.set.races))
+- 96783 A Way In (L34.0, Alterac Mountains): left out of the world: no located turn-in; missing: turn-in NPC's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: level uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.96783.set.level)); missing: xp uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.96783.set.xp))
+- 96785 Ain't No Telling (L34.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: level uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.96785.set.level)); missing: xp uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.96785.set.xp)); missing: sources disagree on start (not applied: an NPC or object without spawns): to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.96785.set.start (not applied: an NPC or object without spawns)))
+- 96786 The Syndicate Sting (L34.0, Alterac Mountains): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: level uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.96786.set.level)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.96786.set.objectives)); missing: xp uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.96786.set.xp)); missing: sources disagree on start (not applied: an NPC or object without spawns): to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.96786.set.start (not applied: an NPC or object without spawns)))
+- 97047 The Cook in the Cage (L38.0, Stranglethorn Vale): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: quest giver uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.97047.set.start)); missing: sources disagree on start (not applied: an NPC or object without spawns), races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.97047.set.start (not applied: an NPC or object without spawns)))
+- 97048 Returning to Port (L38.0, Stranglethorn Vale): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 97065 Tip the Scales - Keefer's Angelfish (L0.0, Stranglethorn Vale): left out of the world: no located turn-in; missing: turn-in NPC's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.97065.set.end)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.97065.set.objectives))
+- 97066 Tip the Scales - Brownell's Blue Striped Racer (L0.0, Stranglethorn Vale): left out of the world: no located turn-in; missing: turn-in NPC's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.97066.set.end)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.97066.set.objectives))
+- 97067 Tip the Scales - Dezian Queenfish (L0.0, Stranglethorn Vale): left out of the world: no located turn-in; missing: turn-in NPC's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.97067.set.end)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.97067.set.objectives))
+- 97284 Vahlarriel's Vengeance (L33.0, Desolace): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: quest giver uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.97284.set.start))
+- 97329 Where's the Key? (L35.0, Stranglethorn Vale): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 97331 Zimmix's Great Escape (L35.0, Stranglethorn Vale): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.97331.set.objectives))
+- 97420 Reduce, Reuse, Reconcile (L36.0, Stranglethorn Vale): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: objectives (targets, counts or items) uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.97420.set.objectives))
+- 98156 Packaged Pristine Pelts (L31.0, Stormwind City): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: level uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.98156.set.level)); missing: min_level uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.98156.set.min_level)); missing: objectives (targets, counts or items) uncertain: 1 of 3 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.98156.set.objectives)); missing: quest giver uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.98156.set.start)); missing: xp uncertain: 1 of 4 sources agree, medium confidence (fix in data corrections (tools/lib/data/corrections.json: quests.98156.set.xp))
+- 98247 Shipping Label (L60.0, Redridge Mountains): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 98338 REUSE ME (L33.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 98372 An Unfortunate End (L0.0, Duskwood): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: quest giver uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.98372.set.start)); missing: sources disagree on races, side: to verify in game (fix in data corrections (tools/lib/data/corrections.json: quests.98372.set.races))
+- 98977 Mossheart the Elder (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 98983 Frostleaf the Elder (L60.0, ): left out of the world: no located quest giver; missing: quest giver's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 99191 A Donation of Wool (L60.0, Alterac Mountains): left out of the world: no located turn-in; missing: turn-in NPC's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns))
+- 99192 A Donation of Silk (L60.0, Alterac Mountains): left out of the world: no located turn-in; missing: turn-in NPC's place unknown (fix in data corrections (tools/lib/data/corrections.json: npcs/objects set spawns)); missing: turn-in NPC uncertain: 1 of 1 sources agree (fix in data corrections (tools/lib/data/corrections.json: quests.99192.set.end))
+
+## pvp/event/profession/rep (411)
+
+- 1036 Avast Ye, Scallywag (L60, forever/alliance/40-50/01-stranglethorn-vale): reputation-gated
+- 1369 Broken Tears (L33, forever/alliance/30-40/02-desolace): reputation-gated
+- 1370 Stealing Supplies (L35, forever/alliance/30-40/06-badlands): reputation-gated
+- 1373 Ongeku (L37, forever/alliance/30-40/06-badlands): reputation-gated
+- 1374 Khan Jehn (L37, forever/alliance/30-40/06-badlands): reputation-gated
+- 1382 Strange Alliance (L35, forever/alliance/30-40/06-badlands): reputation-gated
+- 1384 Raid on the Kolkar (L32, forever/alliance/30-40/06-badlands): reputation-gated
+- 1385 Brutal Politics (L35, forever/alliance/30-40/06-badlands): reputation-gated
+- 1386 Assault on the Kolkar (L32, forever/alliance/30-40/02-desolace): reputation-gated
+- 4161 Recipe of the Kaldorei (L7, forever/alliance/40-50/05-the-hinterlands): profession quest (skill 185)
+- 4621 Avast Ye, Admiral! (L60, forever/alliance/40-50/01-stranglethorn-vale): reputation-gated
+- 7863 Sentinel Basic Care Package (L34, forever/alliance/30-40/03-ashenvale): PvP (battleground) quest
+- 7864 Sentinel Standard Care Package (L44, forever/alliance/30-40/03-ashenvale): PvP (battleground) quest
+- 7865 Sentinel Advanced Care Package (L60, forever/alliance/30-40/03-ashenvale): PvP (battleground) quest
+- 8260 Arathor Basic Care Package (L34, forever/alliance/30-40/05-arathi-highlands): PvP (battleground) quest
+- 8261 Arathor Standard Care Package (L44, forever/alliance/30-40/05-arathi-highlands): PvP (battleground) quest
+- 8262 Arathor Advanced Care Package (L60, forever/alliance/30-40/05-arathi-highlands): PvP (battleground) quest
+- 90 Seasoned Wolf Kabobs (L25.0, Duskwood): left out of the world: profession
+- 866 Root Samples (L16.0, The Barrens): left out of the world: profession
+- 1468 Children's Week (L60.0, Stormwind City): left out of the world: seasonal event
+- 1559 Flash Bomb Recipe (L37.0, Badlands): left out of the world: profession
+- 1578 Supplying the Front (L12.0, Ironforge): left out of the world: profession
+- 1579 Gaffer Jacks (L12.0, Darkshore): left out of the world: profession
+- 1580 Electropellers (L12.0, Darkshore): left out of the world: profession
+- 1581 Elixirs for the Bladeleafs (L8.0, Teldrassil): left out of the world: profession
+- 1582 Moonglow Vest (L18.0, Teldrassil): left out of the world: profession
+- 1618 Gearing Redridge (L16.0, Ironforge): left out of the world: profession
+- 1658 Crashing the Wickerman Festival (L60.0, Hillsbrad Foothills): left out of the world: seasonal event
+- 2178 Easy Strider Living (L12.0, Darkshore): left out of the world: profession
+- 2501 Badlands Reagent Run II (L44.0, Loch Modan): left out of the world: profession
+- 2758 The Origins of Smithing (L40.0, Stormwind City): left out of the world: profession
+- 2759 In Search of Galvan (L40.0, Stormwind City): left out of the world: profession
+- 2760 The Mithril Order (L40.0, Stranglethorn Vale): left out of the world: profession
+- 2761 Smelt On, Smelt Off (L45.0, Stranglethorn Vale): left out of the world: profession
+- 2762 The Great Silver Deceiver (L45.0, Stranglethorn Vale): left out of the world: profession
+- 2763 The Art of the Imbue (L45.0, Stranglethorn Vale): left out of the world: profession
+- 2764 Galvan's Finest Pupil (L45.0, Stranglethorn Vale): left out of the world: profession
+- 2765 Expert Blacksmith! (L45.0, Stranglethorn Vale): left out of the world: profession
+- 2771 A Good Head On Your Shoulders (L45.0, Tanaris): left out of the world: profession
+- 2772 The World At Your Feet (L45.0, Tanaris): left out of the world: profession
+- 2773 The Mithril Kid (L45.0, Tanaris): left out of the world: profession
+- 2847 Wild Leather Armor (L45.0, Feralas): left out of the world: profession
+- 2848 Wild Leather Shoulders (L45.0, Feralas): left out of the world: profession
+- 2849 Wild Leather Vest (L45.0, Feralas): left out of the world: profession
+- 2850 Wild Leather Helmet (L45.0, Feralas): left out of the world: profession
+- 2851 Wild Leather Boots (L45.0, Feralas): left out of the world: profession
+- 2852 Wild Leather Leggings (L45.0, Feralas): left out of the world: profession
+- 2853 Master of the Wild Leather (L45.0, Feralas): left out of the world: profession
+- 3321 Did You Lose This? (L50.0, Tanaris): left out of the world: profession
+- 3379 Shadoweaver (L50.0, Searing Gorge): left out of the world: profession
+- 3385 The Undermarket (L50.0, Searing Gorge): left out of the world: profession
+- 3402 The Undermarket (L50.0, Searing Gorge): left out of the world: profession
+- 3629 Goblin Engineering (L47.0, Ironforge): left out of the world: profession
+- 3630 Gnome Engineering (L47.0, Stormwind City): left out of the world: profession
+- 3632 Gnome Engineering (L47.0, Ironforge): left out of the world: profession
+- 3633 Goblin Engineering (L47.0, The Barrens): left out of the world: profession
+- 3634 Gnome Engineering (L47.0, The Barrens): left out of the world: profession
+- 3638 The Pledge of Secrecy (L47.0, Tanaris): left out of the world: profession
+- 3639 Show Your Work (L47.0, Tanaris): left out of the world: profession
+- 3640 The Pledge of Secrecy (L47.0, Ironforge): left out of the world: profession
+- 3641 Show Your Work (L47.0, Ironforge): left out of the world: profession
+- 3644 Membership Card Renewal (L47.0, Tanaris): left out of the world: profession
+- 3645 Membership Card Renewal (L47.0, Ironforge): left out of the world: profession
+- 3646 Membership Card Renewal (L47.0, The Barrens): left out of the world: profession
+- 3647 Membership Card Renewal (L47.0, Stranglethorn Vale): left out of the world: profession
+- 4083 The Spectral Chalice (L55.0, ): left out of the world: profession
+- 4104 Salve via Mining (L55.0, Felwood): left out of the world: profession
+- 4105 Salve via Gathering (L55.0, Felwood): left out of the world: profession
+- 4106 Salve via Skinning (L55.0, Felwood): left out of the world: profession
+- 4107 Salve via Disenchanting (L55.0, Felwood): left out of the world: profession
+- 4181 Goblin Engineering (L47.0, Stormwind City): left out of the world: profession
+- 5103 Hot Fiery Death (L60.0, Winterspring): left out of the world: profession
+- 5124 Fiery Plate Gauntlets (L60.0, Winterspring): left out of the world: profession
+- 5126 Lorax's Tale (L60.0, Winterspring): left out of the world: profession
+- 5127 The Demon Forge (L60.0, Winterspring): left out of the world: profession
+- 5141 Dragonscale Leatherworking (L55.0, Azshara): left out of the world: profession
+- 5143 Tribal Leatherworking (L55.0, Thousand Needles): left out of the world: profession
+- 5144 Elemental Leatherworking (L55.0, Searing Gorge): left out of the world: profession
+- 5283 The Art of the Armorsmith (L40.0, Ironforge): left out of the world: profession
+- 5284 The Way of the Weaponsmith (L40.0, Ironforge): left out of the world: profession
+- 5305 Sweet Serenity (L60.0, Winterspring): left out of the world: profession
+- 5306 Snakestone of the Shadow Huntress (L60.0, Winterspring): left out of the world: profession
+- 5307 Corruption (L60.0, Winterspring): left out of the world: profession
+- 5507 Mantles of the Dawn (L60.0, Western Plaguelands): left out of the world: needs reputation above Friendly
+- 5513 Mantles of the Dawn (L60.0, Eastern Plaguelands): left out of the world: needs reputation above Friendly
+- 5517 Chromatic Mantle of the Dawn (L60.0, Eastern Plaguelands): left out of the world: needs reputation above Friendly
+- 5521 Chromatic Mantle of the Dawn (L60.0, Western Plaguelands): left out of the world: needs reputation above Friendly
+- 5883 Salve via Mining (L55.0, Felwood): left out of the world: profession
+- 5884 Salve via Gathering (L55.0, Felwood): left out of the world: profession
+- 5885 Salve via Skinning (L55.0, Felwood): left out of the world: profession
+- 5886 Salve via Disenchanting (L55.0, Felwood): left out of the world: profession
+- 6032 Sacred Cloth (L55.0, Felwood): left out of the world: profession
+- 6607 Nat Pagle, Angler Extreme (L45.0, Dustwallow Marsh): left out of the world: profession
+- 6609 I Got Nothin' Left! (L45.0, Ironforge): left out of the world: profession
+- 6610 Clamlette Surprise (L45.0, Tanaris): left out of the world: profession
+- 6612 I Know A Guy... (L45.0, Ironforge): left out of the world: profession
+- 6624 Triage (L45.0, Dustwallow Marsh): left out of the world: profession
+- 6625 Alliance Trauma (L45.0, Ironforge): left out of the world: profession
+- 7022 Greatfather Winter is Here! (L60.0, Ironforge): left out of the world: seasonal event
+- 7023 Greatfather Winter is Here! (L60.0, Stormwind City): left out of the world: seasonal event
+- 7025 Treats for Greatfather Winter (L60.0, Ironforge): left out of the world: seasonal event
+- 7042 Stolen Winter Veil Treats (L60.0, Ironforge): left out of the world: seasonal event
+- 7043 You're a Mean One... (L35.0, Alterac Mountains): left out of the world: seasonal event
+- 7045 A Smokywood Pastures' Thank You! (L60.0, Ironforge): left out of the world: seasonal event
+- 7062 The Reason for the Season (L60.0, Ironforge): left out of the world: seasonal event
+- 7497 The Journey Has Just Begun (L60.0, Stormwind City): left out of the world: profession
+- 7649 Enchanted Thorium Platemail: Volume I (L60.0, ): left out of the world: profession
+- 7650 Enchanted Thorium Platemail: Volume II (L60.0, ): left out of the world: profession
+- 7651 Enchanted Thorium Platemail: Volume III (L60.0, ): left out of the world: profession
+- 7652 A Blue Light Bargain (L60.0, Tanaris): left out of the world: profession
+- 7653 Imperial Plate Belt (L60.0, Tanaris): left out of the world: profession
+- 7654 Imperial Plate Boots (L60.0, Tanaris): left out of the world: profession
+- 7655 Imperial Plate Bracer (L60.0, Tanaris): left out of the world: profession
+- 7656 Imperial Plate Chest (L60.0, Tanaris): left out of the world: profession
+- 7657 Imperial Plate Helm (L60.0, Tanaris): left out of the world: profession
+- 7658 Imperial Plate Leggings (L60.0, Tanaris): left out of the world: profession
+- 7659 Imperial Plate Shoulders (L60.0, Tanaris): left out of the world: profession
+- 7881 Carnival Boots (L60.0, Mulgore): left out of the world: seasonal event
+- 7882 Carnival Jerkins (L60.0, Mulgore): left out of the world: seasonal event
+- 7883 The World's Largest Gnome! (L60.0, Mulgore): left out of the world: seasonal event
+- 7884 Crocolisk Boy and the Bearded Murloc (L60.0, Mulgore): left out of the world: seasonal event
+- 7885 Armor Kits (L60.0, Mulgore): left out of the world: seasonal event
+- 7889 Coarse Weightstone (L60.0, Mulgore): left out of the world: seasonal event
+- 7890 Heavy Grinding Stone (L60.0, Mulgore): left out of the world: seasonal event
+- 7891 Green Iron Bracers (L60.0, Mulgore): left out of the world: seasonal event
+- 7892 Big Black Mace (L60.0, Mulgore): left out of the world: seasonal event
+- 7893 Rituals of Strength (L60.0, Mulgore): left out of the world: seasonal event
+- 7894 Copper Modulator (L60.0, Mulgore): left out of the world: seasonal event
+- 7895 Whirring Bronze Gizmo (L60.0, Mulgore): left out of the world: seasonal event
+- 7896 Green Fireworks (L60.0, Mulgore): left out of the world: seasonal event
+- 7897 Mechanical Repair Kits (L60.0, Mulgore): left out of the world: seasonal event
+- 7898 Thorium Widget (L60.0, Mulgore): left out of the world: seasonal event
+- 7899 Small Furry Paws (L60.0, Mulgore): left out of the world: seasonal event
+- 7900 Torn Bear Pelts (L60.0, Mulgore): left out of the world: seasonal event
+- 7901 Soft Bushy Tails (L60.0, Mulgore): left out of the world: seasonal event
+- 7902 Vibrant Plumes (L60.0, Mulgore): left out of the world: seasonal event
+- 7903 Evil Bat Eyes (L60.0, Mulgore): left out of the world: seasonal event
+- 7905 The Darkmoon Faire (L60.0, Ironforge): left out of the world: seasonal event
+- 7930 5 Tickets - Darkmoon Flower (L60.0, Mulgore): left out of the world: seasonal event
+- 7931 5 Tickets - Minor Darkmoon Prize (L60.0, Mulgore): left out of the world: seasonal event
+- 7932 12 Tickets - Lesser Darkmoon Prize (L60.0, Mulgore): left out of the world: seasonal event
+- 7933 40 Tickets - Greater Darkmoon Prize (L60.0, Mulgore): left out of the world: seasonal event
+- 7934 50 Tickets - Darkmoon Storage Box (L60.0, Mulgore): left out of the world: seasonal event
+- 7935 10 Tickets - Last Month's Mutton (L60.0, Mulgore): left out of the world: seasonal event
+- 7936 50 Tickets - Last Year's Mutton (L60.0, Mulgore): left out of the world: seasonal event
+- 7939 More Dense Grinding Stones (L60.0, Mulgore): left out of the world: seasonal event
+- 7940 1200 Tickets - Orb of the Darkmoon (L60.0, Mulgore): left out of the world: seasonal event
+- 7941 More Armor Kits (L60.0, Mulgore): left out of the world: seasonal event
+- 7942 More Thorium Widgets (L60.0, Mulgore): left out of the world: seasonal event
+- 7943 More Bat Eyes (L60.0, Mulgore): left out of the world: seasonal event
+- 7946 Spawn of Jubjub (L60.0, Mulgore): left out of the world: seasonal event
+- 7981 1200 Tickets - Amulet of the Darkmoon (L60.0, Mulgore): left out of the world: seasonal event
+- 8149 Honoring a Hero (L60.0, Dun Morogh): left out of the world: seasonal event
+- 8193 Master Angler (L60.0, Stranglethorn Vale): left out of the world: seasonal event
+- 8194 Apprentice Angler (L60.0, Stranglethorn Vale): left out of the world: seasonal event
+- 8196 Essence Mangoes (L60.0, Stranglethorn Vale): left out of the world: needs reputation above Friendly
+- 8221 Rare Fish - Keefer's Angelfish (L60.0, Stranglethorn Vale): left out of the world: seasonal event
+- 8222 Glowing Scorpid Blood (L60.0, Mulgore): left out of the world: seasonal event
+- 8223 More Glowing Scorpid Blood (L60.0, Mulgore): left out of the world: seasonal event
+- 8224 Rare Fish - Dezian Queenfish (L60.0, Stranglethorn Vale): left out of the world: seasonal event
+- 8225 Rare Fish - Brownell's Blue Striped Racer (L60.0, Stranglethorn Vale): left out of the world: seasonal event
+- 8229 Could I get a Fishing Flier? (L60.0, Orgrimmar): left out of the world: seasonal event
+- 8243 Zanza's Potent Potables (L60.0, Stranglethorn Vale): left out of the world: needs reputation above Friendly
+- 8246 Signets of the Zandalar (L60.0, Stranglethorn Vale): left out of the world: needs reputation above Friendly
+- 8307 Desert Recipe (L57.0, Silithus): left out of the world: profession
+- 8311 Hallow's End Treats for Jesper! (L60.0, Stormwind City): left out of the world: seasonal event
+- 8313 Sharing the Knowledge (L57.0, Silithus): left out of the world: profession
+- 8317 Kitchen Assistance (L57.0, Silithus): left out of the world: profession
+- 8353 Chicken Clucking for a Mint (L60.0, Ironforge): left out of the world: seasonal event
+- 8355 Incoming Gumdrop (L60.0, Ironforge): left out of the world: seasonal event
+- 8356 Flexing for Nougat (L60.0, Stormwind City): left out of the world: seasonal event
+- 8357 Dancing for Marzipan (L60.0, Teldrassil): left out of the world: seasonal event
+- 8373 The Power of Pine (L60.0, Hillsbrad Foothills): left out of the world: seasonal event
+- 8481 The Root of All Evil (L60.0, Felwood): left out of the world: needs reputation above Friendly
+- 8484 The Brokering of Peace (L60.0, Felwood): left out of the world: needs reputation above Friendly
+- 8492 The Alliance Needs Copper Bars! (L60.0, Ironforge): left out of the world: seasonal event
+- 8493 The Alliance Needs More Copper Bars! (L60.0, Ironforge): left out of the world: seasonal event
+- 8494 The Alliance Needs Iron Bars! (L60.0, Ironforge): left out of the world: seasonal event
+- 8495 The Alliance Needs More Iron Bars! (L60.0, Ironforge): left out of the world: seasonal event
+- 8499 The Alliance Needs Thorium Bars! (L60.0, Ironforge): left out of the world: seasonal event
+- 8500 The Alliance Needs More Thorium Bars! (L60.0, Ironforge): left out of the world: seasonal event
+- 8503 The Alliance Needs Stranglekelp! (L60.0, Ironforge): left out of the world: seasonal event
+- 8504 The Alliance Needs More Stranglekelp! (L60.0, Ironforge): left out of the world: seasonal event
+- 8505 The Alliance Needs Purple Lotus! (L60.0, Ironforge): left out of the world: seasonal event
+- 8506 The Alliance Needs More Purple Lotus! (L60.0, Ironforge): left out of the world: seasonal event
+- 8507 Field Duty (L60.0, Silithus): left out of the world: seasonal event
+- 8509 The Alliance Needs Arthas' Tears! (L60.0, Ironforge): left out of the world: seasonal event
+- 8510 The Alliance Needs More Arthas' Tears! (L60.0, Ironforge): left out of the world: seasonal event
+- 8511 The Alliance Needs Light Leather! (L60.0, Ironforge): left out of the world: seasonal event
+- 8512 The Alliance Needs Light Leather! (L60.0, Ironforge): left out of the world: seasonal event
+- 8513 The Alliance Needs Medium Leather! (L60.0, Ironforge): left out of the world: seasonal event
+- 8514 The Alliance Needs More Medium Leather! (L60.0, Ironforge): left out of the world: seasonal event
+- 8515 The Alliance Needs Thick Leather! (L60.0, Ironforge): left out of the world: seasonal event
+- 8516 The Alliance Needs More Thick Leather! (L60.0, Ironforge): left out of the world: seasonal event
+- 8517 The Alliance Needs Linen Bandages! (L60.0, Ironforge): left out of the world: seasonal event
+- 8518 The Alliance Needs More Linen Bandages! (L60.0, Ironforge): left out of the world: seasonal event
+- 8520 The Alliance Needs Silk Bandages! (L60.0, Ironforge): left out of the world: seasonal event
+- 8521 The Alliance Needs More Silk Bandages! (L60.0, Ironforge): left out of the world: seasonal event
+- 8522 The Alliance Needs Runecloth Bandages! (L60.0, Ironforge): left out of the world: seasonal event
+- 8523 The Alliance Needs More Runecloth Bandages! (L60.0, Ironforge): left out of the world: seasonal event
+- 8524 The Alliance Needs Rainbow Fin Albacore! (L60.0, Ironforge): left out of the world: seasonal event
+- 8525 The Alliance Needs More Rainbow Fin Albacore! (L60.0, Ironforge): left out of the world: seasonal event
+- 8526 The Alliance Needs Roast Raptor! (L60.0, Ironforge): left out of the world: seasonal event
+- 8527 The Alliance Needs More Roast Raptor! (L60.0, Ironforge): left out of the world: seasonal event
+- 8528 The Alliance Needs Spotted Yellowtail! (L60.0, Ironforge): left out of the world: seasonal event
+- 8529 The Alliance Needs More Spotted Yellowtail! (L60.0, Ironforge): left out of the world: seasonal event
+- 8556 Signet of Unyielding Strength (L60.0, Silithus): left out of the world: seasonal event
+- 8557 Drape of Unyielding Strength (L60.0, Silithus): left out of the world: seasonal event
+- 8558 Sickle of Unyielding Strength (L60.0, Silithus): left out of the world: seasonal event
+- 8619 Morndeep the Elder (L60.0, ): left out of the world: seasonal event
+- 8635 Splitrock the Elder (L60.0, ): left out of the world: seasonal event
+- 8636 Rumblerock the Elder (L60.0, Burning Steppes): left out of the world: seasonal event
+- 8642 Silvervein the Elder (L60.0, Loch Modan): left out of the world: seasonal event
+- 8643 Highpeak the Elder (L60.0, The Hinterlands): left out of the world: seasonal event
+- 8644 Stonefort the Elder (L60.0, ): left out of the world: seasonal event
+- 8645 Obsidian the Elder (L60.0, Silverpine Forest): left out of the world: seasonal event
+- 8646 Hammershout the Elder (L60.0, Stormwind City): left out of the world: seasonal event
+- 8647 Bellowrage the Elder (L60.0, Blasted Lands): left out of the world: seasonal event
+- 8648 Darkcore the Elder (L60.0, Undercity): left out of the world: seasonal event
+- 8649 Stormbrow the Elder (L60.0, Elwynn Forest): left out of the world: seasonal event
+- 8650 Snowcrown the Elder (L60.0, Eastern Plaguelands): left out of the world: seasonal event
+- 8651 Ironband the Elder (L60.0, Searing Gorge): left out of the world: seasonal event
+- 8652 Graveborn the Elder (L60.0, Tirisfal Glades): left out of the world: seasonal event
+- 8653 Goldwell the Elder (L60.0, Dun Morogh): left out of the world: seasonal event
+- 8654 Primestone the Elder (L60.0, Silithus): left out of the world: seasonal event
+- 8670 Runetotem the Elder (L60.0, Durotar): left out of the world: seasonal event
+- 8671 Ragetotem the Elder (L60.0, Tanaris): left out of the world: seasonal event
+- 8672 Stonespire the Elder (L60.0, Winterspring): left out of the world: seasonal event
+- 8673 Bloodhoof the Elder (L60.0, Mulgore): left out of the world: seasonal event
+- 8674 Winterhoof the Elder (L60.0, Stranglethorn Vale): left out of the world: seasonal event
+- 8675 Skychaser the Elder (L60.0, Westfall): left out of the world: seasonal event
+- 8676 Wildmane the Elder (L60.0, ): left out of the world: seasonal event
+- 8677 Darkhorn the Elder (L60.0, Orgrimmar): left out of the world: seasonal event
+- 8678 Proudhorn the Elder (L60.0, Mulgore): left out of the world: seasonal event
+- 8679 Grimtotem the Elder (L60.0, Feralas): left out of the world: seasonal event
+- 8680 Windtotem the Elder (L60.0, The Barrens): left out of the world: seasonal event
+- 8681 Thunderhorn the Elder (L60.0, Un'Goro Crater): left out of the world: seasonal event
+- 8682 Skyseer the Elder (L60.0, Thousand Needles): left out of the world: seasonal event
+- 8683 Dawnstrider the Elder (L60.0, Burning Steppes): left out of the world: seasonal event
+- 8684 Dreamseer the Elder (L60.0, Tanaris): left out of the world: seasonal event
+- 8685 Mistwalker the Elder (L60.0, Feralas): left out of the world: seasonal event
+- 8686 High Mountain the Elder (L60.0, The Barrens): left out of the world: seasonal event
+- 8688 Windrun the Elder (L60.0, Eastern Plaguelands): left out of the world: seasonal event
+- 8689 Shroud of Infinite Wisdom (L60.0, Silithus): left out of the world: seasonal event
+- 8691 Drape of Vaulted Secrets (L60.0, Silithus): left out of the world: seasonal event
+- 8692 Cloak of Unending Life (L60.0, Silithus): left out of the world: seasonal event
+- 8693 Cloak of Veiled Shadows (L60.0, Silithus): left out of the world: seasonal event
+- 8694 Shroud of Unspoken Names (L60.0, Silithus): left out of the world: seasonal event
+- 8695 Cape of Eternal Justice (L60.0, Silithus): left out of the world: seasonal event
+- 8696 Cloak of the Unseen Path (L60.0, Silithus): left out of the world: seasonal event
+- 8697 Ring of Infinite Wisdom (L60.0, Silithus): left out of the world: seasonal event
+- 8699 Band of Vaulted Secrets (L60.0, Silithus): left out of the world: seasonal event
+- 8700 Band of Unending Life (L60.0, Silithus): left out of the world: seasonal event
+- 8701 Band of Veiled Shadows (L60.0, Silithus): left out of the world: seasonal event
+- 8702 Ring of Unspoken Names (L60.0, Silithus): left out of the world: seasonal event
+- 8703 Ring of Eternal Justice (L60.0, Silithus): left out of the world: seasonal event
+- 8704 Signet of the Unseen Path (L60.0, Silithus): left out of the world: seasonal event
+- 8705 Gavel of Infinite Wisdom (L60.0, Silithus): left out of the world: seasonal event
+- 8707 Blade of Vaulted Secrets (L60.0, Silithus): left out of the world: seasonal event
+- 8708 Mace of Unending Life (L60.0, Silithus): left out of the world: seasonal event
+- 8709 Dagger of Veiled Shadows (L60.0, Silithus): left out of the world: seasonal event
+- 8710 Kris of Unspoken Names (L60.0, Silithus): left out of the world: seasonal event
+- 8711 Blade of Eternal Justice (L60.0, Silithus): left out of the world: seasonal event
+- 8712 Scythe of the Unseen Path (L60.0, Silithus): left out of the world: seasonal event
+- 8713 Starsong the Elder (L60.0, ): left out of the world: seasonal event
+- 8714 Moonstrike the Elder (L60.0, Western Plaguelands): left out of the world: seasonal event
+- 8715 Bladeleaf the Elder (L60.0, Teldrassil): left out of the world: seasonal event
+- 8716 Starglade the Elder (L60.0, Stranglethorn Vale): left out of the world: seasonal event
+- 8717 Moonwarden the Elder (L60.0, The Barrens): left out of the world: seasonal event
+- 8718 Bladeswift the Elder (L60.0, Teldrassil): left out of the world: seasonal event
+- 8719 Bladesing the Elder (L60.0, Silithus): left out of the world: seasonal event
+- 8720 Skygleam the Elder (L60.0, Azshara): left out of the world: seasonal event
+- 8721 Starweave the Elder (L60.0, Darkshore): left out of the world: seasonal event
+- 8722 Meadowrun the Elder (L60.0, Western Plaguelands): left out of the world: seasonal event
+- 8723 Nightwind the Elder (L60.0, Felwood): left out of the world: seasonal event
+- 8724 Morningdew the Elder (L60.0, Thousand Needles): left out of the world: seasonal event
+- 8725 Riversong the Elder (L60.0, Ashenvale): left out of the world: seasonal event
+- 8726 Brightspear the Elder (L60.0, Winterspring): left out of the world: seasonal event
+- 8727 Farwhisper the Elder (L60.0, ): left out of the world: seasonal event
+- 8743 Bang a Gong! (L60.0, Silithus): left out of the world: seasonal event
+- 8744 A Carefully Wrapped Present (L1.0, Orgrimmar): left out of the world: seasonal event
+- 8745 Treasure of the Timeless One (L60.0, Silithus): left out of the world: seasonal event
+- 8762 Metzen the Reindeer (L60.0, Ironforge): left out of the world: seasonal event
+- 8763 The Hero of the Day (L60.0, Ironforge): left out of the world: seasonal event
+- 8767 A Gently Shaken Gift (L1.0, Orgrimmar): left out of the world: seasonal event
+- 8768 A Gaily Wrapped Present (L20.0, Orgrimmar): left out of the world: seasonal event
+- 8769 A Ticking Present (L40.0, Orgrimmar): left out of the world: seasonal event
+- 8788 A Gently Shaken Gift (L1.0, Orgrimmar): left out of the world: seasonal event
+- 8795 The Alliance Needs Your Help! (L60.0, Ironforge): left out of the world: seasonal event
+- 8796 The Alliance Needs Your Help! (L60.0, Ironforge): left out of the world: seasonal event
+- 8797 The Alliance Needs Your Help! (L60.0, Ironforge): left out of the world: seasonal event
+- 8798 A Yeti of Your Own (L60.0, Winterspring): left out of the world: profession
+- 8800 Cenarion Battlegear (L60.0, Silithus): left out of the world: seasonal event
+- 8803 A Festive Gift (L10.0, Orgrimmar): left out of the world: seasonal event
+- 8827 Winter's Presents (L1.0, Durotar): left out of the world: seasonal event
+- 8830 One Commendation Signet (L60.0, Ironforge): left out of the world: seasonal event
+- 8831 Ten Commendation Signets (L60.0, Ironforge): left out of the world: seasonal event
+- 8834 One Commendation Signet (L60.0, Ironforge): left out of the world: seasonal event
+- 8835 Ten Commendation Signets (L60.0, Ironforge): left out of the world: seasonal event
+- 8836 One Commendation Signet (L60.0, Ironforge): left out of the world: seasonal event
+- 8837 Ten Commendation Signets (L60.0, Ironforge): left out of the world: seasonal event
+- 8838 One Commendation Signet (L60.0, Ironforge): left out of the world: seasonal event
+- 8839 Ten Commendation Signets (L60.0, Ironforge): left out of the world: seasonal event
+- 8846 Five Signets for War Supplies (L19.0, Ironforge): left out of the world: seasonal event
+- 8847 Ten Signets for War Supplies (L29.0, Ironforge): left out of the world: seasonal event
+- 8848 Fifteen Signets for War Supplies (L39.0, Ironforge): left out of the world: seasonal event
+- 8849 Twenty Signets for War Supplies (L49.0, Ironforge): left out of the world: seasonal event
+- 8850 Thirty Signets for War Supplies (L60.0, Ironforge): left out of the world: seasonal event
+- 8857 Secrets of the Colossus - Ashi (L60.0, Silithus): left out of the world: seasonal event
+- 8858 Secrets of the Colossus - Regal (L60.0, Silithus): left out of the world: seasonal event
+- 8859 Secrets of the Colossus - Zora (L60.0, Silithus): left out of the world: seasonal event
+- 8860 New Year Celebrations! (L60.0, Durotar): left out of the world: seasonal event
+- 8862 Elune's Candle (L60.0, Moonglade): left out of the world: seasonal event
+- 8863 Festival Dumplings (L60.0, Moonglade): left out of the world: seasonal event
+- 8864 Festive Lunar Dresses (L60.0, Moonglade): left out of the world: seasonal event
+- 8865 Festive Lunar Pant Suits (L60.0, Moonglade): left out of the world: seasonal event
+- 8866 Bronzebeard the Elder (L60.0, Ironforge): left out of the world: seasonal event
+- 8867 Lunar Fireworks (L60.0, Mulgore): left out of the world: seasonal event
+- 8868 Elune's Blessing (L60.0, Moonglade): left out of the world: seasonal event
+- 8869 Sweet Serenity (L60.0, ): left out of the world: profession
+- 8870 The Lunar Festival (L60.0, Teldrassil): left out of the world: seasonal event
+- 8871 The Lunar Festival (L60.0, Teldrassil): left out of the world: seasonal event
+- 8872 The Lunar Festival (L60.0, Teldrassil): left out of the world: seasonal event
+- 8876 Small Rockets (L60.0, Moonglade): left out of the world: seasonal event
+- 8877 Firework Launcher (L60.0, Moonglade): left out of the world: seasonal event
+- 8878 Festive Recipes (L60.0, Moonglade): left out of the world: seasonal event
+- 8879 Large Rockets (L60.0, Moonglade): left out of the world: seasonal event
+- 8880 Cluster Rockets (L60.0, Moonglade): left out of the world: seasonal event
+- 8881 Large Cluster Rockets (L60.0, Moonglade): left out of the world: seasonal event
+- 8882 Cluster Launcher (L60.0, Moonglade): left out of the world: seasonal event
+- 8883 Valadar Starsong (L60.0, Mulgore): left out of the world: seasonal event
+- 8897 Dearest Colara, (L60.0, Stormwind City): left out of the world: seasonal event
+- 8898 Dearest Colara, (L60.0, Ironforge): left out of the world: seasonal event
+- 8899 Dearest Colara, (L60.0, Teldrassil): left out of the world: seasonal event
+- 8903 Dangerous Love (L60.0, Stormwind City): left out of the world: seasonal event
+- 8993 Gift Giving (L60.0, Mulgore): left out of the world: seasonal event
+- 9024 Aristan's Hunch (L60.0, Stormwind City): left out of the world: seasonal event
+- 9025 Morgan's Discovery (L60.0, Stormwind City): left out of the world: seasonal event
+- 9026 Tracing the Source (L60.0, Stormwind City): left out of the world: seasonal event
+- 9027 Tracing the Source (L60.0, Stormwind City): left out of the world: seasonal event
+- 9028 The Source Revealed (L60.0, Stormwind City): left out of the world: seasonal event
+- 9029 A Bubbling Cauldron (L60.0, Alterac Mountains): left out of the world: seasonal event
+- 9085 Shadows of Doom (L60.0, Eastern Plaguelands): left out of the world: seasonal event
+- 9094 Argent Dawn Gloves (L60.0, Ironforge): left out of the world: seasonal event
+- 9153 Under the Shadow (L60.0, Eastern Plaguelands): left out of the world: seasonal event
+- 9154 Light's Hope Chapel (L60.0, Teldrassil): left out of the world: seasonal event
+- 9248 A Humble Offering (L60.0, Silithus): left out of the world: needs reputation above Friendly
+- 9260 Investigate the Scourge of Stormwind (L6.0, Stormwind City): left out of the world: seasonal event
+- 9261 Investigate the Scourge of Ironforge (L10.0, Dun Morogh): left out of the world: seasonal event
+- 9262 Investigate the Scourge of Darnassus (L10.0, Teldrassil): left out of the world: seasonal event
+- 9317 Consecrated Sharpening Stones (L60.0, Ironforge): left out of the world: seasonal event
+- 9318 Blessed Wizard Oil (L60.0, Ironforge): left out of the world: seasonal event
+- 9319 A Light in Dark Places (L60.0, Mulgore): left out of the world: seasonal event
+- 9321 Major Healing Potion (L60.0, Ironforge): left out of the world: seasonal event
+- 9322 Wild Fires in Kalimdor (L60.0, Mulgore): left out of the world: seasonal event
+- 9323 Wild Fires in the Eastern Kingdoms (L60.0, Mulgore): left out of the world: seasonal event
+- 9337 Major Mana Potion (L60.0, Ironforge): left out of the world: seasonal event
+- 9341 Tabard of the Argent Dawn (L60.0, Ironforge): left out of the world: seasonal event
+- 9365 A Thief's Reward (L60.0, Mulgore): left out of the world: seasonal event
+- 9367 The Festival of Fire (L60.0, Teldrassil): left out of the world: seasonal event
+- 9386 A Light in Dark Places (L60.0, Mulgore): left out of the world: seasonal event
+- 9388 Flickering Flames in Kalimdor (L25.0, Teldrassil): left out of the world: seasonal event
+- 9389 Flickering Flames in the Eastern Kingdoms (L25.0, Teldrassil): left out of the world: seasonal event
+- 91751 Rough Wolf Pelts (L7.0, Elwynn Forest): left out of the world: profession
+- 91753 An Enchanting Lesson (L7.0, Elwynn Forest): left out of the world: profession
+- 95217 The Quarry's Smith (L10.0, Dun Morogh): left out of the world: profession
+- 96031 Camping 101: Leatherworking (L6.0, Dun Morogh): left out of the world: profession
+- 96044 Camping 101: Blacksmithing (L6.0, Dun Morogh): left out of the world: profession
+- 96045 Camping 101: Alchemy (L6.0, Ironforge): left out of the world: profession
+- 96046 Camping 101: Mining (L6.0, Dun Morogh): left out of the world: profession
+- 96047 Camping 101: First Aid (L6.0, Dun Morogh): left out of the world: profession
+- 96050 Camping 101: Fishing (L6.0, Dun Morogh): left out of the world: profession
+- 96055 Camping 101: Herbalism (L6.0, Dun Morogh): left out of the world: profession
+- 96056 Camping 101: Skinning (L6.0, Dun Morogh): left out of the world: profession
+- 96057 Camping 101: Tailoring (L6.0, Dun Morogh): left out of the world: profession
+- 96058 Camping 101: Engineering (L6.0, Dun Morogh): left out of the world: profession
+- 96059 Camping 101: Enchanting (L6.0, Ironforge): left out of the world: profession
+- 97915 Camping 101: Alchemy (L6.0, Elwynn Forest): left out of the world: profession
+- 97916 Camping 101: Blacksmithing (L6.0, Elwynn Forest): left out of the world: profession
+- 97917 Camping 101: Enchanting (L6.0, Elwynn Forest): left out of the world: profession
+- 97918 Camping 101: Engineering (L6.0, Elwynn Forest): left out of the world: profession
+- 97919 Camping 101: First Aid (L6.0, Elwynn Forest): left out of the world: profession
+- 97920 Camping 101: Fishing (L6.0, Elwynn Forest): left out of the world: profession
+- 97921 Camping 101: Herbalism (L6.0, Elwynn Forest): left out of the world: profession
+- 97922 Camping 101: Leatherworking (L6.0, Elwynn Forest): left out of the world: profession
+- 97923 Camping 101: Mining (L6.0, Elwynn Forest): left out of the world: profession
+- 97924 Camping 101: Skinning (L6.0, Elwynn Forest): left out of the world: profession
+- 97925 Camping 101: Tailoring (L6.0, Elwynn Forest): left out of the world: profession
+- 97938 Camping 101: Alchemy (L6.0, Teldrassil): left out of the world: profession
+- 97939 Camping 101: Blacksmithing (L6.0, Teldrassil): left out of the world: profession
+- 97940 Camping 101: Enchanting (L6.0, Teldrassil): left out of the world: profession
+- 97941 Camping 101: Engineering (L6.0, Teldrassil): left out of the world: profession
+- 97942 Camping 101: First Aid (L6.0, Teldrassil): left out of the world: profession
+- 97943 Camping 101: Fishing (L6.0, Teldrassil): left out of the world: profession
+- 97944 Camping 101: Herbalism (L6.0, Teldrassil): left out of the world: profession
+- 97946 Camping 101: Leatherworking (L6.0, Teldrassil): left out of the world: profession
+- 97948 Camping 101: Mining (L6.0, Teldrassil): left out of the world: profession
+- 97949 Camping 101: Skinning (L6.0, Teldrassil): left out of the world: profession
+- 97950 Camping 101: Tailoring (L6.0, Teldrassil): left out of the world: profession
+- 97963 Camping 101: Alchemy (L6.0, Zephras Isle): left out of the world: profession
+- 97964 Camping 101: Blacksmithing (L6.0, Zephras Isle): left out of the world: profession
+- 97965 Camping 101: First Aid (L6.0, Zephras Isle): left out of the world: profession
+- 97967 Camping 101: Fishing (L6.0, Zephras Isle): left out of the world: profession
+- 97968 Camping 101: Herbalism (L6.0, Zephras Isle): left out of the world: profession
+- 97969 Camping 101: Leatherworking (L6.0, Zephras Isle): left out of the world: profession
+- 97970 Camping 101: Mining (L6.0, Zephras Isle): left out of the world: profession
+- 97971 Camping 101: Skinning (L6.0, Zephras Isle): left out of the world: profession
+- 97973 Camping 101: Tailoring (L6.0, Zephras Isle): left out of the world: profession
+- 98285 Camping 101: Engineering (L6.0, Zephras Isle): left out of the world: profession
+- 98286 Camping 101: Enchanting (L6.0, Zephras Isle): left out of the world: profession
+- 98287 Camping 101: Engineering (L6.0, ): left out of the world: profession
+
+## rare-drop (10)
+
+- 123 The Collector (L10, forever/alliance/human/01-elwynn-forest): optional in v1: F17 #553: The Collector starts from a rare drop (Gold Pickup Schedule, ~1 %): v1 marks it optional; the route does not count on it
+- 92910 Harvesting the Harvesters (L15, forever/alliance/02-westfall): optional in v1: F46 #298: Harvesting the Harvesters' starter is a ~1 in 900 drop: optional in v1, not counted on
+- 95213 Stolen Blasting Powder (L10, forever/alliance/40-50/06-searing-gorge): started by a rare drop (best 0.0 %)
+- 96391 Underground Map (L15, forever/alliance/40-50/06-searing-gorge): started by a rare drop (best 0.0 %)
+- 97236 Fang of Githyiss (L5, forever/alliance/40-50/05-the-hinterlands): started by a rare drop (best 0.0 %)
+- 713 Coolant Heads Prevail (L37.0, Badlands): left out of the world: item objective 3829 drops below 1%
+- 6701 Syndicate Emblems (L60.0, Alterac Mountains): left out of the world: item objective 17124 drops below 1%
+- 8911 An Earnest Proposition (L60.0, Ironforge): left out of the world: item objective 16703 drops below 1%
+- 8933 Just Compensation (L60.0, Ironforge): left out of the world: item objective 16723 drops below 1%
+- 8935 Just Compensation (L60.0, Ironforge): left out of the world: item objective 16713 drops below 1%
+
+## zone-left (123)
+
+- 48 Sweet Amber (L44, forever/alliance/02-westfall): the route never passes its giver (500 yd) at a level that opens it
+- 67 The Legend of Stalvan (L28, forever/alliance/05-duskwood): its work or turn-in is in a zone the route does not reach soon after
+- 104 The Coastal Menace (L20, forever/alliance/02-westfall): the route never passes its giver (500 yd) at a level that opens it
+- 116 Dry Times (L15, forever/alliance/04-redridge-mountains): its work or turn-in is in a zone the route does not reach soon after
+- 152 The Coast Isn't Clear (L19, forever/alliance/02-westfall): the route never passes its giver (500 yd) at a level that opens it
+- 179 Dwarven Outfitters (L1, forever/alliance/40-50/06-searing-gorge): the route never passes its giver (500 yd) at a level that opens it
+- 182 The Troll Cave (L4, forever/alliance/40-50/06-searing-gorge): the route never passes its giver (500 yd) at a level that opens it
+- 183 The Boar Hunter (L3, forever/alliance/40-50/06-searing-gorge): the route never passes its giver (500 yd) at a level that opens it
+- 217 In Defense of the King's Lands (L17, forever/alliance/40-50/05-the-hinterlands): the route never passes its giver (500 yd) at a level that opens it
+- 224 In Defense of the King's Lands (L12, forever/alliance/40-50/05-the-hinterlands): the route never passes its giver (500 yd) at a level that opens it
+- 225 The Weathered Grave (L35, forever/alliance/05-duskwood): the route never passes its giver (500 yd) at a level that opens it
+- 250 A Dark Threat Looms (L18, forever/alliance/50-60/06-silithus): the route never passes its giver (500 yd) at a level that opens it
+- 257 A Hunter's Boast (L16, forever/alliance/30-40/05-arathi-highlands): the route never passes its giver (500 yd) at a level that opens it
+- 267 The Trogg Threat (L12, forever/alliance/40-50/05-the-hinterlands): the route never passes its giver (500 yd) at a level that opens it
+- 297 Gathering Idols (L18, forever/alliance/30-40/05-arathi-highlands): the route never passes its giver (500 yd) at a level that opens it
+- 307 Filthy Paws (L15, forever/alliance/50-60/06-silithus): the route never passes its giver (500 yd) at a level that opens it
+- 312 Tundra MacGrann's Stolen Stash (L12, forever/alliance/50-60/05-silithus): the route never passes its giver (500 yd) at a level that opens it
+- 313 The Grizzled Den (L7, forever/alliance/50-60/05-silithus): the route never passes its giver (500 yd) at a level that opens it
+- 315 The Perfect Stout (L9, forever/alliance/50-60/05-silithus): the route never passes its giver (500 yd) at a level that opens it
+- 317 Stocking Jetsteam (L6, forever/alliance/50-60/05-silithus): the route never passes its giver (500 yd) at a level that opens it
+- 335 A Noble Brew (L30, forever/alliance/40-50/01-stranglethorn-vale): its work or turn-in is in a zone the route does not reach soon after
+- 344 Brother Paxton (L24, forever/alliance/06-ashenvale): its work or turn-in is in a zone the route does not reach soon after
+- 384 Beer Basted Boar Ribs (L7, forever/alliance/50-60/05-silithus): the route never passes its giver (500 yd) at a level that opens it
+- 385 Crocolisk Hunting (L15, forever/alliance/30-40/05-arathi-highlands): the route never passes its giver (500 yd) at a level that opens it
+- 399 Humble Beginnings (L15, forever/alliance/04-redridge-mountains): its work or turn-in is in a zone the route does not reach soon after
+- 412 Operation Recombobulation (L10, forever/alliance/50-60/05-silithus): the route never passes its giver (500 yd) at a level that opens it
+- 416 Rat Catching (L11, forever/alliance/30-40/05-arathi-highlands): the route never passes its giver (500 yd) at a level that opens it
+- 418 Thelsamar Blood Sausages (L11, forever/alliance/30-40/05-arathi-highlands): the route never passes its giver (500 yd) at a level that opens it
+- 419 The Lost Pilot (L10, forever/alliance/30-40/05-arathi-highlands): the route never passes its giver (500 yd) at a level that opens it
+- 432 Those Blasted Troggs! (L9, forever/alliance/06-ashenvale): the route never passes its giver (500 yd) at a level that opens it
+- 433 The Public Servant (L11, forever/alliance/06-ashenvale): the route never passes its giver (500 yd) at a level that opens it
+- 436 Ironband's Excavation (L18, forever/alliance/30-40/05-arathi-highlands): the route never passes its giver (500 yd) at a level that opens it
+- 456 The Balance of Nature (L2, forever/alliance/40-50/05-the-hinterlands): the route never passes its giver (500 yd) at a level that opens it
+- 458 The Woodland Protector (L1, forever/alliance/40-50/05-the-hinterlands): the route never passes its giver (500 yd) at a level that opens it
+- 466 Search for Incendicite (L22, forever/alliance/50-60/05-silithus): the route never passes its giver (500 yd) at a level that opens it
+- 468 Report to Mountaineer Rockgar (L21, forever/alliance/30-40/05-arathi-highlands): the route never passes its giver (500 yd) at a level that opens it
+- 475 A Troubling Breeze (L6, forever/alliance/40-50/05-the-hinterlands): the route never passes its giver (500 yd) at a level that opens it
+- 487 The Road to Darnassus (L8, forever/alliance/40-50/05-the-hinterlands): the route never passes its giver (500 yd) at a level that opens it
+- 488 Zenn's Bidding (L5, forever/alliance/40-50/05-the-hinterlands): the route never passes its giver (500 yd) at a level that opens it
+- 490 Bounty: Gnarlpine Furbolg (L8, forever/alliance/40-50/05-the-hinterlands): the route never passes its giver (500 yd) at a level that opens it
+- 580 Whiskey Slim's Lost Grog (L50, forever/alliance/40-50/01-stranglethorn-vale): the route never passes its giver (500 yd) at a level that opens it
+- 594 Message in a Bottle (L45, forever/alliance/40-50/01-stranglethorn-vale): the route never passes its giver (500 yd) at a level that opens it
+- 730 Trouble In Darkshore? (L14, forever/alliance/50-60/04-western-plaguelands): the route never passes its giver (500 yd) at a level that opens it
+- 834 Winds in the Desert (L9, forever/alliance/50-60/01-burning-steppes): the route never passes its giver (500 yd) at a level that opens it
+- 858 Ignition (L18, forever/alliance/30-40/03-ashenvale): the route never passes its giver (500 yd) at a level that opens it
+- 865 Raptor Horns (L18, forever/alliance/50-60/05-silithus): the route never passes its giver (500 yd) at a level that opens it
+- 887 Southsea Freebooters (L14, forever/alliance/50-60/05-silithus): the route never passes its giver (500 yd) at a level that opens it
+- 895 WANTED: Baron Longshore (L16, forever/alliance/50-60/05-silithus): the route never passes its giver (500 yd) at a level that opens it
+- 896 Miner's Fortune (L18, forever/alliance/50-60/05-silithus): the route never passes its giver (500 yd) at a level that opens it
+- 916 Webwood Venom (L4, forever/alliance/40-50/05-the-hinterlands): the route never passes its giver (500 yd) at a level that opens it
+- 918 Timberling Seeds (L7, forever/alliance/40-50/05-the-hinterlands): the route never passes its giver (500 yd) at a level that opens it
+- 919 Timberling Sprouts (L7, forever/alliance/40-50/05-the-hinterlands): the route never passes its giver (500 yd) at a level that opens it
+- 932 Twisted Hatred (L8, forever/alliance/40-50/05-the-hinterlands): the route never passes its giver (500 yd) at a level that opens it
+- 937 The Enchanted Glade (L11, forever/alliance/40-50/05-the-hinterlands): the route never passes its giver (500 yd) at a level that opens it
+- 1008 The Zoram Strand (L19, forever/alliance/30-40/03-ashenvale): the route never passes its giver (500 yd) at a level that opens it
+- 1015 The New Frontier (L55, forever/alliance/02-westfall): the route never passes its giver (500 yd) at a level that opens it
+- 1017 Mage Summoner (L25, forever/alliance/06-ashenvale): its work or turn-in is in a zone the route does not reach soon after
+- 1019 The New Frontier (L55, forever/alliance/50-60/06-silithus): the route never passes its giver (500 yd) at a level that opens it
+- 1032 Satyr Slaying! (L32, forever/alliance/30-40/03-ashenvale): the route never passes its giver (500 yd) at a level that opens it
+- 1037 Velinde Starsong (L30, forever/alliance/30-40/03-ashenvale): its work or turn-in is in a zone the route does not reach soon after
+- 1056 Journey to Stonetalon Peak (L18, forever/alliance/30-40/03-ashenvale): the route never passes its giver (500 yd) at a level that opens it
+- 1057 Reclaiming the Charred Vale (L27, forever/alliance/06-ashenvale): the route never passes its giver (500 yd) at a level that opens it
+- 1069 Deepmoss Spider Eggs (L20, forever/alliance/50-60/05-silithus): the route never passes its giver (500 yd) at a level that opens it
+- 1076 Devils in Westfall (L21, forever/alliance/06-ashenvale): the route never passes its giver (500 yd) at a level that opens it
+- 1078 Retrieval for Mauren (L26, forever/alliance/06-ashenvale): its work or turn-in is in a zone the route does not reach soon after
+- 1079 Covert Ops - Alpha (L22, forever/alliance/06-ashenvale): the route never passes its giver (500 yd) at a level that opens it
+- 1080 Covert Ops - Beta (L22, forever/alliance/06-ashenvale): the route never passes its giver (500 yd) at a level that opens it
+- 1082 Update for Sentinel Thenysil (L22, forever/alliance/06-ashenvale): the route never passes its giver (500 yd) at a level that opens it
+- 1097 Elmore's Task (L15, forever/alliance/04-redridge-mountains): its work or turn-in is in a zone the route does not reach soon after
+- 1132 Fiora Longears (L30, forever/alliance/06-ashenvale): its work or turn-in is in a zone the route does not reach soon after
+- 1133 Journey to Astranaar (L20, forever/alliance/40-50/01-stranglethorn-vale): the route never passes its giver (500 yd) at a level that opens it
+- 1135 Highperch Venom (L30, forever/alliance/40-50/01-stranglethorn-vale): the route never passes its giver (500 yd) at a level that opens it
+- 1178 Goblin Sponsorship (L37, forever/alliance/07-thousand-needles): the route never passes its giver (500 yd) at a level that opens it
+- 1282 They Call Him Smiling Jim (L35, forever/alliance/40-50/01-stranglethorn-vale): the route never passes its giver (500 yd) at a level that opens it
+- 1339 Mountaineer Stormpike's Task (L15, forever/alliance/30-40/05-arathi-highlands): the route never passes its giver (500 yd) at a level that opens it
+- 1483 Ziz Fizziks (L21, forever/alliance/50-60/05-silithus): the route never passes its giver (500 yd) at a level that opens it
+- 2038 Bingles' Missing Supplies (L15, forever/alliance/30-40/05-arathi-highlands): the route never passes its giver (500 yd) at a level that opens it
+- 2039 Find Bingles (L15, forever/alliance/06-ashenvale): the route never passes its giver (500 yd) at a level that opens it
+- 2041 Speak with Shoni (L15, forever/alliance/06-ashenvale): the route never passes its giver (500 yd) at a level that opens it
+- 2438 The Emerald Dreamcatcher (L6, forever/alliance/40-50/05-the-hinterlands): the route never passes its giver (500 yd) at a level that opens it
+- 2518 Tears of the Moon (L12, forever/alliance/50-60/04-western-plaguelands): the route never passes its giver (500 yd) at a level that opens it
+- 2519 The Temple of the Moon (L10, forever/alliance/50-60/06-silithus): the route never passes its giver (500 yd) at a level that opens it
+- 2541 The Sleeping Druid (L8, forever/alliance/40-50/05-the-hinterlands): the route never passes its giver (500 yd) at a level that opens it
+- 2641 Sprinkle's Secret Ingredient (L49, forever/alliance/40-50/04-tanaris): the route never passes its giver (500 yd) at a level that opens it
+- 2783 Petty Squabbles (L57, forever/alliance/40-50/05-the-hinterlands): the route never passes its giver (500 yd) at a level that opens it
+- 3361 A Refugee's Quandary (L3, forever/alliance/40-50/06-searing-gorge): the route never passes its giver (500 yd) at a level that opens it
+- 3371 Dwarven Justice (L55, forever/alliance/40-50/07-un-goro-crater): its work or turn-in is in a zone the route does not reach soon after
+- 3721 An OOX of Your Own (L50, forever/alliance/40-50/01-stranglethorn-vale): the route never passes its giver (500 yd) at a level that opens it
+- 3765 The Corruption Abroad (L24, forever/alliance/50-60/05-silithus): its work or turn-in is in a zone the route does not reach soon after
+- 3787 Jonespyre's Request (L50, forever/alliance/50-60/05-silithus): the route never passes its giver (500 yd) at a level that opens it
+- 3788 Jonespyre's Request (L50, forever/alliance/40-50/03-feralas): the route never passes its giver (500 yd) at a level that opens it
+- 3789 Assisting Arch Druid Staghelm (L50, forever/alliance/02-westfall): the route never passes its giver (500 yd) at a level that opens it
+- 3790 Assisting Arch Druid Staghelm (L50, forever/alliance/50-60/05-silithus): the route never passes its giver (500 yd) at a level that opens it
+- 4450 Ledger from Tanaris (L46, forever/alliance/40-50/06-searing-gorge): its work or turn-in is in a zone the route does not reach soon after
+- 4495 A Good Friend (L4, forever/alliance/40-50/05-the-hinterlands): the route never passes its giver (500 yd) at a level that opens it
+- 5066 A Call to Arms: The Plaguelands! (L50, forever/alliance/02-westfall): the route never passes its giver (500 yd) at a level that opens it
+- 5090 A Call to Arms: The Plaguelands! (L50, forever/alliance/50-60/06-silithus): the route never passes its giver (500 yd) at a level that opens it
+- 5091 A Call to Arms: The Plaguelands! (L50, forever/alliance/50-60/04-western-plaguelands): the route never passes its giver (500 yd) at a level that opens it
+- 5142 Little Pamela (L55, forever/alliance/50-60/04-western-plaguelands): the route never passes its giver (500 yd) at a level that opens it
+- 5246 Fragments of the Past (L56, forever/alliance/50-60/04-western-plaguelands): its work or turn-in is in a zone the route does not reach soon after
+- 5250 Starfall (L56, forever/alliance/40-50/05-the-hinterlands): the route never passes its giver (500 yd) at a level that opens it
+- 5505 The Key to Scholomance (L60, forever/alliance/50-60/04-western-plaguelands): the route never passes its giver (500 yd) at a level that opens it
+- 5541 Ammo for Rumbleshot (L6, forever/alliance/50-60/05-silithus): the route never passes its giver (500 yd) at a level that opens it
+- 5845 Of Lost Honor (L58, forever/alliance/50-60/04-western-plaguelands): the route never passes its giver (500 yd) at a level that opens it
+- 6805 Stormers and Rumblers (L57, forever/alliance/50-60/01-burning-steppes): the route never passes its giver (500 yd) at a level that opens it
+- 79008 ... and that note you found (L22, forever/alliance/02-westfall): the route never passes its giver (500 yd) at a level that opens it
+- 79192 Stepping Stones (L24, forever/alliance/40-50/01-stranglethorn-vale): the route never passes its giver (500 yd) at a level that opens it
+- 79974 Wet Job (L32, forever/alliance/06-ashenvale): the route never passes its giver (500 yd) at a level that opens it
+- 79975 Eagle's Fist (L32, forever/alliance/30-40/01-hillsbrad-foothills): the route never passes its giver (500 yd) at a level that opens it
+- 79980 Scramble (L24, forever/alliance/06-ashenvale): the route never passes its giver (500 yd) at a level that opens it
+- 86574 Stonetalon Supply Run (L24, forever/alliance/06-ashenvale): the route never passes its giver (500 yd) at a level that opens it
+- 86758 Twisting the Knife (L16, forever/alliance/30-40/05-arathi-highlands): the route never passes its giver (500 yd) at a level that opens it
+- 87288 Soft Saber Pelts (L7, forever/alliance/40-50/05-the-hinterlands): the route never passes its giver (500 yd) at a level that opens it
+- 93928 Of Mice and Milk (L15, forever/alliance/02-westfall): its work or turn-in is in a zone the route does not reach soon after
+- 96137 Ira's Dagger (L24, forever/alliance/40-50/02-badlands): the route never passes its giver (500 yd) at a level that opens it
+- 96408 A Visitor to Dun Morogh (L13, forever/alliance/50-60/05-silithus): the route never passes its giver (500 yd) at a level that opens it
+- 98067 Eyes of the Sentinels (L11, forever/alliance/50-60/04-western-plaguelands): the route never passes its giver (500 yd) at a level that opens it
+- 98155 Pristine Pesterhide Pelts (L31, forever/alliance/40-50/03-feralas): the route never passes its giver (500 yd) at a level that opens it
+- 98391 The Sisterhood of Elune (L10, forever/alliance/40-50/05-the-hinterlands): the route never passes its giver (500 yd) at a level that opens it
+- 99046 The Lost Runner (L9, forever/alliance/40-50/05-the-hinterlands): the route never passes its giver (500 yd) at a level that opens it
+- 99047 Not Dead Yet (L9, forever/alliance/40-50/05-the-hinterlands): the route never passes its giver (500 yd) at a level that opens it
+- 99158 Dawn in the Mountains (L8, forever/alliance/50-60/05-silithus): the route never passes its giver (500 yd) at a level that opens it
+- 99159 Finding Warmth (L8, forever/alliance/40-50/07-un-goro-crater): the route never passes its giver (500 yd) at a level that opens it

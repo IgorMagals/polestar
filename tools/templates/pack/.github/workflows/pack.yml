@@ -24,7 +24,8 @@ jobs:
           git clone --depth 1 "{{repo}}" "$RUNNER_TEMP/polestar"
           cd "$RUNNER_TEMP/polestar"
           npm link
-          polestar data build --no-web-xp --no-wowhead
+          cargo build --release --locked --manifest-path rust/Cargo.toml -p forge
+          rust/target/release/forge data build --no-web-xp --no-web-zones
       - name: Lint
         run: polestar lint --format github
       - name: Playtest

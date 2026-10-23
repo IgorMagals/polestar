@@ -7,7 +7,7 @@
 // rule (tests/lint-timed.test.js); the Fargodeep Mine and Blackfathom Deeps
 // mouths are in tests/guides-caves.test.js.
 //
-// Needs data/forever (node tools/polestar.js data build); skips without it.
+// Needs data/forever (forge data build); skips without it.
 
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
@@ -18,7 +18,7 @@ const { compileSources, OFFICIAL_DIR } = require('../tools/lib/dsl/project');
 const { loadData } = require('../tools/lib/dsl/data');
 const { loadCorrections } = require('../tools/lib/data/corrections');
 const { DATA, SOURCES } = require('../tools/lib/paths');
-const { loadWowhead } = require('../tools/lib/codex/wowhead');
+const { loadWeb } = require('../tools/lib/codex/web');
 const { runAddon } = require('./helpers/lua');
 const { writeTestPack } = require('./helpers/dsl');
 const { buildSimPack, playGuide, SIMULATE } = require('../tools/lib/playtest');
@@ -1235,12 +1235,12 @@ test(`${ZEPHRAS_HORDE}: Sato's report: Welcome to Shen'dar Village follows its o
 test('Sato\'s report: the Scrawny Ursera step leads to the slope west of Thendal Village', { skip }, (t) => {
 	const fix = (loadCorrections().npcs[250926] || {}).addSpawns;
 	if (!fix) return t.skip('needs the private corrections overlay (data/local/corrections-private.json)');
-	const wowhead = fix[2521].pts;
-	assert.ok(wowhead.every(([x]) => x <= 41.6), 'the corrected spawns are all west of the village');
+	const fixed = fix[2521].pts;
+	assert.ok(fixed.every(([x]) => x <= 41.6), 'the corrected spawns are all west of the village');
 	for (const guide of [ZEPHRAS_HORDE, ZEPHRAS_ALLIANCE]) {
 		const list = goals(guide);
 		const { goal } = list[at(list, `${guide}: Scrawny Ursera Claw`, (g) => g.t === 'collect' && g.item === 251918)];
-		assert.ok(wowhead.some(([x, y]) => close(goal, { map: 2521, x, y }, 0.3)), `${guide}: the arrow's point ${goal.x},${goal.y} is at a Scrawny Ursera spawn`);
+		assert.ok(fixed.some(([x, y]) => close(goal, { map: 2521, x, y }, 0.3)), `${guide}: the arrow's point ${goal.x},${goal.y} is at a Scrawny Ursera spawn`);
 		for (const sp of (goal.spots || []).filter((o) => !o.alt)) assert.ok(sp.x <= 41.7, `${guide}: the spot ${sp.x},${sp.y} is west of the village`);
 	}
 });
@@ -1753,15 +1753,15 @@ test('#246: every goal with Tirion leads to Tirion Fordring at his hut, never to
 // standing beside it through the crossing to the other zone and back (the
 // travel planner takes the target's zone from its map). Drops count when no
 // dropper is listed in the goal's zone. Needs Forever's list cache
-// (data/sources/wowhead/codex, `polestar codex build`).
+// (data/sources/web/codex, `polestar codex build`).
 const NEIGHBOUR_MAP = new Set([
 	// The optional hand-in at Garush shares a step with the Alliance's at Pureheart in Western Plaguelands.
 	'forever/reputation/argent-dawn.guide talk npc 10839',
 ]);
-const wowheadLists = fs.existsSync(path.join(SOURCES, 'wowhead', 'codex', 'lists', 'npc.json'));
+const webLists = fs.existsSync(path.join(SOURCES, 'web', 'codex', 'lists', 'npc.json'));
 
-test('#246: no NPC or object goal is on a neighbouring zone\'s map where the two maps overlap', { skip: skip || (!wowheadLists && 'no Forever list cache (data/sources/wowhead/codex/lists)') }, () => {
-	const wh = loadWowhead(SOURCES).listed;
+test('#246: no NPC or object goal is on a neighbouring zone\'s map where the two maps overlap', { skip: skip || (!webLists && 'no Forever list cache (data/sources/web/codex/lists)') }, () => {
+	const wh = loadWeb(SOURCES).listed;
 	data = data || loadData(DATA);
 	const area = (map) => data.zone(map) && data.zone(map).areaId;
 	const world = (map, x, y, f) => {
@@ -2349,8 +2349,8 @@ test(`${DUROTAR}: tor's report (#351): Encroachment is taken after the Tiragarde
 // does, each heart's goal reads its own line.
 test("forever/class/warlock/incubus-horde.guide: Phyz's report (#412): Avelina's and Isaac's hearts each read their own line of Hearts of the Lovers", { skip }, () => {
 	const corrected = loadData(DATA);
-	const fix = require('../tools/lib/data/corrections.json').quests['65593'];
-	assert.ok(fix, 'corrections.json corrects 65593');
+	const fix = loadCorrections().quests['65593'];
+	assert.ok(fix, 'the corrections correct 65593');
 	Object.assign(corrected.quest(65593), fix.set);
 	const file = path.join(OFFICIAL_DIR, 'forever/class/warlock/incubus-horde.guide');
 	const { guides } = compileSources([{ file, text: fs.readFileSync(file, 'utf8') }], corrected);

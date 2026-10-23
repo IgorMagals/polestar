@@ -24,7 +24,7 @@ test("buildInstances: a boss's own Forever drop table (any rate) before the worl
 	const { instances } = buildInstances(instanceFacts(TABLES, [{ ID: '249' }]), {
 		npcs: { 10184: { id: 10184, name: 'Onyxia', level: 63, rank: 3, spawns: {}, source: ['pfquest'] } },
 		items: { 17966: { id: 17966, name: 'Onyxia Hide Backpack', drops: { npc: { 10184: 84 } }, vendors: [] } },
-		wowhead: {
+		web: {
 			npc: {
 				10184: {
 					id: 10184,
@@ -86,7 +86,7 @@ test('compareCodex: a confirmed drop or loot row the cap cut carries the reason 
 		instances: {},
 	};
 	const drops = [{ item: 2589, count: 9, outof: 100 }, { item: 3159, count: 1, outof: 100 }];
-	const verify = { wowhead: { npc: { 511: { drops: [drops[0]] }, 61: { drops: [drops[1]] } }, object: {}, item: {} }, clientInstances: new Set() };
+	const verify = { web: { npc: { 511: { drops: [drops[0]] }, 61: { drops: [drops[1]] } }, object: {}, item: {} }, clientInstances: new Set() };
 	const r = compareCodex(ours, theirs, verify);
 	assert.deepEqual(r.kinds['drop chances'].internalOnly, { confirmed: 1, notInForever: 0, unverified: 0, cut: 1 });
 	assert.match(r.kinds['drop chances'].missing[0].reason, /^cut by a cap/);

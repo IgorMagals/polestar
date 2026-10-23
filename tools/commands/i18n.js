@@ -107,10 +107,10 @@ ${wrapWords(require('../lib/i18n/leaks').SCENE_NAMES.join(', ') + '.', 29)}
                              (and the objectives of dungeon event quests) in
                              each language. Per id, the first source with a
                              name wins: the Forever client's tables
-                             (wago.tools, &locale=), Wowhead's Forever
-                             database in that language (list pages and
+                             (wago.tools, &locale=), the web quest database's
+                             Forever pages in that language (list pages and
                              tooltips, read only from what is already cached
-                             in data/sources/wowhead/names),
+                             in data/sources/web/names),
                              DingDB (pinned commit and sha256s, cloned into
                              data/sources/ding), then pfQuest's db/<locale>.
                              Only the ids the compiled guides, the quest
@@ -160,7 +160,7 @@ options:
                     table stops the build)
   --offline         names: no downloads; the cached clones and tables
   --build <version> names: this Forever client build (default the newest wago.tools lists)
-  --sources <dir>   names: the client-table and Wowhead cache (default data/sources)
+  --sources <dir>   names: the client-table and web cache (default data/sources)
   --ding <dir>      names: this DingDB checkout (default data/sources/ding)
   --pfquest <dir>   names: this pfQuest checkout (default data/sources/pfQuest)
   --guides <file>   names: the compiled guides (default addon/Polestar_Guides/Guides.lua)
@@ -383,13 +383,13 @@ const KIND_WORDS = {
 	quest: 'quest', npc: 'NPC', object: 'object', item: 'item', map: 'instance', encounter: 'encounter',
 	faction: 'faction', taxi: 'flight point', objective: 'quest objective',
 };
-const SOURCE_WORDS = { wago: 'client tables', wowhead: 'Wowhead', ding: 'DingDB', pfquest: 'pfQuest' };
+const SOURCE_WORDS = { wago: 'client tables', web: 'the web quest database', ding: 'DingDB', pfquest: 'pfQuest' };
 
 async function runNames(opts, positional) {
 	const names = require('../lib/i18n/names');
 	const { ensurePfQuest, loadPfQuestNames } = require('../lib/data/pfquest');
 	const { loadClientNames } = require('../lib/i18n/names-wago');
-	const wh = require('../lib/i18n/names-wowhead');
+	const wh = require('../lib/i18n/names-web');
 	const wanted = locales(positional);
 	const abs = (p) => (p ? path.resolve(p) : undefined);
 	const log = opts.json ? () => {} : (m) => console.log(m);
@@ -426,16 +426,16 @@ async function runNames(opts, positional) {
 	}
 
 	// Web names: only what is already cached.
-	const whNames = Object.fromEntries(wanted.map((l) => [l, wh.loadWowheadNames(sourcesDir, l)]));
-	const out = names.buildNames({ locales: wanted, ids, ding: dingNames, pf, wago, wowhead: whNames, english });
+	const whNames = Object.fromEntries(wanted.map((l) => [l, wh.loadWebNames(sourcesDir, l)]));
+	const out = names.buildNames({ locales: wanted, ids, ding: dingNames, pf, wago, web: whNames, english });
 	for (const l of wanted) {
 		for (const kind of ['map', 'faction', 'taxi']) {
 			if (wago && ids[kind] && ids[kind].size && !out[l].names[kind].size) throw new Error(`${l}: no ${kind} names from the client tables (${ids[kind].size} wanted); nothing written`);
 		}
 	}
 	const outDir = abs(opts.out) || names.DEFAULTS.out;
-	const sources = { wago: wagoInfo, wowhead: Object.fromEntries(wanted.map((l) => [l, whNames[l]])), ding, pf: pfInfo };
-	if (!Object.values(sources.wowhead).some((x) => x.fetched)) sources.wowhead = null;
+	const sources = { wago: wagoInfo, web: Object.fromEntries(wanted.map((l) => [l, whNames[l]])), ding, pf: pfInfo };
+	if (!Object.values(sources.web).some((x) => x.fetched)) sources.web = null;
 	const written = names.writeNamesAddons(out, outDir, { sources });
 	// The ids whose every name in a language is the English one, for
 	// `i18n leaks --update-baseline` (data/local, not shipped); only for a
@@ -451,7 +451,7 @@ async function runNames(opts, positional) {
 		console.log(JSON.stringify({
 			ids: { ...kinds(idCount), sources: ids.counts },
 			wago: wagoInfo ? wagoInfo.builds : null,
-			wowhead: sources.wowhead ? Object.fromEntries(wanted.map((l) => [l, whNames[l].fetched])) : null,
+			web: sources.web ? Object.fromEntries(wanted.map((l) => [l, whNames[l].fetched])) : null,
 			ding: ding ? { version: ding.pin.version, commit: ding.pin.commit, revision: ding.revision } : null,
 			pfquest: { revision: pfInfo.revision },
 			locales: Object.fromEntries(wanted.map((l) => {
@@ -466,7 +466,7 @@ async function runNames(opts, positional) {
 	for (const [src, c] of Object.entries(ids.counts)) console.log(`  ${src}: ${idLine(c, names.NAME_KINDS)}`);
 	console.log(wagoInfo ? `client tables: ${Object.entries(wagoInfo.builds).map(([p, b]) => `${p} ${b}`).join(', ')}` : 'client tables left out');
 	const whDates = wanted.flatMap((l) => (whNames[l].fetched ? [whNames[l].fetched.first, whNames[l].fetched.last] : [])).sort();
-	console.log(whDates.length ? `Wowhead: the cache, read ${whDates[0].slice(0, 10)} to ${whDates[whDates.length - 1].slice(0, 10)}` : 'Wowhead: nothing cached');
+	console.log(whDates.length ? `web quest database: the cache, read ${whDates[0].slice(0, 10)} to ${whDates[whDates.length - 1].slice(0, 10)}` : 'web quest database: nothing cached');
 	console.log(ding ? `DingDB ${ding.pin.version} (${ding.pin.commit.slice(0, 7)}): every pinned file matches its sha256` : 'DingDB left out (--no-questie)');
 	console.log(`pfQuest ${pfInfo.revision ? pfInfo.revision.slice(0, 7) : '(revision unknown)'}`);
 	for (const l of wanted) {
@@ -582,8 +582,8 @@ function packGuides(opts) {
 	if (!pack.manifest) throw new Error(`${pack.dir}: no valid pack.json`);
 	// Our guides as context only check routes across packs: the texts need none.
 	const r = buildPack({ ...pack, contextDir: null }, { dataDir: opts.data ? path.resolve(opts.data) : DATA, files: false });
-	if (r.noData) throw new Error('no reference data: run `node tools/polestar.js data build` (or pass --data)');
-	if (r.diag.errors.length) throw new Error(`the pack does not compile (${plural(r.diag.errors.length, 'error')}): run \`node tools/polestar.js lint\``);
+	if (r.noData) throw new Error('no reference data: run `forge data build` (or pass --data)');
+	if (r.diag.errors.length) throw new Error(`the pack does not compile (${plural(r.diag.errors.length, 'error')}): run \`forge guide lint\``);
 	return { dir: pack.dir, manifest: pack.manifest, guides: r.guides.filter((g) => g._ast && g._ast.source), tokens: r.tokens };
 }
 

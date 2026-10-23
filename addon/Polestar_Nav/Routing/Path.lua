@@ -449,7 +449,7 @@ local function connect(st, swim, mult, k, node)
 		if #st.endTrees > 8 then
 			table.remove(st.endTrees, 1).tree = nil
 		end
-		if st.endCount >= 256 then
+		if st.endCount >= (Path.endsMax or 256) then
 			st.ends, st.endCount = {}, 0
 		end
 		st.ends[key], st.endCount = entry, st.endCount + 1

@@ -391,7 +391,7 @@ async function buildNav({
 	const { continentTiles, transportTravel } = require('../geom');
 	const { Geo } = require('../../planner/geo');
 	const framesFile = path.join(dataDir, 'map-frames.json');
-	if (!fs.existsSync(framesFile)) throw new Error(`${framesFile} not found (node tools/polestar.js data build)`);
+	if (!fs.existsSync(framesFile)) throw new Error(`${framesFile} not found (forge data build)`);
 	const frames = JSON.parse(fs.readFileSync(framesFile, 'utf8'));
 	const zonesFile = path.join(dataDir, 'zones.json');
 	const geo = new Geo(frames, fs.existsSync(zonesFile) ? JSON.parse(fs.readFileSync(zonesFile, 'utf8')) : {});

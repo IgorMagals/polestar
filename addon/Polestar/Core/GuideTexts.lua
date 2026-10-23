@@ -147,7 +147,8 @@ local function collect(def, fields)
 	if type(def.reward) == "table" then
 		for _, r in ipairs(def.reward) do if type(r) == "table" then add(r, "text") end end
 	end
-	for _, step in ipairs(def.steps) do
+	-- Deferred steps not read in yet are left for PrepareSteps.
+	for _, step in ipairs(rawget(def, "steps") or {}) do
 		for _, f in ipairs(STEP_FIELDS) do add(step, f) end
 		for _, goal in ipairs(step.goals) do
 			if type(goal) == "table" then
@@ -160,10 +161,10 @@ local function collect(def, fields)
 end
 
 -- Writes def's texts; escaped through `escape` (nil: left for RegisterGuide).
-local function apply(def, entry, live, escape)
+local function apply(def, entry, live, escape, from)
 	local changed = false
 	local f = entry.fields
-	for i = 1, #f, 3 do
+	for i = from or 1, #f, 3 do
 		local v = render(def, entry, f[i + 2], live)
 		if escape then v = escape(v) end
 		if f[i][f[i + 1]] ~= v then
@@ -198,6 +199,47 @@ function GuideTexts.Prepare(def, live)
 	-- An English client fills the tokens once: nothing ever changes them.
 	if not english then prepared[def] = entry end
 	apply(def, entry, live, nil)
+end
+
+-- A deferred guide's steps, read in (Guides.Steps): their texts join def's,
+-- written in the client's language now.
+function GuideTexts.PrepareSteps(def)
+	local entry = prepared[def]
+	if not entry then
+		-- An English client keeps no entry: one for these steps alone.
+		local names, written = {}, {}
+		for k, v in pairs(type(def.names) == "table" and def.names or {}) do if valid(k) and valid(v) then names[k] = v end end
+		for k, v in pairs(type(def.written) == "table" and def.written or {}) do if valid(k) and valid(v) then written[k] = v end end
+		entry = { names = names, written = written, fields = {} }
+	end
+	entry.header = entry.header or #entry.fields
+	local from = #entry.fields + 1
+	local f = entry.fields
+	local function add(holder, key)
+		local v = holder[key]
+		if valid(v) then
+			f[#f + 1] = holder
+			f[#f + 1] = key
+			f[#f + 1] = v
+		end
+	end
+	for _, step in ipairs(rawget(def, "steps") or {}) do
+		for _, k in ipairs(STEP_FIELDS) do add(step, k) end
+		for _, goal in ipairs(step.goals or {}) do
+			if type(goal) == "table" then
+				for _, k in ipairs(GOAL_FIELDS) do add(goal, k) end
+				if goal.t == "kill" and goal.npc == nil then add(goal, "target") end
+			end
+		end
+	end
+	apply(def, entry, true, nil, from)
+end
+
+-- A deferred guide's steps dropped (Guides.Release): their texts leave def's.
+function GuideTexts.DropSteps(def)
+	local entry = prepared[def]
+	if not (entry and entry.header) then return end
+	for i = #entry.fields, entry.header + 1, -1 do entry.fields[i] = nil end
 end
 
 function GuideTexts.Refresh(def)

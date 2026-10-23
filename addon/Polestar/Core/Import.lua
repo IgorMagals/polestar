@@ -238,7 +238,8 @@ local GUIDE = rec({
 	id = S, title = S, faction = S, races = LS, classes = LS, minLevel = N, maxLevel = N, category = S, folder = S, keywords = LS,
 	collects = LN, reward = list(rec({ item = N, itemName = S, quality = N, choice = B, spell = N, spellName = S, text = S })),
 	why = S, zone = N, zoneName = S, next = S, nextChoices = LS, nextWhen = { map = list(WHEN) }, pitch = S, pros = LS, cons = LS, author = S, version = N, group = B,
-	names = { map = SM }, written = { map = SM }, steps = list(STEP),
+	-- Format 6's baked legs (Nav/Baked.lua): the grid's name and one leg string per step.
+	names = { map = SM }, written = { map = SM }, legsGrid = S, legs = { idmap = S }, steps = list(STEP),
 })
 local PAYLOAD = rec({ format = N, license = S, guide = GUIDE, frames = { idmap = rec({ c = N, left = N, right = N, top = N, bottom = N }) } })
 

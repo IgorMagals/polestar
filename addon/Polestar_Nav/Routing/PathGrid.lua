@@ -27,6 +27,7 @@ Path.clusters = 64 -- secondary count ceiling per map (at least 4)
 Path.graphKB = 4096 -- decoded entrances/edges across all maps while a search runs
 Path.graphRestKB = 4096 -- the same with no search queued (Idle trims to it)
 Path.cacheKB = 24576 -- decoded grids across all maps; active coroutine locals are additional
+Path.endsMax = 256  -- max cached endpoint-connection entries; raise offline to avoid repeated connect() searches
 Path.clock = debugprofilestop or function()
 	return os.clock() * 1000
 end

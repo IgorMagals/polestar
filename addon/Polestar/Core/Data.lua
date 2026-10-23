@@ -139,6 +139,10 @@ function Data.CheckInstall()
 	-- language has one (Core/GuideTexts.lua): never missing either.
 	local texts = ns.GuideTexts and ns.GuideTexts.TextsAddon("Polestar_Guides")
 	if texts then check(texts, mine, missing, stale) end
+	-- Our guide pack's race part for the player's race, when the release has
+	-- one (Core/Guides.lua loads it): never missing either.
+	local race = UnitRace and readable((select(2, UnitRace("player")))) or nil
+	if type(race) == "string" and race ~= "" then check("Polestar_Guides_" .. race, mine, missing, stale) end
 	return missing, stale
 end
 

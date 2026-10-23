@@ -298,7 +298,7 @@ async function run(argv, env = process.env, native = {}) {
 		}
 	}
 	if (!hasCompiledGuides(path.join(source, 'Polestar_Guides'))) {
-		console.warn('warning: Polestar_Guides has no compiled guides; run `node tools/polestar.js compile` first');
+		console.warn('warning: Polestar_Guides has no compiled guides; run `forge guide compile` first');
 	}
 	return installFolders(names.map((name) => ({ src: path.join(source, name), name })), opts, ctx);
 }

@@ -41,6 +41,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { header } = require('../generated');
 const { closedByOf } = require('../data/prereqs');
+const { isWebCitation } = require('./web');
 
 const SCHEMA = 3; // 3: objective facts (objectives) instead of an English line, instance map, boss encounter
 
@@ -215,10 +216,10 @@ function djPlace(p) {
 }
 
 // The reputation a quest gives: Forever's quest list row (quests.json
-// `wowhead.rep`). QuestieDB's `reputation` is the standing a quest asks for
+// `web.rep`). QuestieDB's `reputation` is the standing a quest asks for
 // (Friendly is 3000), not what it gives.
 function repOf(fq, factions) {
-	const r = fq && fq.wowhead && fq.wowhead.rep;
+	const r = fq && fq.web && fq.web.rep;
 	if (!Array.isArray(r)) return [];
 	return r.map(([faction, value]) => ({ faction, name: (factions[faction] && factions[faction].name) || null, value: value ?? null }));
 }
@@ -280,7 +281,7 @@ function buildPages(inputs, codex, warnings = []) {
 	// Citadel), the Greater Eternal Essence from Gri'lek and Maexxna (The
 	// Ectoplasmic Distiller), the Copper Modulator from Sneed's Shredder.
 	const STRAY = 5;
-	const stray = (s) => Array.isArray(s.from) && s.from.length > 0 && s.from.every((f) => f === 'wowhead') && typeof s.chance === 'number' && s.chance < STRAY;
+	const stray = (s) => Array.isArray(s.from) && s.from.length > 0 && s.from.every((f) => f === 'web') && typeof s.chance === 'number' && s.chance < STRAY;
 	const npcInstance = {};
 	for (const [id, n] of Object.entries(npcs)) if (n.instance) npcInstance[id] = n.instance;
 	const itemInstances = {};
@@ -325,8 +326,8 @@ function buildPages(inputs, codex, warnings = []) {
 	// Classic Attunement to the Core 7487 that 7848 replaced).
 	const live = (id) => ((fq[id] && fq[id].source) || []).some((s) => /^questie|^recorder/.test(s));
 
-	// How many of a reward item Forever's list row gives (quests.json `wowhead`).
-	const countIn = (id, list, it) => ((((fq[id] && fq[id].wowhead) || {})[list] || []).find((p) => p[0] === it) || [])[1];
+	// How many of a reward item Forever's list row gives (quests.json `web`).
+	const countIn = (id, list, it) => ((((fq[id] && fq[id].web) || {})[list] || []).find((p) => p[0] === it) || [])[1];
 	// { closedBy } when taking or finishing other quests closes this one, else {}.
 	const closers = (id) => {
 		const by = closedByOf(id, fq);
@@ -342,7 +343,7 @@ function buildPages(inputs, codex, warnings = []) {
 		const e = src.end || {};
 		const start = placeOf('npc', (s.npc || [])[0], codex) || placeOf('object', (s.object || [])[0], codex);
 		const startItem = (s.item || [])[0] ? { id: s.item[0], name: names.item(s.item[0]) } : null;
-		const wh = f.wowhead || {};
+		const wh = f.web || {};
 		const faction = SIDE[src.faction] || null;
 		return {
 			id: Number(id),
@@ -436,7 +437,7 @@ function buildPages(inputs, codex, warnings = []) {
 		if (!q) continue;
 		const f = fq[id] || {};
 		const byArea = new Set();
-		for (const area of [f.area, live(id) && f.wowhead ? f.wowhead.zone : null]) if (area && areaKeys[area]) for (const k of areaKeys[area]) byArea.add(k);
+		for (const area of [f.area, live(id) && f.web ? f.web.zone : null]) if (area && areaKeys[area]) for (const k of areaKeys[area]) byArea.add(k);
 		const byLink = [...linked(q)];
 		let keys = [...byArea];
 		if (keys.length > 1) {
@@ -453,7 +454,7 @@ function buildPages(inputs, codex, warnings = []) {
 			if (rec) onPage[key].set(id, rec);
 		}
 	}
-	// 3b. The cited table's quests (tools/lib/codex/journal-quests.json): what
+	// 3b. The cited table's quests (data/codex/journal-quests.json): what
 	//     no rule places (Shards of the Felvine: Moonglade giver, an item made
 	//     from Alzzin's Felvine in Dire Maul). A row of an instance this build
 	//     lacks is skipped; one whose quest it lacks is a warning.
@@ -585,13 +586,14 @@ function buildPages(inputs, codex, warnings = []) {
 }
 
 // The cited table of journal quests no rule places
-// (tools/lib/codex/journal-quests.json) -> [{ quest, instance, source, note }].
+// (data/codex/journal-quests.json) -> [{ quest, instance, source, note }];
+// source: a URL or a web quest database citation (tools/lib/codex/web.js).
 // A malformed row throws.
-function loadJournalQuests(file = path.join(__dirname, 'journal-quests.json')) {
+function loadJournalQuests(file = path.join(__dirname, '..', '..', '..', 'data', 'codex', 'journal-quests.json')) {
 	if (!fs.existsSync(file)) return [];
 	const rows = JSON.parse(fs.readFileSync(file, 'utf8')).quests || [];
 	for (const r of rows) {
-		if (!Number.isInteger(r.quest) || typeof r.instance !== 'string' || !/^https?:\/\//.test(r.source || '')) throw new Error(`journal-quests.json: bad row ${JSON.stringify(r)}`);
+		if (!Number.isInteger(r.quest) || typeof r.instance !== 'string' || !(typeof r.source === 'string' ? /^https?:\/\//.test(r.source) : isWebCitation(r.source))) throw new Error(`journal-quests.json: bad row ${JSON.stringify(r)}`);
 	}
 	return rows;
 }

@@ -38,7 +38,7 @@ const built = (name) => fs.existsSync(path.join(ADDON, name, `${name}.toc`));
 // The Codex and the quest database are built (a developer's machine, not CI).
 const fullData = () => built('Polestar_Codex') && built('Polestar_QuestDB');
 const NEEDS = {
-	codex: () => (built('Polestar_Codex') ? false : 'addon/Polestar_Codex is not built (node tools/polestar.js codex build)'),
+	codex: () => (built('Polestar_Codex') ? false : 'addon/Polestar_Codex is not built (forge data codex)'),
 	questdb: () => (built('Polestar_QuestDB') ? false : 'addon/Polestar_QuestDB is not built (node tools/polestar.js questdb build)'),
 };
 

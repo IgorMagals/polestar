@@ -15,8 +15,8 @@
 //   atlasloot|null, rarescanner|null                      (--local-extras only)
 //   client: clientFacts(tables) + { instanceMaps, instances: instanceFacts() }|null,
 //   curated: [item ids guides collect], curatedGates: curatedRepGates(), entrances: curatedEntrances(),
-//   entranceTable: loadEntranceTable() (tools/lib/codex/entrances.json),
-//   repTable: loadRepGateTable() (tools/lib/codex/repgates.json), localExtras,
+//   entranceTable: loadEntranceTable() (data/codex/entrances.json),
+//   repTable: loadRepGateTable() (data/codex/repgates.json), localExtras,
 // }
 // Without AtlasLoot and dungeons.json the instances come from the client
 // tables (tools/lib/codex/instances.js).
@@ -34,13 +34,14 @@ const path = require('node:path');
 const { spawnSync } = require('node:child_process');
 const { emitPack, packOrder, ADDON, SCHEMA } = require('./pack');
 const { instanceFacts, buildInstances, curatedEntrances, loadEntranceTable } = require('./instances');
-const { loadWowhead, chanceOf } = require('./wowhead');
+const { loadWeb, chanceOf, isWebCitation } = require('./web');
 const { blockingPrereqs } = require('../data/prereqs');
 const { reduceSpawns } = require('../data/spawns');
 const { isEscort } = require('../dsl/escort');
 
 const { ROOT, DATA, SOURCES } = require('../paths');
 const { CLASSES, FACTION_RACES } = require('../game/races');
+const { boxOf, moreInner } = require('../maps/inner');
 // Map, AreaTable, DungeonEncounter, LFGDungeons, MapDifficulty and ContentTuning
 // give the dungeons and raids (tools/lib/codex/instances.js); Mount and
 // BattlePetSpecies the mount and companion summon spells.
@@ -53,10 +54,10 @@ const TABLES = [
 const ERA_BUILD = '1.15.9.70003';
 const ERA_TABLES = ['Item', 'ItemSparse', 'ItemEffect', 'Map'];
 
-// curated: the cited reputation gate table (tools/lib/codex/repgates.json);
+// curated: the cited reputation gate table (data/codex/repgates.json);
 // guides: Polestar's own curated guides (a collectible's `rep` before its
 // `buy`). A gate from the client beats the table, the table a guide's.
-const RANK = { recordings: 0, client: 1, curated: 2, guides: 3, questie: 4, flbis: 4, rarescanner: 4, dungeons: 4, journal: 4, forever: 4, pfquest: 5, atlasloot: 5, wowhead: 6 };
+const RANK = { recordings: 0, client: 1, curated: 2, guides: 3, questie: 4, flbis: 4, rarescanner: 4, dungeons: 4, journal: 4, forever: 4, pfquest: 5, atlasloot: 5, web: 6 };
 const RANK_UNKNOWN = 7;
 // gift: an NPC hands the item out (casts a spell that creates it).
 const KEY_FIELD = { vendor: 'npc', drop: 'npc', object: 'object', quest: 'quest', gift: 'npc', craft: 'spell', rep: 'faction', pvp: null, container: 'item', world: null };
@@ -323,45 +324,6 @@ function frameOf(frames, map, f) {
 	return Math.abs(fr.right - fr.left) > 0 && Math.abs(fr.bottom - fr.top) > 0 ? fr : null;
 }
 
-// A frame as a world rectangle (frames are written corner to corner, either
-// way round).
-function boxOf(fr) {
-	return fr && {
-		c: fr.c,
-		x0: Math.min(fr.left, fr.right), x1: Math.max(fr.left, fr.right),
-		y0: Math.min(fr.top, fr.bottom), y1: Math.max(fr.top, fr.bottom),
-	};
-}
-
-// Box `b` lies wholly within `a` and is smaller: its map is inside the other's
-// (Darnassus within Teldrassil, a zone within a continent). Frames of
-// neighbouring zones overlap without either holding the other, so this is not
-// a size test.
-function within(b, a) {
-	if (!(b && a && b.c === a.c)) return false;
-	if (!(b.x0 >= a.x0 && b.x1 <= a.x1 && b.y0 >= a.y0 && b.y1 <= a.y1)) return false;
-	return (b.x1 - b.x0) * (b.y1 - b.y0) < (a.x1 - a.x0) * (a.y1 - a.y0);
-}
-
-// A map you are inside rather than crossing: a capital or a battleground.
-// Their frames stand well apart from the zones' — Ironforge 791 yd on its
-// long side, Undercity 959, Thunder Bluff 1044, Darnassus 1058, Warsong Gulch
-// 1146, Stormwind City 1344 and Orgrimmar 1403, then nothing until Arathi
-// Basin at 1756 and Redridge Mountains at 2171. (journal.js tells continents
-// from zones by size the same way.)
-const INNER_MAX = 1500; // yards on the long side
-function enclosed(b) {
-	return !!b && Math.max(b.x1 - b.x0, b.y1 - b.y0) <= INNER_MAX;
-}
-
-// Of two maps holding the same place, `b` is the one the player is in: an
-// enclosed map beats the open zone around it, and otherwise the map whose
-// frame lies inside the other's.
-function moreInner(b, a) {
-	if (enclosed(b) && !enclosed(a)) return true;
-	return within(b, a);
-}
-
 // A map point's world position through its frame, or null.
 function worldOf(frames, map, f, x, y) {
 	const fr = frameOf(frames, map, f);
@@ -575,10 +537,10 @@ function mergeCodex(inputs) {
 		};
 		npcRoles[id] = new Set(n.roles || []);
 	}
-	// Forever's cached per-entity facts (tools/lib/codex/wowhead.js), release
+	// Forever's cached per-entity facts (tools/lib/codex/web.js), release
 	// build only: a level, rare rank or spawns our data lacks, and the rares
 	// only that data knows (with a name and a place).
-	const wh = (!al && inputs.wowhead) || null;
+	const wh = (!al && inputs.web) || null;
 	if (wh) {
 		for (const [id, w] of Object.entries(wh.npc)) {
 			const rareW = w.classification === 'rare' || w.classification === 'rareelite';
@@ -603,7 +565,7 @@ function mergeCodex(inputs) {
 			}
 			if (!rec.spawns.length && spawns.length) rec.spawns = spawns;
 		}
-		// Forever's cached NPC list rows (data/sources/wowhead/codex/lists):
+		// Forever's cached NPC list rows (data/sources/web/codex/lists):
 		// the level of an NPC neither our data nor a page gives one. Only the
 		// level: a row's rank and place are no page's (rares and bosses stay
 		// the pages' and the data's).
@@ -756,7 +718,7 @@ function mergeCodex(inputs) {
 			entranceTable: inputs.entranceTable || {},
 			curated: inputs.entrances || [],
 			quality: (id) => (cl.items[id] ? cl.items[id].quality : null),
-			wowhead: wh,
+			web: wh,
 		});
 		Object.assign(instances, built.instances);
 		Object.assign(bossInstance, built.bossInstance);
@@ -834,9 +796,9 @@ function mergeCodex(inputs) {
 	if (wh) {
 		for (const [npc, w] of Object.entries(wh.npc)) {
 			if (!npcs[npc]) continue;
-			for (const d of w.drops) add(d.item, { type: 'drop', npc: Number(npc), chance: chanceOf(d), instance: npcInstance[npc] || null, from: ['wowhead'] });
+			for (const d of w.drops) add(d.item, { type: 'drop', npc: Number(npc), chance: chanceOf(d), instance: npcInstance[npc] || null, from: ['web'] });
 		}
-		for (const [obj, w] of Object.entries(wh.object)) for (const d of w.drops) add(d.item, { type: 'object', object: Number(obj), chance: chanceOf(d), from: ['wowhead'] });
+		for (const [obj, w] of Object.entries(wh.object)) for (const d of w.drops) add(d.item, { type: 'object', object: Number(obj), chance: chanceOf(d), from: ['web'] });
 	}
 	// Professions: craft sources, recipe items.
 	const recipeSpell = {}; // recipe item -> craft spell
@@ -950,12 +912,12 @@ function mergeCodex(inputs) {
 		}
 	}
 	for (const [id, x] of Object.entries(dungeonItems)) if (!names[id]) names[id] = x.name;
-	// Forever's quest lists (quests.json `wowhead`, data build), last:
+	// Forever's quest lists (quests.json `web`, data build), last:
 	// the reward items no recording, ForeverLevelingBiS or dungeons.json row
 	// names, each as Forever's data files it (one of `choices`, or every one of
 	// `items`). Its lists carry most dungeon quests' rewards these lack.
 	for (const [qid, q] of Object.entries(fv.quests || {})) {
-		const w = q.wowhead;
+		const w = q.web;
 		if (!w) continue;
 		const have = questRewards[qid];
 		const known = (it) => have && (have.rewards.has(it) || have.choices.has(it));
@@ -966,7 +928,7 @@ function mergeCodex(inputs) {
 			for (const [it] of list) {
 				if (known(it)) continue;
 				reward(qid, it, choice);
-				add(it, { type: 'quest', quest: Number(qid), choice: choice || null, from: ['wowhead'] });
+				add(it, { type: 'quest', quest: Number(qid), choice: choice || null, from: ['web'] });
 			}
 		}
 	}
@@ -1070,9 +1032,9 @@ function mergeCodex(inputs) {
 			const vendor = list.find((s) => s.type === 'vendor');
 			for (const r of tip.rep || []) {
 				const faction = factionByName[normName(r.faction)];
-				if (faction) list.push({ type: 'rep', faction, standing: r.standing, npc: vendor ? vendor.npc : null, from: ['wowhead'] });
+				if (faction) list.push({ type: 'rep', faction, standing: r.standing, npc: vendor ? vendor.npc : null, from: ['web'] });
 			}
-			if (tip.pvpRank) list.push({ type: 'pvp', rank: tip.pvpRank, npc: vendor ? vendor.npc : null, from: ['wowhead'] });
+			if (tip.pvpRank) list.push({ type: 'pvp', rank: tip.pvpRank, npc: vendor ? vendor.npc : null, from: ['web'] });
 			if (!tip.pvpRank) evidence.noPvp.push(id);
 		}
 		// A curated guide that collects the item reaches a standing before it
@@ -1086,7 +1048,7 @@ function mergeCodex(inputs) {
 		// who casts it, Forever's spell data) hands it out.
 		for (const spell of (cl && cl.creates && cl.creates[id]) || []) {
 			for (const npc of (wh && wh.spell && wh.spell[spell] && wh.spell[spell].usedBy) || []) {
-				if (npcs[npc]) list.push({ type: 'gift', npc, spell, from: ['wowhead'] });
+				if (npcs[npc]) list.push({ type: 'gift', npc, spell, from: ['web'] });
 			}
 		}
 		// The cited gate table (repgates.json): the standing its vendor or
@@ -1428,7 +1390,7 @@ io.write(string.format("%.1f %.1f %d %.1f\\n", raw, decoded, #keep, loadMs))
 function readJson(file, optional = false) {
 	if (!fs.existsSync(file)) {
 		if (optional) return null;
-		throw new Error(`missing ${path.relative(process.cwd(), file)} (run \`node tools/polestar.js data build\` first)`);
+		throw new Error(`missing ${path.relative(process.cwd(), file)} (run \`forge data build\` first)`);
 	}
 	return JSON.parse(fs.readFileSync(file, 'utf8'));
 }
@@ -1493,8 +1455,8 @@ async function loadInputs({ addons, offline = false, dataDir, sourcesDir, build,
 		dungeons: localExtras ? j('dungeons.json', true) : null,
 	};
 	// Forever's per-entity facts already cached in
-	// data/sources/wowhead/codex/ (nothing is fetched), release builds only.
-	const wowhead = localExtras ? null : loadWowhead(sourcesDir);
+	// data/sources/web/codex/ (nothing is fetched), release builds only.
+	const web = localExtras ? null : loadWeb(sourcesDir);
 	const warnings = [];
 	const { resolveAddonsDir } = require('../addons');
 	const dir = resolveAddonsDir(addons);
@@ -1546,7 +1508,7 @@ async function loadInputs({ addons, offline = false, dataDir, sourcesDir, build,
 		warnings.push(`Era client tables ${ERA_BUILD}: ${err.message}`);
 	}
 	client.instances = instanceFacts(loaded.tables, eraMaps);
-	return { forever, atlasloot, rarescanner, flbis, client, wowhead, curated: curatedCollects(guidesDir), curatedGates: curatedRepGates(guidesDir), entrances: curatedEntrances(guidesDir), entranceTable: loadEntranceTable(), repTable: loadRepGateTable(), localExtras: !!localExtras, warnings };
+	return { forever, atlasloot, rarescanner, flbis, client, web, curated: curatedCollects(guidesDir), curatedGates: curatedRepGates(guidesDir), entrances: curatedEntrances(guidesDir), entranceTable: loadEntranceTable(), repTable: loadRepGateTable(), localExtras: !!localExtras, warnings };
 }
 
 // Every .guide file under dir -> [{ file, text }], by path.
@@ -1600,15 +1562,16 @@ function curatedRepGates(dir = path.join(ROOT, 'guides')) {
 	return out;
 }
 
-// The cited reputation gate table (tools/lib/codex/repgates.json): rows
+// The cited reputation gate table (data/codex/repgates.json): rows
 // { item, name, faction, standing (1..8), npcs: [vendor or giver] | quest
-// (+ choice), source (URL), note? } -> { item: [row] }. A malformed row throws.
-function loadRepGateTable(file = path.join(__dirname, 'repgates.json')) {
+// (+ choice), source (an https URL or a web quest database citation,
+// tools/lib/codex/web.js), note? } -> { item: [row] }. A malformed row throws.
+function loadRepGateTable(file = path.join(__dirname, '..', '..', '..', 'data', 'codex', 'repgates.json')) {
 	if (!fs.existsSync(file)) return {};
 	const out = {};
 	for (const g of JSON.parse(fs.readFileSync(file, 'utf8')).gates || []) {
 		const where = Array.isArray(g.npcs) && g.npcs.length && g.npcs.every(Number.isInteger) ? !g.quest : Number.isInteger(g.quest) && !g.npcs;
-		if (!Number.isInteger(g.item) || !Number.isInteger(g.faction) || !(g.standing >= 1 && g.standing <= 8) || !where || !/^https:\/\//.test(g.source || '')) {
+		if (!Number.isInteger(g.item) || !Number.isInteger(g.faction) || !(g.standing >= 1 && g.standing <= 8) || !where || !(typeof g.source === 'string' ? /^https:\/\//.test(g.source) : isWebCitation(g.source))) {
 			throw new Error(`${path.basename(file)}: bad row ${JSON.stringify(g)}`);
 		}
 		(out[g.item] = out[g.item] || []).push(g);
@@ -1628,20 +1591,20 @@ function sourcesMeta(inputs) {
 	for (const [x, name, licence] of imp) if (x) out.push({ name, version: (x.meta && x.meta.version) || null, licence: (x.meta && x.meta.licence) || licence });
 	const d = inputs.forever.dungeons;
 	if (d && d.source) out.push({ name: `dungeons.json (${d.source.name || 'DungeonJournal'})`, version: d.source.version || null, licence: 'All Rights Reserved' });
-	const wh = inputs.wowhead;
+	const wh = inputs.web;
 	if (wh) {
 		const n = Object.keys(wh.npc).length + Object.keys(wh.object).length + Object.keys(wh.item).length;
 		const listed = wh.listed && wh.listed.npc ? Object.keys(wh.listed.npc).length : 0;
-		if (n || listed) out.push({ name: `Wowhead Forever database (wowhead.com/forever): NPC and object pages, item tooltips${listed ? ', NPC list levels' : ''}`, version: `${n} entities${listed ? `, ${listed} listed NPCs` : ''}; cache data/sources/wowhead/codex`, licence: 'Public web pages; facts only (levels, classification, positions, drop counts, requirements)' });
+		if (n || listed) out.push({ name: `The web quest database's Forever pages: NPC and object pages, item tooltips${listed ? ', NPC list levels' : ''}`, version: `${n} entities${listed ? `, ${listed} listed NPCs` : ''}; cache data/sources/web/codex`, licence: 'Public web pages; facts only (levels, classification, positions, drop counts, requirements)' });
 	}
 	const ne = Object.keys(inputs.entranceTable || {}).length;
-	if (ne && !inputs.atlasloot) out.push({ name: 'Curated instance entrances (tools/lib/codex/entrances.json): QuestieDB Forever dungeon table, warcraft.wiki.gg, Wowhead Forever', version: `${ne} entrances`, licence: 'Facts only (coordinates), each entry with its source' });
+	if (ne && !inputs.atlasloot) out.push({ name: 'Curated instance entrances (data/codex/entrances.json): QuestieDB Forever dungeon table, warcraft.wiki.gg, the web quest database (Forever pages)', version: `${ne} entrances`, licence: 'Facts only (coordinates), each entry with its source' });
 	const nr = Object.keys(inputs.repTable || {}).length;
-	if (nr) out.push({ name: 'Curated reputation gates (tools/lib/codex/repgates.json): warcraft.wiki.gg, Wowhead Classic reputation guides, QuestieDB', version: `${nr} items`, licence: 'Facts only (standings), each row with its source' });
+	if (nr) out.push({ name: "Curated reputation gates (data/codex/repgates.json): warcraft.wiki.gg, the web quest database's Classic reputation guides, QuestieDB", version: `${nr} items`, licence: 'Facts only (standings), each row with its source' });
 	const na = (inputs.attunementTable || require('./attunements').loadAttunementTable()).attunements.length;
-	if (na) out.push({ name: 'Curated attunement goals (tools/lib/codex/attunements.json): Wowhead Forever, warcraft.wiki.gg', version: `${na} attunements`, licence: 'Facts only (quest and item ids), each entry with its sources' });
+	if (na) out.push({ name: 'Curated attunement goals (data/codex/attunements.json): the web quest database (Forever pages), warcraft.wiki.gg', version: `${na} attunements`, licence: 'Facts only (quest and item ids), each entry with its sources' });
 	const nj = (inputs.journalQuests || require('./journal').loadJournalQuests()).length;
-	if (nj) out.push({ name: 'Curated Dungeons journal quests (tools/lib/codex/journal-quests.json): Wowhead Forever', version: `${nj} quests`, licence: 'Facts only (quest ids and instances), each row with its source' });
+	if (nj) out.push({ name: 'Curated Dungeons journal quests (data/codex/journal-quests.json): the web quest database (Forever pages)', version: `${nj} quests`, licence: 'Facts only (quest ids and instances), each row with its source' });
 	if (inputs.client) out.push({ name: 'World of Warcraft: Forever client tables via wago.tools', version: inputs.client.build, licence: 'Blizzard Entertainment game data, facts only' });
 	if (inputs.client && inputs.client.eraBuild) out.push({ name: 'World of Warcraft Classic Era client item tables via wago.tools (items missing from the Forever tables)', version: inputs.client.eraBuild, licence: 'Blizzard Entertainment game data, facts only' });
 	return out;
@@ -1711,7 +1674,7 @@ async function buildCodex(opts = {}) {
 function verifyOf(inputs) {
 	const norm = (x) => String(x || '').toLowerCase().replace(/^the\s+/, '').replace(/[^a-z0-9]/g, '');
 	return {
-		wowhead: inputs.wowhead || { npc: {}, object: {}, item: {} },
+		web: inputs.web || { npc: {}, object: {}, item: {} },
 		clientInstances: new Set(((inputs.client && inputs.client.instanceMaps) || []).map((m) => norm(m.name))),
 		// The AreaTable areas on instance maps (a `location` inside one).
 		instanceAreas: inputs.client ? new Set((inputs.client.instanceMaps || []).flatMap((m) => m.inner || [])) : null,

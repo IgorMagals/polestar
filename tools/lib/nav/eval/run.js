@@ -69,7 +69,7 @@ function navFiles(navDir) {
 	return files;
 }
 
-function runQueries({ navDir, queries, lua = findInterpreter(), zoneLevels = null }) {
+function runQueries({ navDir, queries, lua = findInterpreter(), zoneLevels = null, warm = false }) {
 	const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'polestar-eval-'));
 	try {
 		const list = path.join(tmp, 'files.txt');
@@ -83,6 +83,7 @@ function runQueries({ navDir, queries, lua = findInterpreter(), zoneLevels = nul
 			fs.writeFileSync(zfile, JSON.stringify(Object.fromEntries(Object.entries(zoneLevels).map(([id, z]) => [id, z.min]))));
 			args.push(zfile);
 		}
+		if (warm) args.push('warm');
 		const r = spawnSync(lua, args, { encoding: 'utf8', stdio: ['ignore', 'ignore', 'pipe'], maxBuffer: 64 * 1024 * 1024 });
 		if (r.error) throw r.error;
 		if (r.status !== 0) throw new Error(`nav eval harness (${lua}) failed: ${(r.stderr || '').trim()}`);

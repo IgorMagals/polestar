@@ -35,7 +35,7 @@
 // Like recorder-perf.test.js, allow one measured clock step (at most 1 ms)
 // for quantization. A whole-ms clock cannot resolve a sub-ms walking frame.
 //
-// Needs data/forever (node tools/polestar.js data build); skips without it.
+// Needs data/forever (forge data build); skips without it.
 // To find what broke a budget: node tests/helpers/profile.js <guide> --packs [--sample=1000]
 
 const { test } = require('node:test');

@@ -1,0 +1,9 @@
+JS references for tests/parity.rs (run with node from anywhere; outputs are absolute paths).
+$POLESTAR_JSREF is a scratch folder; drive-env.js reads its simdir/ (or POLESTAR_SIMDIR):
+
+  mkdir -p $POLESTAR_JSREF/simdir   # copies of data/sim/{world-*.json,params.json,floors.json}, symlinks to walks-*.bin
+
+Parity B's references are rust/tests/golden/sim (sim/regen.js, with JS_ROOT at 734380d2a).
+Parity A (historical: `sim route` is retired; needs a checkout at 734380d2a as <old>):
+  node <old>/rust/crates/forge-sim/tests/js/drivecli.js sim route --faction horde --race orc --class warrior --out $POLESTAR_JSREF/v2-horde-orc-warrior.json
+  node v2events.js $POLESTAR_JSREF/v2-horde-orc-warrior.json off $POLESTAR_JSREF/v2ev-horde-orc-off.json

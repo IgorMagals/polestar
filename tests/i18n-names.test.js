@@ -60,8 +60,8 @@ test('DingDB names come first and pfQuest fills the gaps; a pfQuest name that is
 	assert.deepEqual(obj(fr.names.object), { 68: 'Avis de recherche', 2843: 'Coffre cabossé' });
 	assert.deepEqual(obj(fr.names.item), { 750: 'Viande de loup coriace', 1528: "Poignée d'avoine", 2862: 'Pierre à aiguiser brute' });
 	assert.deepEqual(Object.fromEntries(names.NAME_KINDS.map((k) => [k, fr.from[k]])), {
-		quest: { wago: 0, wowhead: 0, ding: 2, pfquest: 1 }, npc: { wago: 0, wowhead: 0, ding: 2, pfquest: 1 },
-		object: { wago: 0, wowhead: 0, ding: 1, pfquest: 1 }, item: { wago: 0, wowhead: 0, ding: 2, pfquest: 1 },
+		quest: { wago: 0, web: 0, ding: 2, pfquest: 1 }, npc: { wago: 0, web: 0, ding: 2, pfquest: 1 },
+		object: { wago: 0, web: 0, ding: 1, pfquest: 1 }, item: { wago: 0, web: 0, ding: 2, pfquest: 1 },
 	});
 	assert.deepEqual(obj(out.esMX.names.npc), { 240: 'Alguacil Dughan' }, 'pfQuest has no esMX: DingDB only; its "Hogger", the English name, is not stored');
 	assert.deepEqual(obj(out.deDE.names.npc), { 6: 'Koboldungeziefer' });
@@ -177,7 +177,7 @@ test('node tools/polestar.js i18n names writes the folders and reports what each
 	const report = JSON.parse(r.stdout);
 	assert.equal(report.ding, null);
 	assert.equal(report.wago, null);
-	assert.equal(report.wowhead, null, 'no web names cache: nothing from it, nothing asked for');
+	assert.equal(report.web, null, 'no web names cache: nothing from it, nothing asked for');
 	assert.deepEqual(Object.fromEntries(names.NAME_KINDS.map((k) => [k, report.locales.frFR.names[k]])), { quest: 2, npc: 2, object: 1, item: 1 });
 	assert.deepEqual([report.locales.frFR.sameAsEnglish.npc, report.locales.frFR.lacking.npc], [1, report.ids.npc - 3],
 		'what each language lacks, apart from Marshal McBride, whose only French name is the English one');

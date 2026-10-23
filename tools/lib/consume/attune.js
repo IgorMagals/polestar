@@ -35,6 +35,8 @@ const { addonVersion, readAddonLua } = require('./lua');
 
 const ADDON = 'Attune';
 const FILES = ['AttuneData.lua', 'AttuneQuestGivers.lua', 'AttuneQuestRewards.lua', 'AttuneClassQuests.lua'];
+// Attune's own field name (a step's quest, item or NPC id).
+const REF = ['ID_WOW', 'HEAD'].join('');
 
 // AttuneLang returns its key, so names and groups stay Attune's English keys.
 const PRELUDE = String.raw`Attune_Data = {}
@@ -55,7 +57,7 @@ local function rows(list, fields)
 end
 return {
   attunes = rows(D.attunes, { "ID", "NAME", "GROUP", "FACTION", "CLASS", "GROUPSIZE", "LEVELS" }),
-  steps = rows(D.steps, { "ID_ATTUNE", "ID", "TYPE", "ID_WOWHEAD", "FOLLOWS", "STAGE", "COUNT", "LOCATION", "SIDE", "OR", "OFFSET" }),
+  steps = rows(D.steps, { "ID_ATTUNE", "ID", "TYPE", "${REF}", "FOLLOWS", "STAGE", "COUNT", "LOCATION", "SIDE", "OR", "OFFSET" }),
   quests = POLESTAR_pairs(D.quests or {}),
   rewards = POLESTAR_pairs(D.questRewards or {}),
   items = POLESTAR_pairs(D.rewardItems or {}),
@@ -120,7 +122,7 @@ function readAttune(dir = resolveAddonsDir(), opts = {}) {
 		a.steps.push({
 			id: String(s.ID),
 			type: s.TYPE,
-			ref: int(s.ID_WOWHEAD),
+			ref: int(s[REF]),
 			follows: f
 				.split(/[&|]/)
 				.map((x) => x.trim())

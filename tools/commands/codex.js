@@ -4,9 +4,12 @@
 const path = require('node:path');
 const { parseArgs } = require('node:util');
 
-const usage = `usage: node tools/polestar.js codex build [options]
+const usage = `usage: node tools/polestar.js codex build --local-extras [options]
        node tools/polestar.js codex parity [--ours <dir>] [--against <dir>]
        node tools/polestar.js codex attune [--addons <dir>] [--ours <dir>]
+
+The release build was retired: forge data codex [--addons DIR] [--build V] [--out DIR]
+[--pack DIR]. \`codex build --local-extras\` stays here: the release build plus local extras.
 
 Builds Lookup's Codex: every item, mount, pet, recipe, NPC, rare, quest,
 zone, dungeon and treasure, with where each item comes from, and the
@@ -31,8 +34,8 @@ ships that folder in the release zip.
                      (DungeonJournal, no licence). For this machine only: the
                      pack's meta says local and \`pack\` refuses to ship it.
 
-A release build also reads the Wowhead Forever facts cached in
-data/sources/wowhead/codex/ (tools/lib/codex/wowhead.js), when present.
+A release build also reads the Forever facts of the web quest database cached in
+data/sources/web/codex/ (tools/lib/codex/web.js), when present.
 
 A release build compares itself with the last --local-extras build (when
 data/local/codex-extras exists), entity by entity, writes
@@ -68,6 +71,10 @@ async function runBuild(rest) {
 		}));
 	} catch (err) {
 		return fail(err.message);
+	}
+	if (!values['local-extras']) {
+		console.error('polestar codex build was retired: forge data codex [--addons DIR] [--build V] [--out DIR] [--pack DIR] (only --local-extras builds here)');
+		return 2;
 	}
 	const { buildCodex } = require('../lib/codex/build');
 	const abs = (p) => (p ? path.resolve(p) : undefined);
@@ -136,7 +143,7 @@ async function runParity(rest) {
 	const fs = require('node:fs');
 	for (const d of [ours, against]) if (!fs.existsSync(path.join(d, 'meta.json'))) return fail(`no Codex build in ${d}`);
 	const { SOURCES } = require('../lib/paths');
-	const { loadWowhead } = require('../lib/codex/wowhead');
+	const { loadWeb } = require('../lib/codex/web');
 	const { parseCsv } = require('../lib/data/csv');
 	const wago = await clientDir(ours);
 	const csv = (table) => {
@@ -150,7 +157,7 @@ async function runParity(rest) {
 	// The AreaTable areas on instance maps (the web data's `location` inside one).
 	const instanceAreas = mapRows && areaRows ? new Set(require('../lib/codex/journal').instanceMapsOf(mapRows, areaRows).flatMap((m) => m.inner)) : null;
 	const oursCodex = { ...readCodex(ours), evidence: null };
-	const { report, files } = writeParity(oursCodex, readCodex(against), path.join(ROOT, 'data', 'local'), { wowhead: loadWowhead(SOURCES), clientInstances, instanceAreas });
+	const { report, files } = writeParity(oursCodex, readCodex(against), path.join(ROOT, 'data', 'local'), { web: loadWeb(SOURCES), clientInstances, instanceAreas });
 	printParity(report, files);
 	return 0;
 }

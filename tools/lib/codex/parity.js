@@ -104,7 +104,7 @@ function bossKey(b) {
 
 // Evidence for a disagreement, strongest first: recordings > the Forever
 // client's tables > Forever's data > pfQuest / QuestieDB > AtlasLoot /
-// RareScanner / DungeonJournal. `verify` = { wowhead: loadWowhead(),
+// RareScanner / DungeonJournal. `verify` = { web: loadWeb(),
 // clientInstances: Set(normalised Map names), instanceAreas: Set(AreaTable
 // ids on instance maps) | null } checks each internal-only
 // entity or value: `confirmed` (Forever has it: a gap of ours), `not in
@@ -112,7 +112,7 @@ function bossKey(b) {
 // (no checked source says either way).
 function verdictOf(kindName, row, verify, theirs) {
 	if (!verify) return 'unverified';
-	const wh = verify.wowhead || { npc: {}, object: {}, item: {} };
+	const wh = verify.web || { npc: {}, object: {}, item: {} };
 	const [a, b, c] = String(row.id).split('/');
 	if (kindName === 'instances') return verify.clientInstances && verify.clientInstances.has(norm((theirs.instances[a] || {}).name)) ? 'confirmed' : 'not in Forever';
 	if (['rares', 'rare positions', 'rare levels'].includes(kindName)) {
@@ -262,8 +262,8 @@ function compareCodex(ours, theirs, verify = null) {
 				? 'recorded kills and loot'
 				: from.includes('questie')
 					? 'QuestieDB Forever drop rate'
-					: from[0] === 'wowhead'
-						? "Wowhead Forever's looted-kill counts"
+					: from[0] === 'web'
+						? "the web quest database's Forever looted-kill counts"
 						: null;
 			if (reason) k('drop chances').match++;
 			k('drop chances').different.push({ ...row, theirs: s.chance, ours: mine.chance, reason });
@@ -346,7 +346,7 @@ function compareCodex(ours, theirs, verify = null) {
 			else if (ty === 'pvp' && noPvp.has(Number(id))) {
 				// Forever's own tooltip asks for no rank: ours keeps the vendor only.
 				k(`items: ${ty}`).match++;
-				k(`items: ${ty}`).different.push({ ...row, theirs: ty, ours: [...mine], reason: "Wowhead Forever's tooltip shows no PvP rank requirement" });
+				k(`items: ${ty}`).different.push({ ...row, theirs: ty, ours: [...mine], reason: "the web quest database's Forever tooltip shows no PvP rank requirement" });
 			} else k(`items: ${ty}`).missing.push(row);
 		}
 		if (['mount', 'pet', 'tabard'].includes(t.kind)) {
@@ -420,7 +420,7 @@ function compareCodex(ours, theirs, verify = null) {
 				k('quest XP').total++;
 				const ox = o.rewards && o.rewards.xp;
 				if (ox === q.rewards.xp) k('quest XP').match++;
-				else if (ox) k('quest XP').different.push({ ...row, theirs: q.rewards.xp, ours: ox, reason: 'QuestieDB / Wowhead Forever XP' });
+				else if (ox) k('quest XP').different.push({ ...row, theirs: q.rewards.xp, ours: ox, reason: 'QuestieDB / web quest database XP' });
 				else {
 					k('quest XP').missing.push(row);
 					needs.push({ kind: 'quest XP', id: q.id, name: q.title, what: 'the XP the quest gives', event: 'turnin (xpReward)' });
@@ -472,7 +472,7 @@ function compareCodex(ours, theirs, verify = null) {
 	// areas on instance maps), or ranks it an ordinary NPC (no boss flag, not
 	// rare) without loot of its own. Still a confirmed row; counted in
 	// internalOnly.notBoss.
-	const wh = (verify && verify.wowhead && verify.wowhead.npc) || {};
+	const wh = (verify && verify.web && verify.web.npc) || {};
 	const areas = (verify && verify.instanceAreas) || null;
 	for (const r of (K.bosses && K.bosses.missing) || []) {
 		const npc = Number(String(r.id).split('/')[1]);
@@ -483,7 +483,7 @@ function compareCodex(ours, theirs, verify = null) {
 		if (areas && !loc.some((a) => areas.has(a)) && (loc.length || maps.length)) {
 			r.reason = `Forever's sources place it outside the instance (${[...loc.map((a) => `area ${a}`), ...maps.map((m) => `map ${m}`)].join(', ')})`;
 		} else if (!w.boss && !['boss', 'rare', 'rareelite'].includes(w.classification)) {
-			r.reason = `Wowhead Forever ranks it an ordinary ${w.classification || 'normal'} NPC (no boss flag, not rare), and no green or better item only it drops at 5% or more`;
+			r.reason = `The web quest database's Forever page ranks it an ordinary ${w.classification || 'normal'} NPC (no boss flag, not rare), and no green or better item only it drops at 5% or more`;
 		} else continue;
 		K.bosses.internalOnly.notBoss = (K.bosses.internalOnly.notBoss || 0) + 1;
 	}
@@ -522,7 +522,7 @@ function markdown(report, { theirs = 'internal (--local-extras)', ours = 'releas
 	const pct = (v) => `${(v * 100).toFixed(1)}%`;
 	const lines = ['# Codex parity', '', `Ours: ${ours}. Theirs: ${theirs}. A difference with a reason (ours from a better-evidenced input) counts as a match.`, ''];
 	lines.push(
-		'Evidence for a disagreement, strongest first: recordings > Forever client tables > Wowhead Forever > pfQuest / QuestieDB > AtlasLoot / RareScanner / DungeonJournal. Internal only: confirmed = Forever has it and ours lacks it (a gap); not in Forever = the internal build is wrong or ahead of the game; unverified = no checked source says.',
+		'Evidence for a disagreement, strongest first: recordings > Forever client tables > the web quest database (Forever) > pfQuest / QuestieDB > AtlasLoot / RareScanner / DungeonJournal. Internal only: confirmed = Forever has it and ours lacks it (a gap); not in Forever = the internal build is wrong or ahead of the game; unverified = no checked source says.',
 		'',
 		'| Kind | Internal | Agree | Match | Internal only: confirmed | not in Forever | unverified | Ours only | Value differs, unresolved |',
 		'|---|---:|---:|---:|---:|---:|---:|---:|---:|',

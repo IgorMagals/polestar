@@ -1355,7 +1355,7 @@
   (`Core/Names.lua`) reads them; docs/ARCHITECTURE.md, "Names", and
   docs/TRANSLATING.md, "Game names".
 - i18n names reads the client's own tables in each language (wago.tools) and
-  the cached Forever web names (data/sources/wowhead/names) before DingDB
+  the cached Forever web names (data/sources/web/names) before DingDB
   and pfQuest, and bakes instance, encounter, faction, flight point and
   dungeon objective names too. Every addon TOC has Title-/Notes- lines for the
   nine languages, from tools/lib/i18n/toc.js.
@@ -1991,7 +1991,7 @@
   <one line>` (format 2; lint warns when a Class guide lacks either).
 - `data build` applies Forever's "Renamed from Y" change notes too: a quest
   whose title is still Y takes Forever's name (its `source` gains
-  `wowhead:title`). It also reads Forever's class quest lists, so
+  `web:title`). It also reads Forever's class quest lists, so
   Forever's XP and level changes reach class quests that no zone list shows.
 - Goals carry `group` (format 2 of the pack format; Polestar 0.2.4 reads it,
   older versions show such a pack as needing 0.2.4): the compiler derives it
@@ -2154,9 +2154,9 @@
   build` applies after the client's own gates and before a guide's; a row
   whose item, vendor or quest the Codex lacks is a build warning. Parity
   "items: rep" goes from 505 to 682 of 689.
-- `codex wowhead` reads Forever's NPC, object and item lists first
+- The Codex's web fetch reads Forever's NPC, object and item lists first
   (1,000 rows a request, by id range, cached under
-  `data/sources/wowhead/codex/lists/`) and fetches a cached page again only
+  `data/sources/web/codex/lists/`) and fetches a cached page again only
   when its list row changed, an older parser read it, or it is older than
   `--max-age` (default 7 days) and an open parity gap or Forever's own (new
   or updated): an entity Forever left as in Classic keeps its page. A
@@ -2169,7 +2169,7 @@
   picks its `--forever-build` (`pickBuild`, tools/lib/data/wago.js);
   `--build <version>` names one, and offline the newest cached build holding
   every table the Codex reads is used. `meta.json` records the build;
-  `codex parity` and `codex wowhead` read the client tables of the build the
+  `codex parity` and the web fetch read the client tables of the build the
   Codex was made from.
 - A route refresh keeps every fix a guide's header documents
   (docs/SIMULATION.md, "Keeping the guides' fixes"; CONTRIBUTING.md, "Fixing
@@ -2450,10 +2450,10 @@
 - A release `codex build` measures itself against the last `--local-extras`
   build, entity by entity (`data/local/codex-parity.md`, `codex parity`), and
   lists what only play can fill with the Recorder event that fills it.
-- `codex wowhead` fetches, one page at a time, Forever's web facts for
+- The Codex's web fetch gets, one page at a time, Forever's web facts for
   what the parity report lists as missing (NPC level, rank, positions and
   drops with counts; object contents; item tooltip requirements) into
-  `data/sources/wowhead/codex/`, which a release `codex build` reads. The
+  `data/sources/web/codex/`, which a release `codex build` reads. The
   parity report now checks every internal-only fact against Forever (the
   client, the web database) and says whether it is a gap of ours, not in Forever, or
   unverified.
@@ -2466,10 +2466,10 @@
   `.agents/skills/` and `.claude/skills/`, and the pack's AGENTS.md points to
   it.
 - `data build` reads Forever's zone quest lists (cached a day in
-  `data/sources/wowhead/`) and applies Forever's change notes: "Experience X
+  `data/sources/web/`) and applies Forever's change notes: "Experience X
   instead of Y", "Level X instead of Y" and "Requires level X instead of Y"
   set X where the data still holds the old value (Scaring Shaky now gives
-  3300 XP, not 820). Quests still without XP take the list's. `--no-wowhead`
+  3300 XP, not 820). Quests still without XP take the list's. `--no-web-zones`
   skips it; guide pack workflows and Codespaces build with it.
 - The Recorder records finds (`rare`, `treasure`, `slain`, `drop`, `enter`,
   `encounter` events; docs/ARCHITECTURE.md, "Recordings") and the quest

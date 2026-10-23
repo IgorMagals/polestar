@@ -8,7 +8,8 @@ skip with a reason.
 
 ## What ships
 
-`node tools/polestar.js pack` writes three files to `dist/`:
+`forge release pack` writes three files to `dist/` ([forge/release.md](forge/release.md)
+has every release command):
 
 | File | Contents |
 |---|---|
@@ -18,11 +19,12 @@ skip with a reason.
 
 Addon folders sit at the top level of each zip, so a player (or an addon
 manager) extracts straight into `Interface/AddOns/`. The zips are
-reproducible: the same sources give byte-identical archives.
+reproducible: the same sources give byte-identical archives, on every
+machine.
 
-Community addons are packed by their authors with `polestar pack` in the pack
-folder (`<pack>/dist/<folder>-<version>.zip`, version from its `pack.json`);
-see docs/PACKS.md.
+Community addons are packed by their authors with `forge release pack` in the
+pack folder (`<pack>/dist/<folder>-<version>.zip`, version from its
+`pack.json`); see docs/PACKS.md.
 
 ## Version
 
@@ -31,8 +33,8 @@ our guides' pack: `compile` writes its version into `Polestar_Guides.toc`)
 and in the `## Version` line of every addon TOC. One command sets them all:
 
 ```sh
-node tools/polestar.js version            # print it; exit 1 if guides/pack.json or a TOC disagrees
-node tools/polestar.js version 0.2.0      # set package.json, guides/pack.json and every addon TOC
+forge release version            # print it; exit 1 if guides/pack.json or a TOC disagrees
+forge release version 0.2.0      # set package.json, guides/pack.json and every addon TOC
 ```
 
 Data addons rebuilt later take the version from `package.json`. Versions
@@ -88,17 +90,17 @@ version throughout.
 2. Set the version and rebuild the data, the data addons and the guides:
 
    ```sh
-   node tools/polestar.js version 0.2.0
-   node tools/polestar.js data build
+   forge release version 0.2.0
+   forge data build --kb                     # fetches the sources first (forge data sources)
    node tools/polestar.js questdb build
-   node tools/polestar.js itemdb build && node tools/polestar.js gear build
-   node tools/polestar.js codex build        # release-safe; never --local-extras here
-   node tools/polestar.js credits            # Guiding Stars: tools/lib/credits.json + merged PRs (needs gh)
-   node tools/polestar.js lint
-   node tools/polestar.js compile
+   forge data itemdb && forge data gear
+   forge data sources --only builders && forge data codex   # release-safe inputs only
+   forge release credits                     # Guiding Stars: data/credits.json + merged PRs (needs gh)
+   forge guide lint
+   forge guide compile
    ```
 
-   Before `credits`, add new Ko-fi supporters to `tools/lib/credits.json`
+   Before `credits`, add new Ko-fi supporters to `data/credits.json`
    (names only, highest total first; amounts are never stored).
 
 3. Run the whole suite with the data built (nothing skips for missing data
@@ -111,26 +113,26 @@ version throughout.
 4. Pack and check the archives:
 
    ```sh
-   rm -rf dist && node tools/polestar.js pack
+   rm -rf dist && forge release pack
    (cd dist && sha256sum -c SHA256SUMS)
    unzip -l dist/Polestar-0.2.0.zip      # Polestar_Codex/ with its LICENSE-DATA.txt, and Polestar_Nav/ with its LICENSE and CREDITS.md, are listed
-   node tools/polestar.js nav check      # Polestar_Nav's walking maps match its PACK.json
+   forge nav check                       # Polestar_Nav's walking maps match its PACK.json
    ```
 
 5. Smoke-test the zips as a player gets them: unpack both into an empty
    AddOns folder and load the addons from there under Lua 5.1, with the stub
-   client the tests use (`POLESTAR_ADDON_DIR` points the test loader at
+   client the addon tests use (`POLESTAR_ADDON_DIR` points the test at
    another addon folder):
 
    ```sh
    smoke=$(mktemp -d)
    unzip -q dist/Polestar-0.2.0.zip -d "$smoke/AddOns"
    unzip -q dist/Polestar_Recorder-0.2.0.zip -d "$smoke/AddOns"
-   POLESTAR_ADDON_DIR="$smoke/AddOns" node --test tests/release.test.js
+   (cd rust && POLESTAR_ADDON_DIR="$smoke/AddOns" cargo test --release -p forge-addontest --test release)
    rm -rf "$smoke"
    ```
 
-   The test loads every addon in the folder in client order, logs in, and
+   The test loads every addon of the release in client order, logs in, and
    checks that the guides registered, a guide opened, the data addons loaded
    and every TOC carries the release version.
 
@@ -170,7 +172,7 @@ version throughout.
    the branch rules (see [Branch rules](#branch-rules)):
 
    ```sh
-   node tools/polestar.js changelog build 0.2.0     # writes "## 0.2.0 (<today>)", deletes the fragments
+   forge changelog build 0.2.0     # writes "## 0.2.0 (<today>)", deletes the fragments
    git add CHANGELOG.md changes package.json guides/pack.json addon/Polestar addon/Polestar_Guides addon/Polestar_ItemDB addon/Polestar_Nav addon/Polestar_Recorder
    git commit -m "Release: 0.2.0"
    git switch main && git merge --ff-only next && git switch next
@@ -178,13 +180,13 @@ version throughout.
    git push origin main next v0.2.0
    ```
 
-8. Write the release notes. `release notes` drafts all three from the
+8. Write the release notes. `forge release notes` drafts all three from the
    version's CHANGELOG.md section into `dist/` (not committed), each
    paragraph and list item joined onto one line, since GitHub shows every
    line break of a release's notes:
 
    ```sh
-   node tools/polestar.js release notes 0.2.0
+   forge release notes 0.2.0
    ```
 
    It writes `notes-0.2.0.md` (GitHub), `notes-curseforge-0.2.0.md` and
@@ -239,7 +241,7 @@ go to testers first. Build it as in [Steps](#steps) with the version
 `0.3.0-rc.1` and do steps 1 to 6, then:
 
 - leave the fragments in `changes/`: only the final release runs
-  `changelog build`. `node tools/polestar.js changelog show` prints what the
+  `forge changelog build`. `forge changelog show` prints what the
   candidate carries, for its notes;
 - tag `v0.3.0-rc.1` on `next`; `main` does not move for a candidate;
 - publish with `gh release create v0.3.0-rc.1 --verify-tag --prerelease`

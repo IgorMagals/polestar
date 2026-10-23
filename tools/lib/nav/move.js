@@ -125,9 +125,12 @@ function segmentClass(code, fa, fb) {
 }
 
 // Seconds of a link (stored code) over length d (yards, 3D) from an entry
-// with flags fa to one with fb, for profile p.
+// with flags fa to one with fb, for profile p (p.slopeMul: its own SLOPE_MUL;
+// p.faceMul: a land link touching a FLAG.STEEP column, terrain steeper than
+// the client walks up, costs that many times more).
 function linkSeconds(p, code, fa, fb, d) {
-	let s = code === CLS.SWIM ? d / p.swim : (d * SLOPE_MUL[code]) / ((fa | fb) & FLAG.INDOOR ? p.indoor : p.outdoor);
+	let s = code === CLS.SWIM ? d / p.swim : (d * (p.slopeMul || SLOPE_MUL)[code]) / ((fa | fb) & FLAG.INDOOR ? p.indoor : p.outdoor);
+	if (p.faceMul && code !== CLS.SWIM && (fa | fb) & FLAG.STEEP) s *= p.faceMul;
 	if (code === CLS.JUMP) s += JUMP_SECONDS;
 	if (p.remount && fa & FLAG.INDOOR && !(fb & (FLAG.INDOOR | FLAG.SWIM))) s += p.remount;
 	return s;

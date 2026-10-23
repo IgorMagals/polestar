@@ -67,7 +67,7 @@ function ctx() {
 			7146: { id: 7146, drops: { npc: {}, object: { 103821: 100 } } },
 		},
 		quality: (id) => quality[id] ?? null,
-		wowhead: {
+		web: {
 			npc: {
 				9476: { id: 9476, name: 'Watchman Doomgrip', boss: true, location: [1584], spawns: {}, drops: [] },
 				9027: { id: 9027, name: 'Gorosh the Dervish', classification: 'elite', boss: true, location: [1584], spawns: {}, drops: [] },
@@ -233,12 +233,12 @@ test('compareCodex: a chest boss matches by its object name; a confirmed missing
 		3864: { classification: 'elite', boss: false, location: [1584], spawns: {}, drops: [{ item: 932, count: 1, outof: 10 }] },
 		10339: { classification: 'elite', boss: true, location: [1584], spawns: {}, drops: [] },
 	};
-	const r = compareCodex(ours, theirs, { wowhead: { npc, object: {}, item: {} }, clientInstances: new Set(), instanceAreas: new Set([1584]) });
+	const r = compareCodex(ours, theirs, { web: { npc, object: {}, item: {} }, clientInstances: new Set(), instanceAreas: new Set([1584]) });
 	const b = r.kinds.bosses;
 	assert.equal(b.match, 1, 'The Seven is the Chest of The Seven');
 	assert.deepEqual(b.internalOnly, { confirmed: 3, notInForever: 0, unverified: 0, notBoss: 2 });
 	const why = Object.fromEntries(b.missing.map((m) => [m.id, m.reason]));
 	assert.equal(why['blackrock-depths/6231'], "Forever's sources place it outside the instance (map 1415)");
-	assert.match(why['blackrock-depths/3864'], /^Wowhead Forever ranks it an ordinary elite NPC/);
+	assert.match(why['blackrock-depths/3864'], /^The web quest database's Forever page ranks it an ordinary elite NPC/);
 	assert.equal(why['blackrock-depths/10339'], undefined, "Forever's data flags Gyth a boss inside: a real gap");
 });

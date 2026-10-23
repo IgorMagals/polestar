@@ -12,9 +12,9 @@
 // Sources, per id, the first one with a name winning:
 //   1. The Forever client's own tables in that language, from wago.tools
 //      (names-wago.js): items (ItemSparse), map, encounter, faction, taxi.
-//   2. Forever's quest data in that language (names-wowhead.js): its
+//   2. Forever's quest data in that language (names-web.js): its
 //      list pages and tooltips, read only from what is already cached in
-//      data/sources/wowhead/names, when present.
+//      data/sources/web/names, when present.
 //      The only source for the names of Forever's own quests, NPCs and
 //      objects.
 //   3. DingDB (Ding/DB/Locales/<locale>.lua of Ding! by Yendi, GPL-3.0, used
@@ -47,7 +47,7 @@ const { tocLines } = require('./toc');
 const NAME_KINDS = ['quest', 'npc', 'object', 'item'];
 const EXTRA_KINDS = ['map', 'encounter', 'faction', 'taxi', 'objective'];
 const PACK_KINDS = [...NAME_KINDS, ...EXTRA_KINDS];
-const SOURCE_KEYS = ['wago', 'wowhead', 'ding', 'pfquest'];
+const SOURCE_KEYS = ['wago', 'web', 'ding', 'pfquest'];
 const ADDON_PREFIX = 'Polestar_Names_';
 const CHUNK = 1000; // names per add() call
 
@@ -241,14 +241,14 @@ function toSets(raw) {
 // { guides: Guides.lua, questdb: addon folder, codex: data/forever/codex }
 // -> { quest, npc, object, item: Set of ids, counts: { guides, questdb, codex: { kind: n } } }
 function usedIds({ guides = DEFAULTS.guides, questdb = DEFAULTS.questdb, codex = DEFAULTS.codex } = {}) {
-	if (!fs.existsSync(guides)) throw new Error(`no compiled guides at ${guides}: run node tools/polestar.js compile, or pass --guides <Guides.lua>`);
+	if (!fs.existsSync(guides)) throw new Error(`no compiled guides at ${guides}: run forge guide compile, or pass --guides <Guides.lua>`);
 	const qFiles = QUESTDB_FILES.map((f) => path.join(questdb, f));
 	if (qFiles.some((f) => !fs.existsSync(f))) {
 		throw new Error(`the quest database is not built (no ${path.join(questdb, 'Quests.lua')}): run node tools/polestar.js questdb build, or pass --questdb <Polestar_QuestDB folder>`);
 	}
 	const cFiles = Object.fromEntries(Object.entries(CODEX_FILES).map(([k, f]) => [k, path.join(codex, f)]));
 	if (Object.values(cFiles).some((f) => !fs.existsSync(f))) {
-		throw new Error(`the Codex data is not built (no ${cFiles.quest}): run node tools/polestar.js codex build, or pass --codex <data/forever/codex folder>`);
+		throw new Error(`the Codex data is not built (no ${cFiles.quest}): run forge data codex, or pass --codex <data/forever/codex folder>`);
 	}
 	const sources = {
 		guides: toSets(luaToJson({ files: [guides], prelude: GUIDE_WALK, expr: LIST })),
@@ -345,7 +345,7 @@ function addEnglish(english, kind, id, name) {
 // ids: usedIds' with extraIds' kinds; ding: readDing's result or null
 // (--no-questie); pf: loadPfQuestNames' with enUS among its locales; wago:
 // loadClientNames' names ({ [locale]: { item, map, encounter, faction, taxi } })
-// or null; wowhead: { [locale]: loadWowheadNames' } or null; english: the
+// or null; web: { [locale]: loadWebNames' } or null; english: the
 // English names (addEnglish), with pfQuest's enUS and the web English lists
 // beside them. Per id the first source with a name that is no English name
 // wins, so any real translation beats a string some source left in English;
@@ -353,13 +353,13 @@ function addEnglish(english, kind, id, name) {
 // name with a placeholder marker is none.
 // -> { [locale]: { names: { kind: Map id -> name } (sorted by id),
 // english: { kind: Set of the ids whose every name is English },
-// from: { kind: { wago, wowhead, ding, pfquest } } } }
-function buildNames({ locales = LOCALE_CODES, ids, ding = null, pf = null, wago = null, wowhead = null, english = {} }) {
+// from: { kind: { wago, web, ding, pfquest } } } }
+function buildNames({ locales = LOCALE_CODES, ids, ding = null, pf = null, wago = null, web = null, english = {} }) {
 	const out = {};
 	const en = pf && pf.enUS;
 	for (const locale of locales) {
 		const w = wago && wago[locale];
-		const h = wowhead && wowhead[locale];
+		const h = web && web[locale];
 		const d = ding && ding[locale];
 		const p = pf && pf[locale];
 		const names = Object.fromEntries(PACK_KINDS.map((k) => [k, new Map()]));
@@ -381,8 +381,8 @@ function buildNames({ locales = LOCALE_CODES, ids, ding = null, pf = null, wago 
 					for (const n of v instanceof Set ? v : [v]) if (text(n)) englishNames.add(text(n));
 				}
 				const candidates = kind === 'objective'
-					? [['wowhead', h && h.objective && h.objective.get(id)], ['pfquest', get(p, id)]]
-					: [['wago', get(w, id)], ['wowhead', get(h && h.names, id)], ['ding', get(d, id)], ['pfquest', get(p, id)]];
+					? [['web', h && h.objective && h.objective.get(id)], ['pfquest', get(p, id)]]
+					: [['wago', get(w, id)], ['web', get(h && h.names, id)], ['ding', get(d, id)], ['pfquest', get(p, id)]];
 				const named = candidates.map(([s, v]) => [s, text(v)]).filter(([, v]) => usable(v));
 				const hit = named.find(([, v]) => !englishNames.has(v));
 				if (!hit) {
@@ -405,7 +405,7 @@ const total = (built) => PACK_KINDS.reduce((n, k) => n + (built.names[k] ? built
 function sourceLabel(sources) {
 	const parts = [];
 	if (sources.wago) parts.push(`the client's tables (${Object.values(sources.wago.builds).join(', ')}, wago.tools)`);
-	if (sources.wowhead) parts.push('Wowhead');
+	if (sources.web) parts.push('the web quest database');
 	if (sources.ding) parts.push(`DingDB ${sources.ding.pin.version}`);
 	parts.push(`pfQuest${sources.pf && sources.pf.revision ? ` ${sources.pf.revision.slice(0, 7)}` : ''}`);
 	return parts.length > 1 ? `${parts.slice(0, -1).join(', ')} and ${parts[parts.length - 1]}` : parts[0];
@@ -434,7 +434,7 @@ function licenseText(locale, built, sources) {
 		'first one with a name for an id winning.',
 		'',
 	];
-	const { wago, wowhead, ding, pf } = sources;
+	const { wago, web, ding, pf } = sources;
 	if (wago) {
 		out.push('World of Warcraft client tables, via wago.tools', '-----------------------------------------------');
 		const builds = { forever: 'World of Warcraft: Forever (wow_classic_beta)', era: 'Classic Era (wow_classic_era), for the items Forever\'s table lacks' };
@@ -442,12 +442,12 @@ function licenseText(locale, built, sources) {
 		for (const url of [...wago.urls].sort()) out.push(`Table: ${url.replace('<locale>', locale)}`);
 		out.push('The client\'s own strings: names only.', `Names taken: ${counts('wago')}.`, '');
 	}
-	const wh = wowhead && wowhead[locale];
+	const wh = web && web[locale];
 	if (wh) {
-		out.push('Wowhead, World of Warcraft: Forever database', '--------------------------------------------');
-		out.push(`URL: https://www.wowhead.com/forever/${require('../codex/wowhead').LOCALE_PATHS[locale]}/ (list pages; tooltips from nether.wowhead.com/forever)`);
+		out.push('The web quest database, World of Warcraft: Forever pages', '--------------------------------------------------------');
+		out.push(`Pages: the ${language} list pages and tooltips`);
 		if (wh.fetched) out.push(`Read: ${wh.fetched.first.slice(0, 10)} to ${wh.fetched.last.slice(0, 10)}`);
-		out.push('Public web pages; the game\'s names only (facts), credited in THIRD_PARTY.md.', `Names taken: ${counts('wowhead')}.`, '');
+		out.push('Public web pages; the game\'s names only (facts), credited in THIRD_PARTY.md.', `Names taken: ${counts('web')}.`, '');
 	}
 	if (ding) {
 		out.push('DingDB, the game database of Ding! by Yendi (@moust4ki)', '-------------------------------------------------------');

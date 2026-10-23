@@ -423,7 +423,11 @@ function encodeGraph(g) {
 }
 
 function decodeGraph(gz) {
-	const raw = gunzip(gz);
+	return decodeGraphRaw(gunzip(gz));
+}
+
+// An inflated graph (any Uint8Array, a SharedArrayBuffer's view too: the arrays are views on it).
+function decodeGraphRaw(raw) {
 	const buf = raw.byteOffset % 4 ? new Uint8Array(raw) : raw;
 	const ab = buf.buffer;
 	const base = buf.byteOffset;
@@ -469,5 +473,5 @@ module.exports = {
 	ADT, TILE_CELLS, CELL, COLUMNS, GENTLE_MAX, WALK_MAX, STEEP_MAX, CLIMB_MAX, STAIR_MAX, WALL_MIN, HALF, AGENT_HEIGHT, STEP, JUMP, SWIM_DEPTH, SAFE_FALL, FALL_MAX, FALL_MAX_WATER,
 	MERGE_TOP, STABLE_CELLS, LIFT_RADIUS, LIFT_REACH, LIFT_MIN, LIFT_FIT, LIFT_OPEN, LINK_SLOPE, CODE_LIFT, FALL_SLIDE,
 	FLAG, CLS, CLS_NAMES, NO_LINK, NO_COMP, MAX_LAYERS, DIRS, FALL_REACH, RUN_MAX, REF_PROFILES, VERSION, TILE_VERSIONS, GRAPH_VERSION, CONSTANTS,
-	tileKey, cellCentre, cellOf, firstOf, encodeTile, decodeTile, encodeGraph, decodeGraph, wallIndex, wallBlocks, encodeWalls, decodeWalls,
+	tileKey, cellCentre, cellOf, firstOf, encodeTile, decodeTile, encodeGraph, decodeGraph, decodeGraphRaw, gunzip, wallIndex, wallBlocks, encodeWalls, decodeWalls,
 };

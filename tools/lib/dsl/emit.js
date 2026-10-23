@@ -6,7 +6,7 @@
 const { FORMAT, NEEDS, TOC_MARKER, TOC_TITLE_PREFIX, LEGACY_TOC_TITLE_PREFIX } = require('../pack/format');
 const { header } = require('../generated');
 
-const GUIDE_KEYS = ['id', 'pack', 'title', 'faction', 'races', 'classes', 'minLevel', 'maxLevel', 'category', 'folder', 'keywords', 'collects', 'reward', 'why', 'zone', 'zoneName', 'next', 'nextChoices', 'nextWhen', 'pitch', 'pros', 'cons', 'author', 'version', 'group', 'names', 'written', 'steps'];
+const GUIDE_KEYS = ['id', 'pack', 'title', 'faction', 'races', 'classes', 'minLevel', 'maxLevel', 'category', 'folder', 'keywords', 'collects', 'reward', 'why', 'zone', 'zoneName', 'next', 'nextChoices', 'nextWhen', 'pitch', 'pros', 'cons', 'author', 'version', 'group', 'names', 'written', 'legsGrid', 'legs', 'steps'];
 // `image` follows note, so a step without one is emitted as before.
 const STEP_KEYS = ['title', 'note', 'image', 'label', 'only', 'when', 'along', 'skipto', 'goals'];
 // A step's picture: its path in the pack's addon folder (no extension) and its size in pixels.
@@ -44,7 +44,7 @@ const ONLY_KEYS = ['classes', 'races', 'factions'];
 const PACK_KEYS = ['id', 'title', 'author', 'version', 'license', 'website', 'source', 'notes'];
 const FRAME_KEYS = ['c', 'left', 'right', 'top', 'bottom'];
 
-const HEADER = header('lua', 'compile', 'the .guide files');
+const HEADER = header('lua', 'forge guide compile', 'the .guide files');
 // The fixed file set every pack loads, in order (a new guide changes Guides.lua, never this list).
 const PACK_SCRIPTS = ['Pack.lua', 'MapFrames.lua', 'Guides.lua'];
 
@@ -86,8 +86,20 @@ function scalar(v, decimals) {
 }
 
 // Arrays of scalars, or of tables (reagents) with a fixed key order.
-function list(arr, keys, decimals) {
-	return `{ ${arr.map((v) => (v !== null && typeof v === 'object' ? inline(v, keys || Object.keys(v).sort(), decimals) : scalar(v))).join(', ')} }`;
+// `records`: a guide's shared candidate records (sharing(), #574), emitted
+// as references; two entries of one list stay distinct tables (ranking keys
+// by identity), so a record is referenced at most once per list.
+function list(arr, keys, decimals, records) {
+	const used = new Set();
+	return `{ ${arr
+		.map((v) => {
+			const value = v !== null && typeof v === 'object' ? inline(v, keys || Object.keys(v).sort(), decimals) : scalar(v);
+			const shared = records && records.get(value);
+			if (!shared || used.has(shared)) return value;
+			used.add(shared);
+			return `candidateRecords[${shared}]`;
+		})
+		.join(', ')} }`;
 }
 
 // Integer-keyed map (e.g. preTitles: quest id -> title), keys ascending.
@@ -98,49 +110,123 @@ function idMap(obj) {
 	return `{ ${keys.map((k) => `[${k}] = ${scalar(obj[k])}`).join(', ')} }`;
 }
 
-function inline(obj, keys, decimals) {
+// `shared`: a guide's sharing() (goals only), for its candidate lists.
+function inline(obj, keys, decimals, shared) {
 	const parts = [];
 	for (const k of keys) {
 		const v = obj[k];
 		if (v === undefined || v === null) continue;
-		if (Array.isArray(v)) parts.push(`${k} = ${list(v, LIST_KEYS[k] || null, LIST_DECIMALS[k])}`);
-		else if (k === 'preTitles') parts.push(`${k} = ${idMap(v)}`);
+		if (Array.isArray(v)) {
+			const value = list(v, LIST_KEYS[k] || null, LIST_DECIMALS[k], k === 'candidates' && shared ? shared.records : null);
+			const ref = k === 'candidates' && shared && shared.lists.get(value);
+			parts.push(`${k} = ${ref ? `candidateLists[${ref}]` : value}`);
+		} else if (k === 'preTitles') parts.push(`${k} = ${idMap(v)}`);
 		else if (typeof v === 'object') parts.push(`${k} = ${inline(v, k === 'only' ? ONLY_KEYS : k === 'lvl' ? ['min', 'max'] : Object.keys(v).sort(), decimals)}`);
 		else parts.push(`${k} = ${scalar(v, decimals)}`);
 	}
 	return parts.length ? `{ ${parts.join(', ')} }` : '{}';
 }
 
+// Candidate lists and records repeated inside one guide, built once and
+// referenced (#574, HershelW): { records, lists } value -> index, and the
+// Lua lines declaring them. Candidates are read-only; a goal's pick and
+// ranking are its own. Nothing is shared across guides (a guide of the other
+// faction keeps none of this one's data), nor spawn spots (visits key by
+// identity).
+function sharing(steps) {
+	const counts = new Map();
+	const records = new Map();
+	for (const step of steps) {
+		for (const goal of step.goals || []) {
+			if (!goal.candidates) continue;
+			const value = list(goal.candidates, CANDIDATE_KEYS, LIST_DECIMALS.candidates);
+			if (!counts.has(value)) {
+				counts.set(value, { candidates: goal.candidates, n: 0 });
+				// Each distinct list counts its records once: a repeated list is shared whole.
+				for (const c of goal.candidates) {
+					const record = inline(c, CANDIDATE_KEYS, LIST_DECIMALS.candidates);
+					records.set(record, (records.get(record) || 0) + 1);
+				}
+			}
+			counts.get(value).n++;
+		}
+	}
+	const shared = { records: new Map(), lists: new Map() };
+	for (const [value, n] of records) if (n > 1) shared.records.set(value, shared.records.size + 1);
+	for (const { candidates, n } of counts.values()) {
+		if (n > 1) shared.lists.set(list(candidates, CANDIDATE_KEYS, LIST_DECIMALS.candidates, shared.records), shared.lists.size + 1);
+	}
+	const lines = [];
+	for (const [name, map] of [['candidateRecords', shared.records], ['candidateLists', shared.lists]]) {
+		if (!map.size) continue;
+		lines.push(`local ${name} = {`, ...[...map.keys()].map((value) => `\t${value},`), '}');
+	}
+	shared.lines = lines;
+	return shared;
+}
+
 // One guide's block of Guides.lua: its table is built inside its own
 // function, so Lua 5.1's per-function constant limit applies per guide.
-function emitGuide(guide, sourceRel) {
+// A guide's steps as Lua table source lines, each line indented by `ind`.
+function stepLines(steps, ind, shared) {
+	const out = [`${ind}{`];
+	for (const step of steps) {
+		out.push(`${ind}\t{`);
+		for (const sk of STEP_KEYS) {
+			const sv = step[sk];
+			if (sv === undefined || sv === null) continue;
+			if (sk === 'goals') {
+				out.push(`${ind}\t\tgoals = {`);
+				for (const goal of sv) out.push(`${ind}\t\t\t${inline(goal, GOAL_KEYS, undefined, shared)},`);
+				out.push(`${ind}\t\t},`);
+			} else if (sk === 'only') out.push(`${ind}\t\tonly = ${inline(sv, ONLY_KEYS)},`);
+			else if (sk === 'image') out.push(`${ind}\t\timage = ${inline(sv, IMAGE_KEYS)},`);
+			else if (sk === 'when') out.push(`${ind}\t\twhen = ${list(sv, WHEN_KEYS)},`);
+			// `skipto` (format 5): each jump's label, then its one predicate.
+			else if (sk === 'skipto') out.push(`${ind}\t\tskipto = { ${sv.map((k) => `{ to = ${luaString(k.to)}, when = ${inline(k.when, WHEN_KEYS)} }`).join(', ')} },`);
+			else out.push(`${ind}\t\t${sk} = ${scalar(sv)},`);
+		}
+		out.push(`${ind}\t},`);
+	}
+	out.push(`${ind}}`);
+	return out;
+}
+
+// `deferred` (a race part's guide, docs/PACK_FORMAT.md "Race parts"): the
+// steps as one source string (`stepsSrc`, `return { ... }`, run on first
+// read) with `stepCount`, and the guide registers only for a character of
+// one of its classes (Polestar.PartWants).
+function emitGuide(guide, sourceRel, { deferred = false } = {}) {
 	const out = [];
 	if (sourceRel) out.push(`-- Source: ${sourceRel.replace(/[\r\n]/g, ' ')}`);
-	out.push('do', '\tlocal function register()', '\t\tPolestar.RegisterGuide({');
+	const shared = sharing(guide.steps || []);
+	out.push('do', '\tlocal function register()');
+	// Deferred steps carry their shared candidates inside their own source.
+	if (!deferred) for (const line of shared.lines) out.push(`\t\t${line}`);
+	out.push('\t\tPolestar.RegisterGuide({');
 	for (const k of GUIDE_KEYS) {
 		const v = guide[k];
 		if (v === undefined || v === null) continue;
-		if (k === 'steps') {
-			out.push('\t\t\tsteps = {');
+		if (k === 'steps' && deferred) {
+			out.push(`\t\t\tstepCount = ${v.length},`);
+			// The group quests its steps ask about (`when group`), for the
+			// options' list without reading the steps (Engine.GroupQuests).
+			const groups = [];
 			for (const step of v) {
-				out.push('\t\t\t\t{');
-				for (const sk of STEP_KEYS) {
-					const sv = step[sk];
-					if (sv === undefined || sv === null) continue;
-					if (sk === 'goals') {
-						out.push('\t\t\t\t\tgoals = {');
-						for (const goal of sv) out.push(`\t\t\t\t\t\t${inline(goal, GOAL_KEYS)},`);
-						out.push('\t\t\t\t\t},');
-					} else if (sk === 'only') out.push(`\t\t\t\t\tonly = ${inline(sv, ONLY_KEYS)},`);
-					else if (sk === 'image') out.push(`\t\t\t\t\timage = ${inline(sv, IMAGE_KEYS)},`);
-					else if (sk === 'when') out.push(`\t\t\t\t\twhen = ${list(sv, WHEN_KEYS)},`);
-					// `skipto` (format 5): each jump's label, then its one predicate.
-					else if (sk === 'skipto') out.push(`\t\t\t\t\tskipto = { ${sv.map((k) => `{ to = ${luaString(k.to)}, when = ${inline(k.when, WHEN_KEYS)} }`).join(', ')} },`);
-					else out.push(`\t\t\t\t\t${sk} = ${scalar(sv)},`);
+				for (const p of step.when || []) {
+					if (p.k !== 'group' || groups.some((x) => x.quest === p.q)) continue;
+					const goal = (step.goals || []).find((g) => g.quest === p.q && g.title);
+					groups.push({ quest: p.q, title: goal ? goal.title : step.title });
 				}
-				out.push('\t\t\t\t},');
 			}
-			out.push('\t\t\t},');
+			if (groups.length) out.push(`\t\t\tgroupQuests = { ${groups.map((x) => `{ quest = ${x.quest}${x.title ? `, title = ${luaString(x.title)}` : ''} }`).join(', ')} },`);
+			out.push(`\t\t\tstepsSrc = ${luaString([...shared.lines, `return ${stepLines(v, '', shared).join('\n')}`].join('\n'))},`);
+		} else if (k === 'steps') {
+			const lines = stepLines(v, '\t\t\t', shared);
+			out.push(`\t\t\tsteps = {`, ...lines.slice(1, -1), '\t\t\t},');
+		} else if (k === 'legs') {
+			// Baked legs (tools/lib/nav/bake.js): step -> the walk into it, one string each.
+			out.push(`\t\t\tlegs = { ${Object.keys(v).map(Number).sort((x, y) => x - y).map((s) => `[${s}] = ${luaString(v[s])}`).join(', ')} },`);
 		} else if (k === 'nextWhen') {
 			// guide id -> its predicates, in the order of nextChoices.
 			out.push(`\t\t\tnextWhen = { ${Object.keys(v).map((id) => `[${luaString(id)}] = ${list(v[id], WHEN_KEYS)}`).join(', ')} },`);
@@ -151,7 +237,8 @@ function emitGuide(guide, sourceRel) {
 		} else if (Array.isArray(v)) out.push(`\t\t\t${k} = ${list(v, LIST_KEYS[k] || null)},`);
 		else out.push(`\t\t\t${k} = ${scalar(v)},`);
 	}
-	out.push('\t\t})', '\tend', '\tregister()', 'end');
+	const classes = deferred && Array.isArray(guide.classes) && guide.classes.length ? guide.classes : null;
+	out.push('\t\t})', '\tend', classes ? `\tif Polestar.PartWants(${list(classes)}) then register() end` : '\tregister()', 'end');
 	return `${out.join('\n')}\n`;
 }
 
@@ -206,6 +293,8 @@ function guideData(guide) {
 				}
 				return s;
 			});
+		} else if (k === 'legs') {
+			out[k] = { ...v };
 		} else if (k === 'nextWhen') {
 			const m = {};
 			for (const id of Object.keys(v)) m[id] = dataList(v[id], WHEN_KEYS);
@@ -228,9 +317,9 @@ function framesData(frames) {
 }
 
 // Guides.lua: every guide's block, sorted by id. entries: [{ guide, source }].
-function emitGuides(entries) {
+function emitGuides(entries, opts) {
 	const sorted = entries.slice().sort((a, b) => (a.guide.id < b.guide.id ? -1 : a.guide.id > b.guide.id ? 1 : 0));
-	return [`${HEADER}\n`, ...sorted.map((e) => emitGuide(e.guide, e.source))].join('\n');
+	return [`${HEADER}\n`, ...sorted.map((e) => emitGuide(e.guide, e.source, opts))].join('\n');
 }
 
 // Pack.lua: the pack's registration with its credits (manifest: pack.json, read by tools/lib/pack/manifest.js).
@@ -238,7 +327,7 @@ function emitGuides(entries) {
 function emitPack(manifest, format = FORMAT) {
 	const parts = ['addon = ADDON', `id = ${luaString(manifest.id)}`, `format = ${format}`];
 	for (const k of PACK_KEYS.slice(1)) if (manifest[k] !== undefined && manifest[k] !== null) parts.push(`${k} = ${luaString(manifest[k])}`);
-	return `${header('lua', 'compile', 'pack.json')}\nlocal ADDON = ...\n\nPolestar.RegisterPack({ ${parts.join(', ')} })\n`;
+	return `${header('lua', 'forge guide compile', 'pack.json')}\nlocal ADDON = ...\n\nPolestar.RegisterPack({ ${parts.join(', ')} })\n`;
 }
 
 // <folder>.toc: the pack's metadata for the client and for Polestar's pack
@@ -274,6 +363,37 @@ function emitToc(manifest, iface, format = FORMAT) {
 	return `${lines.join('\n')}\n`;
 }
 
+// A pack's race part (tools/lib/dsl/project.js buildPackFiles): the leveling
+// guides for one race, <folder>_<race file>, which Polestar loads on demand
+// once the pack is in, for a player of that race only (Core/Guides.lua). Its
+// guides register into the pack; its TOC names the pack and the race.
+function emitPartToc(manifest, race, iface) {
+	const lines = [
+		`## Interface: ${iface}`,
+		`## Title: ${manifest.title} (${race})`,
+		`## Notes: Leveling guides of ${manifest.title} for ${race} characters. Loaded on demand for that race.`,
+		`## Author: ${manifest.author}`,
+		`## Version: ${manifest.version}`,
+		'## Category: Quests',
+		'## Group: Polestar',
+		'## LoadOnDemand: 1',
+		`## Dependencies: Polestar, ${manifest.folder}`,
+		`## X-Polestar-Part: ${manifest.id}`,
+		`## X-Polestar-Race: ${race}`,
+		`## X-License: ${manifest.license}`,
+		TOC_MARKER,
+		'',
+		'Guides.lua',
+	];
+	return `${lines.join('\n')}\n`;
+}
+
+// The ids of guides a cutover retired (retired.json), after the pack's guides
+// in Guides.lua: Polestar opens a saved tab of one as its successor.
+function emitRetired(packId, ids) {
+	return `\nPolestar.RetireGuides(${luaString(packId)}, {\n${ids.map((id) => `\t${luaString(id)},`).join('\n')}\n})\n`;
+}
+
 // A pack's texts addon for one language (docs/TRANSLATING.md, "Guide
 // texts"): <folder>_<locale>, which Polestar loads on demand on that client
 // only, once the pack's own files are in (Core/GuideTexts.lua). Its TOC
@@ -306,7 +426,7 @@ function emitTextsToc(manifest, locale, language, iface) {
 // function: Lua 5.1 limits the constants of one.
 function emitTexts(packId, locale, t) {
 	const entries = (o) => Object.keys(o).sort().map((k) => `\t[${luaString(k)}] = ${luaString(o[k])},`);
-	const out = [header('lua', 'compile', `the pack's locales/${locale}/ files`), '', 'local t = { guides = {} }', 't.pack = {', ...entries(t.pack || {}), '}'];
+	const out = [header('lua', 'forge guide compile', `the pack's locales/${locale}/ files`), '', 'local t = { guides = {} }', 't.pack = {', ...entries(t.pack || {}), '}'];
 	const guides = t.guides || {};
 	for (const id of Object.keys(guides).sort()) out.push(`t.guides[${luaString(id)}] = (function() return {`, ...entries(guides[id]).map((l) => `\t${l}`), '} end)()');
 	out.push('', `Polestar.RegisterGuideTexts(${luaString(locale)}, ${luaString(packId)}, t)`, '');
@@ -417,4 +537,4 @@ function emitLicense(meta) {
 	return `${out.join('\n').trimEnd()}\n`;
 }
 
-module.exports = { emitGuides, emitPack, emitToc, emitTextsToc, emitTexts, emitMapFrames, emitClassTrainers, emitLicense, luaString, luaNumber, guideData, framesData, GUIDE_KEYS, STEP_KEYS, IMAGE_KEYS, WHEN_KEYS, GOAL_KEYS, ONLY_KEYS, LIST_KEYS, FRAME_KEYS };
+module.exports = { emitGuides, emitPack, emitToc, emitTextsToc, emitPartToc, emitRetired, emitTexts, emitMapFrames, emitClassTrainers, emitLicense, luaString, luaNumber, guideData, framesData, GUIDE_KEYS, STEP_KEYS, IMAGE_KEYS, WHEN_KEYS, GOAL_KEYS, ONLY_KEYS, LIST_KEYS, FRAME_KEYS };

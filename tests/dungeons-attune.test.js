@@ -1,6 +1,6 @@
 'use strict';
 // Attunements and keys: the builder (tools/lib/codex/attunements.js through
-// the journal), the cited goal table (tools/lib/codex/attunements.json), the
+// the journal), the cited goal table (data/codex/attunements.json), the
 // runtime's states and guide (addon/Polestar/Dungeons/Attune.lua) in the real
 // engine over the stub world, and the Attunement tab (UI/Dungeons.lua) over
 // the fake engine of tests/lua/stub_ui.lua.
@@ -25,6 +25,7 @@ const { writeCodexPack } = require('./helpers/codex');
 const { DATA, needs } = require('./helpers/data');
 const { luaValue } = require('../tools/lib/playtest');
 const { buildJournal, emitJournal } = require('../tools/lib/codex/journal');
+const { isWebCitation } = require('../tools/lib/codex/web');
 const { attunementsOf, loadAttunementTable, auditReport } = require('../tools/lib/codex/attunements');
 
 const fixture = JSON.parse(fs.readFileSync(path.join(__dirname, 'fixtures', 'codex', 'dungeons.json'), 'utf8'));
@@ -81,14 +82,14 @@ test('the goal table: every entry cites public sources, names a goal or an item,
 		assert.ok(['attunement', 'key', 'item'].includes(a.kind), a.id);
 		assert.ok(['each', 'one'].includes(a.need), a.id);
 		assert.ok((a.goal || []).every(Number.isInteger) && ((a.goal || []).length || Number.isInteger(a.item)), a.id);
-		assert.ok(a.sources.length && a.sources.every((s) => /^https:\/\//.test(s)), a.id);
-		for (const [q, l] of Object.entries(a.links || {})) assert.ok(/^\d+$/.test(q) && l.pre.every(Number.isInteger) && /https:\/\//.test(l.source), `${a.id} link ${q}`);
+		assert.ok(a.sources.length && a.sources.every((s) => (typeof s === 'string' ? /^https:\/\//.test(s) : isWebCitation(s))), a.id);
+		for (const [q, l] of Object.entries(a.links || {})) assert.ok(/^\d+$/.test(q) && l.pre.every(Number.isInteger) && (typeof l.source === 'string' ? /^https:\/\//.test(l.source) : isWebCitation(l.source)), `${a.id} link ${q}`);
 		assert.doesNotMatch(JSON.stringify(a), /Attune(?!ment)/i, `${a.id} names Attune`);
 	}
 	for (const r of t.removed) assert.ok(r.why && r.sources.length, r.id);
 	for (const e of t.inside) {
 		assert.ok(['npc', 'object'].includes(e.kind) && Number.isInteger(e.id) && e.name && e.instance, JSON.stringify(e));
-		assert.ok(e.sources.length && e.sources.every((s) => /^https:\/\/www\.wowhead\.com\/forever\//.test(s)), `${e.kind} ${e.id}`);
+		assert.ok(e.sources.length && e.sources.every((s) => isWebCitation(s) && s.edition === 'forever'), `${e.kind} ${e.id}`);
 		assert.doesNotMatch(JSON.stringify(e), /Attune(?!ment)/i, `${e.kind} ${e.id} names Attune`);
 	}
 });

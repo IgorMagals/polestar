@@ -11,8 +11,8 @@ const { resolveGuide } = require('./resolve');
 const { validateGuides, validatePackFrames, forEachGoalMap } = require('./validate');
 const { loadData } = require('./data');
 const { tokeniseGuides } = require('./tokens');
-const { emitGuides, emitPack, emitToc, emitTextsToc, emitTexts, emitMapFrames, emitLicense } = require('./emit');
-const { ownsGuideId, GENERATED_MARKER, formatFor } = require('../pack/format');
+const { emitGuides, emitPack, emitToc, emitTextsToc, emitPartToc, emitRetired, emitTexts, emitMapFrames, emitLicense } = require('./emit');
+const { ownsGuideId, GENERATED_MARKER, isGenerated, formatFor } = require('../pack/format');
 const { heightCounts } = require('./heights');
 const { checkImages, imageFiles } = require('./images');
 const { HEIGHTS_SOURCE } = require('../travel/cmangos');
@@ -20,6 +20,7 @@ const { HEIGHTS_SOURCE } = require('../travel/cmangos');
 const { ROOT, DATA } = require('../paths');
 const { LOCALES, LOCALE_CODES } = require('../i18n/locales');
 const { ADDON_PREFIX: NAMES_PREFIX } = require('../i18n/names');
+const { RACE_FILES } = require('../game/races');
 // Our own pack: guides/pack.json and the guides beside it.
 const OFFICIAL_DIR = path.join(ROOT, 'guides');
 
@@ -63,7 +64,7 @@ function findGuideFiles(packDir, includeDrafts = false) {
 function loadProjectData(dataDir, diag) {
 	const data = loadData(dataDir);
 	if (!fs.existsSync(dataDir)) {
-		diag.warn(dataDir, 0, 'reference data not found (run `node tools/polestar.js data build` or pass --data); nothing can be filled in');
+		diag.warn(dataDir, 0, 'reference data not found (run `forge data build` or pass --data); nothing can be filled in');
 	} else if (data.missingCore.length) {
 		// professions.json / factions.json are reported where a guide needs them.
 		diag.warn(dataDir, 0, `missing ${data.missingCore.join(', ')}`);
@@ -101,7 +102,76 @@ function compileProject({ packDir, manifest, dataDir, includeDrafts = false, dat
 		if (!contextData) contextData = contextDataDir && path.resolve(contextDataDir) !== path.resolve(dataDir || '') ? loadProjectData(contextDataDir, diag) : data;
 		context = { sources: readSources(contextDir, findGuideFiles(contextDir)), data: contextData };
 	}
-	return { ...compileSources(readSources(packDir, sources), data, diag, { pack: manifest && manifest.id, author: manifest && manifest.author, context, packDir }), data, sources };
+	const out = { ...compileSources(readSources(packDir, sources), data, diag, { pack: manifest && manifest.id, author: manifest && manifest.author, context, packDir }), data, sources };
+	out.retired = readRetired(packDir, out.guides, diag);
+	readLegs(packDir, out.guides, data, diag);
+	return out;
+}
+
+// <packDir>/legs.json (`polestar bake`, tools/lib/nav/bake.js): each class
+// route guide's baked legs, { schema, grid, legs: { [id]: { hash, steps:
+// { [step]: string } } } }. A guide gets `legs` (step -> string) and
+// `legsGrid` when its leg ends still hash the same; one changed since warns
+// and goes without (search as before) until the next bake.
+const LEGS_FILE = 'legs.json';
+function readLegs(packDir, guides, data, diag) {
+	const file = path.join(packDir, LEGS_FILE);
+	if (!fs.existsSync(file)) return;
+	let doc;
+	try {
+		doc = JSON.parse(fs.readFileSync(file, 'utf8'));
+	} catch (e) {
+		diag.error(file, 1, `${LEGS_FILE} is not JSON: ${e.message}`);
+		return;
+	}
+	if (!doc || doc.schema !== 1 || typeof doc.legs !== 'object' || typeof doc.grid !== 'string') {
+		diag.error(file, 1, `${LEGS_FILE} is not a legs file of schema 1 (polestar bake)`);
+		return;
+	}
+	const { guideHash } = require('../nav/bake');
+	let stale = 0;
+	for (const g of guides) {
+		const entry = doc.legs[g.id];
+		if (!entry || !racePart(g)) continue;
+		if (entry.hash !== guideHash(g, data.mapFrames)) {
+			stale++;
+			continue;
+		}
+		const steps = {};
+		for (const [s, str] of Object.entries(entry.steps || {})) if (typeof str === 'string' && /^[A-Za-z0-9+/]+$/.test(str) && g.steps[Number(s) - 1]) steps[s] = str;
+		if (Object.keys(steps).length) {
+			// The guide and the copy Guides.lua gets (localise).
+			for (const x of [g, g._localised].filter(Boolean)) {
+				x.legs = steps;
+				x.legsGrid = doc.grid;
+			}
+		}
+	}
+	if (stale) diag.warn(file, 1, `${stale} guide(s) changed since their legs were baked: they go without until \`polestar bake\` runs again`);
+}
+
+// <packDir>/retired.json: the ids of guides a cutover removed, ["<id>", ...]
+// (Polestar opens a saved tab of one as its successor: Core/Guides.lua
+// Guides.Successor). An id one of the pack's guides still has warns; a file
+// that is no list of guide ids is an error. -> [id] ([] without the file)
+const RETIRED_FILE = 'retired.json';
+function readRetired(packDir, guides, diag) {
+	const file = path.join(packDir, RETIRED_FILE);
+	if (!fs.existsSync(file)) return [];
+	let list;
+	try {
+		list = JSON.parse(fs.readFileSync(file, 'utf8'));
+	} catch (e) {
+		diag.error(file, 1, `${RETIRED_FILE} is not JSON: ${e.message}`);
+		return [];
+	}
+	if (!Array.isArray(list) || !list.every((id) => typeof id === 'string' && /^[a-z0-9_-]+(?:\/[a-z0-9_-]+)*$/.test(id))) {
+		diag.error(file, 1, `${RETIRED_FILE} must be a list of guide ids`, 'write ["forever/horde/02-the-barrens", ...]');
+		return [];
+	}
+	const live = new Set(guides.map((g) => g.id));
+	for (const id of list) if (live.has(id)) diag.warn(file, 1, `retired guide id "${id}" is still a guide of the pack: Polestar keeps opening it`);
+	return [...new Set(list)].sort();
 }
 
 // Parse and resolve sources into guides of `pack` (ours when absent); a
@@ -186,20 +256,43 @@ function referencedFrames(guides, data) {
 // `translations` (tools/lib/i18n/guides.js packTranslations: { [locale]: {
 // pack, guides } }) add a texts addon per language beside the folder,
 // named `../<folder>_<locale>/<file>` (writePackDir writes them there).
-function buildPackFiles({ guides, manifest, data, license = null, translations = {} }) {
+function buildPackFiles({ guides, manifest, data, license = null, translations = {}, retired = [] }) {
 	const sources = (data.meta && Array.isArray(data.meta.sources) && data.meta.sources) || [];
 	const h = heightCounts(guides);
 	const meta = h.withZ + h.candidatesWithZ + h.spotsWithZ && !sources.some((s) => s && s.name === HEIGHTS_SOURCE.name) ? { ...data.meta, sources: [...sources, HEIGHTS_SOURCE] } : data.meta;
 	const iface = coreInterface();
 	const format = formatFor(guides);
+	const entry = (g) => ({ guide: g._localised || g, source: g._ast && g._ast.source ? g._ast.source : null });
+	// Leveling guides for one class and named races go into an addon per race
+	// (racePart), which Polestar loads for the player's race only.
+	const parts = new Map();
+	const main = [];
+	for (const g of guides) {
+		const races = racePart(g);
+		if (!races) {
+			main.push(g);
+			continue;
+		}
+		for (const r of races) {
+			if (!parts.has(r)) parts.set(r, []);
+			parts.get(r).push(g);
+		}
+	}
 	const files = {
 		[`${manifest.folder}.toc`]: emitToc(manifest, iface, format),
 		'Pack.lua': emitPack(manifest, format),
+		// Every guide's maps, the parts' too: their guides register into this pack.
 		'MapFrames.lua': emitMapFrames(referencedFrames(guides, data), manifest.id),
-		'Guides.lua': emitGuides(guides.map((g) => ({ guide: g._localised || g, source: g._ast && g._ast.source ? g._ast.source : null }))),
+		'Guides.lua': emitGuides(main.map(entry)) + (retired.length ? emitRetired(manifest.id, retired) : ''),
 		'LICENSE-DATA.txt': emitLicense(meta),
 	};
 	if (license != null) files['LICENSE.txt'] = license;
+	for (const race of [...parts.keys()].sort()) {
+		const name = partAddon(manifest.folder, race);
+		files[`../${name}/${name}.toc`] = emitPartToc(manifest, race, iface);
+		files[`../${name}/Guides.lua`] = emitGuides(parts.get(race).map(entry), { deferred: true });
+		if (license != null) files[`../${name}/LICENSE.txt`] = license;
+	}
 	for (const [rel, abs] of imageFiles(guides)) files[rel] = fs.readFileSync(abs);
 	for (const locale of Object.keys(translations).sort()) {
 		const name = textsAddon(manifest.folder, locale);
@@ -208,6 +301,22 @@ function buildPackFiles({ guides, manifest, data, license = null, translations =
 		if (license != null) files[`../${name}/LICENSE.txt`] = license;
 	}
 	return files;
+}
+
+// The races a guide's own addon part is for: a leveling guide (category
+// Leveling or none) with a `class` and a `race` header (a v2 route's chain),
+// as race files; null for any other guide.
+function racePart(g) {
+	if (g.category != null && g.category !== 'Leveling') return null;
+	if (!(Array.isArray(g.classes) && g.classes.length && Array.isArray(g.races) && g.races.length)) return null;
+	const races = g.races.filter((r) => RACE_FILES.includes(r));
+	return races.length ? races : null;
+}
+
+// The race part of pack folder `folder` for race file `race` (Core/Guides.lua
+// loads <pack addon>_<race file> for the player's race).
+function partAddon(folder, race) {
+	return `${folder}_${race}`;
 }
 
 // The texts addon of pack folder `folder` in `locale` (Core/GuideTexts.lua).
@@ -224,7 +333,7 @@ function isGeneratedDir(dir) {
 	} catch {
 		return false;
 	}
-	const has = (name) => fs.readFileSync(path.join(dir, name), 'utf8').includes(GENERATED_MARKER);
+	const has = (name) => isGenerated(fs.readFileSync(path.join(dir, name), 'utf8'));
 	return entries.some((e) => e.isFile() && (e.name.toLowerCase().endsWith('.toc') || e.name === 'Pack.xml') && has(e.name));
 }
 
@@ -242,7 +351,7 @@ function generatedPackId(dir) {
 	for (const e of entries) {
 		if (!e.isFile() || !e.name.toLowerCase().endsWith('.toc')) continue;
 		const text = fs.readFileSync(path.join(dir, e.name), 'utf8');
-		const m = text.includes(GENERATED_MARKER) && PACK_ID_LINE.exec(text);
+		const m = isGenerated(text) && PACK_ID_LINE.exec(text);
 		if (m) return m[1];
 	}
 	return null;
@@ -272,8 +381,9 @@ function packDirRefusal(dir, packId = null) {
 // files' TOC names). The old layout (Pack.xml, Guides/) is removed, and a
 // LICENSE.txt the build no longer has; generated files are replaced;
 // anything else is left alone. Files named `../<folder>_<locale>/...` are the
-// pack's texts addons (buildPackFiles), each written whole beside outDir; a
-// texts addon of the pack whose language the build no longer has is removed.
+// pack's texts addons and `../<folder>_<race file>/...` its race parts
+// (buildPackFiles), each written whole beside outDir; a texts addon or race
+// part of the pack the build no longer has is removed.
 function writePackDir(outDir, files) {
 	const toc = Object.keys(files).find((name) => !name.startsWith('../') && name.toLowerCase().endsWith('.toc'));
 	const m = toc ? PACK_ID_LINE.exec(String(files[toc])) : null;
@@ -294,6 +404,12 @@ function writePackDir(outDir, files) {
 		const why = textsDirRefusal(dir, packId);
 		if (siblings.has(path.basename(dir)) && why) throw new Error(`refusing to write into ${dir}: ${why}`);
 	}
+	const raceParts = RACE_FILES.map((r) => partAddon(base, r));
+	for (const folder of raceParts) {
+		const dir = path.join(parent, folder);
+		const why = partDirRefusal(dir, packId);
+		if (siblings.has(folder) && why) throw new Error(`refusing to write into ${dir}: ${why}`);
+	}
 	fs.mkdirSync(outDir, { recursive: true });
 	fs.rmSync(path.join(outDir, 'Guides'), { recursive: true, force: true });
 	fs.rmSync(path.join(outDir, 'Pack.xml'), { force: true });
@@ -303,18 +419,41 @@ function writePackDir(outDir, files) {
 		if (name.includes('/')) fs.mkdirSync(path.join(outDir, path.dirname(name)), { recursive: true });
 		fs.writeFileSync(path.join(outDir, name), files[name]);
 	}
-	for (const locale of LOCALE_CODES) {
-		const folder = textsAddon(base, locale);
+	const writeSibling = (folder, refused) => {
 		const dir = path.join(parent, folder);
 		const own = siblings.get(folder);
 		if (!own) {
-			if (fs.existsSync(dir) && !textsDirRefusal(dir, packId) && fs.readdirSync(dir).length) fs.rmSync(dir, { recursive: true, force: true });
-			continue;
+			if (fs.existsSync(dir) && !refused(dir) && fs.readdirSync(dir).length) fs.rmSync(dir, { recursive: true, force: true });
+			return;
 		}
 		fs.rmSync(dir, { recursive: true, force: true });
 		fs.mkdirSync(dir, { recursive: true });
 		for (const name of Object.keys(own).sort()) fs.writeFileSync(path.join(dir, name), own[name]);
+	};
+	for (const locale of LOCALE_CODES) writeSibling(textsAddon(base, locale), (dir) => textsDirRefusal(dir, packId));
+	// A race part of the pack the build no longer has is removed with the rest.
+	for (const folder of raceParts) writeSibling(folder, (dir) => partDirRefusal(dir, packId));
+}
+
+// The pack id a generated race part's TOC names (`## X-Polestar-Part:`).
+const PART_ID_LINE = /^## X-Polestar-Part:[ \t]*(\S+)[ \t]*$/m;
+
+// Whether dir may hold pack packId's race part: absent, empty, or one we
+// generated for that pack. -> null, or why not.
+function partDirRefusal(dir, packId) {
+	let entries;
+	try {
+		entries = fs.readdirSync(dir);
+	} catch {
+		return fs.existsSync(dir) ? 'it is not a folder' : null;
 	}
+	if (!entries.length) return null;
+	const toc = entries.find((e) => e.toLowerCase().endsWith('.toc'));
+	const text = toc ? fs.readFileSync(path.join(dir, toc), 'utf8') : '';
+	const m = isGenerated(text) && PART_ID_LINE.exec(text);
+	if (!m) return `it is not a generated race part (no TOC with the "${GENERATED_MARKER}" line); move it away first`;
+	if (packId && m[1] !== packId) return `it holds a race part of the community addon "${m[1]}", not "${packId}"`;
+	return null;
 }
 
 // The pack id a generated texts addon's TOC names (`## X-Polestar-Texts:`).
@@ -332,7 +471,7 @@ function textsDirRefusal(dir, packId) {
 	if (!entries.length) return null;
 	const toc = entries.find((e) => e.toLowerCase().endsWith('.toc'));
 	const text = toc ? fs.readFileSync(path.join(dir, toc), 'utf8') : '';
-	const m = text.includes(GENERATED_MARKER) && TEXTS_ID_LINE.exec(text);
+	const m = isGenerated(text) && TEXTS_ID_LINE.exec(text);
 	if (!m) return `it is not a generated texts addon (no TOC with the "${GENERATED_MARKER}" line); move it away first`;
 	if (packId && m[1] !== packId) return `it holds the texts of the community addon "${m[1]}", not "${packId}"`;
 	return null;
@@ -342,7 +481,7 @@ function textsDirRefusal(dir, packId) {
 // Polestar's walking router and maps, `nav pack`), plus the generated
 // data addons when they have been built (each skipped while its folder or TOC
 // is missing; `pack` refuses a release without the Codex, which Lookup,
-// Dungeons and Rares read: tools/lib/codex/pack.js releaseRefusal), the names
+// Dungeons and Rares read: forge-release's codex_refusal), the names
 // addons of each language last (`i18n names`, committed; the client loads only
 // its own).
 const RELEASE_ADDONS = ['Polestar', 'Polestar_Guides', 'Polestar_Nav'];
@@ -358,7 +497,9 @@ const RELEASE_DATA_ADDONS = [
 function releaseAddons(addonsDir) {
 	const skipped = RELEASE_DATA_ADDONS.filter((n) => !fs.existsSync(path.join(addonsDir, n, `${n}.toc`)));
 	const texts = RELEASE_TEXT_ADDONS.filter((n) => fs.existsSync(path.join(addonsDir, n, `${n}.toc`)));
-	return { names: [...RELEASE_ADDONS, ...texts, ...RELEASE_DATA_ADDONS.filter((n) => !skipped.includes(n))], skipped };
+	// Our pack's race parts (buildPackFiles), each once built.
+	const parts = RACE_FILES.map((r) => partAddon('Polestar_Guides', r)).filter((n) => fs.existsSync(path.join(addonsDir, n, `${n}.toc`)));
+	return { names: [...RELEASE_ADDONS, ...parts, ...texts, ...RELEASE_DATA_ADDONS.filter((n) => !skipped.includes(n))], skipped };
 }
 
 module.exports = {
@@ -372,9 +513,12 @@ module.exports = {
 	buildPackFiles,
 	packDirRefusal,
 	textsDirRefusal,
+	partDirRefusal,
 	writePackDir,
 	referencedFrames,
 	textsAddon,
+	partAddon,
+	racePart,
 	RELEASE_ADDONS,
 	RELEASE_DATA_ADDONS,
 	releaseAddons,

@@ -42,7 +42,7 @@ zone Stormwind City
 # Places: npcs.json for the givers and the Terrordale Spirits;
 # items.json for the vendors of the Enriched Manna Biscuits (the Argent Dawn
 # quartermasters), the Stratholme Supply Crates that hold the Holy Water and
-# the droppers of the diamonds; tools/lib/codex/entrances.json (QuestieDB
+# the droppers of the diamonds; data/codex/entrances.json (QuestieDB
 # Forever) for the Dire Maul gate (Feralas 59.2,45.1), Scholomance (Caer
 # Darrow, Western Plaguelands 69.7,73.2) and Stratholme's main gate (Eastern
 # Plaguelands 26.5,10.4, Forever's map). Tendris Warpwood, the Ancient Equine

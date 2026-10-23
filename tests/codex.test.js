@@ -755,7 +755,7 @@ test('Codex services keep precise fallback positions when the reference data has
 	const inputs = syntheticInputs();
 	delete inputs.atlasloot;
 	inputs.forever.npcs[4730].spawns = {};
-	inputs.wowhead = { npc: { 4730: { spawns: { 1438: [[25.2,50.1],[25.3,50.2]] }, drops: [] } }, object: {}, item: {}, spell: {} };
+	inputs.web = { npc: { 4730: { spawns: { 1438: [[25.2,50.1],[25.3,50.2]] }, drops: [] } }, object: {}, item: {}, spell: {} };
 	const npc = mergeCodex(inputs).npcs[4730];
 	assert.deepEqual(npc.spawns, [{ map:1438, x:25.2, y:50.1, f:null }, { map:1438, x:25.3, y:50.2, f:null }]);
 });
@@ -764,9 +764,9 @@ test('mergeCodex: an NPC casting a spell that creates the item hands it out (gif
 	const inputs = syntheticInputs();
 	delete inputs.atlasloot;
 	inputs.client.creates = { 20001: [21357] };
-	inputs.wowhead = { npc: {}, object: {}, item: {}, spell: { 21357: { id: 21357, usedBy: [4730, 424242] } } };
+	inputs.web = { npc: {}, object: {}, item: {}, spell: { 21357: { id: 21357, usedBy: [4730, 424242] } } };
 	const it = mergeCodex(inputs).items;
-	assert.deepEqual(it[20001].sources, [{ type: 'gift', npc: 4730, spell: 21357, from: ['wowhead'] }], 'an NPC the data does not know is left out');
+	assert.deepEqual(it[20001].sources, [{ type: 'gift', npc: 4730, spell: 21357, from: ['web'] }], 'an NPC the data does not know is left out');
 });
 
 test('mergeCodex: a Forever list row gives the level of an NPC nothing else does, only the level', () => {
@@ -774,7 +774,7 @@ test('mergeCodex: a Forever list row gives the level of an NPC nothing else does
 	delete inputs.atlasloot;
 	inputs.forever.npcs[7747].level = null;
 	const row = (id, level) => ({ id, name: 'x', location: [1], level, classification: 'rare', boss: true, change: { status: 'new', lines: [] } });
-	inputs.wowhead = { npc: {}, object: {}, item: {}, spell: {}, listed: { npc: { 7747: row(7747, [9, 10]), 4730: row(4730, [50, 50]) } } };
+	inputs.web = { npc: {}, object: {}, item: {}, spell: {}, listed: { npc: { 7747: row(7747, [9, 10]), 4730: row(4730, [50, 50]) } } };
 	const { npcs } = mergeCodex(inputs);
 	assert.deepEqual([npcs[7747].level, npcs[7747].levelMax, npcs[7747].rare, npcs[7747].boss], [9, 10, false, false]);
 	assert.equal(npcs[4730].level, 35, "the data's level stays");

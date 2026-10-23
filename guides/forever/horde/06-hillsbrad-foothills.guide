@@ -56,7 +56,7 @@ next forever/horde/07-ashenvale
 # because QuestieDB lists no prerequisite for them; but 97289 asks for the
 # Head of the Baron, and the chain starts from the Abominable Head (97288), a
 # drop from The Baron in the Ruins of Lordaeron dungeon, so they stay out
-# (tools/lib/data/corrections.json now links 97288 -> 97289 -> ... -> 97292).
+# (data/corrections.json now links 97288 -> 97289 -> ... -> 97292).
 # Valuable Vantages (98095, Forever, Masoj's follow-up to Scout Support):
 # the new consensus route takes it, but its three vial spots (the hills by
 # Dun Garok, the plateau over Durnholde, the Headland ridge above Hillsbrad,

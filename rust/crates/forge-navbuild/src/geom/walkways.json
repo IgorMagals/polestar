@@ -1,0 +1,17 @@
+{
+	"note": [
+		"Reviewed walkways: M2 models one walks across, whose faces steeper than WALK_MAX nav build keeps as walls instead of spans (tools/lib/nav/geom/index.js tileGeometry, tools/lib/nav/grid/rasterise.js).",
+		"A face between WALK_MAX and WALL_MIN is a span wherever it crosses a column's centre line. On a narrow model deck (a rope bridge placed at a small scale) the side rails' leaning faces cross the centre lines of the deck's own columns, so their spans sit on the planks: the deck below is blocked for headroom and the top is steep, and the bridge is cut in two.",
+		"Each entry names an M2 by FileDataID; every placement of that model gets the rule. As walls the rails still keep a walk from stepping off the side, as WALL_MIN faces do.",
+		"Add an entry only for a model that is walked across in the game, checked against every placement of it: list them (FileDataID, uniqueId, scale) and route each end to end before and after.",
+		"nav build keeps a tile it already built: after a change here, delete the tiles the model stands on (tiles/<c>/<col>_<row>.*) or build with --force, then nav pack."
+	],
+	"walkways": [
+		{
+			"id": "thousand-needles-grimtotem-rope-bridge",
+			"m2": 202693,
+			"issue": 374,
+			"why": "The Grimtotem rope bridges between the mesas of Darkcloud Pinnacle, Thousand Needles: 8 placements, all on Kalimdor 35_40 and 35_41. The two placed at 0.71 and 0.74 scale were cut in two by their rails: uniqueId 475080, the last bridge on the way from the pinnacle to Arnak Grimtotem and Lakota Windsong, so the walk went down into the canyon, up the Great Lift and back along the top (4,233 yd instead of 662), and 475085, to the mesa south-west of it, which had no way across at all. The six at 1.0 to 1.45 scale were already open and route the same."
+		}
+	]
+}

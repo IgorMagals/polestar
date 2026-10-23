@@ -141,9 +141,9 @@ test('buildJournal: a stray drop (only the Forever item lists record it, under 5
 	c.npcs[16014] = { id: 16014, name: 'Mux Manascrambler', level: 60, faction: null, instance: null, roles: [], spawns: [{ map: 1446, x: 52, y: 28, f: 'e' }] };
 	c.npcs[642] = { id: 642, name: "Sneed's Shredder", level: 20, faction: null, instance: 'deadmines', roles: [], spawns: [] };
 	const item = (id, name, from, chance) => ({ id, name, quality: 1, kind: 'item', sources: [{ type: 'drop', npc: 642, instance: 'deadmines', chance, from }] });
-	c.items[16203] = item(16203, 'Greater Eternal Essence', ['wowhead'], 1.2);
-	c.items[90010] = item(90010, 'Shredder Gear', ['questie', 'pfquest', 'wowhead'], 1.2);
-	c.items[90011] = item(90011, 'Shredder Plate', ['wowhead'], 40);
+	c.items[16203] = item(16203, 'Greater Eternal Essence', ['web'], 1.2);
+	c.items[90010] = item(90010, 'Shredder Gear', ['questie', 'pfquest', 'web'], 1.2);
+	c.items[90011] = item(90011, 'Shredder Plate', ['web'], 40);
 	const quest = (id, title, itemId) => ({
 		id, title, level: 60, minLevel: 55, faction: null, races: null, classes: null,
 		start: { npc: [16014], object: [], item: [] }, end: { npc: [16014], object: [] },

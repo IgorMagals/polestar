@@ -4,7 +4,23 @@
 // Run this after merging a contributor PR that touches guides/, the addon's
 // Lua, or player-facing English strings, and before every feature release.
 
+const fs = require('node:fs');
 const path = require('node:path');
+const { spawnSync } = require('node:child_process');
+const { ROOT } = require('../lib/paths');
+
+// `forge guide compile` (the compiler moved to forge): the forge on PATH, else
+// this checkout's release build (cargo build --release -p forge in rust/).
+function forgeCompile() {
+	const built = path.join(ROOT, 'rust', 'target', 'release', process.platform === 'win32' ? 'forge.exe' : 'forge');
+	const bin = fs.existsSync(built) ? built : 'forge';
+	const r = spawnSync(bin, ['guide', 'compile'], { cwd: ROOT, stdio: 'inherit' });
+	if (r.error) {
+		console.error(`regen: cannot run forge (${r.error.message}): build it with \`cargo build --release -p forge\` in rust/, or put forge on PATH`);
+		return 1;
+	}
+	return r.status === null ? 1 : r.status;
+}
 
 module.exports = {
 	name: 'regen',
@@ -15,7 +31,7 @@ module.exports = {
 		'Regenerates the four sets of committed generated files that contributors',
 		'do not commit themselves:',
 		'',
-		'  compile     addon/Polestar_Guides/Guides.lua from guides/ and data/forever',
+		'  compile     addon/Polestar_Guides/Guides.lua from guides/ and data/forever (forge guide compile)',
 		'  i18n sync   locale files from the addon\u2019s English strings',
 		'  preview     docs/preview/*.svg from the addon\u2019s Lua (no reference data)',
 		'  media       addon/Polestar/Media/*.tga from tools/media/ (no reference data)',
@@ -34,7 +50,7 @@ module.exports = {
 		);
 
 		const steps = [
-			{ key: 'compile', file: 'compile', args: [] },
+			{ key: 'compile', run: forgeCompile, args: [] },
 			{ key: 'i18n', file: 'i18n', args: ['sync'] },
 			{ key: 'preview', file: 'preview', args: [] },
 			{ key: 'media', file: 'media', args: [] },
@@ -47,8 +63,7 @@ module.exports = {
 				continue;
 			}
 			console.log(`\nregen: ${[step.key, ...step.args].join(' ')}`);
-			const cmd = require(path.join(__dirname, `${step.file}.js`));
-			const code = await cmd.run(step.args);
+			const code = step.run ? step.run() : await require(path.join(__dirname, `${step.file}.js`)).run(step.args);
 			if (code) {
 				console.error(`regen: ${step.key} exited with ${code}`);
 				anyFailed = true;

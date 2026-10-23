@@ -5,7 +5,7 @@
 // real reference data, the last located goal before the target must be a
 // `goto` at the mouth, and the step's tip must say the target is underground.
 //
-// Needs data/forever (node tools/polestar.js data build); skips without it.
+// Needs data/forever (forge data build); skips without it.
 
 const { test } = require('node:test');
 const assert = require('node:assert/strict');

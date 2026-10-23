@@ -9,12 +9,12 @@
 //
 // journal: data/forever/codex/journal.json; attune: readAttune(); quests: the
 // Codex quests (data/forever/codex/quests.json); forever: data/forever
-// quests.json (QuestieDB facts and Forever's `wowhead` rows); build: the
+// quests.json (QuestieDB facts and Forever's `web` rows); build: the
 // client build the Codex was built from.
 //
 // rows: one per Attune dungeon group and side: { name, faction, key, attune,
 //   ours, both, chain, attuneOnly: [{ id, title, why }], oursOnly: [{ id, title, why }] }
-// rewards: { checked, match, differ: [{ key, id, title, ours, wowhead, attune }] }
+// rewards: { checked, match, differ: [{ key, id, title, ours, web, attune }] }
 
 const norm = (s) =>
 	String(s || '')
@@ -97,12 +97,12 @@ function auditDungeonQuests({ journal = {}, attune = {}, quests = {}, forever = 
 			const live = f && (f.source || []).some((s) => /^questie|^recorder/.test(s));
 			let why;
 			if (VERDICTS[id]) why = VERDICTS[id];
-			else if (!live) why = `not in QuestieDB's Forever store${f ? ' (pfQuest alone, no giver)' : ''}: retired or Season of Discovery (Wowhead Forever lists those too)`;
+			else if (!live) why = `not in QuestieDB's Forever store${f ? ' (pfQuest alone, no giver)' : ''}: retired or Season of Discovery (the web quest database lists those too)`;
 			else if (anySide) why = `on the page for the ${anySide.faction === 'A' ? 'Alliance' : 'Horde'} only (our side data)`;
 			else {
 				const elsewhere = onPages(id).filter((k) => k !== key);
 				if (elsewhere.length) why = `on the ${elsewhere.join(', ')} page`;
-				else if (f && f.wowhead && (f.wowhead.type === DUNGEON || f.wowhead.type === RAID)) why = `Wowhead files it as a ${f.wowhead.type === RAID ? 'raid' : 'dungeon'} quest of area ${f.wowhead.zone}`;
+				else if (f && f.web && (f.web.type === DUNGEON || f.web.type === RAID)) why = `the web quest database files it as a ${f.web.type === RAID ? 'raid' : 'dungeon'} quest of area ${f.web.zone}`;
 				else why = 'no link to the instance or to a page quest in our data';
 			}
 			row.attuneOnly.push({ id, title: title(id), why });
@@ -110,8 +110,8 @@ function auditDungeonQuests({ journal = {}, attune = {}, quests = {}, forever = 
 		for (const [id, q] of ours) {
 			if (ids.includes(id)) continue;
 			const f = forever[id] || {};
-			const w = f.wowhead;
-			const why = w && (w.type === DUNGEON || w.type === RAID) ? 'Wowhead: dungeon quest' : w && w.zone && p && f.area !== w.zone && (p.quests || []).length ? `Wowhead area ${w.zone}` : q.inside ? 'inside' : q.chain && q.chain.some((c) => ids.includes(c)) ? 'follows an Attune quest' : 'objectives or area in the instance';
+			const w = f.web;
+			const why = w && (w.type === DUNGEON || w.type === RAID) ? 'web: dungeon quest' : w && w.zone && p && f.area !== w.zone && (p.quests || []).length ? `web area ${w.zone}` : q.inside ? 'inside' : q.chain && q.chain.some((c) => ids.includes(c)) ? 'follows an Attune quest' : 'objectives or area in the instance';
 			row.oursOnly.push({ id, title: q.title, why });
 		}
 		rows.push(row);
@@ -121,7 +121,7 @@ function auditDungeonQuests({ journal = {}, attune = {}, quests = {}, forever = 
 	const rewards = { checked: 0, match: 0, differ: [] };
 	for (const [key, p] of Object.entries(pages)) {
 		for (const q of p.quests) {
-			const w = forever[q.id] && forever[q.id].wowhead;
+			const w = forever[q.id] && forever[q.id].web;
 			const at = (attune.rewards || {})[q.id];
 			if (!w && !at) continue;
 			rewards.checked++;
@@ -131,7 +131,7 @@ function auditDungeonQuests({ journal = {}, attune = {}, quests = {}, forever = 
 			const okW = !wh || (same(o.choice, wh.choice) && same(o.fixed, wh.fixed));
 			const okA = !as || (same(o.choice, as.choice) && same(o.fixed, as.fixed));
 			if (okW && okA) rewards.match++;
-			else rewards.differ.push({ key, id: q.id, title: q.title, ours: fmt(o), wowhead: wh && fmt(wh), attune: as && fmt(as) });
+			else rewards.differ.push({ key, id: q.id, title: q.title, ours: fmt(o), web: wh && fmt(wh), attune: as && fmt(as) });
 		}
 	}
 	return { rows, rewards, markdown: markdown(rows, rewards, attune, build) };
@@ -174,10 +174,10 @@ function markdown(rows, rewards, attune, build) {
 	}
 	out.push('## Rewards');
 	out.push('');
-	out.push(`${rewards.checked} journal quests with a Wowhead Forever list row or an Attune reward row; ${rewards.match} show the same choices and fixed rewards as both, ${rewards.differ.length} differ from one of them:`);
+	out.push(`${rewards.checked} journal quests with a web quest database list row or an Attune reward row; ${rewards.match} show the same choices and fixed rewards as both, ${rewards.differ.length} differ from one of them:`);
 	out.push('');
 	const ids = (s) => (s ? `choose ${s.choice.join(', ') || '-'}; get ${s.fixed.join(', ') || '-'}` : 'n/a');
-	for (const d of rewards.differ) out.push(`- ${d.key} ${d.id} ${d.title}: ours ${ids(d.ours)} | Wowhead ${ids(d.wowhead)} | Attune ${ids(d.attune)}`);
+	for (const d of rewards.differ) out.push(`- ${d.key} ${d.id} ${d.title}: ours ${ids(d.ours)} | web ${ids(d.web)} | Attune ${ids(d.attune)}`);
 	out.push('');
 	return out.join('\n');
 }
